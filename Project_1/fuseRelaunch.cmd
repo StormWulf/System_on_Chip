@@ -1,0 +1,1 @@
+-prj "project_1.prj" -o "proj1.exe" 

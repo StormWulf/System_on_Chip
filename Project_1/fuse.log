@@ -1,0 +1,6 @@
+Running: C:\Xilinx\13.1\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -prj project_1.prj -o proj1.exe 
+ISim O.40d (signature 0xc4ca3437)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+ERROR:Simulator:796 - Unable to open project file "project_1.prj"
+ERROR:Simulator:747 - No design top(s) specified

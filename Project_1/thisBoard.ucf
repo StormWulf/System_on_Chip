@@ -1,0 +1,13 @@
+NET "buttonLED[0]" LOC = D4;
+NET "buttonLED[1]" LOC = C3;
+NET "buttonLED[2]" LOC = E6;
+NET "buttonLED[3]" LOC = D6;
+NET "buttonLED[4]" LOC = D13;
+NET "buttonLED[5]" LOC = A7;
+NET "buttonLED[6]" LOC = G9;
+NET "buttonLED[7]" LOC = A8;
+NET "clk_50mhz" LOC = C9;
+NET "NESclk" LOC = N14;
+NET "NESdatIN" LOC = E15;
+NET "NESlatch" LOC = N15;
+NET "reset" LOC = N17;

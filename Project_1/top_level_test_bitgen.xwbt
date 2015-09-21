@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Jeff\Dropbox\UNH\ELEC_4475_01_F15_System_On_Chip\SoC\project_1\top_level_test.ncd
+OUTFILE=C:\Users\Jeff\Dropbox\UNH\ELEC_4475_01_F15_System_On_Chip\SoC\project_1\top_level_test.bit
+FAMILY=Spartan3E
+PART=xc3s1600e-4fg320
+WORKINGDIR=C:\Users\Jeff\Dropbox\UNH\ELEC_4475_01_F15_System_On_Chip\SoC\project_1
+LICENSE=WebPack
+USER_INFO=210948723_0_0_030

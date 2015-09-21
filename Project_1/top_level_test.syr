@@ -1,0 +1,547 @@
+Release 13.1 - xst O.40d (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 2.00 secs
+Total CPU time to Xst completion: 1.43 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 2.00 secs
+Total CPU time to Xst completion: 1.44 secs
+ 
+--> Reading design: top_level_test.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "top_level_test.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "top_level_test"
+Output Format                      : NGC
+Target Device                      : xc3s1600e-4-fg320
+
+---- Source Options
+Top Module Name                    : top_level_test
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+WARNING:Xst:2682 - Unable to write in file "top_level_test.lso"
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Jeff/Dropbox/UNH/ELEC_4475_01_F15_System_On_Chip/SoC/project_1/proj1.vhd" in Library work.
+Entity <top_level_test> compiled.
+Entity <top_level_test> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <top_level_test> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <top_level_test> in library <work> (Architecture <behavioral>).
+Entity <top_level_test> analyzed. Unit <top_level_test> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <top_level_test>.
+    Related source file is "C:/Users/Jeff/Dropbox/UNH/ELEC_4475_01_F15_System_On_Chip/SoC/project_1/proj1.vhd".
+WARNING:Xst:1780 - Signal <en> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+INFO:Xst:1799 - State s5 is never reached in FSM <stateNow>.
+INFO:Xst:1799 - State s7 is never reached in FSM <stateNow>.
+INFO:Xst:1799 - State s6 is never reached in FSM <stateNow>.
+INFO:Xst:1799 - State s8 is never reached in FSM <stateNow>.
+INFO:Xst:1799 - State s9 is never reached in FSM <stateNow>.
+INFO:Xst:1799 - State s10 is never reached in FSM <stateNow>.
+INFO:Xst:1799 - State s11 is never reached in FSM <stateNow>.
+INFO:Xst:1799 - State s12 is never reached in FSM <stateNow>.
+INFO:Xst:1799 - State s13 is never reached in FSM <stateNow>.
+INFO:Xst:1799 - State s14 is never reached in FSM <stateNow>.
+INFO:Xst:1799 - State s15 is never reached in FSM <stateNow>.
+INFO:Xst:1799 - State s16 is never reached in FSM <stateNow>.
+    Found finite state machine <FSM_0> for signal <stateNow>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 5                                              |
+    | Inputs             | 0                                              |
+    | Outputs            | 5                                              |
+    | Clock              | divsig                    (rising_edge)        |
+    | Reset              | reset                     (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | s0                                             |
+    | Power Up State     | s0                                             |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+WARNING:Xst:737 - Found 1-bit latch for signal <shift_0>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <shift_1>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <shift_2>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <shift_3>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <shift_4>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <shift_5>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <shift_6>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <shift_7>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <NESlatch>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <NESclk>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+    Found 24-bit up counter for signal <sig>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   1 Counter(s).
+Unit <top_level_test> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 24-bit up counter                                     : 1
+# Latches                                              : 10
+ 1-bit latch                                           : 10
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <stateNow/FSM> on signal <stateNow[1:5]> with one-hot encoding.
+-------------------
+ State | Encoding
+-------------------
+ s0    | 00001
+ s1    | 00010
+ s2    | 00100
+ s3    | 01000
+ s4    | 10000
+ s5    | unreached
+ s6    | unreached
+ s7    | unreached
+ s8    | unreached
+ s9    | unreached
+ s10   | unreached
+ s11   | unreached
+ s12   | unreached
+ s13   | unreached
+ s14   | unreached
+ s15   | unreached
+ s16   | unreached
+-------------------
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <shift_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <shift_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <shift_4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <shift_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <shift_6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <shift_7>. This FF/Latch will be trimmed during the optimization process.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# Counters                                             : 1
+ 24-bit up counter                                     : 1
+# Latches                                              : 10
+ 1-bit latch                                           : 10
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <shift_2> (without init value) has a constant value of 0 in block <top_level_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <sig_6> of sequential type is unconnected in block <top_level_test>.
+WARNING:Xst:2677 - Node <sig_7> of sequential type is unconnected in block <top_level_test>.
+WARNING:Xst:2677 - Node <sig_8> of sequential type is unconnected in block <top_level_test>.
+WARNING:Xst:2677 - Node <sig_9> of sequential type is unconnected in block <top_level_test>.
+WARNING:Xst:2677 - Node <sig_10> of sequential type is unconnected in block <top_level_test>.
+WARNING:Xst:2677 - Node <sig_11> of sequential type is unconnected in block <top_level_test>.
+WARNING:Xst:2677 - Node <sig_12> of sequential type is unconnected in block <top_level_test>.
+WARNING:Xst:2677 - Node <sig_13> of sequential type is unconnected in block <top_level_test>.
+WARNING:Xst:2677 - Node <sig_14> of sequential type is unconnected in block <top_level_test>.
+WARNING:Xst:2677 - Node <sig_15> of sequential type is unconnected in block <top_level_test>.
+WARNING:Xst:2677 - Node <sig_16> of sequential type is unconnected in block <top_level_test>.
+WARNING:Xst:2677 - Node <sig_17> of sequential type is unconnected in block <top_level_test>.
+WARNING:Xst:2677 - Node <sig_18> of sequential type is unconnected in block <top_level_test>.
+WARNING:Xst:2677 - Node <sig_19> of sequential type is unconnected in block <top_level_test>.
+WARNING:Xst:2677 - Node <sig_20> of sequential type is unconnected in block <top_level_test>.
+WARNING:Xst:2677 - Node <sig_21> of sequential type is unconnected in block <top_level_test>.
+WARNING:Xst:2677 - Node <sig_22> of sequential type is unconnected in block <top_level_test>.
+WARNING:Xst:2677 - Node <sig_23> of sequential type is unconnected in block <top_level_test>.
+
+Optimizing unit <top_level_test> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block top_level_test, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 11
+ Flip-Flops                                            : 11
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : top_level_test.ngr
+Top Level Output File Name         : top_level_test
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 13
+
+Cell Usage :
+# BELS                             : 24
+#      GND                         : 1
+#      INV                         : 3
+#      LUT1                        : 5
+#      LUT2                        : 2
+#      LUT4                        : 1
+#      MUXCY                       : 5
+#      VCC                         : 1
+#      XORCY                       : 6
+# FlipFlops/Latches                : 15
+#      FD                          : 6
+#      FDC                         : 4
+#      FDP                         : 1
+#      LD                          : 4
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 12
+#      IBUF                        : 2
+#      OBUF                        : 10
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s1600efg320-4 
+
+ Number of Slices:                        7  out of  14752     0%  
+ Number of Slice Flip Flops:             13  out of  29504     0%  
+ Number of 4 input LUTs:                 11  out of  29504     0%  
+ Number of IOs:                          13
+ Number of bonded IOBs:                  13  out of    250     5%  
+    IOB Flip Flops:                       2
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+NESlatch_or0000(NESlatch_or0000:O) | NONE(*)(NESclk)        | 2     |
+stateNow_FSM_FFd1                  | NONE(shift_1)          | 1     |
+stateNow_FSM_FFd3                  | NONE(shift_0)          | 1     |
+sig_5                              | NONE(stateNow_FSM_FFd2)| 5     |
+clk_50mhz                          | BUFGP                  | 6     |
+-----------------------------------+------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+reset                              | IBUF                   | 5     |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 3.643ns (Maximum Frequency: 274.499MHz)
+   Minimum input arrival time before clock: 1.973ns
+   Maximum output required time after clock: 5.492ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'sig_5'
+  Clock period: 2.309ns (frequency: 433.088MHz)
+  Total number of paths / destination ports: 5 / 4
+-------------------------------------------------------------------------
+Delay:               2.309ns (Levels of Logic = 1)
+  Source:            stateNow_FSM_FFd1 (FF)
+  Destination:       stateNow_FSM_FFd2 (FF)
+  Source Clock:      sig_5 rising
+  Destination Clock: sig_5 rising
+
+  Data Path: stateNow_FSM_FFd1 to stateNow_FSM_FFd2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              3   0.591   0.706  stateNow_FSM_FFd1 (stateNow_FSM_FFd1)
+     LUT2:I0->O            1   0.704   0.000  stateNow_FSM_FFd2-In1 (stateNow_FSM_FFd2-In)
+     FDC:D                     0.308          stateNow_FSM_FFd2
+    ----------------------------------------
+    Total                      2.309ns (1.603ns logic, 0.706ns route)
+                                       (69.4% logic, 30.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_50mhz'
+  Clock period: 3.643ns (frequency: 274.499MHz)
+  Total number of paths / destination ports: 21 / 6
+-------------------------------------------------------------------------
+Delay:               3.643ns (Levels of Logic = 6)
+  Source:            sig_1 (FF)
+  Destination:       sig_5 (FF)
+  Source Clock:      clk_50mhz rising
+  Destination Clock: clk_50mhz rising
+
+  Data Path: sig_1 to sig_5
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.591   0.595  sig_1 (sig_1)
+     LUT1:I0->O            1   0.704   0.000  Mcount_sig_cy<1>_rt (Mcount_sig_cy<1>_rt)
+     MUXCY:S->O            1   0.464   0.000  Mcount_sig_cy<1> (Mcount_sig_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_sig_cy<2> (Mcount_sig_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_sig_cy<3> (Mcount_sig_cy<3>)
+     MUXCY:CI->O           0   0.059   0.000  Mcount_sig_cy<4> (Mcount_sig_cy<4>)
+     XORCY:CI->O           1   0.804   0.000  Mcount_sig_xor<5> (Result<5>)
+     FD:D                      0.308          sig_5
+    ----------------------------------------
+    Total                      3.643ns (3.048ns logic, 0.595ns route)
+                                       (83.7% logic, 16.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'stateNow_FSM_FFd1'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.973ns (Levels of Logic = 1)
+  Source:            NESdatIN (PAD)
+  Destination:       shift_1 (LATCH)
+  Destination Clock: stateNow_FSM_FFd1 falling
+
+  Data Path: NESdatIN to shift_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.218   0.447  NESdatIN_IBUF (NESdatIN_IBUF)
+     LD:D                      0.308          shift_1
+    ----------------------------------------
+    Total                      1.973ns (1.526ns logic, 0.447ns route)
+                                       (77.3% logic, 22.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'stateNow_FSM_FFd3'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.973ns (Levels of Logic = 1)
+  Source:            NESdatIN (PAD)
+  Destination:       shift_0 (LATCH)
+  Destination Clock: stateNow_FSM_FFd3 falling
+
+  Data Path: NESdatIN to shift_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.218   0.447  NESdatIN_IBUF (NESdatIN_IBUF)
+     LD:D                      0.308          shift_0
+    ----------------------------------------
+    Total                      1.973ns (1.526ns logic, 0.447ns route)
+                                       (77.3% logic, 22.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'NESlatch_or0000'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              4.368ns (Levels of Logic = 1)
+  Source:            NESlatch (LATCH)
+  Destination:       NESlatch (PAD)
+  Source Clock:      NESlatch_or0000 falling
+
+  Data Path: NESlatch to NESlatch
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.676   0.420  NESlatch (NESlatch_OBUF)
+     OBUF:I->O                 3.272          NESlatch_OBUF (NESlatch)
+    ----------------------------------------
+    Total                      4.368ns (3.948ns logic, 0.420ns route)
+                                       (90.4% logic, 9.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'stateNow_FSM_FFd1'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.492ns (Levels of Logic = 2)
+  Source:            shift_1 (LATCH)
+  Destination:       buttonLED<1> (PAD)
+  Source Clock:      stateNow_FSM_FFd1 falling
+
+  Data Path: shift_1 to buttonLED<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.676   0.420  shift_1 (shift_1)
+     INV:I->O              1   0.704   0.420  buttonLED<1>1_INV_0 (buttonLED_1_OBUF)
+     OBUF:I->O                 3.272          buttonLED_1_OBUF (buttonLED<1>)
+    ----------------------------------------
+    Total                      5.492ns (4.652ns logic, 0.840ns route)
+                                       (84.7% logic, 15.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'stateNow_FSM_FFd3'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.492ns (Levels of Logic = 2)
+  Source:            shift_0 (LATCH)
+  Destination:       buttonLED<0> (PAD)
+  Source Clock:      stateNow_FSM_FFd3 falling
+
+  Data Path: shift_0 to buttonLED<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.676   0.420  shift_0 (shift_0)
+     INV:I->O              1   0.704   0.420  buttonLED<0>1_INV_0 (buttonLED_0_OBUF)
+     OBUF:I->O                 3.272          buttonLED_0_OBUF (buttonLED<0>)
+    ----------------------------------------
+    Total                      5.492ns (4.652ns logic, 0.840ns route)
+                                       (84.7% logic, 15.3% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 52.00 secs
+Total CPU time to Xst completion: 52.07 secs
+ 
+--> 
+
+Total memory usage is 354144 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   37 (   0 filtered)
+Number of infos    :   15 (   0 filtered)
+

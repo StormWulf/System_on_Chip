@@ -1,0 +1,22 @@
+//! **************************************************************************
+// Written by: Map O.40d on Wed Sep 16 10:15:42 2015
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "buttonLED<0>" LOCATE = SITE "D4" LEVEL 1;
+COMP "NESclk" LOCATE = SITE "N14" LEVEL 1;
+COMP "buttonLED<1>" LOCATE = SITE "C3" LEVEL 1;
+COMP "buttonLED<2>" LOCATE = SITE "E6" LEVEL 1;
+COMP "NESdatIN" LOCATE = SITE "E15" LEVEL 1;
+COMP "buttonLED<3>" LOCATE = SITE "D6" LEVEL 1;
+COMP "buttonLED<4>" LOCATE = SITE "D13" LEVEL 1;
+COMP "buttonLED<5>" LOCATE = SITE "A7" LEVEL 1;
+COMP "buttonLED<6>" LOCATE = SITE "G9" LEVEL 1;
+COMP "buttonLED<7>" LOCATE = SITE "A8" LEVEL 1;
+COMP "clk_50mhz" LOCATE = SITE "C9" LEVEL 1;
+COMP "NESlatch" LOCATE = SITE "N15" LEVEL 1;
+COMP "reset" LOCATE = SITE "N17" LEVEL 1;
+NET "clk_50mhz_BUFGP/IBUFG" BEL "clk_50mhz_BUFGP/BUFG.GCLKMUX"
+        USELOCALCONNECT;
+SCHEMATIC END;
+

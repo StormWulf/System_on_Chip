@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=C:\Users\Jeff\Dropbox\UNH\ELEC_4475_01_F15_System_On_Chip\SoC\project_1\impact.xsl
+OUTFILE=C:\Users\Jeff\Dropbox\UNH\ELEC_4475_01_F15_System_On_Chip\SoC\project_1\impact.xsl
+FAMILY=Multiple
+PART=Multiple
+WORKINGDIR=C:\Users\Jeff\Dropbox\UNH\ELEC_4475_01_F15_System_On_Chip\SoC\project_1
+LICENSE=iMPACT
+USER_INFO=iMPACT

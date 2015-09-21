@@ -1,0 +1,60 @@
+xst -intstyle ise -ifn "C:/Users/Jeff/Dropbox/UNH/ELEC_4475_01_F15_System_On_Chip/project_1/top_level_test.xst" -ofn "C:/Users/Jeff/Dropbox/UNH/ELEC_4475_01_F15_System_On_Chip/project_1/top_level_test.syr" 
+xst -intstyle ise -ifn "C:/Users/Jeff/Dropbox/UNH/ELEC_4475_01_F15_System_On_Chip/project_1/top_level_test.xst" -ofn "C:/Users/Jeff/Dropbox/UNH/ELEC_4475_01_F15_System_On_Chip/project_1/top_level_test.syr" 
+xst -intstyle ise -ifn "C:/Users/Jeff/Dropbox/UNH/ELEC_4475_01_F15_System_On_Chip/SoC/project_1/top_level_test.xst" -ofn "C:/Users/Jeff/Dropbox/UNH/ELEC_4475_01_F15_System_On_Chip/SoC/project_1/top_level_test.syr" 
+xst -intstyle ise -ifn "C:/Users/wputn1/Desktop/project_1/top_level_test.xst" -ofn "C:/Users/wputn1/Desktop/project_1/top_level_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc thisBoard.ucf -p xc3s1600e-fg320-4 top_level_test.ngc top_level_test.ngd  
+map -intstyle ise -p xc3s1600e-fg320-4 -cm area -ir off -pr off -c 100 -o top_level_test_map.ncd top_level_test.ngd top_level_test.pcf 
+par -w -intstyle ise -ol high -t 1 top_level_test_map.ncd top_level_test.ncd top_level_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_level_test.twx top_level_test.ncd -o top_level_test.twr top_level_test.pcf -ucf thisBoard.ucf 
+bitgen -intstyle ise -f top_level_test.ut top_level_test.ncd 
+xst -intstyle ise -ifn "C:/Users/wputn1/Desktop/project_1/top_level_test.xst" -ofn "C:/Users/wputn1/Desktop/project_1/top_level_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc thisBoard.ucf -p xc3s1600e-fg320-4 top_level_test.ngc top_level_test.ngd  
+map -intstyle ise -p xc3s1600e-fg320-4 -cm area -ir off -pr off -c 100 -o top_level_test_map.ncd top_level_test.ngd top_level_test.pcf 
+par -w -intstyle ise -ol high -t 1 top_level_test_map.ncd top_level_test.ncd top_level_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_level_test.twx top_level_test.ncd -o top_level_test.twr top_level_test.pcf -ucf thisBoard.ucf 
+bitgen -intstyle ise -f top_level_test.ut top_level_test.ncd 
+xst -intstyle ise -ifn "C:/Users/wputn1/Desktop/project_1/top_level_test.xst" -ofn "C:/Users/wputn1/Desktop/project_1/top_level_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc thisBoard.ucf -p xc3s1600e-fg320-4 top_level_test.ngc top_level_test.ngd  
+map -intstyle ise -p xc3s1600e-fg320-4 -cm area -ir off -pr off -c 100 -o top_level_test_map.ncd top_level_test.ngd top_level_test.pcf 
+par -w -intstyle ise -ol high -t 1 top_level_test_map.ncd top_level_test.ncd top_level_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_level_test.twx top_level_test.ncd -o top_level_test.twr top_level_test.pcf -ucf thisBoard.ucf 
+bitgen -intstyle ise -f top_level_test.ut top_level_test.ncd 
+xst -intstyle ise -ifn "C:/Users/wputn1/Desktop/project_1/top_level_test.xst" -ofn "C:/Users/wputn1/Desktop/project_1/top_level_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc thisBoard.ucf -p xc3s1600e-fg320-4 top_level_test.ngc top_level_test.ngd  
+map -intstyle ise -p xc3s1600e-fg320-4 -cm area -ir off -pr off -c 100 -o top_level_test_map.ncd top_level_test.ngd top_level_test.pcf 
+par -w -intstyle ise -ol high -t 1 top_level_test_map.ncd top_level_test.ncd top_level_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_level_test.twx top_level_test.ncd -o top_level_test.twr top_level_test.pcf -ucf thisBoard.ucf 
+bitgen -intstyle ise -f top_level_test.ut top_level_test.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc thisBoard.ucf -p xc3s1600e-fg320-4 top_level_test.ngc top_level_test.ngd  
+map -intstyle ise -p xc3s1600e-fg320-4 -cm area -ir off -pr off -c 100 -o top_level_test_map.ncd top_level_test.ngd top_level_test.pcf 
+par -w -intstyle ise -ol high -t 1 top_level_test_map.ncd top_level_test.ncd top_level_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_level_test.twx top_level_test.ncd -o top_level_test.twr top_level_test.pcf -ucf thisBoard.ucf 
+xst -intstyle ise -ifn "C:/Users/wputn1/Desktop/project_1/top_level_test.xst" -ofn "C:/Users/wputn1/Desktop/project_1/top_level_test.syr" 
+xst -intstyle ise -ifn "C:/Users/wputn1/Desktop/project_1/top_level_test.xst" -ofn "C:/Users/wputn1/Desktop/project_1/top_level_test.syr" 
+xst -intstyle ise -ifn "C:/Users/wputn1/Desktop/project_1/top_level_test.xst" -ofn "C:/Users/wputn1/Desktop/project_1/top_level_test.syr" 
+xst -intstyle ise -ifn "C:/Users/wputn1/Desktop/project_1/top_level_test.xst" -ofn "C:/Users/wputn1/Desktop/project_1/top_level_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc thisBoard.ucf -p xc3s1600e-fg320-4 top_level_test.ngc top_level_test.ngd  
+map -intstyle ise -p xc3s1600e-fg320-4 -cm area -ir off -pr off -c 100 -o top_level_test_map.ncd top_level_test.ngd top_level_test.pcf 
+par -w -intstyle ise -ol high -t 1 top_level_test_map.ncd top_level_test.ncd top_level_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_level_test.twx top_level_test.ncd -o top_level_test.twr top_level_test.pcf -ucf thisBoard.ucf 
+bitgen -intstyle ise -f top_level_test.ut top_level_test.ncd 
+xst -intstyle ise -ifn "C:/Users/wputn1/Desktop/project_1/top_level_test.xst" -ofn "C:/Users/wputn1/Desktop/project_1/top_level_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc thisBoard.ucf -p xc3s1600e-fg320-4 top_level_test.ngc top_level_test.ngd  
+map -intstyle ise -p xc3s1600e-fg320-4 -cm area -ir off -pr off -c 100 -o top_level_test_map.ncd top_level_test.ngd top_level_test.pcf 
+par -w -intstyle ise -ol high -t 1 top_level_test_map.ncd top_level_test.ncd top_level_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_level_test.twx top_level_test.ncd -o top_level_test.twr top_level_test.pcf -ucf thisBoard.ucf 
+bitgen -intstyle ise -f top_level_test.ut top_level_test.ncd 
+xst -intstyle ise -ifn "C:/Users/Jeff/Dropbox/UNH/ELEC_4475_01_F15_System_On_Chip/SoC/project_1/top_level_test.xst" -ofn "C:/Users/Jeff/Dropbox/UNH/ELEC_4475_01_F15_System_On_Chip/SoC/project_1/top_level_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc thisBoard.ucf -p xc3s1600e-fg320-4 top_level_test.ngc top_level_test.ngd  
+map -intstyle ise -p xc3s1600e-fg320-4 -cm area -ir off -pr off -c 100 -o top_level_test_map.ncd top_level_test.ngd top_level_test.pcf 
+par -w -intstyle ise -ol high -t 1 top_level_test_map.ncd top_level_test.ncd top_level_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_level_test.twx top_level_test.ncd -o top_level_test.twr top_level_test.pcf -ucf thisBoard.ucf 
+bitgen -intstyle ise -f top_level_test.ut top_level_test.ncd 
+xst -intstyle ise -ifn "C:/Users/Jeff/Dropbox/UNH/ELEC_4475_01_F15_System_On_Chip/SoC/project_1/top_level_test.xst" -ofn "C:/Users/Jeff/Dropbox/UNH/ELEC_4475_01_F15_System_On_Chip/SoC/project_1/top_level_test.syr" 
+xst -intstyle ise -ifn "C:/Users/Jeff/Dropbox/UNH/ELEC_4475_01_F15_System_On_Chip/SoC/project_1/top_level_test.xst" -ofn "C:/Users/Jeff/Dropbox/UNH/ELEC_4475_01_F15_System_On_Chip/SoC/project_1/top_level_test.syr" 
+xst -intstyle ise -ifn "C:/Users/Jeff/Dropbox/UNH/ELEC_4475_01_F15_System_On_Chip/SoC/project_1/top_level_test.xst" -ofn "C:/Users/Jeff/Dropbox/UNH/ELEC_4475_01_F15_System_On_Chip/SoC/project_1/top_level_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc thisBoard.ucf -p xc3s1600e-fg320-4 top_level_test.ngc top_level_test.ngd  
+map -intstyle ise -p xc3s1600e-fg320-4 -cm area -ir off -pr off -c 100 -o top_level_test_map.ncd top_level_test.ngd top_level_test.pcf 
+par -w -intstyle ise -ol high -t 1 top_level_test_map.ncd top_level_test.ncd top_level_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_level_test.twx top_level_test.ncd -o top_level_test.twr top_level_test.pcf -ucf thisBoard.ucf 
+bitgen -intstyle ise -f top_level_test.ut top_level_test.ncd 
