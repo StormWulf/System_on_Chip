@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Jeff\Documents\GitHub\System_on_Chip\Project2\vgatest.ncd
+OUTFILE=C:\Users\Jeff\Documents\GitHub\System_on_Chip\Project2\vgatest.bit
+FAMILY=Spartan3E
+PART=xc3s1600e-5fg320
+WORKINGDIR=C:\Users\Jeff\Documents\GitHub\System_on_Chip\Project2
+LICENSE=WebPack
+USER_INFO=210948723_0_0_030
