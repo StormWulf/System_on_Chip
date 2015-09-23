@@ -1,7 +1,7 @@
 Release 13.1 Drc O.40d (nt64)
 Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
 
-Tue Sep 22 12:14:55 2015
+Wed Sep 23 17:04:15 2015
 
 drc -z vgatest.ncd vgatest.pcf
 
