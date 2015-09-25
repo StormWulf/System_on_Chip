@@ -44,11 +44,11 @@ Clock clk to Pad
             | clk (edge) |                  | Clock  |
 Destination |   to PAD   |Internal Clock(s) | Phase  |
 ------------+------------+------------------+--------+
-hsync       |    7.765(R)|clk_BUFGP         |   0.000|
-rgb<0>      |   10.582(R)|clk_BUFGP         |   0.000|
-rgb<1>      |   10.318(R)|clk_BUFGP         |   0.000|
-rgb<2>      |   10.547(R)|clk_BUFGP         |   0.000|
-vsync       |    7.526(R)|clk_BUFGP         |   0.000|
+hsync       |    8.054(R)|clk_BUFGP         |   0.000|
+rgb<0>      |   10.324(R)|clk_BUFGP         |   0.000|
+rgb<1>      |   10.230(R)|clk_BUFGP         |   0.000|
+rgb<2>      |   10.041(R)|clk_BUFGP         |   0.000|
+vsync       |    7.909(R)|clk_BUFGP         |   0.000|
 ------------+------------+------------------+--------+
 
 Clock to Setup on destination clock clk
@@ -56,11 +56,11 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    8.884|         |         |         |
+clk            |    9.024|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Wed Sep 23 17:04:00 2015 
+Analysis completed Fri Sep 25 13:26:01 2015 
 --------------------------------------------------------------------------------
 
 Trace Settings:

@@ -4,13 +4,13 @@ Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 1.43 secs
+Total CPU time to Xst completion: 1.63 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 1.44 secs
+Total CPU time to Xst completion: 1.72 secs
  
 --> Reading design: vgatest.prj
 
@@ -122,7 +122,7 @@ Analyzing hierarchy for entity <vgatimehelper> in library <work> (architecture <
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing Entity <vgatest> in library <work> (Architecture <arch>).
-WARNING:Xst:753 - "C:/Users/Jeff/Documents/GitHub/System_on_Chip/Project2/vgatest.vhd" line 220: Unconnected output port 'p_tick' of component 'vgatimehelper'.
+WARNING:Xst:753 - "C:/Users/Jeff/Documents/GitHub/System_on_Chip/Project2/vgatest.vhd" line 201: Unconnected output port 'p_tick' of component 'vgatimehelper'.
 INFO:Xst:1432 - Contents of array <grid_map> may be accessed with a negative index, causing simulation mismatch.
 INFO:Xst:1433 - Contents of array <grid_map> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
 Entity <vgatest> analyzed. Unit <vgatest> generated.
@@ -166,9 +166,9 @@ WARNING:Xst:646 - Signal <pixel_x<3:0>> is assigned but never used. This unconne
 WARNING:Xst:646 - Signal <mapindex<31:11>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:1781 - Signal <grid_map> is used but never assigned. Tied to default value.
 WARNING:Xst:1780 - Signal <divsig> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
-    Found 1200x3-bit ROM for signal <$varindex0000> created at line 233.
-    Found 12-bit adder for signal <mapindex$add0000> created at line 225.
-    Found 6x6-bit multiplier for signal <mapindex$mult0000> created at line 225.
+    Found 1200x3-bit ROM for signal <$varindex0000> created at line 215.
+    Found 12-bit adder for signal <mapindex$add0000> created at line 207.
+    Found 6x6-bit multiplier for signal <mapindex$mult0000> created at line 207.
     Found 3-bit register for signal <rgb_reg>.
     Summary:
 	inferred   1 ROM(s).
@@ -274,20 +274,19 @@ Design Statistics
 # IOs                              : 10
 
 Cell Usage :
-# BELS                             : 135
+# BELS                             : 134
 #      GND                         : 1
 #      INV                         : 3
 #      LUT1                        : 22
-#      LUT2                        : 28
+#      LUT2                        : 27
 #      LUT2_D                      : 1
 #      LUT3                        : 2
 #      LUT4                        : 16
 #      LUT4_D                      : 1
-#      LUT4_L                      : 1
 #      MUXCY                       : 28
 #      MUXF5                       : 2
 #      VCC                         : 1
-#      XORCY                       : 29
+#      XORCY                       : 30
 # FlipFlops/Latches                : 26
 #      FDC                         : 6
 #      FDCE                        : 20
@@ -305,9 +304,9 @@ Device utilization summary:
 
 Selected Device : 3s1600efg320-5 
 
- Number of Slices:                       41  out of  14752     0%  
+ Number of Slices:                       40  out of  14752     0%  
  Number of Slice Flip Flops:             26  out of  29504     0%  
- Number of 4 input LUTs:                 74  out of  29504     0%  
+ Number of 4 input LUTs:                 72  out of  29504     0%  
  Number of IOs:                          10
  Number of bonded IOBs:                   7  out of    250     2%  
  Number of MULT18X18SIOs:                 1  out of     36     2%  
@@ -361,15 +360,15 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
   Clock period: 9.594ns (frequency: 104.235MHz)
-  Total number of paths / destination ports: 1403 / 46
+  Total number of paths / destination ports: 1398 / 46
 -------------------------------------------------------------------------
 Delay:               9.594ns (Levels of Logic = 6)
   Source:            vga_unit/v_count_reg_9 (FF)
-  Destination:       rgb_reg_1 (FF)
+  Destination:       rgb_reg_0 (FF)
   Source Clock:      clk rising
   Destination Clock: clk rising
 
-  Data Path: vga_unit/v_count_reg_9 to rgb_reg_1
+  Data Path: vga_unit/v_count_reg_9 to rgb_reg_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
@@ -377,8 +376,8 @@ Delay:               9.594ns (Levels of Logic = 6)
      MULT18X18SIO:A5->P8    1   3.953   0.509  Mmult_mapindex_mult0000 (mapindex_mult0000<8>)
      LUT1:I0->O            1   0.612   0.000  Madd_mapindex_add0000_Madd_cy<8>_rt (Madd_mapindex_add0000_Madd_cy<8>_rt)
      MUXCY:S->O            1   0.404   0.000  Madd_mapindex_add0000_Madd_cy<8> (Madd_mapindex_add0000_Madd_cy<8>)
-     XORCY:CI->O           2   0.699   0.449  Madd_mapindex_add0000_Madd_xor<9> (mapindex<9>)
-     LUT2_D:I1->O          1   0.612   0.360  Mrom__varindex00001231_SW1 (N41)
+     XORCY:CI->O           1   0.699   0.426  Madd_mapindex_add0000_Madd_xor<9> (mapindex<9>)
+     LUT2_D:I1->O          2   0.612   0.383  Mrom__varindex00001231_SW1 (N41)
      LUT4:I3->O            1   0.612   0.000  Mrom__varindex00003131 (N3)
      FDC:D                     0.268          rgb_reg_1
     ----------------------------------------
@@ -409,12 +408,12 @@ Offset:              6.474ns (Levels of Logic = 3)
 =========================================================================
 
 
-Total REAL time to Xst completion: 49.00 secs
-Total CPU time to Xst completion: 49.39 secs
+Total REAL time to Xst completion: 67.00 secs
+Total CPU time to Xst completion: 67.02 secs
  
 --> 
 
-Total memory usage is 370320 kilobytes
+Total memory usage is 338944 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    8 (   0 filtered)

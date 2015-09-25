@@ -1,3 +1,7 @@
+--file: vgatest.vhd
+--Authors: William Putnam, Jeff Falberg
+--Last Updated: 9.25.2015
+
 library ieee;
 use ieee.std_logic_1164.all;
 use IEEE.NUMERIC_STD.ALL;
@@ -20,180 +24,166 @@ architecture arch of vgatest is
 	
 	signal divsig: STD_LOGIC;
 	signal sig: unsigned (23 downto 0);
+	constant cblk : std_logic_vector(2 downto 0) := "000";
 	constant cblue : std_logic_vector(2 downto 0) := "001";
 	constant cgreen : std_logic_vector(2 downto 0) := "010";
+	constant ccyan : std_logic_vector(2 downto 0) := "011";
 	constant cred: std_logic_vector(2 downto 0) := "100";
+	constant cmag: std_logic_vector(2 downto 0) := "101";
+	constant cyel: std_logic_vector(2 downto 0) := "110";
 	constant ctrans: std_logic_vector(2 downto 0) := "111";
 	type tile_map is array(0 to 1199) of std_logic_vector(2 downto 0);
 	signal grid_map : tile_map := (
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans,
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans,
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans, 
-		cblue, cgreen, cred, ctrans, cblue, cgreen, cred, ctrans);
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans,
+		cblk, cblue, cgreen, ccyan, cred, cmag, cyel, ctrans);
 	
 	signal mapindex : integer;
 
@@ -207,42 +197,24 @@ architecture arch of vgatest is
 
 begin
 
-	--clock divider
---	process(clk, divsig, sig)
---		begin
---		if (clk'event and clk = '1') then
---			sig <= sig + 1;
---		end if;
---		divsig <= sig(5);
---	end process;
-
   -- instantiate VGA sync circuit
    vga_unit: vgatimehelper
       port map(clk=>clk, reset=>reset, hsync=>hsync,
                vsync=>vsync, video_on=>video_on,
                p_tick=>open, pixel_x=>pixel_x, pixel_y=>pixel_y);
 
+	--get pixel location
 	mapindex <= conv_integer(pixel_x(9 downto 4)) + (conv_integer(pixel_y(9 downto 4)) * 40);
 
-   -- rgb buffer
+   -- rgb buffer (paint screen)
    process (clk,reset)
    begin
       if reset='1' then
          rgb_reg <= (others=>'0');
       elsif (clk'event and clk='1') then
-         rgb_reg <= grid_map(mapindex);--sw;
+         rgb_reg <= grid_map(mapindex);
       end if;
    end process;
-	
-	--paint the screen
---	process(reset, divsig)
---	begin
---			if (reset = '1') then rgb <= "000";
---			elsif (divsig'event and divsig = '1') then
---				mapindex <= std_logic_vector((signed((pixel_x)) + signed((pixel_y)) * 40));
---				rgb <= grid_map(conv_integer(mapindex));
---			end if;
---	end process;
 
    rgb <= rgb_reg when video_on='1' else "000";
 end arch;

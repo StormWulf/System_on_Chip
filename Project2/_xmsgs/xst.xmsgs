@@ -5,7 +5,7 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/Jeff/Documents/GitHub/System_on_Chip/Project2/vgatest.vhd</arg>&quot; line <arg fmt="%d" index="2">220</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">p_tick</arg>&apos; of component &apos;<arg fmt="%s" index="4">vgatimehelper</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/Jeff/Documents/GitHub/System_on_Chip/Project2/vgatest.vhd</arg>&quot; line <arg fmt="%d" index="2">201</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">p_tick</arg>&apos; of component &apos;<arg fmt="%s" index="4">vgatimehelper</arg>&apos;.
 </msg>
 
 <msg type="info" file="Xst" num="1432" delta="old" >Contents of array &lt;<arg fmt="%s" index="1">grid_map</arg>&gt; may be accessed with a negative index, causing simulation mismatch.

@@ -42,3 +42,9 @@ map -intstyle ise -p xc3s1600e-fg320-5 -cm area -ir off -pr off -c 100 -o vgates
 par -w -intstyle ise -ol high -t 1 vgatest_map.ncd vgatest.ncd vgatest.pcf 
 trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml vgatest.twx vgatest.ncd -o vgatest.twr vgatest.pcf -ucf thisBoard.ucf 
 bitgen -intstyle ise -f vgatest.ut vgatest.ncd 
+xst -intstyle ise -ifn "C:/Users/Jeff/Documents/GitHub/System_on_Chip/Project2/vgatest.xst" -ofn "C:/Users/Jeff/Documents/GitHub/System_on_Chip/Project2/vgatest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc thisBoard.ucf -p xc3s1600e-fg320-5 vgatest.ngc vgatest.ngd  
+map -intstyle ise -p xc3s1600e-fg320-5 -cm area -ir off -pr off -c 100 -o vgatest_map.ncd vgatest.ngd vgatest.pcf 
+par -w -intstyle ise -ol high -t 1 vgatest_map.ncd vgatest.ncd vgatest.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml vgatest.twx vgatest.ncd -o vgatest.twr vgatest.pcf -ucf thisBoard.ucf 
+bitgen -intstyle ise -f vgatest.ut vgatest.ncd 
