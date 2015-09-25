@@ -11,5 +11,8 @@
 <msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Jeff/Documents/GitHub/System_on_Chip/Project2/vgatest.vhd&quot; into library work</arg>
 </msg>
 
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Jeff/Documents/GitHub/System_on_Chip/Project2/vgatimehelper.vhd&quot; into library work</arg>
+</msg>
+
 </messages>
 
