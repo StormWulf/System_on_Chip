@@ -1,0 +1,454 @@
+Release 13.1 - xst O.40d (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Reading design: vgatest.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "vgatest.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "vgatest"
+Output Format                      : NGC
+Target Device                      : xc3s1600e-5-fg320
+
+---- Source Options
+Top Module Name                    : vgatest
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/project_3/vgatimehelper.vhd" in Library work.
+Architecture arch of Entity vgatimehelper is up to date.
+Compiling vhdl file "C:/project_3/vgatest.vhd" in Library work.
+Entity <vgatest> compiled.
+Entity <vgatest> (Architecture <arch>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <vgatest> in library <work> (architecture <arch>).
+
+Analyzing hierarchy for entity <vgatimehelper> in library <work> (architecture <arch>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <vgatest> in library <work> (Architecture <arch>).
+WARNING:Xst:753 - "C:/project_3/vgatest.vhd" line 366: Unconnected output port 'p_tick' of component 'vgatimehelper'.
+INFO:Xst:1432 - Contents of array <foreground> may be accessed with a negative index, causing simulation mismatch.
+INFO:Xst:1433 - Contents of array <foreground> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1432 - Contents of array <background> may be accessed with a negative index, causing simulation mismatch.
+INFO:Xst:1433 - Contents of array <background> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1432 - Contents of array <spriteArr> may be accessed with a negative index, causing simulation mismatch.
+INFO:Xst:1433 - Contents of array <spriteArr> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1432 - Contents of array <spriteArr> may be accessed with a negative index, causing simulation mismatch.
+INFO:Xst:1433 - Contents of array <spriteArr> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1432 - Contents of array <spriteArr> may be accessed with a negative index, causing simulation mismatch.
+INFO:Xst:1433 - Contents of array <spriteArr> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+Entity <vgatest> analyzed. Unit <vgatest> generated.
+
+Analyzing Entity <vgatimehelper> in library <work> (Architecture <arch>).
+Entity <vgatimehelper> analyzed. Unit <vgatimehelper> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <vgatimehelper>.
+    Related source file is "C:/project_3/vgatimehelper.vhd".
+    Found 10-bit up counter for signal <h_count_reg>.
+    Found 10-bit comparator greatequal for signal <h_sync_next$cmp_ge0000> created at line 105.
+    Found 10-bit comparator lessequal for signal <h_sync_next$cmp_le0000> created at line 105.
+    Found 1-bit register for signal <h_sync_reg>.
+    Found 1-bit register for signal <mod2_reg>.
+    Found 10-bit up counter for signal <v_count_reg>.
+    Found 10-bit comparator greatequal for signal <v_sync_next$cmp_ge0000> created at line 109.
+    Found 10-bit comparator lessequal for signal <v_sync_next$cmp_le0000> created at line 109.
+    Found 1-bit register for signal <v_sync_reg>.
+    Found 10-bit comparator less for signal <video_on$cmp_lt0000> created at line 115.
+    Found 10-bit comparator less for signal <video_on$cmp_lt0001> created at line 115.
+    Summary:
+	inferred   2 Counter(s).
+	inferred   3 D-type flip-flop(s).
+	inferred   6 Comparator(s).
+Unit <vgatimehelper> synthesized.
+
+
+Synthesizing Unit <vgatest>.
+    Related source file is "C:/project_3/vgatest.vhd".
+WARNING:Xst:647 - Input <sw> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1780 - Signal <toDispConv> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <toDisp> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1781 - Signal <spriteArr> is used but never assigned. Tied to default value.
+WARNING:Xst:1780 - Signal <sig> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <pixindex> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pixel_y<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pixel_x<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pixdatF<31:11>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pixdatB<31:11>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <mapindex<31:11>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1781 - Signal <foreground> is used but never assigned. Tied to default value.
+WARNING:Xst:1780 - Signal <divsig> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1781 - Signal <background> is used but never assigned. Tied to default value.
+    Found 1200x64-bit ROM for signal <mapindex_10_0$rom0000>.
+    Found 2048x4-bit ROM for signal <rgb_reg$varindex0000> created at line 392.
+    Found 2048x4-bit ROM for signal <$varindex0000> created at line 387.
+    Found 12-bit adder for signal <mapindex$add0000> created at line 372.
+    Found 6x6-bit multiplier for signal <mapindex$mult0000> created at line 372.
+    Found 32-bit adder for signal <pixdatB>.
+    Found 32-bit adder for signal <pixdatB$addsub0000> created at line 378.
+    Found 32-bit adder for signal <pixdatF>.
+    Found 32-bit adder for signal <pixdatF$addsub0000> created at line 377.
+    Found 3-bit register for signal <rgb_reg>.
+    Summary:
+	inferred   3 ROM(s).
+	inferred   3 D-type flip-flop(s).
+	inferred   5 Adder/Subtractor(s).
+	inferred   1 Multiplier(s).
+Unit <vgatest> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 3
+ 1200x64-bit ROM                                       : 1
+ 2048x4-bit ROM                                        : 2
+# Multipliers                                          : 1
+ 6x6-bit multiplier                                    : 1
+# Adders/Subtractors                                   : 5
+ 12-bit adder                                          : 1
+ 32-bit adder                                          : 4
+# Counters                                             : 2
+ 10-bit up counter                                     : 2
+# Registers                                            : 4
+ 1-bit register                                        : 3
+ 3-bit register                                        : 1
+# Comparators                                          : 6
+ 10-bit comparator greatequal                          : 2
+ 10-bit comparator less                                : 2
+ 10-bit comparator lessequal                           : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 3
+ 1200x64-bit ROM                                       : 1
+ 2048x4-bit ROM                                        : 2
+# Multipliers                                          : 1
+ 6x6-bit multiplier                                    : 1
+# Adders/Subtractors                                   : 5
+ 11-bit adder                                          : 5
+# Counters                                             : 2
+ 10-bit up counter                                     : 2
+# Registers                                            : 6
+ Flip-Flops                                            : 6
+# Comparators                                          : 6
+ 10-bit comparator greatequal                          : 2
+ 10-bit comparator less                                : 2
+ 10-bit comparator lessequal                           : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <vgatest> ...
+
+Optimizing unit <vgatimehelper> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block vgatest, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 26
+ Flip-Flops                                            : 26
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : vgatest.ngr
+Top Level Output File Name         : vgatest
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 10
+
+Cell Usage :
+# BELS                             : 362
+#      GND                         : 1
+#      INV                         : 4
+#      LUT1                        : 22
+#      LUT2                        : 38
+#      LUT2_D                      : 1
+#      LUT3                        : 50
+#      LUT3_D                      : 2
+#      LUT3_L                      : 3
+#      LUT4                        : 127
+#      LUT4_D                      : 1
+#      LUT4_L                      : 9
+#      MUXCY                       : 28
+#      MUXF5                       : 41
+#      MUXF6                       : 3
+#      VCC                         : 1
+#      XORCY                       : 31
+# FlipFlops/Latches                : 26
+#      FDC                         : 6
+#      FDCE                        : 20
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 6
+#      IBUF                        : 1
+#      OBUF                        : 5
+# MULTs                            : 1
+#      MULT18X18SIO                : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s1600efg320-5 
+
+ Number of Slices:                      136  out of  14752     0%  
+ Number of Slice Flip Flops:             26  out of  29504     0%  
+ Number of 4 input LUTs:                257  out of  29504     0%  
+ Number of IOs:                          10
+ Number of bonded IOBs:                   7  out of    250     2%  
+ Number of MULT18X18SIOs:                 1  out of     36     2%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 26    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+reset                              | IBUF                   | 26    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 14.445ns (Maximum Frequency: 69.230MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 6.557ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 14.445ns (frequency: 69.230MHz)
+  Total number of paths / destination ports: 61087 / 46
+-------------------------------------------------------------------------
+Delay:               14.445ns (Levels of Logic = 11)
+  Source:            vga_unit/v_count_reg_9 (FF)
+  Destination:       rgb_reg_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: vga_unit/v_count_reg_9 to rgb_reg_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             7   0.514   0.602  vga_unit/v_count_reg_9 (vga_unit/v_count_reg_9)
+     MULT18X18SIO:A5->P8    1   3.953   0.509  Mmult_mapindex_mult0000 (mapindex_mult0000<8>)
+     LUT1:I0->O            1   0.612   0.000  Madd_mapindex_add0000_Madd_cy<8>_rt (Madd_mapindex_add0000_Madd_cy<8>_rt)
+     MUXCY:S->O            1   0.404   0.000  Madd_mapindex_add0000_Madd_cy<8> (Madd_mapindex_add0000_Madd_cy<8>)
+     XORCY:CI->O          11   0.699   0.823  Madd_mapindex_add0000_Madd_xor<9> (mapindex<9>)
+     LUT3_D:I2->O          6   0.612   0.572  mapindex<7>111_SW0 (N22)
+     LUT4:I3->O           12   0.612   0.820  Mrom_mapindex_10_0_rom000061136_2 (Mrom_mapindex_10_0_rom000061136_1)
+     LUT4:I3->O            1   0.612   0.360  N321_SW1 (N48)
+     LUT4:I3->O            1   0.612   0.000  Mrom__varindex0000221_5 (Mrom__varindex0000221_5)
+     MUXF5:I1->O           1   0.278   0.000  Mrom__varindex0000221_4_f5 (Mrom__varindex0000221_4_f5)
+     MUXF6:I0->O           3   0.451   0.520  Mrom__varindex0000221_2_f6 (N151)
+     LUT4:I1->O            1   0.612   0.000  rgb_reg_mux0001<1>59 (rgb_reg_mux0001<1>)
+     FDC:D                     0.268          rgb_reg_0
+    ----------------------------------------
+    Total                     14.445ns (10.239ns logic, 4.206ns route)
+                                       (70.9% logic, 29.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 29 / 5
+-------------------------------------------------------------------------
+Offset:              6.557ns (Levels of Logic = 3)
+  Source:            vga_unit/v_count_reg_6 (FF)
+  Destination:       rgb<2> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: vga_unit/v_count_reg_6 to rgb<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             5   0.514   0.690  vga_unit/v_count_reg_6 (vga_unit/v_count_reg_6)
+     LUT4:I0->O            3   0.612   0.603  vga_unit/video_on_and000021 (vga_unit/video_on_and000021)
+     LUT4:I0->O            1   0.612   0.357  rgb<2>1 (rgb_2_OBUF)
+     OBUF:I->O                 3.169          rgb_2_OBUF (rgb<2>)
+    ----------------------------------------
+    Total                      6.557ns (4.907ns logic, 1.650ns route)
+                                       (74.8% logic, 25.2% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 9.73 secs
+ 
+--> 
+
+Total memory usage is 220524 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   15 (   0 filtered)
+Number of infos    :   10 (   0 filtered)
+

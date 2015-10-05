@@ -1,0 +1,4 @@
+AR vgatest arch C:/project_3/vgatest.vhd sub00/vhpl03 1443821427
+AR vgatimehelper arch C:/project_3/vgatimehelper.vhd sub00/vhpl01 1443821425
+EN vgatest NULL C:/project_3/vgatest.vhd sub00/vhpl02 1443821426
+EN vgatimehelper NULL C:/project_3/vgatimehelper.vhd sub00/vhpl00 1443821424
