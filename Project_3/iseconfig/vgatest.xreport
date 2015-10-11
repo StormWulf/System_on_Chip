@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2015-10-02T12:36:04</DateModified>
+  <DateModified>2015-10-05T09:39:00</DateModified>
   <ModuleName>vgatest</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/project_3/iseconfig/vgatest.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/project_3</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/Jeff/Documents/GitHub/System_on_Chip/Project_3/iseconfig/vgatest.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/Jeff/Documents/GitHub/System_on_Chip/Project_3\</ImplementationReportsDirectory>
   <DateInitialized>2015-10-02T12:36:03</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

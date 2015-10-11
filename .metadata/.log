@@ -1,0 +1,16 @@
+!SESSION 2015-10-09 16:06:05.007 -----------------------------------------------
+eclipse.buildId=Release 13.1 Build SDK_O.40d
+java.version=1.8.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.core.jobs 4 2 2015-10-09 16:06:48.360
+!MESSAGE An internal error occurred during: "Initializing SDK".
+!STACK 0
+java.lang.UnsatisfiedLinkError: com.xilinx.sdk.xlcm.LicenseManager.hasValidLicense(Ljava/lang/String;)Z
+	at com.xilinx.sdk.xlcm.LicenseManager.hasValidLicense(Native Method)
+	at com.xilinx.sdk.startup.InitSDK.validateLicense(Unknown Source)
+	at com.xilinx.sdk.startup.InitSDK.access$2(Unknown Source)
+	at com.xilinx.sdk.startup.InitSDK$1.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
