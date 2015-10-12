@@ -1,0 +1,7 @@
+INFILE=C:\Users\jfalb1\Desktop\implementation\Project4.ncd
+OUTFILE=C:\Users\jfalb1\Desktop\implementation\Project4.bit
+FAMILY=Spartan3E
+PART=xc3s1600e-4fg320
+WORKINGDIR=C:\Users\jfalb1\Desktop\implementation
+LICENSE=ISE
+USER_INFO=177243941_177243943_177243945_929

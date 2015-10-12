@@ -1,0 +1,14 @@
+// File: C:\Users\jfalb1\Desktop\implementation\Project4_stub.bmm
+
+ADDRESS_MAP microblaze_0 MICROBLAZE 100
+	ADDRESS_SPACE lmb_bram_combined COMBINED [0x00000000:0x00001fff]
+		ADDRESS_RANGE RAMB16
+		BUS_BLOCK
+			Project4_i/lmb_bram/lmb_bram/ramb16_s9_s9_0 [31:24] ;
+			Project4_i/lmb_bram/lmb_bram/ramb16_s9_s9_1 [23:16] ;
+			Project4_i/lmb_bram/lmb_bram/ramb16_s9_s9_2 [15:8] ;
+			Project4_i/lmb_bram/lmb_bram/ramb16_s9_s9_3 [7:0] ;
+		END_BUS_BLOCK;
+		END_ADDRESS_RANGE;
+	END_ADDRESS_SPACE;
+END_ADDRESS_MAP;

@@ -1,0 +1,76 @@
+/*
+ * Copyright (c) 2009 Xilinx, Inc.  All rights reserved.
+ *
+ * Xilinx, Inc.
+ * XILINX IS PROVIDING THIS DESIGN, CODE, OR INFORMATION "AS IS" AS A
+ * COURTESY TO YOU.  BY PROVIDING THIS DESIGN, CODE, OR INFORMATION AS
+ * ONE POSSIBLE   IMPLEMENTATION OF THIS FEATURE, APPLICATION OR
+ * STANDARD, XILINX IS MAKING NO REPRESENTATION THAT THIS IMPLEMENTATION
+ * IS FREE FROM ANY CLAIMS OF INFRINGEMENT, AND YOU ARE RESPONSIBLE
+ * FOR OBTAINING ANY RIGHTS YOU MAY REQUIRE FOR YOUR IMPLEMENTATION.
+ * XILINX EXPRESSLY DISCLAIMS ANY WARRANTY WHATSOEVER WITH RESPECT TO
+ * THE ADEQUACY OF THE IMPLEMENTATION, INCLUDING BUT NOT LIMITED TO
+ * ANY WARRANTIES OR REPRESENTATIONS THAT THIS IMPLEMENTATION IS FREE
+ * FROM CLAIMS OF INFRINGEMENT, IMPLIED WARRANTIES OF MERCHANTABILITY
+ * AND FITNESS FOR A PARTICULAR PURPOSE.
+ *
+ */
+
+/*
+ * helloworld.c: simple test application
+ */
+
+#include <stdio.h>
+#include <unistd.h>
+#include "platform.h"
+#include "xgpio_l.h"
+#include "xparameters.h"
+#include "xbasic_types.h"
+
+#define FALSE 0
+#define TRUE 1
+
+u32 DIP_read;
+
+int main()
+{
+	int sleepyTime = 0, DIP[4], LEDarr[6] = {0}, i;
+
+    init_platform();
+
+    for(;;){
+    	DIP_read = XGpio_ReadReg(XPAR_DIP_SWITCHES_4BIT_BASEADDR,0);
+    	XGpio_WriteReg(XPAR_LEDS_6BIT_BASEADDR, 0, DIP_read);
+
+    	/*if (DIP[0]) sleepyTime = 100;
+
+    	else if (DIP[1]) sleepyTime = 1000;
+
+    	else if (DIP[2]) sleepyTime = 5000;
+
+    	else if (DIP[3]) sleepyTime = 10000;
+
+    	LEDarr[0] = TRUE;
+    	for (i=0; i < sleepyTime; ++i){}
+    	LEDarr[0] = FALSE;
+    	LEDarr[1] = TRUE;
+    	for (i=0; i < sleepyTime; ++i){}
+    	LEDarr[1] = FALSE;
+    	LEDarr[2] = TRUE;
+    	for (i=0; i < sleepyTime; ++i){}
+    	LEDarr[2] = FALSE;
+    	LEDarr[3] = TRUE;
+    	for (i=0; i < sleepyTime; ++i){}
+    	LEDarr[3] = FALSE;
+    	LEDarr[4] = TRUE;
+    	for (i=0; i < sleepyTime; ++i){}
+    	LEDarr[4] = FALSE;
+    	LEDarr[5] = TRUE;
+    	for (i=0; i < sleepyTime; ++i){}
+    	LEDarr[5] = FALSE;*/
+    }
+
+    cleanup_platform();
+
+    return 0;
+}

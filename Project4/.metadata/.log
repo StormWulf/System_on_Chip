@@ -1,0 +1,12 @@
+!SESSION 2015-10-09 13:37:18.188 -----------------------------------------------
+eclipse.buildId=Release 13.1 Build SDK_O.40d
+java.version=1.6.0_21
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-10-09 13:41:46.134
+!MESSAGE Indexed 'Project4' (2 sources, 26 headers) in 2.62 sec: 774 declarations; 786 references; 5 unresolved inclusions; 0 syntax errors; 1 unresolved names (0.06%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-10-09 13:41:46.198
+!MESSAGE Indexed 'Project4BSP' (0 sources, 8 headers) in 0.02 sec: 0 declarations; 0 references; 8 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
