@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="error" file="HDLParsers" num="808" delta="old" >&quot;<arg fmt="%s" index="1">E:/SoC/Project5IPCore/project5IP.vhd</arg>&quot; Line <arg fmt="%d" index="2">114</arg>. <arg fmt="%s" index="3">*</arg> can not have such operands in this context.
+</msg>
+
+<msg type="error" file="HDLParsers" num="808" delta="old" >&quot;<arg fmt="%s" index="1">E:/SoC/Project5IPCore/project5IP.vhd</arg>&quot; Line <arg fmt="%d" index="2">115</arg>. <arg fmt="%s" index="3">*</arg> can not have such operands in this context.
+</msg>
+
+<msg type="error" file="HDLParsers" num="821" delta="new" >&quot;<arg fmt="%s" index="1">E:/SoC/Project5IPCore/project5IP.vhd</arg>&quot; Line <arg fmt="%d" index="2">123</arg>. Wrong index type for <arg fmt="%s" index="3">ramF</arg>.
+</msg>
+
+<msg type="error" file="HDLParsers" num="821" delta="new" >&quot;<arg fmt="%s" index="1">E:/SoC/Project5IPCore/project5IP.vhd</arg>&quot; Line <arg fmt="%d" index="2">123</arg>. Wrong index type for <arg fmt="%s" index="3">ramF</arg>.
+</msg>
+
+<msg type="error" file="HDLParsers" num="821" delta="new" >&quot;<arg fmt="%s" index="1">E:/SoC/Project5IPCore/project5IP.vhd</arg>&quot; Line <arg fmt="%d" index="2">124</arg>. Wrong index type for <arg fmt="%s" index="3">ramB</arg>.
+</msg>
+
+</messages>
+
