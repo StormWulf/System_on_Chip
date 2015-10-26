@@ -1,0 +1,24 @@
+Running: C:\Xilinx\13.1\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -o E:/SoC/Project5IPCore/project5IP_isim_beh.exe -prj E:/SoC/Project5IPCore/project5IP_beh.prj work.project5IP 
+ISim O.40d (signature 0x79f3f3a8)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "E:/SoC/Project5IPCore/project5IP.vhd" into library work
+Starting static elaboration
+WARNING:HDLCompiler:89 - "E:/SoC/Project5IPCore/project5IP.vhd" Line 105: <vgatimehelper> remains a black-box since it has no binding entity.
+Completed static elaboration
+Fuse Memory Usage: 96052 KB
+Fuse CPU Usage: 202 ms
+Using precompiled package standard from library std
+Using precompiled package std_logic_1164 from library ieee
+Using precompiled package numeric_std from library ieee
+Using precompiled package std_logic_arith from library ieee
+Using precompiled package std_logic_unsigned from library ieee
+Using precompiled package math_real from library ieee
+WARNING:Simulator:648 - "E:/SoC/Project5IPCore/project5IP.vhd" Line 105. Instance vgatimehelper is unbound
+Compiling architecture behavioral of entity project5ip
+Time Resolution for simulation is 1ps.
+Compiled 7 VHDL Units
+Built simulation executable E:/SoC/Project5IPCore/project5IP_isim_beh.exe
+Fuse Memory Usage: 102820 KB
+Fuse CPU Usage: 249 ms

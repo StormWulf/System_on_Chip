@@ -56,8 +56,8 @@ signal rgb_reg, toDispConv: std_logic_vector(2 downto 0);
 	constant cmag1 : std_logic_vector(3 downto 0) := "1011";
 	constant cyel1 : std_logic_vector(3 downto 0) := "1101";
 	constant cwht1: std_logic_vector(3 downto 0) := "1111";
-	signal pixdatB, pixdatF: std_logic_vector(9 downto 0);
-	--signal pixdatB, pixdatF: integer;
+	--signal pixdatB, pixdatF: std_logic_vector(9 downto 0);
+	signal pixdatB, pixdatF: integer;
 
 	type ramtype is array(0 to 2047) of std_logic_vector(3 downto 0);
 	signal ramF, ramB, ramS : ramtype;
@@ -111,8 +111,8 @@ signal rgb_reg, toDispConv: std_logic_vector(2 downto 0);
 	mapindex <= conv_integer(pixel_x(9 downto 4)) + (conv_integer(pixel_y(9 downto 4)) * 40);
 
 	--determine which pixel to display
-	pixdatF <= (((conv_integer(pixel_x) / 2) mod 8) + (64 * ramF(mapindex)) + ((conv_integer(pixel_y) / 2) mod 8) * 8);
-	pixdatB <= (((conv_integer(pixel_x) / 2) mod 8) + (64 * ramB(mapindex)) + ((conv_integer(pixel_y) / 2) mod 8) * 8);
+	pixdatF <= (((conv_integer(pixel_x) / 2) mod 8) + (64 * conv_integer(ramF(mapindex)(3 downto 1))) + ((conv_integer(pixel_y) / 2) mod 8) * 8);
+	pixdatB <= (((conv_integer(pixel_x) / 2) mod 8) + (64 * conv_integer(ramB(mapindex)(3 downto 1))) + ((conv_integer(pixel_y) / 2) mod 8) * 8);
 
    -- rgb buffer (paint screen)
    process (clk,reset)
@@ -120,7 +120,7 @@ signal rgb_reg, toDispConv: std_logic_vector(2 downto 0);
       if reset='1' then rgb_reg <= (others=>'0');
       elsif (clk'event and clk='1') then
 			--which pixel is dominant?
-			if (ramS(pixdat)(0)) = '1') then rgb_reg <= ramF(pixdatF)(3 downto 1);
+			if (ramS(pixdatF)(0) = '1') then rgb_reg <= ramF(pixdatF)(3 downto 1);
 			else rgb_reg <= ramS(pixdatB)(3 downto 1);
 			end if;
 		end if;

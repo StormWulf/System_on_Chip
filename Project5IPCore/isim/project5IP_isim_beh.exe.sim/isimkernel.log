@@ -1,0 +1,30 @@
+Command line:
+   project5IP_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  49831
+
+Fri Oct 23 14:03:59 2015
+
+
+ Elaboration Time: 0.1404 sec
+
+ Current Memory Usage: 808.546 Meg
+
+ Total Signals          : 36
+ Total Nets             : 24676
+ Total Signal Drivers   : 13
+ Total Blocks           : 6
+ Total Primitive Blocks : 6
+ Total Processes        : 8
+ Total Traceable Variables  : 59
+ Total Scalar Nets and Variables : 25363
+In process project5IP.vhd:114 
+ 
+
+ Total Simulation Time: 0.1872 sec
+
+ Current Memory Usage: 652.308 Meg
+
+Fri Oct 23 14:51:28 2015
+

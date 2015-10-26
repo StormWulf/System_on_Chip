@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "E:/SoC/Project5IPCore/project5IP_isim_beh.exe" -prj "E:/SoC/Project5IPCore/project5IP_beh.prj" "work.project5IP" 

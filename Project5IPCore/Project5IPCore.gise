@@ -22,22 +22,88 @@
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="Project5IPCore.xise"/>
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="project5IP.bld"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="project5IP.cmd_log"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="project5IP.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="project5IP.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="project5IP.ngr"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="project5IP.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="project5IP.stx"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="project5IP.syr"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="project5IP.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="project5IP_beh.prj"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="project5IP_envsettings.html"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="project5IP_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="project5IP_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="project5IP_ngdbuild.xrpt"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="project5IP_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="project5IP_summary.html"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="project5IP_vhdl.prj"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="project5IP_xst.xrpt"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1445620945" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1445620945">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1445623428" xil_pn:in_ck="-3690300453942364523" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1445623428">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="project5IP.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1445620949" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="2480229807249904232" xil_pn:start_ts="1445620949">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1445620949" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-3243065525840082326" xil_pn:start_ts="1445620949">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1445620949" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="3765164064604315362" xil_pn:start_ts="1445620949">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1445623428" xil_pn:in_ck="-3690300453942364523" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1445623428">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="project5IP.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1445623437" xil_pn:in_ck="-3690300453942364523" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="9032391289452640805" xil_pn:start_ts="1445623428">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="project5IP_beh.prj"/>
+      <outfile xil_pn:name="project5IP_isim_beh.exe"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1445623437" xil_pn:in_ck="-5775063345564372204" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-4950581086173280270" xil_pn:start_ts="1445623437">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="project5IP_isim_beh.wdb"/>
+    </transform>
     <transform xil_pn:end_ts="1445023969" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1445023969">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
     </transform>
     <transform xil_pn:end_ts="1445023969" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="7815040967962684842" xil_pn:start_ts="1445023969">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -63,20 +129,37 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1445025369" xil_pn:in_ck="-3690300453942364523" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-1099069809267862349" xil_pn:start_ts="1445025363">
-      <status xil_pn:value="FailedRun"/>
+    <transform xil_pn:end_ts="1445619803" xil_pn:in_ck="-3690300453942364523" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-1099069809267862349" xil_pn:start_ts="1445619767">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="project5IP.lso"/>
+      <outfile xil_pn:name="project5IP.ngc"/>
+      <outfile xil_pn:name="project5IP.ngr"/>
       <outfile xil_pn:name="project5IP.prj"/>
+      <outfile xil_pn:name="project5IP.stx"/>
       <outfile xil_pn:name="project5IP.syr"/>
       <outfile xil_pn:name="project5IP.xst"/>
       <outfile xil_pn:name="project5IP_vhdl.prj"/>
       <outfile xil_pn:name="project5IP_xst.xrpt"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1445620550" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="2387302709340347805" xil_pn:start_ts="1445620549">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1445620559" xil_pn:in_ck="-3690300453942373269" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="1074119577309182863" xil_pn:start_ts="1445620550">
+      <status xil_pn:value="FailedRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+      <outfile xil_pn:name="project5IP.bld"/>
+      <outfile xil_pn:name="project5IP_ngdbuild.xrpt"/>
     </transform>
   </transforms>
 

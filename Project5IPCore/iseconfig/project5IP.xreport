@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2015-10-16T14:46:36</DateModified>
+  <DateModified>2015-10-23T15:55:51</DateModified>
   <ModuleName>project5IP</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>E:/SoC/Project5IPCore/iseconfig/project5IP.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>E:/SoC/Project5IPCore</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>E:/SoC/Project5IPCore\</ImplementationReportsDirectory>
   <DateInitialized>2015-10-16T14:38:33</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

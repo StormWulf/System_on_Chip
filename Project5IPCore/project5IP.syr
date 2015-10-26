@@ -3,13 +3,13 @@ Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
+Total REAL time to Xst completion: 1.00 secs
 Total CPU time to Xst completion: 0.16 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
+Total REAL time to Xst completion: 1.00 secs
 Total CPU time to Xst completion: 0.16 secs
  
 --> Reading design: project5IP.prj
@@ -106,16 +106,1644 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 Compiling vhdl file "E:/SoC/Project5IPCore/project5IP.vhd" in Library work.
 Entity <project5ip> compiled.
-ERROR:HDLParsers:808 - "E:/SoC/Project5IPCore/project5IP.vhd" Line 114. * can not have such operands in this context.
-ERROR:HDLParsers:808 - "E:/SoC/Project5IPCore/project5IP.vhd" Line 115. * can not have such operands in this context.
-ERROR:HDLParsers:821 - "E:/SoC/Project5IPCore/project5IP.vhd" Line 123. Wrong index type for ramF.
-ERROR:HDLParsers:821 - "E:/SoC/Project5IPCore/project5IP.vhd" Line 123. Wrong index type for ramF.
-ERROR:HDLParsers:821 - "E:/SoC/Project5IPCore/project5IP.vhd" Line 124. Wrong index type for ramB.
+Entity <project5IP> (Architecture <Behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <project5IP> in library <work> (architecture <Behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <project5IP> in library <work> (Architecture <Behavioral>).
+INFO:Xst:1432 - Contents of array <ramF> may be accessed with a negative index, causing simulation mismatch.
+INFO:Xst:1433 - Contents of array <ramF> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1432 - Contents of array <ramF> may be accessed with a negative index, causing simulation mismatch.
+INFO:Xst:1433 - Contents of array <ramF> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1432 - Contents of array <ramB> may be accessed with a negative index, causing simulation mismatch.
+INFO:Xst:1433 - Contents of array <ramB> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1432 - Contents of array <ramB> may be accessed with a negative index, causing simulation mismatch.
+INFO:Xst:1433 - Contents of array <ramB> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1432 - Contents of array <ramS> may be accessed with a negative index, causing simulation mismatch.
+INFO:Xst:1433 - Contents of array <ramS> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1432 - Contents of array <ramS> may be accessed with a negative index, causing simulation mismatch.
+INFO:Xst:1433 - Contents of array <ramS> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+WARNING:Xst:753 - "E:/SoC/Project5IPCore/project5IP.vhd" line 105: Unconnected output port 'p_tick' of component 'vgatimehelper'.
+WARNING:Xst:2211 - "E:/SoC/Project5IPCore/project5IP.vhd" line 105: Instantiating black box module <vgatimehelper>.
+INFO:Xst:1432 - Contents of array <ramF> may be accessed with a negative index, causing simulation mismatch.
+INFO:Xst:1433 - Contents of array <ramF> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1432 - Contents of array <ramB> may be accessed with a negative index, causing simulation mismatch.
+INFO:Xst:1433 - Contents of array <ramB> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1432 - Contents of array <ramS> may be accessed with a negative index, causing simulation mismatch.
+INFO:Xst:1433 - Contents of array <ramS> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1432 - Contents of array <ramF> may be accessed with a negative index, causing simulation mismatch.
+INFO:Xst:1433 - Contents of array <ramF> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1432 - Contents of array <ramS> may be accessed with a negative index, causing simulation mismatch.
+INFO:Xst:1433 - Contents of array <ramS> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+Entity <project5IP> analyzed. Unit <project5IP> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <project5IP>.
+    Related source file is "E:/SoC/Project5IPCore/project5IP.vhd".
+WARNING:Xst:647 - Input <rAddB<31:11>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <rAddF<31:11>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <sw> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <rAddS<31:11>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <wAddB<31:11>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <wAddF<31:11>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <wAddS<31:11>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1780 - Signal <toDispConv> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <toDisp> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <sig> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <pixindex> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pixel_y<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pixel_x<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pixdatF<31:11>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pixdatB<31:11>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <mapindex<31:11>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <divsig> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+INFO:Xst:1439 - HDL ADVISOR - You may have used signed signal(s) to address this RAM. If that is the case, negative values being out of range, sign bits were ignored. As a result only the first half of the RAM is actually accessed. Please check your source code.
+    Found 2048x4-bit dual-port RAM <Mram_ramS> for signal <ramS>.
+INFO:Xst:1439 - HDL ADVISOR - You may have used signed signal(s) to address this RAM. If that is the case, negative values being out of range, sign bits were ignored. As a result only the first half of the RAM is actually accessed. Please check your source code.
+    Found 2048x4-bit dual-port RAM <Mram_ramS_ren> for signal <ramS>.
+INFO:Xst:1439 - HDL ADVISOR - You may have used signed signal(s) to address this RAM. If that is the case, negative values being out of range, sign bits were ignored. As a result only the first half of the RAM is actually accessed. Please check your source code.
+    Found 2048x4-bit dual-port RAM <Mram_ramS_ren_1> for signal <ramS>.
+INFO:Xst:1439 - HDL ADVISOR - You may have used signed signal(s) to address this RAM. If that is the case, negative values being out of range, sign bits were ignored. As a result only the first half of the RAM is actually accessed. Please check your source code.
+    Found 2048x4-bit dual-port RAM <Mram_ramB> for signal <ramB>.
+INFO:Xst:1439 - HDL ADVISOR - You may have used signed signal(s) to address this RAM. If that is the case, negative values being out of range, sign bits were ignored. As a result only the first half of the RAM is actually accessed. Please check your source code.
+    Found 2048x4-bit dual-port RAM <Mram_ramB_ren> for signal <ramB>.
+INFO:Xst:1439 - HDL ADVISOR - You may have used signed signal(s) to address this RAM. If that is the case, negative values being out of range, sign bits were ignored. As a result only the first half of the RAM is actually accessed. Please check your source code.
+    Found 2048x4-bit dual-port RAM <Mram_ramF> for signal <ramF>.
+INFO:Xst:1439 - HDL ADVISOR - You may have used signed signal(s) to address this RAM. If that is the case, negative values being out of range, sign bits were ignored. As a result only the first half of the RAM is actually accessed. Please check your source code.
+    Found 2048x4-bit dual-port RAM <Mram_ramF_ren> for signal <ramF>.
+INFO:Xst:1439 - HDL ADVISOR - You may have used signed signal(s) to address this RAM. If that is the case, negative values being out of range, sign bits were ignored. As a result only the first half of the RAM is actually accessed. Please check your source code.
+    Found 2048x4-bit dual-port RAM <Mram_ramF_ren_1> for signal <ramF>.
+    Found 4-bit register for signal <dataOutF>.
+    Found 4-bit register for signal <dataOutB>.
+    Found 4-bit register for signal <dataOutS>.
+    Found 12-bit adder for signal <mapindex$add0000> created at line 111.
+    Found 6x6-bit multiplier for signal <mapindex$mult0000> created at line 111.
+    Found 10-bit adder for signal <pixdatB$addsub0000> created at line 115.
+    Found 10-bit adder carry out for signal <pixdatB$addsub0001> created at line 115.
+    Found 10-bit adder for signal <pixdatF$addsub0000> created at line 114.
+    Found 10-bit adder carry out for signal <pixdatF$addsub0001> created at line 114.
+    Found 3-bit register for signal <rgb_reg>.
+    Summary:
+	inferred   8 RAM(s).
+	inferred  15 D-type flip-flop(s).
+	inferred   5 Adder/Subtractor(s).
+	inferred   1 Multiplier(s).
+Unit <project5IP> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 8
+ 2048x4-bit dual-port RAM                              : 8
+# Multipliers                                          : 1
+ 6x6-bit multiplier                                    : 1
+# Adders/Subtractors                                   : 5
+ 10-bit adder                                          : 2
+ 10-bit adder carry out                                : 2
+ 12-bit adder                                          : 1
+# Registers                                            : 4
+ 3-bit register                                        : 1
+ 4-bit register                                        : 3
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <project5IP>.
+INFO:Xst:3226 - The RAM <Mram_ramS_ren_1> will be implemented as a BLOCK RAM, absorbing the following register(s): <dataOutS>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 2048-word x 4-bit                   |          |
+    |     mode           | read-first                          |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <wEnS>          | high     |
+    |     addrA          | connected to signal <wAddS>         |          |
+    |     diA            | connected to signal <dataInS>       |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 2048-word x 4-bit                   |          |
+    |     mode           | write-first                         |          |
+    |     clkB           | connected to signal <clk>           | rise     |
+    |     addrB          | connected to signal <rAddS>         |          |
+    |     doB            | connected to signal <dataOutS>      |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3226 - The RAM <Mram_ramB_ren> will be implemented as a BLOCK RAM, absorbing the following register(s): <dataOutB>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 2048-word x 4-bit                   |          |
+    |     mode           | read-first                          |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <wEnB>          | high     |
+    |     addrA          | connected to signal <wAddB>         |          |
+    |     diA            | connected to signal <dataInB>       |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 2048-word x 4-bit                   |          |
+    |     mode           | write-first                         |          |
+    |     clkB           | connected to signal <clk>           | rise     |
+    |     addrB          | connected to signal <rAddB>         |          |
+    |     doB            | connected to signal <dataOutB>      |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3226 - The RAM <Mram_ramF_ren_1> will be implemented as a BLOCK RAM, absorbing the following register(s): <dataOutF>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 2048-word x 4-bit                   |          |
+    |     mode           | read-first                          |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <wEnF>          | high     |
+    |     addrA          | connected to signal <wAddF>         |          |
+    |     diA            | connected to signal <dataInF>       |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 2048-word x 4-bit                   |          |
+    |     mode           | write-first                         |          |
+    |     clkB           | connected to signal <clk>           | rise     |
+    |     addrB          | connected to signal <rAddF>         |          |
+    |     doB            | connected to signal <dataOutF>      |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_ramS> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 2048-word x 4-bit                   |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <wEnS>          | high     |
+    |     addrA          | connected to signal <wAddS>         |          |
+    |     diA            | connected to signal <dataInS>       |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 2048-word x 4-bit                   |          |
+    |     addrB          | connected to signal <pixdatB>       |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_ramS_ren> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 2048-word x 4-bit                   |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <wEnS>          | high     |
+    |     addrA          | connected to signal <wAddS>         |          |
+    |     diA            | connected to signal <dataInS>       |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 2048-word x 4-bit                   |          |
+    |     addrB          | connected to signal <pixdatF>       |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_ramB> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 2048-word x 4-bit                   |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <wEnB>          | high     |
+    |     addrA          | connected to signal <wAddB>         |          |
+    |     diA            | connected to signal <dataInB>       |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 2048-word x 4-bit                   |          |
+    |     addrB          | connected to signal <mapindex>      |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_ramF> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 2048-word x 4-bit                   |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <wEnF>          | high     |
+    |     addrA          | connected to signal <wAddF>         |          |
+    |     diA            | connected to signal <dataInF>       |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 2048-word x 4-bit                   |          |
+    |     addrB          | connected to signal <mapindex>      |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_ramF_ren> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 2048-word x 4-bit                   |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <wEnF>          | high     |
+    |     addrA          | connected to signal <wAddF>         |          |
+    |     diA            | connected to signal <dataInF>       |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 2048-word x 4-bit                   |          |
+    |     addrB          | connected to signal <pixdatF>       |          |
+    -----------------------------------------------------------------------
+Unit <project5IP> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 8
+ 2048x4-bit dual-port block RAM                        : 3
+ 2048x4-bit dual-port distributed RAM                  : 5
+# Multipliers                                          : 1
+ 6x6-bit multiplier                                    : 1
+# Adders/Subtractors                                   : 5
+ 10-bit adder                                          : 2
+ 10-bit adder carry out                                : 2
+ 11-bit adder                                          : 1
+# Registers                                            : 3
+ Flip-Flops                                            : 3
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2677 - Node <Mram_ramS1> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS2> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS5> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS3> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS4> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS6> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS7> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS10> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS8> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS9> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS11> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS12> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS15> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS13> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS14> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS18> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS16> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS17> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS21> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS19> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS20> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS22> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS23> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS26> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS24> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS25> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS27> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS28> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS31> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS29> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS30> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS32> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS33> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS36> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS34> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS35> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS37> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS38> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS41> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS39> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS40> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS42> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS43> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS46> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS44> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS45> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS47> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS48> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS51> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS49> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS50> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS52> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS53> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS56> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS54> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS55> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS57> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS58> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS61> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS59> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS60> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS62> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS63> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS66> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS64> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS65> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS67> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS68> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS71> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS69> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS70> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS72> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS73> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS76> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS74> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS75> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS77> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS78> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS81> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS79> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS80> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS82> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS83> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS86> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS84> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS85> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS87> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS88> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS91> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS89> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS90> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS92> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS93> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS96> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS94> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS95> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS99> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS97> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS98> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS102> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS100> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS101> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS103> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS104> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS107> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS105> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS106> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS108> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS109> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS112> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS110> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS111> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS113> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS114> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS117> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS115> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS116> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS118> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS119> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS122> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS120> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS121> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS123> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS124> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS127> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS125> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS126> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS128> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren131> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren129> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren130> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren132> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren133> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren136> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren134> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren135> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren137> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren138> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren141> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren139> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren140> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren142> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren143> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren146> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren144> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren145> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren149> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren147> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren148> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren152> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren150> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren151> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren153> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren154> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren157> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren155> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren156> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren158> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren159> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren162> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren160> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren161> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren163> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren164> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren167> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren165> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren166> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren168> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren169> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren172> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren170> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren171> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren173> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren174> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren177> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren175> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren176> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren178> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren179> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren182> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren180> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren181> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren183> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren184> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren187> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren185> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren186> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren188> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren189> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren192> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren190> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren191> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren193> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren194> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren197> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren195> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren196> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren198> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren199> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren202> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren200> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren201> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren203> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren204> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren207> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren205> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren206> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren208> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren209> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren212> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren210> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren211> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren213> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren214> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren217> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren215> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren216> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren218> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren219> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren222> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren220> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren221> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren223> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren224> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren227> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren225> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren226> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren230> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren228> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren229> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren233> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren231> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren232> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren234> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren235> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren238> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren236> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren237> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren239> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren240> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren243> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren241> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren242> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren244> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren245> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren248> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren246> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren247> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren249> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren250> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren253> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren251> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren252> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren254> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren255> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren258> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren256> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren257> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren259> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren260> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren263> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren261> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren262> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren264> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren265> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren268> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren266> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren267> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren269> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren270> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren273> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren271> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren272> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren274> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren275> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren278> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren276> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren277> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren279> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren280> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren283> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren281> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren282> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren284> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren285> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren288> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren286> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren287> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren289> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren290> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren293> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren291> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren292> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren294> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren295> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren298> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren296> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren297> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren299> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren300> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren303> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren301> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren302> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren304> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren305> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren308> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren306> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren307> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren311> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren309> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren310> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren314> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren312> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren313> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren315> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren316> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren319> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren317> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren318> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren320> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren321> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren324> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren322> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren323> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren325> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren326> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren329> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren327> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren328> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren330> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren331> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren334> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren332> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren333> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren335> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren336> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren339> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren337> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren338> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren340> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren341> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren344> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren342> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren343> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren345> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren346> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren349> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren347> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren348> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren350> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren351> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren354> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren352> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren353> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren355> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren356> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren359> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren357> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren358> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren360> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren361> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren364> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren362> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren363> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren365> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren366> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren369> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren367> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren368> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren370> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren371> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren374> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren372> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren373> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren375> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren376> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren379> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren377> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren378> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren380> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren381> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren384> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren382> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren383> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren385> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren386> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren389> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren387> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren388> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren392> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren390> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren391> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren395> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren393> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren394> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren396> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren397> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren400> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren398> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren399> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren401> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren402> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren405> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren403> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren404> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren406> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren407> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren410> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren408> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren409> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren411> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren412> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren415> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren413> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren414> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren416> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren417> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren420> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren418> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren419> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren421> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren422> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren425> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren423> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren424> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren426> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren427> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren430> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren428> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren429> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren431> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren432> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren435> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren433> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren434> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren436> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren437> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren440> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren438> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren439> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren441> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren442> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren445> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren443> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren444> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren446> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren447> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren450> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren448> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren449> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren451> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren452> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren455> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren453> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren454> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren456> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren457> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren460> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren458> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren459> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren461> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren462> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren465> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren463> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren464> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren466> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren467> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren470> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren468> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren469> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren473> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren471> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren472> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren476> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren474> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren475> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren477> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren478> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren481> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren479> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren480> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren482> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren483> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren486> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren484> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren485> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren487> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren488> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren491> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren489> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren490> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren492> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren493> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren496> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren494> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren495> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren497> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren498> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren501> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren499> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren500> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren502> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren503> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren506> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren504> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren505> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren507> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren508> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren511> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren509> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren510> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren512> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren1> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren4> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren2> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren3> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren5> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren6> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren9> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren7> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren8> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren10> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren11> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren14> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren12> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren13> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren15> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren16> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren19> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren17> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren18> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren20> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren21> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren24> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren22> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren23> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren25> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren26> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren29> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren27> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren28> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren30> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren31> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren34> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren32> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren33> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren37> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren35> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren36> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren40> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren38> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren39> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren41> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren42> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren45> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren43> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren44> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren46> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren47> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren50> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren48> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren49> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren51> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren52> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren55> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren53> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren54> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren56> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren57> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren60> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren58> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren59> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren61> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren62> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren65> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren63> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren64> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren66> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren67> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren70> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren68> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren69> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren71> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren72> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren75> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren73> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren74> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren76> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren77> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren80> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren78> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren79> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren81> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren82> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren85> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren83> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren84> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren86> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren87> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren90> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren88> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren89> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren91> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren92> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren95> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren93> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren94> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren96> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren97> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren100> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren98> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren99> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren101> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren102> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren105> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren103> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren104> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren106> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren107> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren110> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren108> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren109> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren111> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren112> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren115> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren113> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren114> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren118> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren116> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren117> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren121> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren119> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren120> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren122> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren123> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren126> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren124> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren125> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren127> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren128> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS193> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS194> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS195> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS198> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS196> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS197> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS199> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS200> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS203> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS201> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS202> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS204> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS205> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS208> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS206> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS207> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS209> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS210> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS213> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS211> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS212> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS214> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS215> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS218> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS216> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS217> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS219> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS220> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS223> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS221> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS222> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS224> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS225> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS228> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS226> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS227> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS229> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS230> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS233> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS231> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS232> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS234> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS235> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS238> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS236> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS237> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS239> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS240> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS243> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS241> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS242> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS244> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS245> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS248> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS246> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS247> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS249> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS250> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS253> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS251> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS252> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS254> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS255> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS256> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS321> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS324> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS322> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS323> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS325> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS326> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS329> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS327> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS328> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS330> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS331> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS334> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS332> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS333> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS335> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS336> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS339> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS337> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS338> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS342> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS340> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS341> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS345> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS343> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS344> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS346> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS347> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS350> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS348> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS349> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS351> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS352> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS355> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS353> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS354> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS356> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS357> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS360> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS358> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS359> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS361> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS362> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS365> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS363> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS364> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS366> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS367> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS370> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS368> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS369> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS371> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS372> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS375> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS373> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS374> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS376> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS377> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS380> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS378> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS379> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS381> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS382> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS383> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS384> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS451> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS449> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS450> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS452> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS453> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS456> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS454> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS455> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS457> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS458> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS461> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS459> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS460> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS462> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS463> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS466> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS464> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS465> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS467> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS468> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS471> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS469> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS470> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS472> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS473> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS476> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS474> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS475> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS477> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS478> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS481> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS479> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS480> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS482> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS483> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS486> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS484> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS485> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS487> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS488> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS491> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS489> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS490> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS492> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS493> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS496> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS494> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS495> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS497> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS498> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS501> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS499> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS500> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS504> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS502> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS503> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS507> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS505> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS506> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS508> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS509> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS512> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS510> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS511> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren65> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren68> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren66> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren67> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren71> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren69> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren70> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren72> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren73> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren76> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren74> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren75> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren77> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren78> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren81> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren79> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren80> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren82> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren83> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren86> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren84> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren85> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren87> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren88> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren91> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren89> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren90> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren92> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren93> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren96> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren94> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren95> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren97> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren98> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren101> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren99> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren100> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren102> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren103> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren106> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren104> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren105> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren107> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren108> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren111> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren109> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren110> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren112> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren113> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren116> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren114> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren115> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren117> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren118> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren121> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren119> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren120> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren122> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren123> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren126> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren124> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren125> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren127> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS_ren128> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren193> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren196> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren194> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren195> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren199> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren197> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren198> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren202> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren200> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren201> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren203> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren204> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren207> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren205> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren206> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren208> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren209> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren212> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren210> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren211> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren213> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren214> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren217> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren215> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren216> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren218> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren219> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren222> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren220> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren221> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren223> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren224> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren227> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren225> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren226> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren228> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren229> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren232> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren230> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren231> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren233> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren234> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren237> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren235> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren236> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren238> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren239> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren242> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren240> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren241> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren243> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren244> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren247> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren245> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren246> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren248> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren249> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren252> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren250> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren251> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren253> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren254> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren255> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren256> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren323> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren321> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren322> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren324> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren325> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren328> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren326> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren327> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren329> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren330> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren333> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren331> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren332> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren334> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren335> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren338> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren336> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren337> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren339> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren340> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren343> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren341> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren342> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren344> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren345> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren348> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren346> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren347> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren349> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren350> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren353> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren351> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren352> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren354> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren355> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren358> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren356> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren357> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren361> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren359> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren360> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren364> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren362> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren363> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren365> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren366> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren369> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren367> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren368> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren370> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren371> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren374> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren372> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren373> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren375> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren376> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren379> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren377> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren378> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren380> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren381> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren384> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren382> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren383> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren449> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren450> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren451> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren454> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren452> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren453> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren455> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren456> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren459> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren457> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren458> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren460> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren461> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren464> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren462> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren463> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren465> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren466> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren469> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren467> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren468> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren470> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren471> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren474> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren472> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren473> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren475> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren476> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren479> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren477> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren478> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren480> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren481> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren484> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren482> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren483> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren485> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren486> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren489> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren487> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren488> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren490> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren491> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren494> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren492> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren493> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren495> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren496> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren499> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren497> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren498> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren500> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren501> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren504> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren502> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren503> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren505> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren506> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren509> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren507> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren508> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren510> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren511> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF_ren512> of sequential type is unconnected in block <project5IP>.
+
+Optimizing unit <project5IP> ...
+
+Mapping all equations...
+WARNING:Xst:2036 - Inserting OBUF on port <vsync> driven by black box <vgatimehelper>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <hsync> driven by black box <vgatimehelper>. Possible simulation mismatch.
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block project5IP, actual ratio is 5.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 3
+ Flip-Flops                                            : 3
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : project5IP.ngr
+Top Level Output File Name         : project5IP
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 229
+
+Cell Usage :
+# BELS                             : 2217
+#      BUF                         : 41
+#      GND                         : 1
+#      LUT1                        : 4
+#      LUT2                        : 9
+#      LUT3                        : 759
+#      LUT3_L                      : 3
+#      LUT4                        : 360
+#      MUXCY                       : 10
+#      MUXF5                       : 696
+#      MUXF6                       : 184
+#      MUXF7                       : 92
+#      MUXF8                       : 46
+#      VCC                         : 1
+#      XORCY                       : 11
+# FlipFlops/Latches                : 3
+#      FDC                         : 3
+# RAMS                             : 1475
+#      RAM16X1D                    : 1472
+#      RAMB16_S4_S4                : 3
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 99
+#      IBUF                        : 82
+#      OBUF                        : 17
+# MULTs                            : 1
+#      MULT18X18SIO                : 1
+# Others                           : 1
+#      vgatimehelper               : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s1600efg320-4 
+
+ Number of Slices:                      731  out of  14752     4%  
+ Number of Slice Flip Flops:              3  out of  29504     0%  
+ Number of 4 input LUTs:               4079  out of  29504    13%  
+    Number used as logic:              1135
+    Number used as RAMs:               2944
+ Number of IOs:                         229
+ Number of bonded IOBs:                 100  out of    250    40%  
+ Number of BRAMs:                         3  out of     36     8%  
+ Number of MULT18X18SIOs:                 1  out of     36     2%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 1478  |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+reset                              | IBUF                   | 3     |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 12.447ns (Maximum Frequency: 80.339MHz)
+   Minimum input arrival time before clock: 21.340ns
+   Maximum output required time after clock: 6.492ns
+   Maximum combinational path delay: 5.102ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 12.447ns (frequency: 80.339MHz)
+  Total number of paths / destination ports: 17856 / 3
+-------------------------------------------------------------------------
+Delay:               12.447ns (Levels of Logic = 12)
+  Source:            Mram_ramF1 (RAM)
+  Destination:       rgb_reg_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: Mram_ramF1 to rgb_reg_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAM16X1D:WCLK->DPO    1   1.901   0.499  Mram_ramF1 (N1283)
+     LUT3:I1->O            1   0.704   0.000  inst_LPM_MUX4_151 (inst_LPM_MUX4_151)
+     MUXF5:I0->O           1   0.321   0.000  inst_LPM_MUX4_13_f5_0 (inst_LPM_MUX4_13_f51)
+     MUXF6:I0->O           1   0.521   0.000  inst_LPM_MUX4_11_f6_0 (inst_LPM_MUX4_11_f61)
+     MUXF7:I0->O           1   0.521   0.000  inst_LPM_MUX4_9_f7_0 (inst_LPM_MUX4_9_f71)
+     MUXF8:I0->O           1   0.521   0.499  inst_LPM_MUX4_7_f8_0 (inst_LPM_MUX4_7_f81)
+     LUT3:I1->O            1   0.704   0.000  inst_LPM_MUX4_2_f5_F (N610)
+     MUXF5:I0->O          32   0.321   1.262  inst_LPM_MUX4_2_f5 (pixdatF_varindex0000<0>)
+     MUXF6:S->O            1   0.850   0.000  inst_LPM_MUX12_7_f6 (inst_LPM_MUX12_7_f6)
+     MUXF7:I1->O           1   0.521   0.000  inst_LPM_MUX12_6_f7 (inst_LPM_MUX12_6_f7)
+     MUXF8:I1->O           1   0.521   0.499  inst_LPM_MUX12_5_f8 (inst_LPM_MUX12_5_f8)
+     LUT3:I1->O            3   0.704   0.566  pixdatF_varindex0000<3>1 (_varindex0000<0>)
+     LUT3:I2->O            1   0.704   0.000  rgb_reg_mux0001<3>31 (rgb_reg_mux0001<3>)
+     FDC:D                     0.308          rgb_reg_2
+    ----------------------------------------
+    Total                     12.447ns (9.122ns logic, 3.325ns route)
+                                       (73.3% logic, 26.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 1212564 / 14804
+-------------------------------------------------------------------------
+Offset:              21.340ns (Levels of Logic = 20)
+  Source:            vga_unit:pixel_y<4> (PAD)
+  Destination:       rgb_reg_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: vga_unit:pixel_y<4> to rgb_reg_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    vgatimehelper:pixel_y<4>    1   0.000   0.420  vga_unit (pixel_y<4>)
+     MULT18X18SIO:A0->P0    1   3.657   0.499  Mmult_mapindex_mult0000 (mapindex_mult0000<0>)
+     LUT2:I1->O            1   0.704   0.000  Madd_mapindex_add0000_Madd_lut<0> (Madd_mapindex_add0000_Madd_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  Madd_mapindex_add0000_Madd_cy<0> (Madd_mapindex_add0000_Madd_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_mapindex_add0000_Madd_cy<1> (Madd_mapindex_add0000_Madd_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_mapindex_add0000_Madd_cy<2> (Madd_mapindex_add0000_Madd_cy<2>)
+     XORCY:CI->O         342   0.804   1.360  Madd_mapindex_add0000_Madd_xor<3> (mapindex<3>)
+     BUF:I->O            342   0.704   1.360  Madd_mapindex_add0000_Madd_xor<3>_1 (Madd_mapindex_add0000_Madd_xor<3>_1)
+     RAM16X1D:DPRA3->DPO    1   0.704   0.499  Mram_ramF95 (N1471)
+     LUT3:I1->O            1   0.704   0.000  inst_LPM_MUX4_10 (inst_LPM_MUX4_10)
+     MUXF5:I1->O           1   0.321   0.000  inst_LPM_MUX4_9_f5 (inst_LPM_MUX4_9_f5)
+     MUXF6:I1->O           1   0.521   0.000  inst_LPM_MUX4_8_f6 (inst_LPM_MUX4_8_f6)
+     MUXF7:I1->O           1   0.521   0.000  inst_LPM_MUX4_7_f7 (inst_LPM_MUX4_7_f7)
+     MUXF8:I1->O           1   0.521   0.499  inst_LPM_MUX4_6_f8 (inst_LPM_MUX4_6_f8)
+     LUT3:I1->O            1   0.704   0.000  inst_LPM_MUX4_2_f5_G (N710)
+     MUXF5:I1->O          32   0.321   1.262  inst_LPM_MUX4_2_f5 (pixdatF_varindex0000<0>)
+     MUXF6:S->O            1   0.850   0.000  inst_LPM_MUX12_7_f6 (inst_LPM_MUX12_7_f6)
+     MUXF7:I1->O           1   0.521   0.000  inst_LPM_MUX12_6_f7 (inst_LPM_MUX12_6_f7)
+     MUXF8:I1->O           1   0.521   0.499  inst_LPM_MUX12_5_f8 (inst_LPM_MUX12_5_f8)
+     LUT3:I1->O            3   0.704   0.566  pixdatF_varindex0000<3>1 (_varindex0000<0>)
+     LUT3:I2->O            1   0.704   0.000  rgb_reg_mux0001<3>31 (rgb_reg_mux0001<3>)
+     FDC:D                     0.308          rgb_reg_2
+    ----------------------------------------
+    Total                     21.340ns (14.376ns logic, 6.964ns route)
+                                       (67.4% logic, 32.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 15 / 15
+-------------------------------------------------------------------------
+Offset:              6.492ns (Levels of Logic = 1)
+  Source:            Mram_ramB_ren (RAM)
+  Destination:       dataOutB<3> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: Mram_ramB_ren to dataOutB<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB16_S4_S4:CLKB->DOB3    1   2.800   0.420  Mram_ramB_ren (dataOutB_3_OBUF)
+     OBUF:I->O                 3.272          dataOutB_3_OBUF (dataOutB<3>)
+    ----------------------------------------
+    Total                      6.492ns (6.072ns logic, 0.420ns route)
+                                       (93.5% logic, 6.5% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 7 / 7
+-------------------------------------------------------------------------
+Delay:               5.102ns (Levels of Logic = 2)
+  Source:            vga_unit:video_on (PAD)
+  Destination:       rgb<2> (PAD)
+
+  Data Path: vga_unit:video_on to rgb<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    vgatimehelper:video_on    3   0.000   0.706  vga_unit (video_on)
+     LUT2:I0->O            1   0.704   0.420  rgb<2>1 (rgb_2_OBUF)
+     OBUF:I->O                 3.272          rgb_2_OBUF (rgb<2>)
+    ----------------------------------------
+    Total                      5.102ns (3.976ns logic, 1.126ns route)
+                                       (77.9% logic, 22.1% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 33.00 secs
+Total CPU time to Xst completion: 32.54 secs
+ 
 --> 
 
-Total memory usage is 177528 kilobytes
+Total memory usage is 249516 kilobytes
 
-Number of errors   :    5 (   0 filtered)
-Number of warnings :    0 (   0 filtered)
-Number of infos    :    0 (   0 filtered)
+Number of errors   :    0 (   0 filtered)
+Number of warnings : 1109 (   0 filtered)
+Number of infos    :   38 (   0 filtered)
 
