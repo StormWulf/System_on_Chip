@@ -1,0 +1,11 @@
+//file: spriteMap.c
+//Authors: William Putnam, Jeff Falberg
+//Last Updated: 10.31.2015
+
+//Description: Write graphics data to the monitor.
+
+#ifndef SPRITEMAP_H_
+#define SPRITEMAP_H_
+
+
+#endif /* SPRITEMAP_H_ */

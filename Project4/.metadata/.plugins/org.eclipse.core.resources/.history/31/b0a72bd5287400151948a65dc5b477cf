@@ -1,0 +1,51 @@
+//file: helloworld.c
+//Authors: William Putnam, Jeff Falberg
+//Last Updated: 10.9.2015
+
+//Description: Flash LEDs based on DIP switch position.
+
+#include <stdio.h>
+#include <unistd.h>
+#include "platform.h"
+#include "xgpio_l.h"
+#include "xparameters.h"
+#include "xbasic_types.h"
+#include "xtmrctr.h"
+#include "xtmrctr_l.h"
+
+//u32 DIP_read, DIP_write, leds;
+//XTmrCtr xTmrCtr;
+
+int main()
+{
+	int cntr = 0, LEDs = 0;
+	XTmrCtr timerCounter;
+
+    init_platform();
+
+    //get the timer ready and running
+    XTmrCtr_Initialize(&timerCounter, XPAR_XPS_TIMER_0_DEVICE_ID);
+    XTmrCtr_SetResetValue(&timerCounter, 0, 0x0);
+    XTmrCtr_Start(&timerCounter, 0);
+
+    for (;;){
+    	//reset time when counter is too high
+    	if (XTmrCtr_GetValue(&timerCounter, 0) > 499999){
+    		XTmrCtr_Stop(&timerCounter, 0);
+    		XTmrCtr_Reset(&timerCounter, 0);
+    		XTmrCtr_Start(&timerCounter, 0);
+    		++cntr;
+    	}
+    	//update the LEDs
+    	if (cntr >= (10*XGpio_ReadReg(XPAR_DIP_SWITCHES_4BIT_BASEADDR,0))){
+    		++LEDs;
+    		XGpio_WriteReg(XPAR_LEDS_6BIT_BASEADDR, 0, LEDs);
+    		if (LEDs == 64) LEDs = 0;
+    		cntr = 0;
+    	}
+    }
+
+    cleanup_platform();
+
+    return 0;
+}

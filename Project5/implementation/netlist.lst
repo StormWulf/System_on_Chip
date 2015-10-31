@@ -1,0 +1,25 @@
+E:\SoC\Project5\implementation\Project5.ngc 1446327376
+E:/SoC/Project5/implementation/microblaze_0_wrapper.ngc 1446327268
+E:/SoC/Project5/implementation/mb_plb_wrapper.ngc 1446325340
+E:/SoC/Project5/implementation/ilmb_wrapper.ngc 1446327274
+E:/SoC/Project5/implementation/dlmb_wrapper.ngc 1446327278
+E:/SoC/Project5/implementation/dlmb_cntlr_wrapper.ngc 1446325378
+E:/SoC/Project5/implementation/ilmb_cntlr_wrapper.ngc 1446325394
+E:/SoC/Project5/implementation/lmb_bram_wrapper.ngc 1446325404
+E:/SoC/Project5/implementation/buttons_3bit_wrapper.ngc 1446325484
+E:/SoC/Project5/implementation/character_lcd_2x16_wrapper.ngc 1446325576
+E:/SoC/Project5/implementation/ddr_sdram_wrapper.ngc 1446327288
+E:/SoC/Project5/implementation/dip_switches_4bit_wrapper.ngc 1446325980
+E:/SoC/Project5/implementation/ethernet_mac_wrapper.ngc 1446327298
+E:/SoC/Project5/implementation/flash_wrapper.ngc 1446326410
+E:/SoC/Project5/implementation/leds_1bit_wrapper.ngc 1446326502
+E:/SoC/Project5/implementation/leds_6bit_wrapper.ngc 1446326592
+E:/SoC/Project5/implementation/rs232_dce_wrapper.ngc 1446327304
+E:/SoC/Project5/implementation/rs232_dte_wrapper.ngc 1446327310
+E:/SoC/Project5/implementation/rotary_encoder_wrapper.ngc 1446326896
+E:/SoC/Project5/implementation/xps_timer_0_wrapper.ngc 1446327010
+E:/SoC/Project5/implementation/clock_generator_0_wrapper.ngc 1446327314
+E:/SoC/Project5/implementation/mdm_0_wrapper.ngc 1446327126
+E:/SoC/Project5/implementation/proc_sys_reset_0_wrapper.ngc 1446327144
+E:/SoC/Project5/implementation/graphics_ip_0_wrapper.ngc 1446327254
+OK

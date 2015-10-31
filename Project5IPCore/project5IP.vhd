@@ -19,14 +19,10 @@ use IEEE.MATH_REAL.ALL;
 
 entity project5IP is
 	port (
-		clk, reset, wEnF, wEnB, wEnS : in std_logic;
+		clk, reset : in std_logic;
 		hsync, vsync : out std_logic;
-		sw: in std_logic_vector(2 downto 0);
 		rgb: out std_logic_vector(2 downto 0);
-		dataInF, dataInB, dataInS : in std_logic_vector(3 downto 0);
-		dataOutF, dataOutB, dataOutS : out std_logic_vector(3 downto 0);
-		rAddF, rAddB, rAddS : in integer;
-		wAddF, wAddB, wAddS : in integer
+		dataPort : in std_logic_vector(31 downto 0)
 	);
 end project5IP;
 
@@ -56,12 +52,16 @@ signal rgb_reg, toDispConv: std_logic_vector(2 downto 0);
 	constant cmag1 : std_logic_vector(3 downto 0) := "1011";
 	constant cyel1 : std_logic_vector(3 downto 0) := "1101";
 	constant cwht1: std_logic_vector(3 downto 0) := "1111";
-	--signal pixdatB, pixdatF: std_logic_vector(9 downto 0);
 	signal pixdatB, pixdatF: integer;
 
 	type ramtype is array(0 to 2047) of std_logic_vector(3 downto 0);
 	signal ramF, ramB, ramS : ramtype;
 	type ground is array(0 to 1199) of integer; --location @ pixel XXXXX
+	
+	signal wEnF, wEnB, wEnS : std_logic;
+	signal dataInF, dataInB : std_logic_vector(5 downto 0);
+	signal dataInS : std_logic_vector(3 downto 0);
+	signal addr : std_logic_vector(11 downto 0);
 
 	component vgatimehelper
      port (
@@ -73,31 +73,36 @@ signal rgb_reg, toDispConv: std_logic_vector(2 downto 0);
 
 	begin
 
+	wEnF <= dataPort(31);
+	wEnB <= dataPort(30);
+	wEnS <= dataPort(29);
+	dataInS <= dataPort(24 to 27);
+	dataInF <= dataPort(18 to 23);
+	dataInB <= dataPort(12 to 17);
+	addr <= dataPort(0 to 11);
+
 	--foreground process
 		process(clk)
 		begin
 			if (rising_edge(clk)) then
-				if (wEnF = '1') then ramF(wAddF) <= dataInF;
+				if (wEnF = '1') then ramF(conv_integer(addr)) <= dataInF;
 				end if;
-			dataOutF <= ramF(rAddF);
 			end if;
 		end process;
 	--background process
 		process(clk)
 		begin
 			if (rising_edge(clk)) then
-				if (wEnB = '1') then ramB(wAddB) <= dataInB;
+				if (wEnB = '1') then ramB(conv_integer(addr)) <= dataInB;
 				end if;
-				dataOutB <= ramB(rAddB);
 			end if;
 		end process;
 	--sprite map process
 		process(clk)
 		begin
 			if (rising_edge(clk)) then
-				if (wEnS = '1') then ramS(wAddS) <= dataInS;
+				if (wEnS = '1') then ramS(conv_integer(addr)) <= dataInS;
 				end if;
-				dataOutS <= ramS(rAddS);
 			end if;
 		end process;
 

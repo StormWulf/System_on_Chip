@@ -1,0 +1,14 @@
+//file: spriteMap.c
+//Authors: William Putnam, Jeff Falberg
+//Last Updated: 10.31.2015
+
+//Description: Write graphics data to the monitor.
+
+#ifndef SPRITEMAP_H_
+#define SPRITEMAP_H_
+
+int cblk = 0, cblue = 1, cgreen = 2, ccyan = 3, cred = 4,
+		cmag = 5, cyel = 6, cwht = 7;
+int sprMap[32][2048] = {0};
+
+#endif

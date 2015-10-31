@@ -10,12 +10,21 @@ Command-line arguments:  -os win32 -ws win32 -arch x86
 
 !ENTRY org.eclipse.cdt.core 1 0 2015-10-09 13:41:46.198
 !MESSAGE Indexed 'Project4BSP' (0 sources, 8 headers) in 0.02 sec: 0 declarations; 0 references; 8 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
-!SESSION 2015-10-14 15:13:36.632 -----------------------------------------------
+!SESSION 2015-10-15 15:19:09.661 -----------------------------------------------
 eclipse.buildId=Release 13.1 Build SDK_O.40d
 java.version=1.6.0_21
 java.vendor=Sun Microsystems Inc.
-BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
-Command-line arguments:  -data C:\Users\Jeff\Documents\GitHub\System_on_Chip\Project4 -os win32 -ws win32 -arch x86_64
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
 
-!ENTRY org.eclipse.core.resources 2 10035 2015-10-14 15:13:40.607
+!ENTRY org.eclipse.core.resources 2 10035 2015-10-15 15:19:18.222
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+!SESSION 2015-10-16 12:33:47.324 -----------------------------------------------
+eclipse.buildId=Release 13.1 Build SDK_O.40d
+java.version=1.6.0_21
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.core.resources 2 10035 2015-10-16 12:34:44.662
 !MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.

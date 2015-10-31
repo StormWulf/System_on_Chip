@@ -1,0 +1,1747 @@
+Release 13.1 - xst O.40d (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> 
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input Format                       : MIXED
+Input File Name                    : "graphics_ip_0_wrapper_xst.prj"
+Verilog Include Directory          : {"E:\SoC\Project5\pcores\" "C:\Xilinx\13.1\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Xilinx\13.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
+
+---- Target Parameters
+Target Device                      : xc3s1600efg320-4
+Output File Name                   : "../implementation/graphics_ip_0_wrapper.ngc"
+
+---- Source Options
+Top Module Name                    : graphics_ip_0_wrapper
+
+---- Target Options
+Add IO Buffers                     : NO
+
+---- General Options
+Optimization Goal                  : speed
+Netlist Hierarchy                  : as_optimized
+Optimization Effort                : 1
+Hierarchy Separator                : /
+
+---- Other Options
+Cores Search Directories           : {../implementation/graphics_ip_0_wrapper}
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/family_support.vhd" in Library proc_common_v3_00_a.
+Package <family_support> compiled.
+Package body <family_support> compiled.
+Compiling vhdl file "C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/proc_common_pkg.vhd" in Library proc_common_v3_00_a.
+Package <proc_common_pkg> compiled.
+Package body <proc_common_pkg> compiled.
+Compiling vhdl file "C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/inferred_lut4.vhd" in Library proc_common_v3_00_a.
+Entity <inferred_lut4> compiled.
+Entity <inferred_lut4> (Architecture <implementation>) compiled.
+Compiling vhdl file "C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/muxf_struct_f.vhd" in Library proc_common_v3_00_a.
+Entity <muxf_struct> compiled.
+Entity <muxf_struct> (Architecture <imp>) compiled.
+Entity <muxf_struct_f> compiled.
+Entity <muxf_struct_f> (Architecture <imp>) compiled.
+Compiling vhdl file "C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter_bit.vhd" in Library proc_common_v3_00_a.
+Entity <pf_counter_bit> compiled.
+Entity <pf_counter_bit> (Architecture <implementation>) compiled.
+Compiling vhdl file "C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/cntr_incr_decr_addn_f.vhd" in Library proc_common_v3_00_a.
+Entity <cntr_incr_decr_addn_f> compiled.
+Entity <cntr_incr_decr_addn_f> (Architecture <imp>) compiled.
+Compiling vhdl file "C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/dynshreg_f.vhd" in Library proc_common_v3_00_a.
+Entity <dynshreg_f> compiled.
+Entity <dynshreg_f> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_adder_bit.vhd" in Library proc_common_v3_00_a.
+Entity <pf_adder_bit> compiled.
+Entity <pf_adder_bit> (Architecture <implementation>) compiled.
+Compiling vhdl file "C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter.vhd" in Library proc_common_v3_00_a.
+Entity <pf_counter> compiled.
+Entity <pf_counter> (Architecture <implementation>) compiled.
+Compiling vhdl file "C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_occ_counter.vhd" in Library proc_common_v3_00_a.
+Entity <pf_occ_counter> compiled.
+Entity <pf_occ_counter> (Architecture <implementation>) compiled.
+Compiling vhdl file "C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter_bit.vhd" in Library proc_common_v3_00_a.
+Entity <counter_bit> compiled.
+Entity <counter_bit> (Architecture <imp>) compiled.
+Compiling vhdl file "C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_muxcy.vhd" in Library proc_common_v3_00_a.
+Entity <or_muxcy> compiled.
+Entity <or_muxcy> (Architecture <implementation>) compiled.
+Compiling vhdl file "C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_muxcy_f.vhd" in Library proc_common_v3_00_a.
+Entity <or_muxcy_f> compiled.
+Entity <or_muxcy_f> (Architecture <implementation>) compiled.
+Compiling vhdl file "C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo_rbu_f.vhd" in Library proc_common_v3_00_a.
+Entity <srl_fifo_rbu_f> compiled.
+Entity <srl_fifo_rbu_f> (Architecture <imp>) compiled.
+Compiling vhdl file "C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/family.vhd" in Library proc_common_v3_00_a.
+Package <family> compiled.
+Package body <family> compiled.
+Compiling vhdl file "C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_occ_counter_top.vhd" in Library proc_common_v3_00_a.
+Entity <pf_occ_counter_top> compiled.
+Entity <pf_occ_counter_top> (Architecture <implementation>) compiled.
+Compiling vhdl file "C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter_top.vhd" in Library proc_common_v3_00_a.
+Entity <pf_counter_top> compiled.
+Entity <pf_counter_top> (Architecture <implementation>) compiled.
+Compiling vhdl file "C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_adder.vhd" in Library proc_common_v3_00_a.
+Entity <pf_adder> compiled.
+Entity <pf_adder> (Architecture <implementation>) compiled.
+Compiling vhdl file "C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter.vhd" in Library proc_common_v3_00_a.
+Entity <Counter> compiled.
+Entity <Counter> (Architecture <imp>) compiled.
+Compiling vhdl file "C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/coregen_comp_defs.vhd" in Library proc_common_v3_00_a.
+Package <coregen_comp_defs> compiled.
+Compiling vhdl file "C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/common_types_pkg.vhd" in Library proc_common_v3_00_a.
+Package <Common_Types> compiled.
+Package body <Common_Types> compiled.
+Compiling vhdl file "C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/conv_funs_pkg.vhd" in Library proc_common_v3_00_a.
+Package <conv_funs_pkg> compiled.
+Package body <conv_funs_pkg> compiled.
+Compiling vhdl file "C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/async_fifo_fg.vhd" in Library proc_common_v3_00_a.
+Entity <async_fifo_fg> compiled.
+Entity <async_fifo_fg> (Architecture <implementation>) compiled.
+Compiling vhdl file "C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/sync_fifo_fg.vhd" in Library proc_common_v3_00_a.
+Entity <sync_fifo_fg> compiled.
+Entity <sync_fifo_fg> (Architecture <implementation>) compiled.
+Compiling vhdl file "C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/blk_mem_gen_wrapper.vhd" in Library proc_common_v3_00_a.
+Entity <blk_mem_gen_wrapper> compiled.
+Entity <blk_mem_gen_wrapper> (Architecture <implementation>) compiled.
+Compiling vhdl file "C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/addsub.vhd" in Library proc_common_v3_00_a.
+Entity <addsub> compiled.
+Entity <addsub> (Architecture <imp>) compiled.
+Compiling vhdl file "C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/direct_path_cntr.vhd" in Library proc_common_v3_00_a.
+Entity <direct_path_cntr> compiled.
+Entity <direct_path_cntr> (Architecture <imp>) compiled.
+Compiling vhdl file "C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/direct_path_cntr_ai.vhd" in Library proc_common_v3_00_a.
+Entity <direct_path_cntr_ai> compiled.
+Entity <direct_path_cntr_ai> (Architecture <imp>) compiled.
+Compiling vhdl file "C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/down_counter.vhd" in Library proc_common_v3_00_a.
+Entity <down_counter> compiled.
+Entity <down_counter> (Architecture <simulation>) compiled.
+Compiling vhdl file "C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/eval_timer.vhd" in Library proc_common_v3_00_a.
+Entity <eval_timer> compiled.
+Entity <eval_timer> (Architecture <imp>) compiled.
+Compiling vhdl file "C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_steer.vhd" in Library proc_common_v3_00_a.
+Entity <IPIF_Steer> compiled.
+Entity <IPIF_Steer> (Architecture <IMP>) compiled.
+Compiling vhdl file "C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_steer128.vhd" in Library proc_common_v3_00_a.
+Entity <ipif_steer128> compiled.
+Entity <ipif_steer128> (Architecture <IMP>) compiled.
+Compiling vhdl file "C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_mirror128.vhd" in Library proc_common_v3_00_a.
+Entity <ipif_mirror128> compiled.
+Entity <ipif_mirror128> (Architecture <IMP>) compiled.
+Compiling vhdl file "C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ld_arith_reg.vhd" in Library proc_common_v3_00_a.
+Entity <ld_arith_reg> compiled.
+Entity <ld_arith_reg> (Architecture <imp>) compiled.
+Compiling vhdl file "C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ld_arith_reg2.vhd" in Library proc_common_v3_00_a.
+Entity <ld_arith_reg2> compiled.
+Entity <ld_arith_reg2> (Architecture <imp>) compiled.
+Compiling vhdl file "C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/mux_onehot.vhd" in Library proc_common_v3_00_a.
+Entity <mux_onehot> compiled.
+Entity <mux_onehot> (Architecture <imp>) compiled.
+Compiling vhdl file "C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_bits.vhd" in Library proc_common_v3_00_a.
+Entity <or_bits> compiled.
+Entity <or_bits> (Architecture <implementation>) compiled.
+Compiling vhdl file "C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_gate.vhd" in Library proc_common_v3_00_a.
+Entity <or_gate> compiled.
+Entity <or_gate> (Architecture <imp>) compiled.
+Compiling vhdl file "C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_dpram_select.vhd" in Library proc_common_v3_00_a.
+Entity <pf_dpram_select> compiled.
+Entity <pf_dpram_select> (Architecture <implementation>) compiled.
+Compiling vhdl file "C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect.vhd" in Library proc_common_v3_00_a.
+Entity <pselect> compiled.
+Entity <pselect> (Architecture <imp>) compiled.
+Compiling vhdl file "C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_mask.vhd" in Library proc_common_v3_00_a.
+Entity <pselect_mask> compiled.
+Entity <pselect_mask> (Architecture <imp>) compiled.
+Compiling vhdl file "C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl16_fifo.vhd" in Library proc_common_v3_00_a.
+Entity <srl16_fifo> compiled.
+Entity <srl16_fifo> (Architecture <implementation>) compiled.
+Compiling vhdl file "C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo.vhd" in Library proc_common_v3_00_a.
+Entity <SRL_FIFO> compiled.
+Entity <SRL_FIFO> (Architecture <IMP>) compiled.
+Compiling vhdl file "C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo2.vhd" in Library proc_common_v3_00_a.
+Entity <srl_fifo2> compiled.
+Entity <srl_fifo2> (Architecture <imp>) compiled.
+Compiling vhdl file "C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo3.vhd" in Library proc_common_v3_00_a.
+Entity <srl_fifo3> compiled.
+Entity <srl_fifo3> (Architecture <imp>) compiled.
+Compiling vhdl file "C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo_rbu.vhd" in Library proc_common_v3_00_a.
+Entity <srl_fifo_rbu> compiled.
+Entity <srl_fifo_rbu> (Architecture <imp>) compiled.
+Compiling vhdl file "C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/valid_be.vhd" in Library proc_common_v3_00_a.
+Entity <valid_be> compiled.
+Entity <valid_be> (Architecture <implementation>) compiled.
+Compiling vhdl file "C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_with_enable_f.vhd" in Library proc_common_v3_00_a.
+Entity <or_with_enable_f> compiled.
+Entity <or_with_enable_f> (Architecture <implementation>) compiled.
+Compiling vhdl file "C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/dynshreg_i_f.vhd" in Library proc_common_v3_00_a.
+Entity <dynshreg_i_f> compiled.
+Entity <dynshreg_i_f> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/mux_onehot_f.vhd" in Library proc_common_v3_00_a.
+Entity <mux_onehot_f> compiled.
+Entity <mux_onehot_f> (Architecture <imp>) compiled.
+Compiling vhdl file "C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo_f.vhd" in Library proc_common_v3_00_a.
+Entity <srl_fifo_f> compiled.
+Entity <srl_fifo_f> (Architecture <imp>) compiled.
+Compiling vhdl file "C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/compare_vectors_f.vhd" in Library proc_common_v3_00_a.
+Entity <compare_vectors_f> compiled.
+Entity <compare_vectors_f> (Architecture <imp>) compiled.
+Compiling vhdl file "C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter_f.vhd" in Library proc_common_v3_00_a.
+Entity <counter_f> compiled.
+Entity <counter_f> (Architecture <imp>) compiled.
+Compiling vhdl file "C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_gate_f.vhd" in Library proc_common_v3_00_a.
+Entity <or_gate_f> compiled.
+Entity <or_gate_f> (Architecture <imp>) compiled.
+Compiling vhdl file "C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/soft_reset.vhd" in Library proc_common_v3_00_a.
+Entity <soft_reset> compiled.
+Entity <soft_reset> (Architecture <implementation>) compiled.
+Compiling vhdl file "C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd" in Library proc_common_v3_00_a.
+Entity <pselect_f> compiled.
+Entity <pselect_f> (Architecture <imp>) compiled.
+Compiling vhdl file "C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_gate128.vhd" in Library proc_common_v3_00_a.
+Entity <or_gate128> compiled.
+Entity <or_gate128> (Architecture <imp>) compiled.
+Compiling vhdl file "C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_pkg.vhd" in Library proc_common_v3_00_a.
+Package <ipif_pkg> compiled.
+Package body <ipif_pkg> compiled.
+Compiling vhdl file "E:/SoC/Project5/pcores/graphics_ip_v1_00_a/hdl/vhdl/vgatimehelper.vhd" in Library graphics_ip_v1_00_a.
+Entity <vgatimehelper> compiled.
+Entity <vgatimehelper> (Architecture <arch>) compiled.
+Compiling vhdl file "C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plb_address_decoder.vhd" in Library plbv46_slave_single_v1_01_a.
+Entity <plb_address_decoder> compiled.
+Entity <plb_address_decoder> (Architecture <IMP>) compiled.
+Compiling vhdl file "E:/SoC/Project5/pcores/graphics_ip_v1_00_a/hdl/vhdl/project5IP.vhd" in Library graphics_ip_v1_00_a.
+Entity <project5IP> compiled.
+Entity <project5IP> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plb_slave_attachment.vhd" in Library plbv46_slave_single_v1_01_a.
+Entity <plb_slave_attachment> compiled.
+Entity <plb_slave_attachment> (Architecture <implementation>) compiled.
+Compiling vhdl file "C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plbv46_slave_single.vhd" in Library plbv46_slave_single_v1_01_a.
+Entity <plbv46_slave_single> compiled.
+Entity <plbv46_slave_single> (Architecture <implementation>) compiled.
+Compiling vhdl file "E:/SoC/Project5/pcores/graphics_ip_v1_00_a/hdl/vhdl/user_logic.vhd" in Library graphics_ip_v1_00_a.
+Entity <user_logic> compiled.
+Entity <user_logic> (Architecture <IMP>) compiled.
+Compiling vhdl file "E:/SoC/Project5/pcores/graphics_ip_v1_00_a/hdl/vhdl/graphics_ip.vhd" in Library graphics_ip_v1_00_a.
+Entity <graphics_ip> compiled.
+Entity <graphics_ip> (Architecture <IMP>) compiled.
+Compiling vhdl file "E:/SoC/Project5/hdl/graphics_ip_0_wrapper.vhd" in Library work.
+Entity <graphics_ip_0_wrapper> compiled.
+Entity <graphics_ip_0_wrapper> (Architecture <STRUCTURE>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <graphics_ip_0_wrapper> in library <work> (architecture <STRUCTURE>).
+
+Analyzing hierarchy for entity <graphics_ip> in library <graphics_ip_v1_00_a> (architecture <IMP>) with generics.
+	C_BASEADDR = "11000111000000000000000000000000"
+	C_FAMILY = "spartan3e"
+	C_HIGHADDR = "11000111000000001111111111111111"
+	C_INCLUDE_DPHASE_TIMER = 1
+	C_SPLB_AWIDTH = 32
+	C_SPLB_CLK_PERIOD_PS = 20000
+	C_SPLB_DWIDTH = 64
+	C_SPLB_MID_WIDTH = 1
+	C_SPLB_NATIVE_DWIDTH = 32
+	C_SPLB_NUM_MASTERS = 2
+	C_SPLB_P2P = 0
+	C_SPLB_SMALLEST_MASTER = 32
+	C_SPLB_SUPPORT_BURSTS = 0
+WARNING:Xst:821 - "C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/proc_common_pkg.vhd" line 272: Loop body will iterate zero times
+
+Analyzing hierarchy for entity <plbv46_slave_single> in library <plbv46_slave_single_v1_01_a> (architecture <implementation>) with generics.
+	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000011000111000000000000000000000000",
+	                          "0000000000000000000000000000000011000111000000001111111111111111")
+	C_ARD_NUM_CE_ARRAY = (1)
+	C_BUS2CORE_CLK_RATIO = 1
+	C_FAMILY = "spartan3e"
+	C_INCLUDE_DPHASE_TIMER = 1
+	C_SIPIF_DWIDTH = 32
+	C_SPLB_AWIDTH = 32
+	C_SPLB_DWIDTH = 64
+	C_SPLB_MID_WIDTH = 1
+	C_SPLB_NUM_MASTERS = 2
+	C_SPLB_P2P = 0
+
+Analyzing hierarchy for entity <user_logic> in library <graphics_ip_v1_00_a> (architecture <IMP>) with generics.
+	C_NUM_REG = 1
+	C_SLV_DWIDTH = 32
+
+Analyzing hierarchy for entity <plb_slave_attachment> in library <plbv46_slave_single_v1_01_a> (architecture <implementation>) with generics.
+	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000011000111000000000000000000000000",
+	                          "0000000000000000000000000000000011000111000000001111111111111111")
+	C_ARD_NUM_CE_ARRAY = (1)
+	C_BUS2CORE_CLK_RATIO = 1
+	C_DPHASE_TIMEOUT = 128
+	C_FAMILY = "spartan3e"
+	C_INCLUDE_DPHASE_TIMER = 1
+	C_IPIF_ABUS_WIDTH = 32
+	C_IPIF_DBUS_WIDTH = 32
+	C_PLB_MID_WIDTH = 1
+	C_PLB_NUM_MASTERS = 2
+	C_SPLB_P2P = 0
+
+Analyzing hierarchy for entity <project5IP> in library <graphics_ip_v1_00_a> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <plb_address_decoder> in library <plbv46_slave_single_v1_01_a> (architecture <IMP>) with generics.
+	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000011000111000000000000000000000000",
+	                          "0000000000000000000000000000000011000111000000001111111111111111")
+	C_ARD_NUM_CE_ARRAY = (1)
+	C_BUS_AWIDTH = 32
+	C_FAMILY = "nofamily"
+	C_SPLB_P2P = 0
+
+Analyzing hierarchy for entity <counter_f> in library <proc_common_v3_00_a> (architecture <imp>) with generics.
+	C_FAMILY = "nofamily"
+	C_NUM_BITS = 8
+
+Analyzing hierarchy for entity <vgatimehelper> in library <graphics_ip_v1_00_a> (architecture <arch>).
+
+Analyzing hierarchy for entity <pselect_f> in library <proc_common_v3_00_a> (architecture <imp>) with generics.
+	C_AB = 16
+	C_AW = 32
+	C_BAR = "11000111000000000000000000000000"
+	C_FAMILY = "nofamily"
+
+Analyzing hierarchy for entity <or_gate128> in library <proc_common_v3_00_a> (architecture <imp>) with generics.
+	C_BUS_WIDTH = 1
+	C_OR_WIDTH = 1
+	C_USE_LUT_OR = false
+
+Analyzing hierarchy for entity <or_muxcy> in library <proc_common_v3_00_a> (architecture <implementation>) with generics.
+	C_NUM_BITS = 1
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <graphics_ip_0_wrapper> in library <work> (Architecture <STRUCTURE>).
+WARNING:Xst:37 - Detected unknown constraint/property "SIGIS". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "SIGIS". This constraint/property is not supported by the current software release and will be ignored.
+Entity <graphics_ip_0_wrapper> analyzed. Unit <graphics_ip_0_wrapper> generated.
+
+Analyzing generic Entity <graphics_ip> in library <graphics_ip_v1_00_a> (Architecture <IMP>).
+	C_BASEADDR = "11000111000000000000000000000000"
+	C_FAMILY = "spartan3e"
+	C_HIGHADDR = "11000111000000001111111111111111"
+	C_INCLUDE_DPHASE_TIMER = 1
+	C_SPLB_AWIDTH = 32
+	C_SPLB_CLK_PERIOD_PS = 20000
+	C_SPLB_DWIDTH = 64
+	C_SPLB_MID_WIDTH = 1
+	C_SPLB_NATIVE_DWIDTH = 32
+	C_SPLB_NUM_MASTERS = 2
+	C_SPLB_P2P = 0
+	C_SPLB_SMALLEST_MASTER = 32
+	C_SPLB_SUPPORT_BURSTS = 0
+WARNING:Xst:37 - Detected unknown constraint/property "SIGIS". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "SIGIS". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:821 - "C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/proc_common_pkg.vhd" line 272: Loop body will iterate zero times
+WARNING:Xst:37 - Detected unknown constraint/property "SIGIS". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "SIGIS". This constraint/property is not supported by the current software release and will be ignored.
+Entity <graphics_ip> analyzed. Unit <graphics_ip> generated.
+
+Analyzing generic Entity <plbv46_slave_single> in library <plbv46_slave_single_v1_01_a> (Architecture <implementation>).
+	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000011000111000000000000000000000000",
+	                          "0000000000000000000000000000000011000111000000001111111111111111")
+	C_ARD_NUM_CE_ARRAY = (1)
+	C_BUS2CORE_CLK_RATIO = 1
+	C_FAMILY = "spartan3e"
+	C_INCLUDE_DPHASE_TIMER = 1
+	C_SIPIF_DWIDTH = 32
+	C_SPLB_AWIDTH = 32
+	C_SPLB_DWIDTH = 64
+	C_SPLB_MID_WIDTH = 1
+	C_SPLB_NUM_MASTERS = 2
+	C_SPLB_P2P = 0
+Entity <plbv46_slave_single> analyzed. Unit <plbv46_slave_single> generated.
+
+Analyzing generic Entity <plb_slave_attachment> in library <plbv46_slave_single_v1_01_a> (Architecture <implementation>).
+	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000011000111000000000000000000000000",
+	                          "0000000000000000000000000000000011000111000000001111111111111111")
+	C_ARD_NUM_CE_ARRAY = (1)
+	C_BUS2CORE_CLK_RATIO = 1
+	C_DPHASE_TIMEOUT = 128
+	C_FAMILY = "spartan3e"
+	C_INCLUDE_DPHASE_TIMER = 1
+	C_IPIF_ABUS_WIDTH = 32
+	C_IPIF_DBUS_WIDTH = 32
+	C_PLB_MID_WIDTH = 1
+	C_PLB_NUM_MASTERS = 2
+	C_SPLB_P2P = 0
+WARNING:Xst:753 - "C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plb_slave_attachment.vhd" line 1201: Unconnected output port 'Count_Out' of component 'counter_f'.
+Entity <plb_slave_attachment> analyzed. Unit <plb_slave_attachment> generated.
+
+Analyzing generic Entity <plb_address_decoder> in library <plbv46_slave_single_v1_01_a> (Architecture <IMP>).
+	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000011000111000000000000000000000000",
+	                          "0000000000000000000000000000000011000111000000001111111111111111")
+	C_ARD_NUM_CE_ARRAY = (1)
+	C_BUS_AWIDTH = 32
+	C_FAMILY = "nofamily"
+	C_SPLB_P2P = 0
+Entity <plb_address_decoder> analyzed. Unit <plb_address_decoder> generated.
+
+Analyzing generic Entity <pselect_f> in library <proc_common_v3_00_a> (Architecture <imp>).
+	C_AB = 16
+	C_AW = 32
+	C_BAR = "11000111000000000000000000000000"
+	C_FAMILY = "nofamily"
+Entity <pselect_f> analyzed. Unit <pselect_f> generated.
+
+Analyzing generic Entity <or_gate128> in library <proc_common_v3_00_a> (Architecture <imp>).
+	C_BUS_WIDTH = 1
+	C_OR_WIDTH = 1
+	C_USE_LUT_OR = false
+Entity <or_gate128> analyzed. Unit <or_gate128> generated.
+
+Analyzing generic Entity <or_muxcy> in library <proc_common_v3_00_a> (Architecture <implementation>).
+	C_NUM_BITS = 1
+Entity <or_muxcy> analyzed. Unit <or_muxcy> generated.
+
+Analyzing generic Entity <counter_f> in library <proc_common_v3_00_a> (Architecture <imp>).
+	C_FAMILY = "nofamily"
+	C_NUM_BITS = 8
+Entity <counter_f> analyzed. Unit <counter_f> generated.
+
+Analyzing generic Entity <user_logic> in library <graphics_ip_v1_00_a> (Architecture <IMP>).
+	C_NUM_REG = 1
+	C_SLV_DWIDTH = 32
+WARNING:Xst:37 - Detected unknown constraint/property "SIGIS". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "SIGIS". This constraint/property is not supported by the current software release and will be ignored.
+Entity <user_logic> analyzed. Unit <user_logic> generated.
+
+Analyzing Entity <project5IP> in library <graphics_ip_v1_00_a> (Architecture <Behavioral>).
+WARNING:Xst:790 - "E:/SoC/Project5/pcores/graphics_ip_v1_00_a/hdl/vhdl/project5IP.vhd" line 89: Index value(s) does not match array range, simulation mismatch.
+INFO:Xst:1433 - Contents of array <ramF> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+WARNING:Xst:790 - "E:/SoC/Project5/pcores/graphics_ip_v1_00_a/hdl/vhdl/project5IP.vhd" line 97: Index value(s) does not match array range, simulation mismatch.
+INFO:Xst:1433 - Contents of array <ramB> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+WARNING:Xst:790 - "E:/SoC/Project5/pcores/graphics_ip_v1_00_a/hdl/vhdl/project5IP.vhd" line 105: Index value(s) does not match array range, simulation mismatch.
+INFO:Xst:1433 - Contents of array <ramS> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+WARNING:Xst:753 - "E:/SoC/Project5/pcores/graphics_ip_v1_00_a/hdl/vhdl/project5IP.vhd" line 111: Unconnected output port 'p_tick' of component 'vgatimehelper'.
+INFO:Xst:1432 - Contents of array <ramF> may be accessed with a negative index, causing simulation mismatch.
+INFO:Xst:1433 - Contents of array <ramF> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1432 - Contents of array <ramB> may be accessed with a negative index, causing simulation mismatch.
+INFO:Xst:1433 - Contents of array <ramB> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1432 - Contents of array <ramS> may be accessed with a negative index, causing simulation mismatch.
+INFO:Xst:1433 - Contents of array <ramS> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1432 - Contents of array <ramS> may be accessed with a negative index, causing simulation mismatch.
+INFO:Xst:1433 - Contents of array <ramS> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1432 - Contents of array <ramS> may be accessed with a negative index, causing simulation mismatch.
+INFO:Xst:1433 - Contents of array <ramS> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+Entity <project5IP> analyzed. Unit <project5IP> generated.
+
+Analyzing Entity <vgatimehelper> in library <graphics_ip_v1_00_a> (Architecture <arch>).
+Entity <vgatimehelper> analyzed. Unit <vgatimehelper> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <counter_f>.
+    Related source file is "C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter_f.vhd".
+    Found 9-bit register for signal <icount_out>.
+    Found 9-bit subtractor for signal <icount_out$sub0000> created at line 297.
+    Summary:
+	inferred   9 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <counter_f> synthesized.
+
+
+Synthesizing Unit <pselect_f>.
+    Related source file is "C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+WARNING:Xst:647 - Input <A<16:31>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <pselect_f> synthesized.
+
+
+Synthesizing Unit <or_muxcy>.
+    Related source file is "C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_muxcy.vhd".
+Unit <or_muxcy> synthesized.
+
+
+Synthesizing Unit <vgatimehelper>.
+    Related source file is "E:/SoC/Project5/pcores/graphics_ip_v1_00_a/hdl/vhdl/vgatimehelper.vhd".
+    Found 10-bit up counter for signal <h_count_reg>.
+    Found 10-bit comparator greatequal for signal <h_sync_next$cmp_ge0000> created at line 105.
+    Found 10-bit comparator lessequal for signal <h_sync_next$cmp_le0000> created at line 105.
+    Found 1-bit register for signal <h_sync_reg>.
+    Found 1-bit register for signal <mod2_reg>.
+    Found 10-bit up counter for signal <v_count_reg>.
+    Found 10-bit comparator greatequal for signal <v_sync_next$cmp_ge0000> created at line 109.
+    Found 10-bit comparator lessequal for signal <v_sync_next$cmp_le0000> created at line 109.
+    Found 1-bit register for signal <v_sync_reg>.
+    Found 10-bit comparator less for signal <video_on$cmp_lt0000> created at line 115.
+    Found 10-bit comparator less for signal <video_on$cmp_lt0001> created at line 115.
+    Summary:
+	inferred   2 Counter(s).
+	inferred   3 D-type flip-flop(s).
+	inferred   6 Comparator(s).
+Unit <vgatimehelper> synthesized.
+
+
+Synthesizing Unit <or_gate128>.
+    Related source file is "C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_gate128.vhd".
+WARNING:Xst:1780 - Signal <test> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <or_gate128> synthesized.
+
+
+Synthesizing Unit <project5IP>.
+    Related source file is "E:/SoC/Project5/pcores/graphics_ip_v1_00_a/hdl/vhdl/project5IP.vhd".
+WARNING:Xst:647 - Input <dataPort<28>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1780 - Signal <toDispConv> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <toDisp> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <sig> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <pixindex> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pixel_y<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pixel_x<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pixdatF<31:11>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pixdatB<31:11>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <mapindex<31:11>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <divsig> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <addr<11>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 1200x6-bit dual-port RAM <Mram_ramF> for signal <ramF>.
+    Found 1200x6-bit dual-port RAM <Mram_ramB> for signal <ramB>.
+    Found 2048x4-bit dual-port RAM <Mram_ramS> for signal <ramS>.
+    Found 2048x4-bit dual-port RAM <Mram_ramS_ren> for signal <ramS>.
+    Found 12-bit adder for signal <mapindex$add0000> created at line 118.
+    Found 6x6-bit multiplier for signal <mapindex$mult0000> created at line 118.
+    Found 12-bit adder for signal <pixdatB$addsub0000> created at line 122.
+    Found 12-bit adder carry out for signal <pixdatB$addsub0001> created at line 122.
+    Found 12-bit adder for signal <pixdatF$addsub0000> created at line 121.
+    Found 12-bit adder carry out for signal <pixdatF$addsub0001> created at line 121.
+    Found 3-bit register for signal <rgb_reg>.
+    Summary:
+	inferred   4 RAM(s).
+	inferred   3 D-type flip-flop(s).
+	inferred   5 Adder/Subtractor(s).
+	inferred   1 Multiplier(s).
+Unit <project5IP> synthesized.
+
+
+Synthesizing Unit <user_logic>.
+    Related source file is "E:/SoC/Project5/pcores/graphics_ip_v1_00_a/hdl/vhdl/user_logic.vhd".
+    Found 32-bit register for signal <slv_reg0>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+Unit <user_logic> synthesized.
+
+
+Synthesizing Unit <plb_address_decoder>.
+    Related source file is "C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plb_address_decoder.vhd".
+WARNING:Xst:647 - Input <Bus_RNW_Erly> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Address_In_Erly> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Address_Valid_Erly> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <cs_s_h_clr> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cs_ce_clr> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <addr_out_s_h> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <addr_match_clr> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit register for signal <cs_out_i<0>>.
+    Found 1-bit register for signal <cs_out_s_h<0>>.
+    Found 1-bit register for signal <decode_hit_reg>.
+    Found 1-bit register for signal <rdce_out_i<0>>.
+    Found 1-bit register for signal <rnw_s_h>.
+    Found 1-bit register for signal <wrce_out_i<0>>.
+    Summary:
+	inferred   6 D-type flip-flop(s).
+Unit <plb_address_decoder> synthesized.
+
+
+Synthesizing Unit <plb_slave_attachment>.
+    Related source file is "C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plb_slave_attachment.vhd".
+WARNING:Xst:647 - Input <PLB_UABus> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1780 - Signal <valid_plb_type> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <valid_plb_size> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <start_data_phase> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <sl_wrdack_ns> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <sl_wrcomp_ns> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <sl_wait_ns> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <sl_rddack_ns> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <sl_rdcomp_ns> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <sl_data_ack> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <set_sl_busy_ns> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <rd_ce_ld_enable> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <clear_sl_rd_busy_ns> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <clear_sl_rd_busy> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <clear_sl_busy_ns> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <clear_rd_ce> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Register <sl_rdcomp_i> equivalent to <rd_clear_sl_busy> has been removed
+    Register <sl_rddack_i> equivalent to <rd_clear_sl_busy> has been removed
+    Register <sl_addrack_i> equivalent to <set_sl_busy> has been removed
+    Register <sl_wrdack_i> equivalent to <sl_wrcomp_i> has been removed
+    Register <wr_clear_sl_busy> equivalent to <sl_wrcomp_i> has been removed
+    Found 1-bit register for signal <addr_cntl_cs<0>>.
+    Found 1-bit register for signal <addr_cycle_flush>.
+    Found 32-bit register for signal <bus2ip_addr_i>.
+    Found 4-bit register for signal <bus2ip_be_i>.
+    Found 1-bit register for signal <bus2ip_rnw_i>.
+    Found 1-bit register for signal <data_timeout>.
+    Found 1-bit register for signal <master_id<31>>.
+    Found 32-bit register for signal <plb_abus_reg>.
+    Found 4-bit register for signal <plb_be_reg>.
+    Found 1-bit register for signal <plb_masterid_reg<0>>.
+    Found 1-bit register for signal <plb_pavalid_reg>.
+    Found 1-bit register for signal <plb_rnw_reg>.
+    Found 4-bit register for signal <plb_size_reg>.
+    Found 3-bit register for signal <plb_type_reg>.
+    Found 32-bit register for signal <plb_wrdbus_reg>.
+    Found 1-bit register for signal <rd_clear_sl_busy>.
+    Found 1-bit register for signal <set_sl_busy>.
+    Found 1-bit register for signal <sl_busy>.
+    Found 2-bit register for signal <sl_mbusy_i>.
+    Found 2-bit register for signal <sl_mrderr_i>.
+    Found 2-bit register for signal <sl_mwrerr_i>.
+    Found 32-bit register for signal <sl_rddbus_i>.
+    Found 1-bit register for signal <sl_rearbitrate_i>.
+    Found 1-bit register for signal <sl_wrcomp_i>.
+    Summary:
+	inferred 162 D-type flip-flop(s).
+Unit <plb_slave_attachment> synthesized.
+
+
+Synthesizing Unit <plbv46_slave_single>.
+    Related source file is "C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plbv46_slave_single.vhd".
+WARNING:Xst:647 - Input <PLB_wrPrim> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_MSize> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_rdBurst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_SAValid> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_wrPendReq> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_wrPendPri> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_rdPendReq> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_rdPendPri> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_busLock> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_wrDBus<32:63>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_reqPri> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_lockErr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_wrBurst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_TAttribute> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_rdPrim> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_abort> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <plbv46_slave_single> synthesized.
+
+
+Synthesizing Unit <graphics_ip>.
+    Related source file is "E:/SoC/Project5/pcores/graphics_ip_v1_00_a/hdl/vhdl/graphics_ip.vhd".
+WARNING:Xst:646 - Signal <ipif_Bus2IP_RNW> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ipif_Bus2IP_CS<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ipif_Bus2IP_Addr> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <graphics_ip> synthesized.
+
+
+Synthesizing Unit <graphics_ip_0_wrapper>.
+    Related source file is "E:/SoC/Project5/hdl/graphics_ip_0_wrapper.vhd".
+Unit <graphics_ip_0_wrapper> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 4
+ 1200x6-bit dual-port RAM                              : 2
+ 2048x4-bit dual-port RAM                              : 2
+# Multipliers                                          : 1
+ 6x6-bit multiplier                                    : 1
+# Adders/Subtractors                                   : 6
+ 12-bit adder                                          : 3
+ 12-bit adder carry out                                : 2
+ 9-bit subtractor                                      : 1
+# Counters                                             : 2
+ 10-bit up counter                                     : 2
+# Registers                                            : 70
+ 1-bit register                                        : 60
+ 3-bit register                                        : 2
+ 32-bit register                                       : 4
+ 4-bit register                                        : 3
+ 9-bit register                                        : 1
+# Comparators                                          : 6
+ 10-bit comparator greatequal                          : 2
+ 10-bit comparator less                                : 2
+ 10-bit comparator lessequal                           : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <project5IP>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_ramF> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 1200-word x 6-bit                   |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <dataPort<31>>  | high     |
+    |     addrA          | connected to signal <dataPort>      |          |
+    |     diA            | connected to signal <dataPort>      |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 1200-word x 6-bit                   |          |
+    |     addrB          | connected to signal <mapindex>      |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_ramB> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 1200-word x 6-bit                   |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <dataPort<30>>  | high     |
+    |     addrA          | connected to signal <dataPort>      |          |
+    |     diA            | connected to signal <dataPort>      |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 1200-word x 6-bit                   |          |
+    |     addrB          | connected to signal <mapindex>      |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_ramS> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 2048-word x 4-bit                   |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <dataPort<29>>  | high     |
+    |     addrA          | connected to signal <dataPort>      |          |
+    |     diA            | connected to signal <dataPort>      |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 2048-word x 4-bit                   |          |
+    |     addrB          | connected to signal <pixdatB>       |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_ramS_ren> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 2048-word x 4-bit                   |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <dataPort<29>>  | high     |
+    |     addrA          | connected to signal <dataPort>      |          |
+    |     diA            | connected to signal <dataPort>      |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 2048-word x 4-bit                   |          |
+    |     addrB          | connected to signal <pixdatF>       |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <project5IP> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 4
+ 1200x6-bit dual-port distributed RAM                  : 2
+ 2048x4-bit dual-port distributed RAM                  : 2
+# Multipliers                                          : 1
+ 6x6-bit multiplier                                    : 1
+# Adders/Subtractors                                   : 6
+ 11-bit adder                                          : 1
+ 12-bit adder                                          : 2
+ 12-bit adder carry out                                : 2
+ 9-bit subtractor                                      : 1
+# Counters                                             : 2
+ 10-bit up counter                                     : 2
+# Registers                                            : 215
+ Flip-Flops                                            : 215
+# Comparators                                          : 6
+ 10-bit comparator greatequal                          : 2
+ 10-bit comparator less                                : 2
+ 10-bit comparator lessequal                           : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <addr_cntl_cs_0> in Unit <plb_slave_attachment> is equivalent to the following FF/Latch, which will be removed : <addr_cycle_flush> 
+WARNING:Xst:2677 - Node <Mram_ramS1> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS2> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS3> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS4> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS5> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS6> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS7> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS8> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS9> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS10> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS11> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS12> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS13> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS14> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS15> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS16> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS17> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS18> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS19> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS20> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS21> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS22> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS23> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS26> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS24> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS25> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS27> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS28> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS29> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS30> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS31> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS32> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS33> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS34> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS35> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS36> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS37> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS38> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS41> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS39> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS40> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS42> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS43> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS44> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS45> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS46> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS47> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS48> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS49> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS50> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS51> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS52> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS53> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS56> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS54> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS55> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS57> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS58> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS59> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS60> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS61> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS62> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS63> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS64> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS65> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS66> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS67> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS68> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS69> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS70> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS71> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS72> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS73> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS74> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS75> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS76> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS77> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS78> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS79> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS80> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS81> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS82> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS83> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS84> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS87> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS85> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS86> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS88> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS89> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS90> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS91> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS92> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS93> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS94> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS95> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS96> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS97> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS98> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS99> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS100> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS101> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS102> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS103> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS104> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS105> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS106> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS107> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS108> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS109> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS110> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS111> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS112> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS113> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS114> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS115> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS118> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS116> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS117> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS119> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS120> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS121> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS122> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS123> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS124> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS125> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS126> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS127> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramS128> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramB376> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramB377> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramB378> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramB379> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramB380> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramB381> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramB382> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramB383> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramB384> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramB385> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramB386> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramB387> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramB388> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramB391> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramB389> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramB390> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramB392> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramB393> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramB394> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramB395> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramB396> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramB397> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramB398> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramB399> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramB400> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramB401> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramB402> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramB403> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramB406> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramB404> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramB405> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramB407> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramB408> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramB409> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramB410> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramB411> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramB412> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramB413> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramB414> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramB415> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramB416> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramB417> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramB418> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramB421> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramB419> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramB420> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramB422> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramB423> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramB424> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramB425> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramB426> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramB427> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramB428> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramB429> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramB430> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramB431> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramB432> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramB433> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramB434> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramB435> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramB436> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramB437> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramB438> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramB439> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramB440> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramB441> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramB442> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramB443> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramB444> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramB445> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramB446> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramB447> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramB448> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramB449> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramB450> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF376> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF377> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF378> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF379> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF380> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF381> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF382> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF383> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF384> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF385> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF386> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF387> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF388> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF391> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF389> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF390> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF392> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF393> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF394> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF395> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF396> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF397> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF398> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF399> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF400> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF401> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF402> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF403> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF404> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF405> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF406> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF407> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF408> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF409> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF410> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF411> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF412> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF413> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF414> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF415> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF416> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF417> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF418> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF419> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF422> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF420> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF421> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF423> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF424> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF425> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF426> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF427> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF428> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF429> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF430> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF431> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF432> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF433> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF434> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF437> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF435> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF436> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF438> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF439> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF440> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF441> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF442> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF443> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF444> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF445> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF446> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF447> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF448> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF449> of sequential type is unconnected in block <project5IP>.
+WARNING:Xst:2677 - Node <Mram_ramF450> of sequential type is unconnected in block <project5IP>.
+
+Optimizing unit <graphics_ip_0_wrapper> ...
+
+Optimizing unit <counter_f> ...
+
+Optimizing unit <vgatimehelper> ...
+
+Optimizing unit <project5IP> ...
+
+Optimizing unit <plb_address_decoder> ...
+
+Optimizing unit <user_logic> ...
+
+Optimizing unit <plb_slave_attachment> ...
+WARNING:Xst:1710 - FF/Latch <graphics_ip_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mrderr_i_1> (without init value) has a constant value of 0 in block <graphics_ip_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <graphics_ip_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mrderr_i_0> (without init value) has a constant value of 0 in block <graphics_ip_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <graphics_ip_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mwrerr_i_1> (without init value) has a constant value of 0 in block <graphics_ip_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <graphics_ip_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mwrerr_i_0> (without init value) has a constant value of 0 in block <graphics_ip_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <graphics_ip_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/cs_out_s_h_0> of sequential type is unconnected in block <graphics_ip_0_wrapper>.
+WARNING:Xst:2677 - Node <graphics_ip_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/cs_out_i_0> of sequential type is unconnected in block <graphics_ip_0_wrapper>.
+WARNING:Xst:2677 - Node <graphics_ip_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_0> of sequential type is unconnected in block <graphics_ip_0_wrapper>.
+WARNING:Xst:2677 - Node <graphics_ip_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_1> of sequential type is unconnected in block <graphics_ip_0_wrapper>.
+WARNING:Xst:2677 - Node <graphics_ip_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_2> of sequential type is unconnected in block <graphics_ip_0_wrapper>.
+WARNING:Xst:2677 - Node <graphics_ip_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_3> of sequential type is unconnected in block <graphics_ip_0_wrapper>.
+WARNING:Xst:2677 - Node <graphics_ip_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_4> of sequential type is unconnected in block <graphics_ip_0_wrapper>.
+WARNING:Xst:2677 - Node <graphics_ip_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_5> of sequential type is unconnected in block <graphics_ip_0_wrapper>.
+WARNING:Xst:2677 - Node <graphics_ip_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_6> of sequential type is unconnected in block <graphics_ip_0_wrapper>.
+WARNING:Xst:2677 - Node <graphics_ip_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_7> of sequential type is unconnected in block <graphics_ip_0_wrapper>.
+WARNING:Xst:2677 - Node <graphics_ip_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_8> of sequential type is unconnected in block <graphics_ip_0_wrapper>.
+WARNING:Xst:2677 - Node <graphics_ip_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_9> of sequential type is unconnected in block <graphics_ip_0_wrapper>.
+WARNING:Xst:2677 - Node <graphics_ip_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_10> of sequential type is unconnected in block <graphics_ip_0_wrapper>.
+WARNING:Xst:2677 - Node <graphics_ip_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_11> of sequential type is unconnected in block <graphics_ip_0_wrapper>.
+WARNING:Xst:2677 - Node <graphics_ip_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_12> of sequential type is unconnected in block <graphics_ip_0_wrapper>.
+WARNING:Xst:2677 - Node <graphics_ip_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_13> of sequential type is unconnected in block <graphics_ip_0_wrapper>.
+WARNING:Xst:2677 - Node <graphics_ip_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_14> of sequential type is unconnected in block <graphics_ip_0_wrapper>.
+WARNING:Xst:2677 - Node <graphics_ip_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_15> of sequential type is unconnected in block <graphics_ip_0_wrapper>.
+WARNING:Xst:2677 - Node <graphics_ip_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_16> of sequential type is unconnected in block <graphics_ip_0_wrapper>.
+WARNING:Xst:2677 - Node <graphics_ip_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_17> of sequential type is unconnected in block <graphics_ip_0_wrapper>.
+WARNING:Xst:2677 - Node <graphics_ip_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_18> of sequential type is unconnected in block <graphics_ip_0_wrapper>.
+WARNING:Xst:2677 - Node <graphics_ip_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_19> of sequential type is unconnected in block <graphics_ip_0_wrapper>.
+WARNING:Xst:2677 - Node <graphics_ip_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_20> of sequential type is unconnected in block <graphics_ip_0_wrapper>.
+WARNING:Xst:2677 - Node <graphics_ip_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_21> of sequential type is unconnected in block <graphics_ip_0_wrapper>.
+WARNING:Xst:2677 - Node <graphics_ip_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_22> of sequential type is unconnected in block <graphics_ip_0_wrapper>.
+WARNING:Xst:2677 - Node <graphics_ip_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_23> of sequential type is unconnected in block <graphics_ip_0_wrapper>.
+WARNING:Xst:2677 - Node <graphics_ip_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_24> of sequential type is unconnected in block <graphics_ip_0_wrapper>.
+WARNING:Xst:2677 - Node <graphics_ip_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_25> of sequential type is unconnected in block <graphics_ip_0_wrapper>.
+WARNING:Xst:2677 - Node <graphics_ip_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_26> of sequential type is unconnected in block <graphics_ip_0_wrapper>.
+WARNING:Xst:2677 - Node <graphics_ip_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_27> of sequential type is unconnected in block <graphics_ip_0_wrapper>.
+WARNING:Xst:2677 - Node <graphics_ip_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_28> of sequential type is unconnected in block <graphics_ip_0_wrapper>.
+WARNING:Xst:2677 - Node <graphics_ip_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_29> of sequential type is unconnected in block <graphics_ip_0_wrapper>.
+WARNING:Xst:2677 - Node <graphics_ip_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_30> of sequential type is unconnected in block <graphics_ip_0_wrapper>.
+WARNING:Xst:2677 - Node <graphics_ip_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_31> of sequential type is unconnected in block <graphics_ip_0_wrapper>.
+WARNING:Xst:2677 - Node <graphics_ip_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_16> of sequential type is unconnected in block <graphics_ip_0_wrapper>.
+WARNING:Xst:2677 - Node <graphics_ip_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_17> of sequential type is unconnected in block <graphics_ip_0_wrapper>.
+WARNING:Xst:2677 - Node <graphics_ip_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_18> of sequential type is unconnected in block <graphics_ip_0_wrapper>.
+WARNING:Xst:2677 - Node <graphics_ip_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_19> of sequential type is unconnected in block <graphics_ip_0_wrapper>.
+WARNING:Xst:2677 - Node <graphics_ip_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_20> of sequential type is unconnected in block <graphics_ip_0_wrapper>.
+WARNING:Xst:2677 - Node <graphics_ip_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_21> of sequential type is unconnected in block <graphics_ip_0_wrapper>.
+WARNING:Xst:2677 - Node <graphics_ip_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_22> of sequential type is unconnected in block <graphics_ip_0_wrapper>.
+WARNING:Xst:2677 - Node <graphics_ip_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_23> of sequential type is unconnected in block <graphics_ip_0_wrapper>.
+WARNING:Xst:2677 - Node <graphics_ip_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_24> of sequential type is unconnected in block <graphics_ip_0_wrapper>.
+WARNING:Xst:2677 - Node <graphics_ip_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_25> of sequential type is unconnected in block <graphics_ip_0_wrapper>.
+WARNING:Xst:2677 - Node <graphics_ip_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_26> of sequential type is unconnected in block <graphics_ip_0_wrapper>.
+WARNING:Xst:2677 - Node <graphics_ip_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_27> of sequential type is unconnected in block <graphics_ip_0_wrapper>.
+WARNING:Xst:2677 - Node <graphics_ip_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_28> of sequential type is unconnected in block <graphics_ip_0_wrapper>.
+WARNING:Xst:2677 - Node <graphics_ip_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_29> of sequential type is unconnected in block <graphics_ip_0_wrapper>.
+WARNING:Xst:2677 - Node <graphics_ip_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_30> of sequential type is unconnected in block <graphics_ip_0_wrapper>.
+WARNING:Xst:2677 - Node <graphics_ip_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_31> of sequential type is unconnected in block <graphics_ip_0_wrapper>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS129>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren129> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS130>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren130> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS131>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren131> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS132>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren132> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS133>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren133> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS134>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren134> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS135>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren135> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS136>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren136> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS137>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren137> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS138>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren138> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS139>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren139> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS140>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren140> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS141>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren141> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS142>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren142> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS143>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren143> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS144>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren144> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS145>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren145> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS146>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren146> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS149>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren149> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS147>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren147> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS148>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren148> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS150>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren150> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS151>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren151> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS152>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren152> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS153>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren153> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS154>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren154> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS155>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren155> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS156>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren156> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS157>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren157> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS158>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren158> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS159>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren159> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS160>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren160> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS161>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren161> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS164>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren164> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS162>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren162> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS163>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren163> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS165>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren165> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS166>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren166> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS167>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren167> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS168>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren168> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS169>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren169> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS170>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren170> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS171>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren171> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS172>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren172> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS173>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren173> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS174>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren174> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS175>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren175> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS176>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren176> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS179>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren179> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS177>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren177> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS178>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren178> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS180>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren180> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS181>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren181> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS182>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren182> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS183>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren183> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS184>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren184> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS185>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren185> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS186>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren186> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS187>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren187> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS188>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren188> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS189>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren189> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS190>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren190> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS191>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren191> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS192>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren192> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS193>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren193> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS194>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren194> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS195>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren195> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS196>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren196> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS197>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren197> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS198>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren198> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS199>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren199> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS200>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren200> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS201>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren201> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS202>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren202> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS203>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren203> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS204>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren204> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS205>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren205> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS206>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren206> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS207>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren207> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS210>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren210> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS208>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren208> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS209>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren209> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS211>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren211> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS212>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren212> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS213>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren213> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS214>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren214> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS215>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren215> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS216>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren216> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS217>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren217> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS218>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren218> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS219>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren219> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS220>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren220> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS221>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren221> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS222>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren222> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS225>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren225> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS223>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren223> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS224>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren224> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS226>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren226> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS227>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren227> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS228>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren228> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS229>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren229> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS230>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren230> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS231>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren231> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS232>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren232> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS233>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren233> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS234>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren234> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS235>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren235> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS236>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren236> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS237>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren237> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS240>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren240> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS238>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren238> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS239>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren239> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS241>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren241> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS242>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren242> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS243>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren243> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS244>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren244> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS245>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren245> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS246>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren246> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS247>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren247> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS248>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren248> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS249>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren249> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS250>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren250> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS251>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren251> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS252>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren252> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS253>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren253> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS254>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren254> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS255>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren255> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS256>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren256> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS257>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren257> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS258>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren258> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS259>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren259> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS260>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren260> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS261>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren261> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS262>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren262> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS263>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren263> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS264>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren264> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS265>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren265> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS266>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren266> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS267>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren267> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS268>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren268> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS271>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren271> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS269>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren269> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS270>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren270> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS272>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren272> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS273>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren273> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS274>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren274> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS275>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren275> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS276>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren276> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS277>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren277> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS278>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren278> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS279>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren279> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS280>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren280> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS281>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren281> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS282>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren282> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS283>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren283> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS286>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren286> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS284>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren284> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS285>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren285> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS287>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren287> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS288>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren288> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS289>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren289> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS290>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren290> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS291>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren291> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS292>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren292> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS293>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren293> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS294>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren294> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS295>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren295> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS296>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren296> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS297>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren297> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS298>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren298> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS301>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren301> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS299>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren299> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS300>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren300> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS302>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren302> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS303>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren303> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS304>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren304> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS305>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren305> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS306>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren306> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS307>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren307> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS308>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren308> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS309>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren309> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS310>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren310> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS311>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren311> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS312>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren312> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS313>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren313> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS314>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren314> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS315>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren315> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS316>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren316> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS317>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren317> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS318>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren318> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS319>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren319> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS320>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren320> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS321>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren321> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS322>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren322> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS323>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren323> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS324>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren324> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS325>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren325> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS326>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren326> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS327>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren327> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS328>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren328> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS329>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren329> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS332>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren332> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS330>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren330> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS331>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren331> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS333>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren333> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS334>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren334> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS335>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren335> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS336>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren336> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS337>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren337> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS338>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren338> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS339>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren339> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS340>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren340> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS341>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren341> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS342>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren342> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS343>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren343> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS344>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren344> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS347>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren347> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS345>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren345> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS346>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren346> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS348>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren348> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS349>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren349> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS350>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren350> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS351>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren351> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS352>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren352> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS353>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren353> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS354>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren354> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS355>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren355> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS356>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren356> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS357>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren357> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS358>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren358> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS359>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren359> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS362>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren362> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS360>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren360> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS361>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren361> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS363>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren363> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS364>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren364> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS365>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren365> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS366>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren366> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS367>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren367> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS368>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren368> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS369>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren369> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS370>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren370> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS371>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren371> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS372>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren372> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS373>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren373> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS374>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren374> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS375>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren375> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS376>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren376> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS377>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren377> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS378>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren378> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS379>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren379> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS380>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren380> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS381>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren381> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS382>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren382> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS383>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren383> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS384>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren384> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS385>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren385> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS386>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren386> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS387>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren387> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS388>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren388> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS389>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren389> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS390>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren390> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS393>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren393> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS391>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren391> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS392>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren392> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS394>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren394> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS395>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren395> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS396>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren396> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS397>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren397> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS398>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren398> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS399>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren399> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS400>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren400> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS401>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren401> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS402>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren402> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS403>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren403> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS404>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren404> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS405>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren405> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS408>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren408> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS406>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren406> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS407>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren407> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS409>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren409> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS410>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren410> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS411>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren411> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS412>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren412> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS413>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren413> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS414>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren414> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS415>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren415> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS416>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren416> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS417>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren417> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS418>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren418> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS419>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren419> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS420>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren420> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS423>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren423> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS421>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren421> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS422>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren422> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS424>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren424> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS425>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren425> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS426>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren426> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS427>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren427> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS428>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren428> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS429>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren429> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS430>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren430> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS431>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren431> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS432>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren432> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS433>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren433> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS434>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren434> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS435>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren435> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS436>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren436> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS437>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren437> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS438>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren438> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS439>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren439> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS440>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren440> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS441>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren441> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS442>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren442> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS443>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren443> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS444>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren444> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS445>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren445> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS446>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren446> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS447>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren447> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS448>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren448> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS449>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren449> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS450>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren450> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS451>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren451> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS454>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren454> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS452>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren452> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS453>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren453> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS455>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren455> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS456>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren456> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS457>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren457> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS458>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren458> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS459>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren459> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS460>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren460> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS461>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren461> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS462>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren462> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS463>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren463> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS464>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren464> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS465>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren465> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS466>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren466> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS469>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren469> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS467>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren467> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS468>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren468> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS470>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren470> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS471>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren471> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS472>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren472> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS473>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren473> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS474>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren474> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS475>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren475> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS476>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren476> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS477>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren477> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS478>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren478> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS479>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren479> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS480>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren480> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS481>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren481> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS484>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren484> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS482>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren482> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS483>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren483> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS485>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren485> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS486>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren486> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS487>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren487> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS488>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren488> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS489>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren489> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS490>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren490> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS491>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren491> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS492>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren492> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS493>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren493> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS494>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren494> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS495>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren495> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS496>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren496> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS497>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren497> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS498>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren498> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS499>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren499> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS500>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren500> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS501>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren501> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS502>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren502> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS503>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren503> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS504>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren504> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS505>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren505> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS506>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren506> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS507>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren507> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS508>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren508> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS509>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren509> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS510>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren510> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS511>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren511> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS512>, <graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramS_ren512> are equivalent, second RAM is removed
+FlipFlop graphics_ip_0/USER_LOGIC_I/ourIP/vga_unit/h_count_reg_1 has been replicated 1 time(s)
+FlipFlop graphics_ip_0/USER_LOGIC_I/ourIP/vga_unit/h_count_reg_2 has been replicated 1 time(s)
+FlipFlop graphics_ip_0/USER_LOGIC_I/ourIP/vga_unit/h_count_reg_3 has been replicated 1 time(s)
+FlipFlop graphics_ip_0/USER_LOGIC_I/ourIP/vga_unit/v_count_reg_1 has been replicated 1 time(s)
+FlipFlop graphics_ip_0/USER_LOGIC_I/slv_reg0_28 has been replicated 7 time(s)
+FlipFlop graphics_ip_0/USER_LOGIC_I/slv_reg0_29 has been replicated 7 time(s)
+FlipFlop graphics_ip_0/USER_LOGIC_I/slv_reg0_30 has been replicated 7 time(s)
+FlipFlop graphics_ip_0/USER_LOGIC_I/slv_reg0_31 has been replicated 7 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 212
+ Flip-Flops                                            : 212
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+Top Level Output File Name         : ../implementation/graphics_ip_0_wrapper.ngc
+Output Format                      : ngc
+Optimization Goal                  : speed
+Keep Hierarchy                     : no
+
+Design Statistics
+# IOs                              : 274
+
+Cell Usage :
+# BELS                             : 2269
+#      BUF                         : 4
+#      GND                         : 1
+#      INV                         : 4
+#      LUT1                        : 22
+#      LUT2                        : 295
+#      LUT3                        : 871
+#      LUT3_L                      : 10
+#      LUT4                        : 174
+#      MUXCY                       : 33
+#      MUXF5                       : 477
+#      MUXF6                       : 202
+#      MUXF7                       : 96
+#      MUXF8                       : 48
+#      VCC                         : 1
+#      XORCY                       : 31
+# FlipFlops/Latches                : 212
+#      FD                          : 1
+#      FDC                         : 6
+#      FDCE                        : 24
+#      FDR                         : 100
+#      FDRE                        : 72
+#      FDRS                        : 2
+#      FDS                         : 7
+# RAMS                             : 1262
+#      RAM16X1D                    : 1262
+# MULTs                            : 1
+#      MULT18X18SIO                : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s1600efg320-4 
+
+ Number of Slices:                      740  out of  14752     5%  
+ Number of Slice Flip Flops:            212  out of  29504     0%  
+ Number of 4 input LUTs:               3900  out of  29504    13%  
+    Number used as logic:              1376
+    Number used as RAMs:               2524
+ Number of IOs:                         274
+ Number of bonded IOBs:                   0  out of    250     0%  
+ Number of MULT18X18SIOs:                 1  out of     36     2%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+-------------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                           | Load  |
+-----------------------------------+-------------------------------------------------+-------+
+SPLB_Clk                           | NONE(graphics_ip_0/USER_LOGIC_I/ourIP/rgb_reg_0)| 1474  |
+-----------------------------------+-------------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+SPLB_Rst                           | NONE                   | 30    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 21.126ns (Maximum Frequency: 47.334MHz)
+   Minimum input arrival time before clock: 2.912ns
+   Maximum output required time after clock: 3.513ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'SPLB_Clk'
+  Clock period: 21.126ns (frequency: 47.334MHz)
+  Total number of paths / destination ports: 1793036 / 12918
+-------------------------------------------------------------------------
+Delay:               21.126ns (Levels of Logic = 19)
+  Source:            graphics_ip_0/USER_LOGIC_I/ourIP/vga_unit/v_count_reg_4 (FF)
+  Destination:       graphics_ip_0/USER_LOGIC_I/ourIP/rgb_reg_0 (FF)
+  Source Clock:      SPLB_Clk rising
+  Destination Clock: SPLB_Clk rising
+
+  Data Path: graphics_ip_0/USER_LOGIC_I/ourIP/vga_unit/v_count_reg_4 to graphics_ip_0/USER_LOGIC_I/ourIP/rgb_reg_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             4   0.591   0.587  graphics_ip_0/USER_LOGIC_I/ourIP/vga_unit/v_count_reg_4 (graphics_ip_0/USER_LOGIC_I/ourIP/vga_unit/v_count_reg_4)
+     MULT18X18SIO:A0->P0    1   3.657   0.499  graphics_ip_0/USER_LOGIC_I/ourIP/Mmult_mapindex_mult0000 (graphics_ip_0/USER_LOGIC_I/ourIP/mapindex_mult0000<0>)
+     LUT2:I1->O            1   0.704   0.000  graphics_ip_0/USER_LOGIC_I/ourIP/Madd_mapindex_add0000_Madd_lut<0> (graphics_ip_0/USER_LOGIC_I/ourIP/Madd_mapindex_add0000_Madd_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  graphics_ip_0/USER_LOGIC_I/ourIP/Madd_mapindex_add0000_Madd_cy<0> (graphics_ip_0/USER_LOGIC_I/ourIP/Madd_mapindex_add0000_Madd_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  graphics_ip_0/USER_LOGIC_I/ourIP/Madd_mapindex_add0000_Madd_cy<1> (graphics_ip_0/USER_LOGIC_I/ourIP/Madd_mapindex_add0000_Madd_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  graphics_ip_0/USER_LOGIC_I/ourIP/Madd_mapindex_add0000_Madd_cy<2> (graphics_ip_0/USER_LOGIC_I/ourIP/Madd_mapindex_add0000_Madd_cy<2>)
+     XORCY:CI->O         375   0.804   1.371  graphics_ip_0/USER_LOGIC_I/ourIP/Madd_mapindex_add0000_Madd_xor<3> (graphics_ip_0/USER_LOGIC_I/ourIP/mapindex<3>)
+     BUF:I->O            376   0.704   1.371  graphics_ip_0/USER_LOGIC_I/ourIP/Madd_mapindex_add0000_Madd_xor<3>_1 (graphics_ip_0/USER_LOGIC_I/ourIP/Madd_mapindex_add0000_Madd_xor<3>_1)
+     RAM16X1D:DPRA3->DPO    1   0.704   0.455  graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramF206 (graphics_ip_0/USER_LOGIC_I/ourIP/N1463)
+     LUT3:I2->O            1   0.704   0.000  graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX8_11 (graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX8_11)
+     MUXF5:I1->O           1   0.321   0.000  graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX8_10_f5 (graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX8_10_f5)
+     MUXF6:I1->O           1   0.521   0.000  graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX8_9_f6 (graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX8_9_f6)
+     MUXF7:I1->O           1   0.521   0.000  graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX8_8_f7 (graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX8_8_f7)
+     MUXF8:I1->O           1   0.521   0.499  graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX8_7_f8 (graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX8_7_f8)
+     LUT3:I1->O            1   0.704   0.000  graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX8_4 (graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX8_4)
+     MUXF5:I0->O          16   0.321   1.034  graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX8_2_f5 (graphics_ip_0/USER_LOGIC_I/ourIP/pixdatF_varindex0000<2>)
+     MUXF8:S->O            1   0.850   0.499  graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX16_6_f8 (graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX16_6_f8)
+     LUT3:I1->O            1   0.704   0.000  graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX16_2_f5_G (N41)
+     MUXF5:I1->O           3   0.321   0.566  graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX16_2_f5 (graphics_ip_0/USER_LOGIC_I/ourIP/_varindex0000<0>)
+     LUT3:I2->O            1   0.704   0.000  graphics_ip_0/USER_LOGIC_I/ourIP/rgb_reg_mux0001<3>1 (graphics_ip_0/USER_LOGIC_I/ourIP/rgb_reg_mux0001<3>)
+     FDC:D                     0.308          graphics_ip_0/USER_LOGIC_I/ourIP/rgb_reg_2
+    ----------------------------------------
+    Total                     21.126ns (14.246ns logic, 6.880ns route)
+                                       (67.4% logic, 32.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'SPLB_Clk'
+  Total number of paths / destination ports: 243 / 235
+-------------------------------------------------------------------------
+Offset:              2.912ns (Levels of Logic = 1)
+  Source:            SPLB_Rst (PAD)
+  Destination:       graphics_ip_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_0 (FF)
+  Destination Clock: SPLB_Clk rising
+
+  Data Path: SPLB_Rst to graphics_ip_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LUT3:I2->O           32   0.704   1.262  graphics_ip_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_or00001 (graphics_ip_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_or0000)
+     FDR:R                     0.911          graphics_ip_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_31
+    ----------------------------------------
+    Total                      2.912ns (1.650ns logic, 1.262ns route)
+                                       (56.7% logic, 43.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'SPLB_Clk'
+  Total number of paths / destination ports: 101 / 77
+-------------------------------------------------------------------------
+Offset:              3.513ns (Levels of Logic = 2)
+  Source:            graphics_ip_0/USER_LOGIC_I/ourIP/vga_unit/h_count_reg_9 (FF)
+  Destination:       pixToDisp<2> (PAD)
+  Source Clock:      SPLB_Clk rising
+
+  Data Path: graphics_ip_0/USER_LOGIC_I/ourIP/vga_unit/h_count_reg_9 to pixToDisp<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             5   0.591   0.808  graphics_ip_0/USER_LOGIC_I/ourIP/vga_unit/h_count_reg_9 (graphics_ip_0/USER_LOGIC_I/ourIP/vga_unit/h_count_reg_9)
+     LUT3:I0->O            3   0.704   0.706  graphics_ip_0/USER_LOGIC_I/ourIP/vga_unit/video_on_and00008 (graphics_ip_0/USER_LOGIC_I/ourIP/vga_unit/video_on_and00008)
+     LUT4:I0->O            0   0.704   0.000  graphics_ip_0/USER_LOGIC_I/ourIP/rgb<2>1 (pixToDisp<2>)
+    ----------------------------------------
+    Total                      3.513ns (1.999ns logic, 1.514ns route)
+                                       (56.9% logic, 43.1% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 107.00 secs
+Total CPU time to Xst completion: 107.04 secs
+ 
+--> 
+
+Total memory usage is 279532 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  403 (   0 filtered)
+Number of infos    :  403 (   0 filtered)
+

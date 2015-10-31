@@ -1,0 +1,104 @@
+//file: spriteMap.c
+//Authors: William Putnam, Jeff Falberg
+//Last Updated: 10.31.2015
+
+//Description: Write graphics data to the monitor.
+
+#ifndef SPRITEMAP_H_
+#define SPRITEMAP_H_
+
+int cblk0 = 0, cblk1 = 1, cblue0 = 2, cblue1 = 3,
+	cgreen0 = 4, cgreen1 = 5, ccyan0 = 6, ccyan1 = 7,
+	cred0 = 8, cred1 = 9, cmag0 = 10, cmag1 = 11,
+	cyel0 = 12, cyel1 = 13, cwht0 = 14, cwht1 = 15;
+int sprMap[32][64] = {{0}};
+int foreground[1200] = {0}, background[1200] = {0};
+
+sprMap[0][] = {									//evin TL
+		cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+		cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+		cwht0, cwht0, cblk1, cblk1, cblk1, cblk1, cwht0, cwht0,
+		cwht0, cblk1, cyel1, cyel1, cred1, cred1, cblk1, cwht0,
+		cwht0, cblk1, cyel1, cyel1, cred1, cred1, cblk1, cwht0,
+		cwht0, cblk1, cyel1, cyel1, cred1, cred1, cblk1, cwht0,
+		cwht0, cblk1, cyel1, cyel1, cred1, cred1, cblk1, cwht0,
+		cwht0, cblk1, cblk1, cblk1, cblk1, cblk1, cwht0, cwht0
+};
+
+sprMap[1] = {									//evin TR
+		cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+		cwht0, cwht0, cblk1, cblk1, cblk1, cblk1, cblk1, cwht0,
+		cwht0, cblk1, cred1, cred1, cred1, cyel1, cyel1, cblk1,
+		cwht0, cblk1, cred1, cred1, cred1, cyel1, cyel1, cblk1,
+		cwht0, cblk1, cred1, cred1, cred1, cyel1, cyel1, cblk1,
+		cwht0, cblk1, cred1, cred1, cred1, cyel1, cyel1, cblk1,
+		cwht0, cwht0, cblk1, cblk1, cblk1, cblk1, cblk1, cwht0,
+		cwht0, cwht0, cwht0, cblk1, cwht0, cwht0, cwht0, cwht0
+};
+
+sprMap[8] = {									//evin CL
+		cwht0, cwht0, cwht0, cwht0, cblk1, cwht0, cwht0, cwht0,
+		cwht0, cwht0, cwht0, cwht0, cblk1, cwht0, cwht0, ccyan1,
+		cwht0, cwht0, cwht0, cwht0, cblk1, cblk1, cblk1, cblk1,
+		cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cblk1, cblk1,
+		cwht0, cwht0, cwht0, cwht0, cblk1, cblk1, cblk1, cblk1,
+		cgreen1, cgreen1, cgreen1, cblk1, cblk1, cblue1, cblue1, cblue1,
+		cgreen1, cwht0, cwht0, cblk1, cblue1, cblue1, cblue1, cblue1,
+		cgreen1, cwht0, cwht0, cblk1, cblue1, cblue1, cblue1, cblue1
+};
+
+sprMap[9] = {									//evin CR
+		cwht0, cwht0, cwht0, cblk1, cwht0, cwht0, cwht0, cwht0,
+		ccyan1, cwht0, cwht0, cblk1, cwht0, cwht0, cwht0, cwht0,
+		cblk1, cblk1, cblk1, cblk1, cwht0, cwht0, cwht0, cwht0,
+		cblk1, cblk1, cwht0, cwht0, cwht0, cgreen1, cgreen1, cwht0,
+		cblk1, cblk1, cblk1, cblk1, cwht0, cwht0, cgreen1, cwht0,
+		cblue1, cblue1, cblue1, cblk1, cblk1, cwht0, cgreen1, cwht0,
+		cblue1, cblue1, cblue1, cblue1, cblk1, cgreen1, cgreen1, cwht0,
+		cblue1, cblue1, cblue1, cblue1, cblk1, cwht0, cwht0, cwht0
+};
+
+sprMap[25] = {									//evin BL
+		cgreen1, cgreen1, cwht0, cblk1, cblue1, cblue1, cblue1, cblue1,
+		cwht0, cwht0, cwht0, cblk1, cblue1, cblue1, cblue1, cblue1,
+		cwht0, cwht0, cwht0, cblk1, cblk1, cblue1, cblue1, cblue1,
+		cwht0, cwht0, cwht0, cwht0, cblk1, cblue1, cblue1, cblue1,
+		cwht0, cwht0, cwht0, cblk1, cblk1, cblue1, cblue1, cblue1,
+		cwht0, cwht0, cblk1, cblk1, cblue1, cblue1, cblue1, cblue1,
+		cwht0, cwht0, cblk1, cblk1, cblk1, cblk1, cblk1, cblk1,
+		cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0
+};
+
+sprMap[26] = {									//evin BR
+		cblue1, cblue1, cblue1, cblue1, cblk1, cwht0, cwht0, cwht0,
+		cblue1, cblue1, cblue1, cblue1, cblk1, cwht0, cwht0, cwht0,
+		cblue1, cblue1, cblue1, cblk1, cblk1, cwht0, cwht0, cwht0,
+		cblue1, cblue1, cblue1, cblk1, cwht0, cwht0, cwht0, cwht0,
+		cblue1, cblue1, cblue1, cblk1, cblk1, cwht0, cwht0, cwht0,
+		cblue1, cblue1, cblue1, cblue1, cblk1, cblk1, cwht0, cwht0,
+		cblk1, cblk1, cblk1, cblk1, cblk1, cblk1, cwht0, cwht0,
+		cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0
+};
+
+sprMap[30] ={									//rock
+		cred0, cred0, cred0, cred0, cred0, cred0, cred0, cred0,
+		cred0, cred0, cred0, cwht0, cwht0, cwht0, cwht0, cred0,
+		cred0, cred0, cred0, cwht0, cred0, cred0, cwht0, cred0,
+		cred0, cred0, cred0, cwht0, cred0, cred0, cwht0, cred0,
+		cred0, cred0, cred0, cwht0, cwht0, cwht0, cwht0, cred0,
+		cred0, cred0, cred0, cred0, cred0, cred0, cred0, cred0,
+		cred0, cred0, cred0, cred0, cred0, cred0, cred0, cred0,
+		cred0, cred0, cred0, cred0, cred0, cred0, cred0, cred0
+};
+sprMap[31] ={									//background
+		cmag0, cmag0, cmag0, cmag0, cmag0, cmag0, cmag0, cmag0,
+		cmag0, cmag0, cmag0, cmag0, cmag0, cmag0, cmag0, cmag0,
+		cmag0, cmag0, cmag0, cmag0, cmag0, cmag0, cmag0, cmag0,
+		cmag0, cmag0, cmag0, cmag0, cmag0, cmag0, cmag0, cmag0,
+		cmag0, cmag0, cmag0, cmag0, cmag0, cmag0, cmag0, cmag0,
+		cmag0, cmag0, cmag0, cmag0, cmag0, cmag0, cmag0, cmag0,
+		cmag0, cmag0, cmag0, cmag0, cmag0, cmag0, cmag0, cmag0,
+		cmag0, cmag0, cmag0, cmag0, cmag0, cmag0, cmag0, cmag0
+};
+
+#endif

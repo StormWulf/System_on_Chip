@@ -1,0 +1,37 @@
+//file: spriteMap.c
+//Authors: William Putnam, Jeff Falberg
+//Last Updated: 10.31.2015
+
+//Description: Write graphics data to the monitor.
+
+#ifndef SPRITEMAP_H_
+#define SPRITEMAP_H_
+
+int cblk = 0, cblue = 1, cgreen = 2, ccyan = 3, cred = 4,
+		cmag = 5, cyel = 6, cwht = 7;
+int sprMap[32][64] = {0};
+
+sprMap[0] = {};
+
+sprMap[30] ={
+		cred, cred, cred, cred, cred, cred, cred, cred,
+		cred, cred, cred, cwht, cwht, cwht, cwht, cred,
+		cred, cred, cred, cwht, cred, cred, cwht, cred,
+		cred, cred, cred, cwht, cred, cred, cwht, cred,
+		cred, cred, cred, cwht, cwht, cwht, cwht, cred,
+		cred, cred, cred, cred, cred, cred, cred, cred,
+		cred, cred, cred, cred, cred, cred, cred, cred,
+		cred, cred, cred, cred, cred, cred, cred, cred,
+};
+sprMap[31] ={									//background
+		cmag, cmag, cmag, cmag, cmag, cmag, cmag, cmag,
+		cmag, cmag, cmag, cmag, cmag, cmag, cmag, cmag,
+		cmag, cmag, cmag, cmag, cmag, cmag, cmag, cmag,
+		cmag, cmag, cmag, cmag, cmag, cmag, cmag, cmag,
+		cmag, cmag, cmag, cmag, cmag, cmag, cmag, cmag,
+		cmag, cmag, cmag, cmag, cmag, cmag, cmag, cmag,
+		cmag, cmag, cmag, cmag, cmag, cmag, cmag, cmag,
+		cmag, cmag, cmag, cmag, cmag, cmag, cmag, cmag,
+};
+
+#endif

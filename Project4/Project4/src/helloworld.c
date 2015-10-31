@@ -1,8 +1,8 @@
 //file: helloworld.c
 //Authors: William Putnam, Jeff Falberg
-//Last Updated: 10.9.2015
+//Last Updated: 10.16.2015
 
-//Description: Flash LEDs based on DIP switch position.
+//Description: Flash LEDs based on DIP switch position. Now with 100% moar timer.
 
 #include <stdio.h>
 #include <unistd.h>
@@ -10,33 +10,36 @@
 #include "xgpio_l.h"
 #include "xparameters.h"
 #include "xbasic_types.h"
-
-u32 DIP_read, DIP_write;
+#include "xtmrctr.h"
+#include "xtmrctr_l.h"
 
 int main()
 {
-	int sleepyTime = 0, DIP[4], LEDarr[6] = {0}, i;
+	int cntr = 0, LEDs = 0;
+	XTmrCtr timerCounter;
 
     init_platform();
 
-    for(;;){
-    	DIP_read = XGpio_ReadReg(XPAR_DIP_SWITCHES_4BIT_BASEADDR,0);
-    	XGpio_WriteReg(XPAR_LEDS_6BIT_BASEADDR, 0, DIP_read);
-    	print(DIP_read);
-    	if (DIP_read == 0) sleepyTime = 1000;
+    //get the timer ready and running
+    XTmrCtr_Initialize(&timerCounter, XPAR_XPS_TIMER_0_DEVICE_ID);
+    XTmrCtr_SetResetValue(&timerCounter, 0, 0x0);
+    XTmrCtr_Start(&timerCounter, 0);
 
-    	else if (DIP[1]) sleepyTime = 1000;
-
-    	else if (DIP[2]) sleepyTime = 5000;
-
-    	else if (DIP[3]) sleepyTime = 10000;
-
-    	//implement when we can figure out what DIP_read is
-    	/*DIP_write = 0;
-    	XGpio_WriteReg(XPAR_LEDS_6BIT_BASEADDR, 0, DIP_write);
-    	for (i=0; i < sleepyTime; ++i){}
-    	DIP_write = 999;
-    	XGpio_WriteReg(XPAR_LEDS_6BIT_BASEADDR, 0, DIP_write);*/
+    for (;;){
+    	//reset time when counter is too high
+    	if (XTmrCtr_GetValue(&timerCounter, 0) > 499999){
+    		XTmrCtr_Stop(&timerCounter, 0);
+    		XTmrCtr_Reset(&timerCounter, 0);
+    		XTmrCtr_Start(&timerCounter, 0);
+    		++cntr;
+    	}
+    	//update the LEDs
+    	if (cntr >= (10*XGpio_ReadReg(XPAR_DIP_SWITCHES_4BIT_BASEADDR,0))){
+    		++LEDs;
+    		XGpio_WriteReg(XPAR_LEDS_6BIT_BASEADDR, 0, LEDs);
+    		if (LEDs == 64) LEDs = 0;
+    		cntr = 0;
+    	}
     }
 
     cleanup_platform();

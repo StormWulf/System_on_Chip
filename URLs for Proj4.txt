@@ -1,0 +1,17 @@
+http://forums.xilinx.com/xlnx/attachments/xlnx/EDK/25067/1/20110712024612887.pdf
+
+http://www.eeworld.com.cn/uploadfile/Xilinx/uploadfile/201107/20110712024659815.pdf
+
+https://forums.xilinx.com/t5/Embedded-Development-Tools/ERROR-region-ilmb-cntlr-dlmb-cntlr-is-full/td-p/3839
+
+https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=region+ilmb_cntlr_dlmb_cntlr+is+full
+
+https://forums.xilinx.com/t5/Embedded-Development-Tools/ERROR-region-ilmb-cntlr-dlmb-cntlr-is-full/td-p/3839
+
+http://www.xilinx.com/support/answers/35619.html
+
+http://www.fpgadeveloper.com/2014/02/create-an-application-using-the-sdk.html
+
+https://forums.xilinx.com/t5/Embedded-Development-Tools/Error-launching-program-MicroBlaze-is-under-reset/td-p/218665
+
+https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=xilinx%20sdk%20c%20print%20function

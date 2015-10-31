@@ -1,0 +1,50 @@
+
+<RENDERBATCH>
+
+  <RENDERIMG RASNAME="E:\SoC\Project5\SDK\SDK_Export\hw\imgs\microblaze_0.jpg" SVGNAME="E:\SoC\Project5\SDK\SDK_Export\hw\imgs\microblaze_0.svg" TMPSVGFN="E:\SoC\Project5\__xps\.dswkshop\microblaze_0.svg"/>
+
+  <RENDERIMG RASNAME="E:\SoC\Project5\SDK\SDK_Export\hw\imgs\mb_plb.jpg" SVGNAME="E:\SoC\Project5\SDK\SDK_Export\hw\imgs\mb_plb.svg" TMPSVGFN="E:\SoC\Project5\__xps\.dswkshop\mb_plb.svg"/>
+
+  <RENDERIMG RASNAME="E:\SoC\Project5\SDK\SDK_Export\hw\imgs\ilmb.jpg" SVGNAME="E:\SoC\Project5\SDK\SDK_Export\hw\imgs\ilmb.svg" TMPSVGFN="E:\SoC\Project5\__xps\.dswkshop\ilmb.svg"/>
+
+  <RENDERIMG RASNAME="E:\SoC\Project5\SDK\SDK_Export\hw\imgs\dlmb.jpg" SVGNAME="E:\SoC\Project5\SDK\SDK_Export\hw\imgs\dlmb.svg" TMPSVGFN="E:\SoC\Project5\__xps\.dswkshop\dlmb.svg"/>
+
+  <RENDERIMG RASNAME="E:\SoC\Project5\SDK\SDK_Export\hw\imgs\dlmb_cntlr.jpg" SVGNAME="E:\SoC\Project5\SDK\SDK_Export\hw\imgs\dlmb_cntlr.svg" TMPSVGFN="E:\SoC\Project5\__xps\.dswkshop\dlmb_cntlr.svg"/>
+
+  <RENDERIMG RASNAME="E:\SoC\Project5\SDK\SDK_Export\hw\imgs\ilmb_cntlr.jpg" SVGNAME="E:\SoC\Project5\SDK\SDK_Export\hw\imgs\ilmb_cntlr.svg" TMPSVGFN="E:\SoC\Project5\__xps\.dswkshop\ilmb_cntlr.svg"/>
+
+  <RENDERIMG RASNAME="E:\SoC\Project5\SDK\SDK_Export\hw\imgs\lmb_bram.jpg" SVGNAME="E:\SoC\Project5\SDK\SDK_Export\hw\imgs\lmb_bram.svg" TMPSVGFN="E:\SoC\Project5\__xps\.dswkshop\lmb_bram.svg"/>
+
+  <RENDERIMG RASNAME="E:\SoC\Project5\SDK\SDK_Export\hw\imgs\Buttons_3Bit.jpg" SVGNAME="E:\SoC\Project5\SDK\SDK_Export\hw\imgs\Buttons_3Bit.svg" TMPSVGFN="E:\SoC\Project5\__xps\.dswkshop\Buttons_3Bit.svg"/>
+
+  <RENDERIMG RASNAME="E:\SoC\Project5\SDK\SDK_Export\hw\imgs\Character_LCD_2x16.jpg" SVGNAME="E:\SoC\Project5\SDK\SDK_Export\hw\imgs\Character_LCD_2x16.svg" TMPSVGFN="E:\SoC\Project5\__xps\.dswkshop\Character_LCD_2x16.svg"/>
+
+  <RENDERIMG RASNAME="E:\SoC\Project5\SDK\SDK_Export\hw\imgs\DDR_SDRAM.jpg" SVGNAME="E:\SoC\Project5\SDK\SDK_Export\hw\imgs\DDR_SDRAM.svg" TMPSVGFN="E:\SoC\Project5\__xps\.dswkshop\DDR_SDRAM.svg"/>
+
+  <RENDERIMG RASNAME="E:\SoC\Project5\SDK\SDK_Export\hw\imgs\DIP_Switches_4Bit.jpg" SVGNAME="E:\SoC\Project5\SDK\SDK_Export\hw\imgs\DIP_Switches_4Bit.svg" TMPSVGFN="E:\SoC\Project5\__xps\.dswkshop\DIP_Switches_4Bit.svg"/>
+
+  <RENDERIMG RASNAME="E:\SoC\Project5\SDK\SDK_Export\hw\imgs\Ethernet_MAC.jpg" SVGNAME="E:\SoC\Project5\SDK\SDK_Export\hw\imgs\Ethernet_MAC.svg" TMPSVGFN="E:\SoC\Project5\__xps\.dswkshop\Ethernet_MAC.svg"/>
+
+  <RENDERIMG RASNAME="E:\SoC\Project5\SDK\SDK_Export\hw\imgs\FLASH.jpg" SVGNAME="E:\SoC\Project5\SDK\SDK_Export\hw\imgs\FLASH.svg" TMPSVGFN="E:\SoC\Project5\__xps\.dswkshop\FLASH.svg"/>
+
+  <RENDERIMG RASNAME="E:\SoC\Project5\SDK\SDK_Export\hw\imgs\LEDs_1Bit.jpg" SVGNAME="E:\SoC\Project5\SDK\SDK_Export\hw\imgs\LEDs_1Bit.svg" TMPSVGFN="E:\SoC\Project5\__xps\.dswkshop\LEDs_1Bit.svg"/>
+
+  <RENDERIMG RASNAME="E:\SoC\Project5\SDK\SDK_Export\hw\imgs\LEDs_6Bit.jpg" SVGNAME="E:\SoC\Project5\SDK\SDK_Export\hw\imgs\LEDs_6Bit.svg" TMPSVGFN="E:\SoC\Project5\__xps\.dswkshop\LEDs_6Bit.svg"/>
+
+  <RENDERIMG RASNAME="E:\SoC\Project5\SDK\SDK_Export\hw\imgs\RS232_DCE.jpg" SVGNAME="E:\SoC\Project5\SDK\SDK_Export\hw\imgs\RS232_DCE.svg" TMPSVGFN="E:\SoC\Project5\__xps\.dswkshop\RS232_DCE.svg"/>
+
+  <RENDERIMG RASNAME="E:\SoC\Project5\SDK\SDK_Export\hw\imgs\RS232_DTE.jpg" SVGNAME="E:\SoC\Project5\SDK\SDK_Export\hw\imgs\RS232_DTE.svg" TMPSVGFN="E:\SoC\Project5\__xps\.dswkshop\RS232_DTE.svg"/>
+
+  <RENDERIMG RASNAME="E:\SoC\Project5\SDK\SDK_Export\hw\imgs\Rotary_Encoder.jpg" SVGNAME="E:\SoC\Project5\SDK\SDK_Export\hw\imgs\Rotary_Encoder.svg" TMPSVGFN="E:\SoC\Project5\__xps\.dswkshop\Rotary_Encoder.svg"/>
+
+  <RENDERIMG RASNAME="E:\SoC\Project5\SDK\SDK_Export\hw\imgs\xps_timer_0.jpg" SVGNAME="E:\SoC\Project5\SDK\SDK_Export\hw\imgs\xps_timer_0.svg" TMPSVGFN="E:\SoC\Project5\__xps\.dswkshop\xps_timer_0.svg"/>
+
+  <RENDERIMG RASNAME="E:\SoC\Project5\SDK\SDK_Export\hw\imgs\clock_generator_0.jpg" SVGNAME="E:\SoC\Project5\SDK\SDK_Export\hw\imgs\clock_generator_0.svg" TMPSVGFN="E:\SoC\Project5\__xps\.dswkshop\clock_generator_0.svg"/>
+
+  <RENDERIMG RASNAME="E:\SoC\Project5\SDK\SDK_Export\hw\imgs\mdm_0.jpg" SVGNAME="E:\SoC\Project5\SDK\SDK_Export\hw\imgs\mdm_0.svg" TMPSVGFN="E:\SoC\Project5\__xps\.dswkshop\mdm_0.svg"/>
+
+  <RENDERIMG RASNAME="E:\SoC\Project5\SDK\SDK_Export\hw\imgs\proc_sys_reset_0.jpg" SVGNAME="E:\SoC\Project5\SDK\SDK_Export\hw\imgs\proc_sys_reset_0.svg" TMPSVGFN="E:\SoC\Project5\__xps\.dswkshop\proc_sys_reset_0.svg"/>
+
+  <RENDERIMG RASNAME="E:\SoC\Project5\SDK\SDK_Export\hw\imgs\Project5_blkd.jpg" SVGNAME="E:\SoC\Project5\SDK\SDK_Export\hw\imgs\Project5_blkd.svg" TMPSVGFN="E:\SoC\Project5\__xps\.dswkshop\Project5_blkd.svg"/>
+
+</RENDERBATCH>
