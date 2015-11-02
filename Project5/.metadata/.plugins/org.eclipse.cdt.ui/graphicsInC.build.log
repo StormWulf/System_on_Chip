@@ -27,9 +27,14 @@ mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../graphics_bsp_0/microblaze_0/i
 ../gameGraphics.c:30: warning: unused variable 'dataTmp'
 Finished building: ../gameGraphics.c
 ' '
+Building file: ../.metadata/.plugins/org.eclipse.cdt.make.core/specs.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../graphics_bsp_0/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.10.a -mno-xl-soft-mul -MMD -MP -MF".metadata/.plugins/org.eclipse.cdt.make.core/specs.d" -MT".metadata/.plugins/org.eclipse.cdt.make.core/specs.d" -o".metadata/.plugins/org.eclipse.cdt.make.core/specs.o" "../.metadata/.plugins/org.eclipse.cdt.make.core/specs.c"
+Finished building: ../.metadata/.plugins/org.eclipse.cdt.make.core/specs.c
+' '
 Building target: graphicsInC.elf
 Invoking: MicroBlaze gcc linker
-mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../graphics_bsp_0/microblaze_0/lib -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.10.a -mno-xl-soft-mul -o"graphicsInC.elf"  ./gameGraphics.o   
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../graphics_bsp_0/microblaze_0/lib -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.10.a -mno-xl-soft-mul -o"graphicsInC.elf"  ./gameGraphics.o  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o   
 Finished building target: graphicsInC.elf
 ' '
 Invoking: MicroBlaze Print Size

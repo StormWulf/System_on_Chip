@@ -19,7 +19,7 @@ WarnForEAArch: 1
 HdlLang: VHDL
 SimModel: BEHAVIORAL
 UcfFile: data/Project5.ucf
-EnableParTimingError: 1
+EnableParTimingError: 0
 ShowLicenseDialog: 1
 Processor: microblaze_0
 ElfImp: 

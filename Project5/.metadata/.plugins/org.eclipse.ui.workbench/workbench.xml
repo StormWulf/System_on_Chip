@@ -3,7 +3,6 @@
 <workbenchAdvisor/>
 <window height="768" maximized="true" width="1024" x="179" y="135">
 <fastViewData fastViewLocation="1024"/>
-<intro standby="true"/>
 <perspectiveBar>
 <itemSize x="160"/>
 </perspectiveBar>
@@ -32,18 +31,13 @@
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
-<part id="1"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="gameGraphics.c" partName="gameGraphics.c" path="E:/SoC/Project5/graphicsInC/gameGraphics.c" title="gameGraphics.c" tooltip="graphicsInC/gameGraphics.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/graphicsInC/gameGraphics.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="9" selectionOffset="493" selectionTopPixel="204"/>
-</editor>
-<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="xgpio_l.h" partName="xgpio_l.h" path="E:/SoC/Project5/graphics_bsp_0/microblaze_0/include/xgpio_l.h" title="xgpio_l.h" tooltip="graphics_bsp_0/microblaze_0/include/xgpio_l.h" workbook="DefaultEditorWorkbook">
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="xgpio_l.h" partName="xgpio_l.h" path="C:/Users/jfalb1/Desktop/Project5/graphics_bsp_0/microblaze_0/include/xgpio_l.h" title="xgpio_l.h" tooltip="graphics_bsp_0/microblaze_0/include/xgpio_l.h" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/graphics_bsp_0/microblaze_0/include/xgpio_l.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="8436" selectionTopPixel="3480"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
@@ -55,8 +49,7 @@
 <view id="org.eclipse.tm.terminal.view.TerminalView" partName="Terminal"/>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
-<expanded>
-<category IMemento.internal.id="Warnings (10 items)"/>
+<expanded>&#x0A;<category IMemento.internal.id="Warnings (10 items)"/>
 <category IMemento.internal.id="Warnings"/>
 <category IMemento.internal.id="Errors"/>
 </expanded>
@@ -70,12 +63,6 @@
 </view>
 <view id="org.eclipse.ui.console.ConsoleView" partName="Console">
 <viewState/>
-</view>
-<view id="org.eclipse.ui.internal.introview" partName="Welcome">
-<viewState>
-<presentation currentPage="file:///C:/Xilinx/13.1/ISE_DS/EDK/eclipse/nt/eclipse/plugins/com.xilinx.sdk.product_1.0.0/intro/index.html" restore="true"/>
-<standbyPart/>
-</viewState>
 </view>
 <view id="org.eclipse.ui.views.TaskList" partName="Tasks"/>
 <view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
@@ -138,7 +125,6 @@
 <view id="org.eclipse.tm.terminal.view.TerminalView"/>
 <view id="org.eclipse.ui.views.ContentOutline"/>
 <view id="org.eclipse.cdt.make.ui.views.MakeView"/>
-<view id="org.eclipse.ui.internal.introview"/>
 <fastViewBars/>
 <layout>
 <mainWindow>
@@ -154,13 +140,11 @@
 </folder>
 </info>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@1eb62b6" ratio="0.75" ratioLeft="750" ratioRight="250" relationship="2" relative="topLeft">
-<folder activePageID="org.eclipse.ui.internal.introview" appearance="2" expanded="2">
-<page content="org.eclipse.ui.internal.introview" label="Welcome"/>
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 <page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-</presentation>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.25" ratioLeft="250" ratioRight="750" relationship="2" relative="topLeft"/>
@@ -204,6 +188,7 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/graphicsInC/src/spritemap.h"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/graphicsInC/src/spriteMap.h"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/graphics_bsp_0/microblaze_0/include/xgpio_l.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/graphicsInC/gameGraphics.c"/>
 </editors>
 <item historyLabel="system.xml" index="0"/>
 <item historyLabel="system.mss" index="1">
@@ -317,6 +302,15 @@
 <item historyLabel="system.mss" index="2"/>
 <item historyLabel="gameGraphics.c" index="3">
 <position info="not_deleted" x="493" y="9"/>
+</item>
+<item historyLabel="xgpio_l.h" index="6">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="xgpio_l.h" index="6">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="gameGraphics.c" index="7">
+<position info="not_deleted" x="387" y="0"/>
 </item>
 <item active="true" historyLabel="xgpio_l.h" index="6">
 <position info="not_deleted" x="0" y="0"/>

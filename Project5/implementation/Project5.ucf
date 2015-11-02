@@ -1,10 +1,10 @@
 #  Spartan-3E 1600E MicroBlaze Dev Board
 
-NET graphics_ip_0_hsync_pin LOC = F15;
-NET graphics_ip_0_vsync_pin LOC = F14;
-NET graphics_ip_0_pixToDisp_pin<2> LOC = H14;
-NET graphics_ip_0_pixToDisp_pin<1> LOC = H15;
-NET graphics_ip_0_pixToDisp_pin<0> LOC = G15;
+NET graphics_ip_0_hsync_pin LOC = F15 | IOSTANDARD = LVCMOS33;
+NET graphics_ip_0_vsync_pin LOC = F14 | IOSTANDARD = LVCMOS33;
+NET graphics_ip_0_pixToDisp_pin<2> LOC = H14 | IOSTANDARD = LVCMOS33;
+NET graphics_ip_0_pixToDisp_pin<1> LOC = H15 | IOSTANDARD = LVCMOS33;
+NET graphics_ip_0_pixToDisp_pin<0> LOC = G15 | IOSTANDARD = LVCMOS33;
 
 Net fpga_0_Buttons_3Bit_GPIO_IO_I_pin<0> LOC=D18 | PULLDOWN  |  IOSTANDARD = LVCMOS33;
 Net fpga_0_Buttons_3Bit_GPIO_IO_I_pin<1> LOC=H13 | PULLDOWN  |  IOSTANDARD = LVCMOS33;

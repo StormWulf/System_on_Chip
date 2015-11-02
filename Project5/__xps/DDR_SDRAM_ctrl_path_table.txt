@@ -1,5 +1,5 @@
 // This file has been automatically generated.  Do not modify.
-// Command Line Options: -family spartan3e -enable_ecc 0 -tRAS 42000 -part_data_width 16 -cas_latency 2 -cas_wr_latency 5 -memory_burst_length 4 -tRC 60000 -tRCD 15000 -nDQSS 1 -tWR 15000 -tRP 15000 -tRRD 12000 -tRFC 72000 -nAL 0 -nCCD 0 -tWTR 0 -tRTP 7500 -nZQCS 64 -c 10000 -reg 0 -m DDR -d 16 -f_txt E:/SoC/Project5/__xps/DDR_SDRAM_ctrl_path_table.txt -f_err E:/SoC/Project5/__xps/DDR_SDRAM_ctrl_path_generation_errors.txt -f_ver E:/SoC/Project5/__xps/DDR_SDRAM_ctrl_path_params.v -static_phy 0 -wr_mem_pipeline 1
+// Command Line Options: -family spartan3e -enable_ecc 0 -tRAS 42000 -part_data_width 16 -cas_latency 2 -cas_wr_latency 5 -memory_burst_length 4 -tRC 60000 -tRCD 15000 -nDQSS 1 -tWR 15000 -tRP 15000 -tRRD 12000 -tRFC 72000 -nAL 0 -nCCD 0 -tWTR 0 -tRTP 7500 -nZQCS 64 -c 10000 -reg 0 -m DDR -d 16 -f_txt C:/Users/jfalb1/Desktop/Project5/__xps/DDR_SDRAM_ctrl_path_table.txt -f_err C:/Users/jfalb1/Desktop/Project5/__xps/DDR_SDRAM_ctrl_path_generation_errors.txt -f_ver C:/Users/jfalb1/Desktop/Project5/__xps/DDR_SDRAM_ctrl_path_params.v -static_phy 0 -wr_mem_pipeline 1
 //
 // Timing Parameters:
 // Memory Clock Period (ps): 10000 

@@ -344,6 +344,14 @@
 
 /******************************************************************/
 
+
+/* Definitions for peripheral GRAPHICS_IP_0 */
+#define XPAR_GRAPHICS_IP_0_BASEADDR 0xC7000000
+#define XPAR_GRAPHICS_IP_0_HIGHADDR 0xC700FFFF
+
+
+/******************************************************************/
+
 /* Definitions for driver TMRCTR */
 #define XPAR_XTMRCTR_NUM_INSTANCES 1
 
