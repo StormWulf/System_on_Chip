@@ -92,3 +92,27 @@ Command-line arguments:  -data C:\Users\jfalb1\Desktop\Project5 -os win32 -ws wi
 !MESSAGE Problems occurred while trying to save the state of the workbench.
 !SUBENTRY 1 org.eclipse.core.resources 2 234 2015-11-02 11:39:04.846
 !MESSAGE The project description file (.project) for 'graphicsInC' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SESSION 2015-11-02 18:01:06.649 -----------------------------------------------
+eclipse.buildId=Release 13.1 Build SDK_O.40d
+java.version=1.6.0_21
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2015-11-02 18:02:26.366
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.core.jobs 4 2 2015-11-02 18:03:03.474
+!MESSAGE An internal error occurred during: "Monitoring hardware specifications".
+!STACK 0
+java.lang.NullPointerException
+	at com.xilinx.sdk.hw.sync.HwSpecChangeUtil.hasUpdatedBitFile(Unknown Source)
+	at com.xilinx.sdk.hw.sync.HwSpecChangeUtil.hasNonSpecChanges(Unknown Source)
+	at com.xilinx.sdk.hw.sync.HwPlatformMonitor.doMonitorTask(Unknown Source)
+	at com.xilinx.sdk.hw.sync.HwPlatformMonitor.access$0(Unknown Source)
+	at com.xilinx.sdk.hw.sync.HwPlatformMonitor$1.run(Unknown Source)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:179)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4584)
+	at com.xilinx.sdk.hw.sync.HwPlatformMonitor.doMonitor(Unknown Source)
+	at com.xilinx.sdk.hw.sync.HwPlatformMonitorUtils$1.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)

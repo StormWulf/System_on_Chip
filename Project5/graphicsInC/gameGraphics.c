@@ -1,36 +1,33 @@
 //file: gameGraphics.c
 //Authors: William Putnam, Jeff Falberg
-//Last Updated: 10.31.2015
+//Last Updated: 11.2.2015
 
 //Description: Write graphics data to the monitor.
 //
-//writeReg	|	register
+//read  	|	register
 //----------+-------------------
-//   0		|	wEn fore
-//   1		|	wEn back
-//   2		|	wEn sprite
-//   3		|	dataIn fore
-//   4		|	dataIn back
-//   5		|	dataIn sprite
-//   6		|	dataOut fore
-//   7		|	dataOut back
-//   8		|	dataOut sprite
+//   31		|	wEn fore
+//   30		|	wEn back
+//   29		|	wEn sprite
+//   24-27	|	color
+//   18-23	|	foreground sprNum
+//   12-17	|	background sprNum
+//   0-11	|	address (0-1200/2047)
 
 #include <stdio.h>
 #include <unistd.h>
-//#include "platform.h"
 #include "xgpio_l.h"
 #include "xparameters.h"
 #include "xbasic_types.h"
 #include "xtmrctr.h"
 #include "xtmrctr_l.h"
 
+const int IPcoreAddr = 0xc7000000, bgOff = 0x40000000, bgSprOff = 0x1000, fgSprOff = 0x40000, fgOff = 0x80000000,
+			sprOff = 0x20000000, sprColorOff = 0x1000000;
+
 int main(){
 
-	int writeReg = 0, readReg = 0, dataTmp = 0,
-			we_tf = 0, we_tb = 0, we_sm = 0,
-			addr_tf = 0, addr_tb = 0, addr_sm = 0,
-			data_tf = 0, data_tb = 0, data_sm = 0;
+	int writeInt = 0, i, addr;
 
 	int cblk0 = 0, cblk1 = 1, cblue0 = 2, cblue1 = 3,
 		cgreen0 = 4, cgreen1 = 5, ccyan0 = 6, ccyan1 = 7,
@@ -38,7 +35,8 @@ int main(){
 		cyel0 = 12, cyel1 = 13, cwht0 = 14, cwht1 = 15;
 	int foreground[1200] = {0}, background[1200] = {0};
 
-	int sprMap[2047] = {	//evin TL 0
+	//sprite map declaration
+	int sprMap[2048] = {	//evin TL 0
 			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
 			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
 			cwht0, cwht0, cblk1, cblk1, cblk1, cblk1, cwht0, cwht0,
@@ -329,27 +327,36 @@ int main(){
 			cmag0, cmag0, cmag0, cmag0, cmag0, cmag0, cmag0, cmag0
 	};
 
-	//registers are separated by a factor of 4
-
 	for(;;){
-		writeReg = 6;
-		readReg = 3;
-		//read in the enables
-		if (we_tf){
-			//dataTmp = XGpio_ReadReg(xxxxx, 4*readReg);
-			//XGpio_WriteReg(xxxxx, 4*writeReg, dataTmp);
+		//paint background
+		for (i = 0; i < 1200; ++i){
+			background[i] = 31;
+			foreground[i] = 29;
 		}
-		++writeReg;
-		++readReg;
-		if (we_tb){
-			//dataTmp = XGpio_ReadReg(xxxxx, 4*readReg);
-			//XGpio_WriteReg(xxxxx, 4*writeReg, dataTmp);
+		foreground[0] = 0;
+		foreground[1] = 1;
+		foreground[40] = 8;
+		foreground[41] = 9;
+		foreground[80] = 25;
+		foreground[81] = 26;
+		background[110] = 30;
+
+		//start with foreground
+		for (addr = 0; addr < 1200; ++addr){
+			XGpio_WriteReg(IPcoreAddr, 0, addr + foreground[addr]*fgSprOff + fgOff);
+			XGpio_ReadReg(IPcoreAddr, 0);
 		}
-		++writeReg;
-		++readReg;
-		if (we_sm){
-			//dataTmp = XGpio_ReadReg(xxxxx, 4*readReg);
-			//XGpio_WriteReg(xxxxx, 4*writeReg, dataTmp);
+
+		//now do background
+		for (addr = 0; addr < 1200; ++addr){
+			XGpio_WriteReg(IPcoreAddr, 0, addr + background[addr]*bgSprOff + bgOff);
+			XGpio_ReadReg(IPcoreAddr, 0);
+		}
+
+		//finally sprite
+		for (addr = 0; addr < 2048; ++addr){
+			XGpio_WriteReg(IPcoreAddr, 0, addr + sprMap[addr]*sprColorOff + sprOff);
+			XGpio_ReadReg(IPcoreAddr, 0);
 		}
 	}
 

@@ -1,0 +1,386 @@
+//file: gameGraphics.c
+//Authors: William Putnam, Jeff Falberg
+//Last Updated: 10.31.2015
+
+//Description: Write graphics data to the monitor.
+//
+//writeReg	|	register
+//----------+-------------------
+//   0		|	wEn fore
+//   1		|	wEn back
+//   2		|	wEn sprite
+//   3		|	dataIn fore
+//   4		|	dataIn back
+//   5		|	dataIn sprite
+//   6		|	dataOut fore
+//   7		|	dataOut back
+//   8		|	dataOut sprite
+
+#include <stdio.h>
+#include <unistd.h>
+//#include "platform.h"
+#include "xgpio_l.h"
+#include "xparameters.h"
+#include "xbasic_types.h"
+#include "xtmrctr.h"
+#include "xtmrctr_l.h"
+
+const int IPcoreAddr = 0xc7000000;
+
+int main(){
+
+	int writeReg = 0, readReg = 0, dataTmp = 0,
+			we_tf = 0, we_tb = 0, we_sm = 0,
+			addr_tf = 0, addr_tb = 0, addr_sm = 0,
+			data_tf = 0, data_tb = 0, data_sm = 0,
+			readInt = 0, read[32] = {0}, i, j;
+
+	int cblk0 = 0, cblk1 = 1, cblue0 = 2, cblue1 = 3,
+		cgreen0 = 4, cgreen1 = 5, ccyan0 = 6, ccyan1 = 7,
+		cred0 = 8, cred1 = 9, cmag0 = 10, cmag1 = 11,
+		cyel0 = 12, cyel1 = 13, cwht0 = 14, cwht1 = 15;
+	int foreground[1200] = {0}, background[1200] = {0};
+
+	int sprMap[2047] = {	//evin TL 0
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cblk1, cblk1, cblk1, cblk1, cwht0, cwht0,
+			cwht0, cblk1, cyel1, cyel1, cred1, cred1, cblk1, cwht0,
+			cwht0, cblk1, cyel1, cyel1, cred1, cred1, cblk1, cwht0,
+			cwht0, cblk1, cyel1, cyel1, cred1, cred1, cblk1, cwht0,
+			cwht0, cblk1, cyel1, cyel1, cred1, cred1, cblk1, cwht0,
+			cwht0, cblk1, cblk1, cblk1, cblk1, cblk1, cwht0, cwht0,
+
+			//evin TR 1
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cblk1, cblk1, cblk1, cblk1, cblk1, cwht0,
+			cwht0, cblk1, cred1, cred1, cred1, cyel1, cyel1, cblk1,
+			cwht0, cblk1, cred1, cred1, cred1, cyel1, cyel1, cblk1,
+			cwht0, cblk1, cred1, cred1, cred1, cyel1, cyel1, cblk1,
+			cwht0, cblk1, cred1, cred1, cred1, cyel1, cyel1, cblk1,
+			cwht0, cwht0, cblk1, cblk1, cblk1, cblk1, cblk1, cwht0,
+			cwht0, cwht0, cwht0, cblk1, cwht0, cwht0, cwht0, cwht0,
+			//2
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			//3
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			//4
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			//5
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			//6
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			//7
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			//evin CL 8
+			cwht0, cwht0, cwht0, cwht0, cblk1, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cblk1, cwht0, cwht0, ccyan1,
+			cwht0, cwht0, cwht0, cwht0, cblk1, cblk1, cblk1, cblk1,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cblk1, cblk1,
+			cwht0, cwht0, cwht0, cwht0, cblk1, cblk1, cblk1, cblk1,
+			cgreen1, cgreen1, cgreen1, cblk1, cblk1, cblue1, cblue1, cblue1,
+			cgreen1, cwht0, cwht0, cblk1, cblue1, cblue1, cblue1, cblue1,
+			cgreen1, cwht0, cwht0, cblk1, cblue1, cblue1, cblue1, cblue1,
+			//evin CR 9
+			cwht0, cwht0, cwht0, cblk1, cwht0, cwht0, cwht0, cwht0,
+			ccyan1, cwht0, cwht0, cblk1, cwht0, cwht0, cwht0, cwht0,
+			cblk1, cblk1, cblk1, cblk1, cwht0, cwht0, cwht0, cwht0,
+			cblk1, cblk1, cwht0, cwht0, cwht0, cgreen1, cgreen1, cwht0,
+			cblk1, cblk1, cblk1, cblk1, cwht0, cwht0, cgreen1, cwht0,
+			cblue1, cblue1, cblue1, cblk1, cblk1, cwht0, cgreen1, cwht0,
+			cblue1, cblue1, cblue1, cblue1, cblk1, cgreen1, cgreen1, cwht0,
+			cblue1, cblue1, cblue1, cblue1, cblk1, cwht0, cwht0, cwht0,
+			//10
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			//11
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			//12
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			//13
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			//14
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			//15
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			//16
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			//17
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			//18
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			//19
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			//20
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			//21
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			//22
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			//23
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			//24
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			//evin BL 25
+			cgreen1, cgreen1, cwht0, cblk1, cblue1, cblue1, cblue1, cblue1,
+			cwht0, cwht0, cwht0, cblk1, cblue1, cblue1, cblue1, cblue1,
+			cwht0, cwht0, cwht0, cblk1, cblk1, cblue1, cblue1, cblue1,
+			cwht0, cwht0, cwht0, cwht0, cblk1, cblue1, cblue1, cblue1,
+			cwht0, cwht0, cwht0, cblk1, cblk1, cblue1, cblue1, cblue1,
+			cwht0, cwht0, cblk1, cblk1, cblue1, cblue1, cblue1, cblue1,
+			cwht0, cwht0, cblk1, cblk1, cblk1, cblk1, cblk1, cblk1,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			//evin BR 26
+			cblue1, cblue1, cblue1, cblue1, cblk1, cwht0, cwht0, cwht0,
+			cblue1, cblue1, cblue1, cblue1, cblk1, cwht0, cwht0, cwht0,
+			cblue1, cblue1, cblue1, cblk1, cblk1, cwht0, cwht0, cwht0,
+			cblue1, cblue1, cblue1, cblk1, cwht0, cwht0, cwht0, cwht0,
+			cblue1, cblue1, cblue1, cblk1, cblk1, cwht0, cwht0, cwht0,
+			cblue1, cblue1, cblue1, cblue1, cblk1, cblk1, cwht0, cwht0,
+			cblk1, cblk1, cblk1, cblk1, cblk1, cblk1, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			//27
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			//28
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			//29
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			//rock 30
+			cred0, cred0, cred0, cred0, cred0, cred0, cred0, cred0,
+			cred0, cred0, cred0, cwht0, cwht0, cwht0, cwht0, cred0,
+			cred0, cred0, cred0, cwht0, cred0, cred0, cwht0, cred0,
+			cred0, cred0, cred0, cwht0, cred0, cred0, cwht0, cred0,
+			cred0, cred0, cred0, cwht0, cwht0, cwht0, cwht0, cred0,
+			cred0, cred0, cred0, cred0, cred0, cred0, cred0, cred0,
+			cred0, cred0, cred0, cred0, cred0, cred0, cred0, cred0,
+			cred0, cred0, cred0, cred0, cred0, cred0, cred0, cred0,
+			//background 31
+			cmag0, cmag0, cmag0, cmag0, cmag0, cmag0, cmag0, cmag0,
+			cmag0, cmag0, cmag0, cmag0, cmag0, cmag0, cmag0, cmag0,
+			cmag0, cmag0, cmag0, cmag0, cmag0, cmag0, cmag0, cmag0,
+			cmag0, cmag0, cmag0, cmag0, cmag0, cmag0, cmag0, cmag0,
+			cmag0, cmag0, cmag0, cmag0, cmag0, cmag0, cmag0, cmag0,
+			cmag0, cmag0, cmag0, cmag0, cmag0, cmag0, cmag0, cmag0,
+			cmag0, cmag0, cmag0, cmag0, cmag0, cmag0, cmag0, cmag0,
+			cmag0, cmag0, cmag0, cmag0, cmag0, cmag0, cmag0, cmag0
+	};
+
+	//registers are separated by a factor of 4
+
+	for(;;){
+		writeReg = 6;
+		readReg = 3;
+		//read in the int and parse it
+		//readInt = XGpio_ReadReg(xxxxx,yyyyy);
+		for (i = 31; i > -1; --i){
+			j = readInt >> i;
+			if (j & 1) read[i] = 1;
+			else read[i] = 0;
+		}
+		we_tf = read[31];
+		we_tb = read[30];
+		we_sm = read[29];
+
+		if (we_tf){
+			//dataTmp = XGpio_ReadReg(xxxxx, 4*readReg);
+			for (i = 0, j= 28; i < 4; ++i){
+				i *= 2;
+				i += read[j];
+				--j;
+			}
+			XGpio_WriteReg(IPcoreAddr, 4*writeReg, i);
+		}
+		++writeReg;
+		++readReg;
+		if (we_tb){
+			//dataTmp = XGpio_ReadReg(xxxxx, 4*readReg);
+			for (i = 0, j= 28; i < 4; ++i){
+				i *= 2;
+				i += read[j];
+				--j;
+			}
+			XGpio_WriteReg(IPcoreAddr, 4*writeReg, i);
+		}
+		++writeReg;
+		++readReg;
+		if (we_sm){
+			//dataTmp = XGpio_ReadReg(xxxxx, 4*readReg);
+			for (i = 0, j= 28; i < 4; ++i){
+				i *= 2;
+				i += read[j];
+				--j;
+			}
+			XGpio_WriteReg(IPcoreAddr, 4*writeReg, i);
+		}
+	}
+
+	return 0;
+}
+

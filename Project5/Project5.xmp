@@ -2,6 +2,7 @@
 XmpVersion: 13.1
 VerMgmt: 13.1
 IntStyle: default
+ModuleSearchPath: pcores
 MHS File: Project5.mhs
 Architecture: spartan3e
 Device: xc3s1600e
