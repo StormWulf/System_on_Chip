@@ -38,9 +38,9 @@
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="gameGraphics.c" partName="gameGraphics.c" path="E:/SoC/Project5/graphicsInC/gameGraphics.c" title="gameGraphics.c" tooltip="graphicsInC/gameGraphics.c" workbook="DefaultEditorWorkbook">
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="gameGraphics.c" partName="gameGraphics.c" path="C:/Users/jfalb1/Desktop/Project5/graphicsInC/gameGraphics.c" title="gameGraphics.c" tooltip="graphicsInC/gameGraphics.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/graphicsInC/gameGraphics.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="17705" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="17475" selectionTopPixel="3616"/>
 </editor>
 </editors>
 <views>
