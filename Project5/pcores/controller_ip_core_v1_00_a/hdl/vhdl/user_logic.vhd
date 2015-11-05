@@ -158,7 +158,7 @@ begin
 		--buttonLED => buttonLED,
 		NESlatch => NESlatch,
 		NESclk => NESclk,
-		NESdatIN => slv_reg0
+		NESdatIN => slv_reg0(0)
 	);
   ------------------------------------------
   -- Example code to read/write user logic slave model s/w accessible registers

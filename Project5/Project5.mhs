@@ -63,6 +63,8 @@
  PORT graphics_ip_0_pixToDisp_pin = graphics_ip_0_pixToDisp, DIR = O, VEC = [2:0]
  PORT graphics_ip_0_hsync_pin = graphics_ip_0_hsync, DIR = O
  PORT graphics_ip_0_vsync_pin = graphics_ip_0_vsync, DIR = O
+ PORT controller_ip_core_0_NESlatch_pin = controller_ip_core_0_NESlatch, DIR = O
+ PORT controller_ip_core_0_NESclk_pin = controller_ip_core_0_NESclk, DIR = O
 
 
 BEGIN microblaze
@@ -375,5 +377,15 @@ BEGIN graphics_ip
  PORT pixToDisp = graphics_ip_0_pixToDisp
  PORT hsync = graphics_ip_0_hsync
  PORT vsync = graphics_ip_0_vsync
+END
+
+BEGIN controller_ip_core
+ PARAMETER INSTANCE = controller_ip_core_0
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_BASEADDR = 0xcee00000
+ PARAMETER C_HIGHADDR = 0xcee0ffff
+ BUS_INTERFACE SPLB = mb_plb
+ PORT NESlatch = controller_ip_core_0_NESlatch
+ PORT NESclk = controller_ip_core_0_NESclk
 END
 

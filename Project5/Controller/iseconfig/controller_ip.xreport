@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2015-11-04T16:07:41</DateModified>
+  <DateModified>2015-11-05T13:39:14</DateModified>
   <ModuleName>controller_ip</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/jfalb1/Desktop/Project5/Controller/iseconfig/controller_ip.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/jfalb1/Desktop/Project5/Controller</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/Jeff/Documents/GitHub/System_on_Chip/Project5/Controller/iseconfig/controller_ip.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/Jeff/Documents/GitHub/System_on_Chip/Project5/Controller\</ImplementationReportsDirectory>
   <DateInitialized>2015-11-04T16:07:40</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

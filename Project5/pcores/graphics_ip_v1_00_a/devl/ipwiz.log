@@ -7,14 +7,14 @@ Analyzing HDL source files ...
 Analyzing HDL source files successfully ...
 HDL language for the peripheral (top level) design unit graphics_ip is vhdl ...
 WARNING:EDK:2221 - Project file
-   C:\Users\jfalb1\Desktop\Project5\pcores/graphics_ip.prj already exists, will
-   be overwrite and removed afterward ...
+   C:\Users\Jeff\Documents\GitHub\System_on_Chip\Project5\pcores/graphics_ip.prj
+   already exists, will be overwrite and removed afterward ...
 resolving hierarchical inclusion of library proc_common_v3_00_a in
 C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/ ...
 resolving hierarchical inclusion of library plbv46_slave_single_v1_01_a in
 C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/ ...
 INFO:EDK:3391 - Create temporary xst project file:
-   C:\Users\jfalb1\Desktop\Project5\pcores/graphics_ip.prj
+   C:\Users\Jeff\Documents\GitHub\System_on_Chip\Project5\pcores/graphics_ip.prj
 Compiling vhdl file
 "C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hd
 l/vhdl/family_support.vhd" in Library proc_common_v3_00_a.
@@ -307,8 +307,8 @@ l/vhdl/ipif_pkg.vhd" in Library proc_common_v3_00_a.
 Package <ipif_pkg> compiled.
 Package body <ipif_pkg> compiled.
 Compiling vhdl file
-"C:/Users/jfalb1/Desktop/Project5/pcores/graphics_ip_v1_00_a/hdl/vhdl/vgatimehel
-per.vhd" in Library graphics_ip_v1_00_a.
+"C:/Users/Jeff/Documents/GitHub/System_on_Chip/Project5/pcores/graphics_ip_v1_00
+_a/hdl/vhdl/vgatimehelper.vhd" in Library graphics_ip_v1_00_a.
 Entity <vgatimehelper> compiled.
 Entity <vgatimehelper> (Architecture <arch>) compiled.
 Compiling vhdl file
@@ -317,8 +317,8 @@ _01_a/hdl/vhdl/plb_address_decoder.vhd" in Library plbv46_slave_single_v1_01_a.
 Entity <plb_address_decoder> compiled.
 Entity <plb_address_decoder> (Architecture <IMP>) compiled.
 Compiling vhdl file
-"C:/Users/jfalb1/Desktop/Project5/pcores/graphics_ip_v1_00_a/hdl/vhdl/project5IP
-.vhd" in Library graphics_ip_v1_00_a.
+"C:/Users/Jeff/Documents/GitHub/System_on_Chip/Project5/pcores/graphics_ip_v1_00
+_a/hdl/vhdl/project5IP.vhd" in Library graphics_ip_v1_00_a.
 Entity <project5IP> compiled.
 Entity <project5IP> (Architecture <Behavioral>) compiled.
 Compiling vhdl file
@@ -332,13 +332,13 @@ _01_a/hdl/vhdl/plbv46_slave_single.vhd" in Library plbv46_slave_single_v1_01_a.
 Entity <plbv46_slave_single> compiled.
 Entity <plbv46_slave_single> (Architecture <implementation>) compiled.
 Compiling vhdl file
-"C:/Users/jfalb1/Desktop/Project5/pcores/graphics_ip_v1_00_a/hdl/vhdl/user_logic
-.vhd" in Library graphics_ip_v1_00_a.
+"C:/Users/Jeff/Documents/GitHub/System_on_Chip/Project5/pcores/graphics_ip_v1_00
+_a/hdl/vhdl/user_logic.vhd" in Library graphics_ip_v1_00_a.
 Entity <user_logic> compiled.
 Entity <user_logic> (Architecture <IMP>) compiled.
 Compiling vhdl file
-"C:/Users/jfalb1/Desktop/Project5/pcores/graphics_ip_v1_00_a/hdl/vhdl/graphics_i
-p.vhd" in Library graphics_ip_v1_00_a.
+"C:/Users/Jeff/Documents/GitHub/System_on_Chip/Project5/pcores/graphics_ip_v1_00
+_a/hdl/vhdl/graphics_ip.vhd" in Library graphics_ip_v1_00_a.
 Entity <graphics_ip> compiled.
 Entity <graphics_ip> (Architecture <IMP>) compiled.
 
@@ -349,22 +349,28 @@ INFO:EDK:1607 - IPTYPE set to value : PERIPHERAL
 INFO:EDK:1511 - IMP_NETLIST set to value : TRUE
 INFO:EDK:1486 - HDL set to value : VHDL
 WARNING:EDK:3590 - Unable to delete temporary project file
-   C:\Users\jfalb1\Desktop\Project5\pcores\graphics_ip.prj : 13
+   C:\Users\Jeff\Documents\GitHub\System_on_Chip\Project5\pcores\graphics_ip.prj
+   : 13
 WARNING:EDK:2065 - PARAMETER:_NUM_SLAVES - SLAVE PLBV46 parameter is not defined
    in the HDL source
 INFO:EDK:1631 - Infer bus clock [SPLB_Clk] for bus interface SPLB ...
 Copying file vgatimehelper.vhd to
-C:\Users\jfalb1\Desktop\Project5\pcores/graphics_ip_v1_00_a/hdl/vhdl/ ...
+C:\Users\Jeff\Documents\GitHub\System_on_Chip\Project5\pcores/graphics_ip_v1_00_
+a/hdl/vhdl/ ...
 Copying file project5IP.vhd to
-C:\Users\jfalb1\Desktop\Project5\pcores/graphics_ip_v1_00_a/hdl/vhdl/ ...
+C:\Users\Jeff\Documents\GitHub\System_on_Chip\Project5\pcores/graphics_ip_v1_00_
+a/hdl/vhdl/ ...
 Copying file user_logic.vhd to
-C:\Users\jfalb1\Desktop\Project5\pcores/graphics_ip_v1_00_a/hdl/vhdl/ ...
+C:\Users\Jeff\Documents\GitHub\System_on_Chip\Project5\pcores/graphics_ip_v1_00_
+a/hdl/vhdl/ ...
 Copying file graphics_ip.vhd to
-C:\Users\jfalb1\Desktop\Project5\pcores/graphics_ip_v1_00_a/hdl/vhdl/ ...
+C:\Users\Jeff\Documents\GitHub\System_on_Chip\Project5\pcores/graphics_ip_v1_00_
+a/hdl/vhdl/ ...
 
 Thank you for using Create and Import Peripheral Wizard! Please find your
 imported peripheral under
-C:\Users\jfalb1\Desktop\Project5\pcores\graphics_ip_v1_00_a.
+C:\Users\Jeff\Documents\GitHub\System_on_Chip\Project5\pcores\graphics_ip_v1_00_
+a.
 
 Summary:
 

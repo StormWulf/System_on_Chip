@@ -4220,3 +4220,61 @@ It is recommended that you use Global SearchPath preference to specify search pa
 WARNING:EDK:3605 - Use of the repository located at C:\Xilinx\13.1\ISE_DS\edk_user_repository\ 
 (equivalent of $XILINX_EDK/../edk_user_repository) is now deprecated. 
 It is recommended that you use Global SearchPath preference to specify search paths that apply to all the projects.
+Xilinx Platform Studio (XPS)
+Xilinx EDK 13.1 Build EDK_O.40d
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+
+********************************************************************************
+At Local date and time: Thu Nov 05 12:23:55 2015
+ make -f Project5.make exporttosdk started...
+make: Nothing to be done for `exporttosdk'.
+Done!
+
+********************************************************************************
+At Local date and time: Thu Nov 05 12:24:01 2015
+ xsdk.exe -hwspec C:\Users\Jeff\Documents\GitHub\System_on_Chip\Project5\SDK\SDK_Export\hw\Project5.xml started...
+Xilinx Software Development Kit
+Xilinx EDK 13.1 Build EDK_O.40d
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+Done!
+Writing filter settings....
+Done writing filter settings to:
+	C:\Users\Jeff\Documents\GitHub\System_on_Chip\Project5\etc\Project5.filters
+Done writing Tab View settings to:
+	C:\Users\Jeff\Documents\GitHub\System_on_Chip\Project5\etc\Project5.gui
+Generated Block Diagram.
+Diagram Controls
+Zoom In/Out = ALT + (Mouse + Left Button) or ARROW UP/DOWN.
+Pan = SHIFT + (Mouse + Left Button) or ARROW UP/DOWN/LEFT/RIGHT.
+Assigned Driver generic 1.00.a for instance controller_ip_core_0
+controller_ip_core_0 has been added to the project
+WARNING:EDK:2137 - Peripheral controller_ip_core_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+WARNING:EDK:2137 - Peripheral controller_ip_core_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+Make instance controller_ip_core_0 port NESlatch external with net as port name
+Instance controller_ip_core_0 port NESlatch connector undefined, using controller_ip_core_0_NESlatch
+Make instance controller_ip_core_0 port NESclk external with net as port name
+Instance controller_ip_core_0 port NESclk connector undefined, using controller_ip_core_0_NESclk
+ERROR:EDK - INST:dlmb_cntlr BASEADDR-HIGHADDR:0000000000-0x00001fff and INST:controller_ip_core_0 BASEADDR-HIGHADDR:0000000000-0x0000ffff - address space overlap!
+ERROR:EDK - INST:ilmb_cntlr BASEADDR-HIGHADDR:0000000000-0x00001fff and INST:controller_ip_core_0 BASEADDR-HIGHADDR:0000000000-0x0000ffff - address space overlap!
+ERROR:EDK - INST:controller_ip_core_0 BASEADDR-HIGHADDR:0000000000-0x0000ffff and INST:dlmb_cntlr BASEADDR-HIGHADDR:0000000000-0x00001fff - address space overlap!
+ERROR:EDK - INST:controller_ip_core_0 BASEADDR-HIGHADDR:0000000000-0x0000ffff and INST:ilmb_cntlr BASEADDR-HIGHADDR:0000000000-0x00001fff - address space overlap!
+Address Map for Processor microblaze_0
+  (0000000000-0x00001fff) dlmb_cntlr	dlmb
+  (0000000000-0x00001fff) ilmb_cntlr	ilmb
+  (0x81000000-0x8100ffff) Ethernet_MAC	mb_plb
+  (0x81400000-0x8140ffff) Rotary_Encoder	mb_plb
+  (0x81420000-0x8142ffff) LEDs_6Bit	mb_plb
+  (0x81440000-0x8144ffff) LEDs_1Bit	mb_plb
+  (0x81460000-0x8146ffff) DIP_Switches_4Bit	mb_plb
+  (0x81480000-0x8148ffff) Character_LCD_2x16	mb_plb
+  (0x814a0000-0x814affff) Buttons_3Bit	mb_plb
+  (0x83c00000-0x83c0ffff) xps_timer_0	mb_plb
+  (0x84000000-0x8400ffff) RS232_DTE	mb_plb
+  (0x84020000-0x8402ffff) RS232_DCE	mb_plb
+  (0x84400000-0x8440ffff) mdm_0	mb_plb
+  (0x89000000-0x89ffffff) FLASH	mb_plb
+  (0x8c000000-0x8fffffff) DDR_SDRAM	mb_plb
+  (0xc7000000-0xc700ffff) graphics_ip_0	mb_plb
+  (0xcee00000-0xcee0ffff) controller_ip_core_0	mb_plb
+Generated Addresses Successfully

@@ -1,0 +1,2 @@
+vhdl work "controller_ip.vhd"
+vhdl work "../pcores/controller_ip_core_v1_00_a/hdl/vhdl/user_logic.vhd"

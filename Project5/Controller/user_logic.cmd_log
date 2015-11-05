@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/Jeff/Documents/GitHub/System_on_Chip/Project5/Controller/user_logic.xst" -ofn "C:/Users/Jeff/Documents/GitHub/System_on_Chip/Project5/Controller/user_logic.syr" 

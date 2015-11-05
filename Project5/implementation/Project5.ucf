@@ -6,6 +6,9 @@ NET graphics_ip_0_pixToDisp_pin<2> LOC = H14 | IOSTANDARD = LVCMOS33;
 NET graphics_ip_0_pixToDisp_pin<1> LOC = H15 | IOSTANDARD = LVCMOS33;
 NET graphics_ip_0_pixToDisp_pin<0> LOC = G15 | IOSTANDARD = LVCMOS33;
 
+NET controller_ip_core_0_NESlatch_pin LOC
+NET controller_ip_core_0_NESclk LOC
+
 Net fpga_0_Buttons_3Bit_GPIO_IO_I_pin<0> LOC=D18 | PULLDOWN  |  IOSTANDARD = LVCMOS33;
 Net fpga_0_Buttons_3Bit_GPIO_IO_I_pin<1> LOC=H13 | PULLDOWN  |  IOSTANDARD = LVCMOS33;
 Net fpga_0_Buttons_3Bit_GPIO_IO_I_pin<2> LOC=V4 | PULLDOWN  |  IOSTANDARD = LVCMOS33;

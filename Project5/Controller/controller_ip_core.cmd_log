@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/Jeff/Documents/GitHub/System_on_Chip/Project5/Controller/controller_ip_core.xst" -ofn "C:/Users/Jeff/Documents/GitHub/System_on_Chip/Project5/Controller/controller_ip_core.syr" 

@@ -3,14 +3,14 @@ Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.78 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.79 secs
  
 --> Reading design: controller_ip.prj
 
@@ -104,9 +104,8 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling vhdl file "C:/Users/jfalb1/Desktop/Project5/Controller/controller_ip.vhd" in Library work.
-Entity <controller_ip> compiled.
-Entity <controller_ip> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Users/Jeff/Documents/GitHub/System_on_Chip/Project5/Controller/controller_ip.vhd" in Library work.
+Architecture behavioral of Entity controller_ip is up to date.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
@@ -128,7 +127,7 @@ Entity <controller_ip> analyzed. Unit <controller_ip> generated.
 Performing bidirectional port resolution...
 
 Synthesizing Unit <controller_ip>.
-    Related source file is "C:/Users/jfalb1/Desktop/Project5/Controller/controller_ip.vhd".
+    Related source file is "C:/Users/Jeff/Documents/GitHub/System_on_Chip/Project5/Controller/controller_ip.vhd".
     Found finite state machine <FSM_0> for signal <stateNow>.
     -----------------------------------------------------------------------
     | States             | 17                                             |
@@ -752,12 +751,12 @@ Offset:              5.492ns (Levels of Logic = 2)
 =========================================================================
 
 
-Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 5.07 secs
+Total REAL time to Xst completion: 34.00 secs
+Total CPU time to Xst completion: 33.31 secs
  
 --> 
 
-Total memory usage is 238888 kilobytes
+Total memory usage is 358220 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   28 (   0 filtered)
