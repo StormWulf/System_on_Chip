@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<item value="E:\SoC\Project5\hw_platform_0\system_bd.bmm" key="hw_platform_0-bmmFile"/>
-	<item value="E:\SoC\Project5\hw_platform_0\system.bit" key="hw_platform_0-bitFile"/>
+	<item value="C:\Users\wputn1\Desktop\Project5\hw_platform_0\system_bd.bmm" key="hw_platform_0-bmmFile"/>
+	<item value="C:\Users\wputn1\Desktop\Project5\hw_platform_0\system.bit" key="hw_platform_0-bitFile"/>
 	<item value="bootloop" key="hw_platform_0-microblaze_0-initElf"/>
 </section>

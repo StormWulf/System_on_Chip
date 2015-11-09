@@ -56,7 +56,10 @@ entity Project5 is
     fpga_0_rst_1_sys_rst_pin : in std_logic;
     graphics_ip_0_pixToDisp_pin : out std_logic_vector(2 downto 0);
     graphics_ip_0_hsync_pin : out std_logic;
-    graphics_ip_0_vsync_pin : out std_logic
+    graphics_ip_0_vsync_pin : out std_logic;
+    controller_0_NESlatch_pin : out std_logic;
+    controller_0_NESclk_pin : out std_logic;
+    controller_0_NESdatIn_pin : in std_logic
   );
 end Project5;
 
@@ -664,7 +667,7 @@ architecture STRUCTURE of Project5 is
       PLB_Clk : in std_logic;
       SYS_Rst : in std_logic;
       PLB_Rst : out std_logic;
-      SPLB_Rst : out std_logic_vector(0 to 13);
+      SPLB_Rst : out std_logic_vector(0 to 14);
       MPLB_Rst : out std_logic_vector(0 to 1);
       PLB_dcrAck : out std_logic;
       PLB_dcrDBus : out std_logic_vector(0 to 31);
@@ -688,22 +691,22 @@ architecture STRUCTURE of Project5 is
       M_type : in std_logic_vector(0 to 5);
       M_wrBurst : in std_logic_vector(0 to 1);
       M_wrDBus : in std_logic_vector(0 to 127);
-      Sl_addrAck : in std_logic_vector(0 to 13);
-      Sl_MRdErr : in std_logic_vector(0 to 27);
-      Sl_MWrErr : in std_logic_vector(0 to 27);
-      Sl_MBusy : in std_logic_vector(0 to 27);
-      Sl_rdBTerm : in std_logic_vector(0 to 13);
-      Sl_rdComp : in std_logic_vector(0 to 13);
-      Sl_rdDAck : in std_logic_vector(0 to 13);
-      Sl_rdDBus : in std_logic_vector(0 to 895);
-      Sl_rdWdAddr : in std_logic_vector(0 to 55);
-      Sl_rearbitrate : in std_logic_vector(0 to 13);
-      Sl_SSize : in std_logic_vector(0 to 27);
-      Sl_wait : in std_logic_vector(0 to 13);
-      Sl_wrBTerm : in std_logic_vector(0 to 13);
-      Sl_wrComp : in std_logic_vector(0 to 13);
-      Sl_wrDAck : in std_logic_vector(0 to 13);
-      Sl_MIRQ : in std_logic_vector(0 to 27);
+      Sl_addrAck : in std_logic_vector(0 to 14);
+      Sl_MRdErr : in std_logic_vector(0 to 29);
+      Sl_MWrErr : in std_logic_vector(0 to 29);
+      Sl_MBusy : in std_logic_vector(0 to 29);
+      Sl_rdBTerm : in std_logic_vector(0 to 14);
+      Sl_rdComp : in std_logic_vector(0 to 14);
+      Sl_rdDAck : in std_logic_vector(0 to 14);
+      Sl_rdDBus : in std_logic_vector(0 to 959);
+      Sl_rdWdAddr : in std_logic_vector(0 to 59);
+      Sl_rearbitrate : in std_logic_vector(0 to 14);
+      Sl_SSize : in std_logic_vector(0 to 29);
+      Sl_wait : in std_logic_vector(0 to 14);
+      Sl_wrBTerm : in std_logic_vector(0 to 14);
+      Sl_wrComp : in std_logic_vector(0 to 14);
+      Sl_wrDAck : in std_logic_vector(0 to 14);
+      Sl_MIRQ : in std_logic_vector(0 to 29);
       PLB_MIRQ : out std_logic_vector(0 to 1);
       PLB_ABus : out std_logic_vector(0 to 31);
       PLB_UABus : out std_logic_vector(0 to 31);
@@ -735,13 +738,13 @@ architecture STRUCTURE of Project5 is
       PLB_rdPendReq : out std_logic;
       PLB_wrPendReq : out std_logic;
       PLB_rdBurst : out std_logic;
-      PLB_rdPrim : out std_logic_vector(0 to 13);
+      PLB_rdPrim : out std_logic_vector(0 to 14);
       PLB_reqPri : out std_logic_vector(0 to 1);
       PLB_size : out std_logic_vector(0 to 3);
       PLB_type : out std_logic_vector(0 to 2);
       PLB_wrBurst : out std_logic;
       PLB_wrDBus : out std_logic_vector(0 to 63);
-      PLB_wrPrim : out std_logic_vector(0 to 13);
+      PLB_wrPrim : out std_logic_vector(0 to 14);
       PLB_SaddrAck : out std_logic;
       PLB_SMRdErr : out std_logic_vector(0 to 1);
       PLB_SMWrErr : out std_logic_vector(0 to 1);
@@ -3683,6 +3686,56 @@ architecture STRUCTURE of Project5 is
     );
   end component;
 
+  component controller_0_wrapper is
+    port (
+      NESlatch : out std_logic;
+      NESclk : out std_logic;
+      NESdatIn : in std_logic;
+      SPLB_Clk : in std_logic;
+      SPLB_Rst : in std_logic;
+      PLB_ABus : in std_logic_vector(0 to 31);
+      PLB_UABus : in std_logic_vector(0 to 31);
+      PLB_PAValid : in std_logic;
+      PLB_SAValid : in std_logic;
+      PLB_rdPrim : in std_logic;
+      PLB_wrPrim : in std_logic;
+      PLB_masterID : in std_logic_vector(0 to 0);
+      PLB_abort : in std_logic;
+      PLB_busLock : in std_logic;
+      PLB_RNW : in std_logic;
+      PLB_BE : in std_logic_vector(0 to 7);
+      PLB_MSize : in std_logic_vector(0 to 1);
+      PLB_size : in std_logic_vector(0 to 3);
+      PLB_type : in std_logic_vector(0 to 2);
+      PLB_lockErr : in std_logic;
+      PLB_wrDBus : in std_logic_vector(0 to 63);
+      PLB_wrBurst : in std_logic;
+      PLB_rdBurst : in std_logic;
+      PLB_wrPendReq : in std_logic;
+      PLB_rdPendReq : in std_logic;
+      PLB_wrPendPri : in std_logic_vector(0 to 1);
+      PLB_rdPendPri : in std_logic_vector(0 to 1);
+      PLB_reqPri : in std_logic_vector(0 to 1);
+      PLB_TAttribute : in std_logic_vector(0 to 15);
+      Sl_addrAck : out std_logic;
+      Sl_SSize : out std_logic_vector(0 to 1);
+      Sl_wait : out std_logic;
+      Sl_rearbitrate : out std_logic;
+      Sl_wrDAck : out std_logic;
+      Sl_wrComp : out std_logic;
+      Sl_wrBTerm : out std_logic;
+      Sl_rdDBus : out std_logic_vector(0 to 63);
+      Sl_rdWdAddr : out std_logic_vector(0 to 3);
+      Sl_rdDAck : out std_logic;
+      Sl_rdComp : out std_logic;
+      Sl_rdBTerm : out std_logic;
+      Sl_MBusy : out std_logic_vector(0 to 1);
+      Sl_MWrErr : out std_logic_vector(0 to 1);
+      Sl_MRdErr : out std_logic_vector(0 to 1);
+      Sl_MIRQ : out std_logic_vector(0 to 1)
+    );
+  end component;
+
   component IOBUF is
     port (
       I : in std_logic;
@@ -3702,6 +3755,9 @@ architecture STRUCTURE of Project5 is
   signal clk_50_0000MHz : std_logic;
   signal clk_100_0000MHz90DCM0 : std_logic;
   signal clk_100_0000MHzDCM0 : std_logic;
+  signal controller_0_NESclk : std_logic;
+  signal controller_0_NESdatIn : std_logic;
+  signal controller_0_NESlatch : std_logic;
   signal dlmb_LMB_ABus : std_logic_vector(0 to 31);
   signal dlmb_LMB_AddrStrobe : std_logic;
   signal dlmb_LMB_BE : std_logic_vector(0 to 3);
@@ -3814,7 +3870,7 @@ architecture STRUCTURE of Project5 is
   signal mb_plb_PLB_rdBurst : std_logic;
   signal mb_plb_PLB_rdPendPri : std_logic_vector(0 to 1);
   signal mb_plb_PLB_rdPendReq : std_logic;
-  signal mb_plb_PLB_rdPrim : std_logic_vector(0 to 13);
+  signal mb_plb_PLB_rdPrim : std_logic_vector(0 to 14);
   signal mb_plb_PLB_reqPri : std_logic_vector(0 to 1);
   signal mb_plb_PLB_size : std_logic_vector(0 to 3);
   signal mb_plb_PLB_type : std_logic_vector(0 to 2);
@@ -3822,24 +3878,24 @@ architecture STRUCTURE of Project5 is
   signal mb_plb_PLB_wrDBus : std_logic_vector(0 to 63);
   signal mb_plb_PLB_wrPendPri : std_logic_vector(0 to 1);
   signal mb_plb_PLB_wrPendReq : std_logic;
-  signal mb_plb_PLB_wrPrim : std_logic_vector(0 to 13);
-  signal mb_plb_SPLB_Rst : std_logic_vector(0 to 13);
-  signal mb_plb_Sl_MBusy : std_logic_vector(0 to 27);
-  signal mb_plb_Sl_MIRQ : std_logic_vector(0 to 27);
-  signal mb_plb_Sl_MRdErr : std_logic_vector(0 to 27);
-  signal mb_plb_Sl_MWrErr : std_logic_vector(0 to 27);
-  signal mb_plb_Sl_SSize : std_logic_vector(0 to 27);
-  signal mb_plb_Sl_addrAck : std_logic_vector(0 to 13);
-  signal mb_plb_Sl_rdBTerm : std_logic_vector(0 to 13);
-  signal mb_plb_Sl_rdComp : std_logic_vector(0 to 13);
-  signal mb_plb_Sl_rdDAck : std_logic_vector(0 to 13);
-  signal mb_plb_Sl_rdDBus : std_logic_vector(0 to 895);
-  signal mb_plb_Sl_rdWdAddr : std_logic_vector(0 to 55);
-  signal mb_plb_Sl_rearbitrate : std_logic_vector(0 to 13);
-  signal mb_plb_Sl_wait : std_logic_vector(0 to 13);
-  signal mb_plb_Sl_wrBTerm : std_logic_vector(0 to 13);
-  signal mb_plb_Sl_wrComp : std_logic_vector(0 to 13);
-  signal mb_plb_Sl_wrDAck : std_logic_vector(0 to 13);
+  signal mb_plb_PLB_wrPrim : std_logic_vector(0 to 14);
+  signal mb_plb_SPLB_Rst : std_logic_vector(0 to 14);
+  signal mb_plb_Sl_MBusy : std_logic_vector(0 to 29);
+  signal mb_plb_Sl_MIRQ : std_logic_vector(0 to 29);
+  signal mb_plb_Sl_MRdErr : std_logic_vector(0 to 29);
+  signal mb_plb_Sl_MWrErr : std_logic_vector(0 to 29);
+  signal mb_plb_Sl_SSize : std_logic_vector(0 to 29);
+  signal mb_plb_Sl_addrAck : std_logic_vector(0 to 14);
+  signal mb_plb_Sl_rdBTerm : std_logic_vector(0 to 14);
+  signal mb_plb_Sl_rdComp : std_logic_vector(0 to 14);
+  signal mb_plb_Sl_rdDAck : std_logic_vector(0 to 14);
+  signal mb_plb_Sl_rdDBus : std_logic_vector(0 to 959);
+  signal mb_plb_Sl_rdWdAddr : std_logic_vector(0 to 59);
+  signal mb_plb_Sl_rearbitrate : std_logic_vector(0 to 14);
+  signal mb_plb_Sl_wait : std_logic_vector(0 to 14);
+  signal mb_plb_Sl_wrBTerm : std_logic_vector(0 to 14);
+  signal mb_plb_Sl_wrComp : std_logic_vector(0 to 14);
+  signal mb_plb_Sl_wrDAck : std_logic_vector(0 to 14);
   signal mb_reset : std_logic;
   signal microblaze_0_mdm_bus_Dbg_Capture : std_logic;
   signal microblaze_0_mdm_bus_Dbg_Clk : std_logic;
@@ -3906,6 +3962,7 @@ architecture STRUCTURE of Project5 is
   attribute BOX_TYPE of mdm_0_wrapper : component is "user_black_box";
   attribute BOX_TYPE of proc_sys_reset_0_wrapper : component is "user_black_box";
   attribute BOX_TYPE of graphics_ip_0_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of controller_0_wrapper : component is "user_black_box";
 
 begin
 
@@ -3917,6 +3974,9 @@ begin
   graphics_ip_0_pixToDisp_pin <= graphics_ip_0_pixToDisp;
   graphics_ip_0_hsync_pin <= graphics_ip_0_hsync;
   graphics_ip_0_vsync_pin <= graphics_ip_0_vsync;
+  controller_0_NESlatch_pin <= controller_0_NESlatch;
+  controller_0_NESclk_pin <= controller_0_NESclk;
+  controller_0_NESdatIn <= controller_0_NESdatIn_pin;
   pgassign8(0 to 7) <= B"00000000";
   fpga_0_DDR_SDRAM_DDR_Clk_pin <= pgassign1(0);
   fpga_0_DDR_SDRAM_DDR_Clk_n_pin <= pgassign2(0);
@@ -7545,6 +7605,55 @@ begin
       Sl_MWrErr => mb_plb_Sl_MWrErr(26 to 27),
       Sl_MRdErr => mb_plb_Sl_MRdErr(26 to 27),
       Sl_MIRQ => mb_plb_Sl_MIRQ(26 to 27)
+    );
+
+  controller_0 : controller_0_wrapper
+    port map (
+      NESlatch => controller_0_NESlatch,
+      NESclk => controller_0_NESclk,
+      NESdatIn => controller_0_NESdatIn,
+      SPLB_Clk => clk_50_0000MHz,
+      SPLB_Rst => mb_plb_SPLB_Rst(14),
+      PLB_ABus => mb_plb_PLB_ABus,
+      PLB_UABus => mb_plb_PLB_UABus,
+      PLB_PAValid => mb_plb_PLB_PAValid,
+      PLB_SAValid => mb_plb_PLB_SAValid,
+      PLB_rdPrim => mb_plb_PLB_rdPrim(14),
+      PLB_wrPrim => mb_plb_PLB_wrPrim(14),
+      PLB_masterID => mb_plb_PLB_masterID(0 to 0),
+      PLB_abort => mb_plb_PLB_abort,
+      PLB_busLock => mb_plb_PLB_busLock,
+      PLB_RNW => mb_plb_PLB_RNW,
+      PLB_BE => mb_plb_PLB_BE,
+      PLB_MSize => mb_plb_PLB_MSize,
+      PLB_size => mb_plb_PLB_size,
+      PLB_type => mb_plb_PLB_type,
+      PLB_lockErr => mb_plb_PLB_lockErr,
+      PLB_wrDBus => mb_plb_PLB_wrDBus,
+      PLB_wrBurst => mb_plb_PLB_wrBurst,
+      PLB_rdBurst => mb_plb_PLB_rdBurst,
+      PLB_wrPendReq => mb_plb_PLB_wrPendReq,
+      PLB_rdPendReq => mb_plb_PLB_rdPendReq,
+      PLB_wrPendPri => mb_plb_PLB_wrPendPri,
+      PLB_rdPendPri => mb_plb_PLB_rdPendPri,
+      PLB_reqPri => mb_plb_PLB_reqPri,
+      PLB_TAttribute => mb_plb_PLB_TAttribute,
+      Sl_addrAck => mb_plb_Sl_addrAck(14),
+      Sl_SSize => mb_plb_Sl_SSize(28 to 29),
+      Sl_wait => mb_plb_Sl_wait(14),
+      Sl_rearbitrate => mb_plb_Sl_rearbitrate(14),
+      Sl_wrDAck => mb_plb_Sl_wrDAck(14),
+      Sl_wrComp => mb_plb_Sl_wrComp(14),
+      Sl_wrBTerm => mb_plb_Sl_wrBTerm(14),
+      Sl_rdDBus => mb_plb_Sl_rdDBus(896 to 959),
+      Sl_rdWdAddr => mb_plb_Sl_rdWdAddr(56 to 59),
+      Sl_rdDAck => mb_plb_Sl_rdDAck(14),
+      Sl_rdComp => mb_plb_Sl_rdComp(14),
+      Sl_rdBTerm => mb_plb_Sl_rdBTerm(14),
+      Sl_MBusy => mb_plb_Sl_MBusy(28 to 29),
+      Sl_MWrErr => mb_plb_Sl_MWrErr(28 to 29),
+      Sl_MRdErr => mb_plb_Sl_MRdErr(28 to 29),
+      Sl_MIRQ => mb_plb_Sl_MIRQ(28 to 29)
     );
 
   iobuf_0 : IOBUF

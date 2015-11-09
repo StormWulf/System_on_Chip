@@ -24,7 +24,7 @@ TABLE OF CONTENTS
 ---- Source Parameters
 Input Format                       : MIXED
 Input File Name                    : "lmb_bram_wrapper_xst.prj"
-Verilog Include Directory          : {"E:\SoC\Project5\pcores\" "C:\Xilinx\13.1\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Xilinx\13.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
+Verilog Include Directory          : {"C:\Users\wputn1\Desktop\Project5\pcores\" "C:\Users\wputn1\Desktop\Project5\pcores\myprocessoriplib\pcores\" "C:\Xilinx\13.1\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Xilinx\13.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
 
 ---- Target Parameters
 Target Device                      : xc3s1600efg320-4
@@ -51,10 +51,10 @@ Cores Search Directories           : {../implementation/lmb_bram_wrapper}
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling vhdl file "E:/SoC/Project5/hdl/elaborate/lmb_bram_elaborate_v1_00_a/hdl/vhdl/lmb_bram_elaborate.vhd" in Library lmb_bram_elaborate_v1_00_a.
+Compiling vhdl file "C:/Users/wputn1/Desktop/Project5/hdl/elaborate/lmb_bram_elaborate_v1_00_a/hdl/vhdl/lmb_bram_elaborate.vhd" in Library lmb_bram_elaborate_v1_00_a.
 Entity <lmb_bram_elaborate> compiled.
 Entity <lmb_bram_elaborate> (Architecture <STRUCTURE>) compiled.
-Compiling vhdl file "E:/SoC/Project5/hdl/lmb_bram_wrapper.vhd" in Library work.
+Compiling vhdl file "C:/Users/wputn1/Desktop/Project5/hdl/lmb_bram_wrapper.vhd" in Library work.
 Entity <lmb_bram_wrapper> compiled.
 Entity <lmb_bram_wrapper> (Architecture <STRUCTURE>) compiled.
 
@@ -85,24 +85,24 @@ Analyzing generic Entity <lmb_bram_elaborate> in library <lmb_bram_elaborate_v1_
 	C_NUM_WE = 4
 	C_PORT_AWIDTH = 32
 	C_PORT_DWIDTH = 32
-WARNING:Xst:753 - "E:/SoC/Project5/hdl/elaborate/lmb_bram_elaborate_v1_00_a/hdl/vhdl/lmb_bram_elaborate.vhd" line 87: Unconnected output port 'DOPA' of component 'RAMB16_S9_S9'.
-WARNING:Xst:753 - "E:/SoC/Project5/hdl/elaborate/lmb_bram_elaborate_v1_00_a/hdl/vhdl/lmb_bram_elaborate.vhd" line 87: Unconnected output port 'DOPB' of component 'RAMB16_S9_S9'.
-WARNING:Xst:2211 - "E:/SoC/Project5/hdl/elaborate/lmb_bram_elaborate_v1_00_a/hdl/vhdl/lmb_bram_elaborate.vhd" line 87: Instantiating black box module <RAMB16_S9_S9>.
+WARNING:Xst:753 - "C:/Users/wputn1/Desktop/Project5/hdl/elaborate/lmb_bram_elaborate_v1_00_a/hdl/vhdl/lmb_bram_elaborate.vhd" line 87: Unconnected output port 'DOPA' of component 'RAMB16_S9_S9'.
+WARNING:Xst:753 - "C:/Users/wputn1/Desktop/Project5/hdl/elaborate/lmb_bram_elaborate_v1_00_a/hdl/vhdl/lmb_bram_elaborate.vhd" line 87: Unconnected output port 'DOPB' of component 'RAMB16_S9_S9'.
+WARNING:Xst:2211 - "C:/Users/wputn1/Desktop/Project5/hdl/elaborate/lmb_bram_elaborate_v1_00_a/hdl/vhdl/lmb_bram_elaborate.vhd" line 87: Instantiating black box module <RAMB16_S9_S9>.
     Set user-defined property "WRITE_MODE_A =  WRITE_FIRST" for instance <ramb16_s9_s9_0> in unit <lmb_bram_elaborate>.
     Set user-defined property "WRITE_MODE_B =  WRITE_FIRST" for instance <ramb16_s9_s9_0> in unit <lmb_bram_elaborate>.
-WARNING:Xst:753 - "E:/SoC/Project5/hdl/elaborate/lmb_bram_elaborate_v1_00_a/hdl/vhdl/lmb_bram_elaborate.vhd" line 113: Unconnected output port 'DOPA' of component 'RAMB16_S9_S9'.
-WARNING:Xst:753 - "E:/SoC/Project5/hdl/elaborate/lmb_bram_elaborate_v1_00_a/hdl/vhdl/lmb_bram_elaborate.vhd" line 113: Unconnected output port 'DOPB' of component 'RAMB16_S9_S9'.
-WARNING:Xst:2211 - "E:/SoC/Project5/hdl/elaborate/lmb_bram_elaborate_v1_00_a/hdl/vhdl/lmb_bram_elaborate.vhd" line 113: Instantiating black box module <RAMB16_S9_S9>.
+WARNING:Xst:753 - "C:/Users/wputn1/Desktop/Project5/hdl/elaborate/lmb_bram_elaborate_v1_00_a/hdl/vhdl/lmb_bram_elaborate.vhd" line 113: Unconnected output port 'DOPA' of component 'RAMB16_S9_S9'.
+WARNING:Xst:753 - "C:/Users/wputn1/Desktop/Project5/hdl/elaborate/lmb_bram_elaborate_v1_00_a/hdl/vhdl/lmb_bram_elaborate.vhd" line 113: Unconnected output port 'DOPB' of component 'RAMB16_S9_S9'.
+WARNING:Xst:2211 - "C:/Users/wputn1/Desktop/Project5/hdl/elaborate/lmb_bram_elaborate_v1_00_a/hdl/vhdl/lmb_bram_elaborate.vhd" line 113: Instantiating black box module <RAMB16_S9_S9>.
     Set user-defined property "WRITE_MODE_A =  WRITE_FIRST" for instance <ramb16_s9_s9_1> in unit <lmb_bram_elaborate>.
     Set user-defined property "WRITE_MODE_B =  WRITE_FIRST" for instance <ramb16_s9_s9_1> in unit <lmb_bram_elaborate>.
-WARNING:Xst:753 - "E:/SoC/Project5/hdl/elaborate/lmb_bram_elaborate_v1_00_a/hdl/vhdl/lmb_bram_elaborate.vhd" line 139: Unconnected output port 'DOPA' of component 'RAMB16_S9_S9'.
-WARNING:Xst:753 - "E:/SoC/Project5/hdl/elaborate/lmb_bram_elaborate_v1_00_a/hdl/vhdl/lmb_bram_elaborate.vhd" line 139: Unconnected output port 'DOPB' of component 'RAMB16_S9_S9'.
-WARNING:Xst:2211 - "E:/SoC/Project5/hdl/elaborate/lmb_bram_elaborate_v1_00_a/hdl/vhdl/lmb_bram_elaborate.vhd" line 139: Instantiating black box module <RAMB16_S9_S9>.
+WARNING:Xst:753 - "C:/Users/wputn1/Desktop/Project5/hdl/elaborate/lmb_bram_elaborate_v1_00_a/hdl/vhdl/lmb_bram_elaborate.vhd" line 139: Unconnected output port 'DOPA' of component 'RAMB16_S9_S9'.
+WARNING:Xst:753 - "C:/Users/wputn1/Desktop/Project5/hdl/elaborate/lmb_bram_elaborate_v1_00_a/hdl/vhdl/lmb_bram_elaborate.vhd" line 139: Unconnected output port 'DOPB' of component 'RAMB16_S9_S9'.
+WARNING:Xst:2211 - "C:/Users/wputn1/Desktop/Project5/hdl/elaborate/lmb_bram_elaborate_v1_00_a/hdl/vhdl/lmb_bram_elaborate.vhd" line 139: Instantiating black box module <RAMB16_S9_S9>.
     Set user-defined property "WRITE_MODE_A =  WRITE_FIRST" for instance <ramb16_s9_s9_2> in unit <lmb_bram_elaborate>.
     Set user-defined property "WRITE_MODE_B =  WRITE_FIRST" for instance <ramb16_s9_s9_2> in unit <lmb_bram_elaborate>.
-WARNING:Xst:753 - "E:/SoC/Project5/hdl/elaborate/lmb_bram_elaborate_v1_00_a/hdl/vhdl/lmb_bram_elaborate.vhd" line 165: Unconnected output port 'DOPA' of component 'RAMB16_S9_S9'.
-WARNING:Xst:753 - "E:/SoC/Project5/hdl/elaborate/lmb_bram_elaborate_v1_00_a/hdl/vhdl/lmb_bram_elaborate.vhd" line 165: Unconnected output port 'DOPB' of component 'RAMB16_S9_S9'.
-WARNING:Xst:2211 - "E:/SoC/Project5/hdl/elaborate/lmb_bram_elaborate_v1_00_a/hdl/vhdl/lmb_bram_elaborate.vhd" line 165: Instantiating black box module <RAMB16_S9_S9>.
+WARNING:Xst:753 - "C:/Users/wputn1/Desktop/Project5/hdl/elaborate/lmb_bram_elaborate_v1_00_a/hdl/vhdl/lmb_bram_elaborate.vhd" line 165: Unconnected output port 'DOPA' of component 'RAMB16_S9_S9'.
+WARNING:Xst:753 - "C:/Users/wputn1/Desktop/Project5/hdl/elaborate/lmb_bram_elaborate_v1_00_a/hdl/vhdl/lmb_bram_elaborate.vhd" line 165: Unconnected output port 'DOPB' of component 'RAMB16_S9_S9'.
+WARNING:Xst:2211 - "C:/Users/wputn1/Desktop/Project5/hdl/elaborate/lmb_bram_elaborate_v1_00_a/hdl/vhdl/lmb_bram_elaborate.vhd" line 165: Instantiating black box module <RAMB16_S9_S9>.
     Set user-defined property "WRITE_MODE_A =  WRITE_FIRST" for instance <ramb16_s9_s9_3> in unit <lmb_bram_elaborate>.
     Set user-defined property "WRITE_MODE_B =  WRITE_FIRST" for instance <ramb16_s9_s9_3> in unit <lmb_bram_elaborate>.
 Entity <lmb_bram_elaborate> analyzed. Unit <lmb_bram_elaborate> generated.
@@ -115,7 +115,7 @@ Entity <lmb_bram_elaborate> analyzed. Unit <lmb_bram_elaborate> generated.
 Performing bidirectional port resolution...
 
 Synthesizing Unit <lmb_bram_elaborate>.
-    Related source file is "E:/SoC/Project5/hdl/elaborate/lmb_bram_elaborate_v1_00_a/hdl/vhdl/lmb_bram_elaborate.vhd".
+    Related source file is "C:/Users/wputn1/Desktop/Project5/hdl/elaborate/lmb_bram_elaborate_v1_00_a/hdl/vhdl/lmb_bram_elaborate.vhd".
 WARNING:Xst:647 - Input <BRAM_Addr_A<0:18>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <BRAM_Addr_A<30:31>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <BRAM_Addr_B<0:18>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -124,7 +124,7 @@ Unit <lmb_bram_elaborate> synthesized.
 
 
 Synthesizing Unit <lmb_bram_wrapper>.
-    Related source file is "E:/SoC/Project5/hdl/lmb_bram_wrapper.vhd".
+    Related source file is "C:/Users/wputn1/Desktop/Project5/hdl/lmb_bram_wrapper.vhd".
 Unit <lmb_bram_wrapper> synthesized.
 
 
@@ -326,8 +326,8 @@ Offset:              2.800ns (Levels of Logic = 1)
 =========================================================================
 
 
-Total REAL time to Xst completion: 8.00 secs
-Total CPU time to Xst completion: 7.90 secs
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 3.24 secs
  
 --> 
 

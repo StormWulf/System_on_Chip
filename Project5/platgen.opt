@@ -2,6 +2,8 @@
 xc3s1600efg320-4
 -lang
 vhdl
+-lp
+pcores/
 -msg
 __xps/ise/xmsgprops.lst
 Project5.mhs

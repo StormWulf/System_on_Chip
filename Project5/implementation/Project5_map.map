@@ -1,4 +1,4 @@
-Release 13.1 Map O.40d (nt64)
+Release 13.1 Map O.40d (nt)
 Xilinx Map Application Log File for Design 'Project5'
 
 Design Information
@@ -9,7 +9,7 @@ Target Device  : xc3s1600e
 Target Package : fg320
 Target Speed   : -4
 Mapper Version : spartan3e -- $Revision: 1.55 $
-Mapped Date    : Mon Nov 02 10:49:52 2015
+Mapped Date    : Sat Nov 07 13:22:28 2015
 
 vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 INFO:Security:50 - The XILINXD_LICENSE_FILE environment variable is set to
@@ -206,55 +206,55 @@ Running directed packing...
 Running delay-based LUT packing...
 Updating timing models...
 Running timing-driven placement...
-Total REAL time at the beginning of Placer: 26 secs 
-Total CPU  time at the beginning of Placer: 24 secs 
+Total REAL time at the beginning of Placer: 22 secs 
+Total CPU  time at the beginning of Placer: 21 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:22f72b73) REAL time: 32 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:388c097d) REAL time: 27 secs 
 
 Phase 2.7  Design Feasibility Check
-Phase 2.7  Design Feasibility Check (Checksum:22f72b73) REAL time: 32 secs 
+Phase 2.7  Design Feasibility Check (Checksum:388c097d) REAL time: 27 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:4d0eef80) REAL time: 32 secs 
+Phase 3.31  Local Placement Optimization (Checksum:d91e0b8d) REAL time: 27 secs 
 
 Phase 4.2  Initial Clock and IO Placement
 
 
 
-Phase 4.2  Initial Clock and IO Placement (Checksum:8ac105f3) REAL time: 38 secs 
+Phase 4.2  Initial Clock and IO Placement (Checksum:4c508d52) REAL time: 33 secs 
 
 Phase 5.30  Global Clock Region Assignment
-Phase 5.30  Global Clock Region Assignment (Checksum:8ac105f3) REAL time: 38 secs 
+Phase 5.30  Global Clock Region Assignment (Checksum:4c508d52) REAL time: 33 secs 
 
 Phase 6.36  Local Placement Optimization
-Phase 6.36  Local Placement Optimization (Checksum:8ac105f3) REAL time: 38 secs 
+Phase 6.36  Local Placement Optimization (Checksum:4c508d52) REAL time: 33 secs 
 
 Phase 7.8  Global Placement
-...................................
-......................................................................................................................................................................................
-...........
-...........................................................................................................................................................................
+...............................
+......................................................
+.........
+..................................................................................................................................................................................
+................
+................
+....................................................................................................
 .....................................
-.......................
-.........................................................................................................................
-...............................................
-Phase 7.8  Global Placement (Checksum:883a6738) REAL time: 1 mins 59 secs 
+Phase 7.8  Global Placement (Checksum:96968e3e) REAL time: 1 mins 39 secs 
 
 Phase 8.5  Local Placement Optimization
-Phase 8.5  Local Placement Optimization (Checksum:883a6738) REAL time: 1 mins 59 secs 
+Phase 8.5  Local Placement Optimization (Checksum:96968e3e) REAL time: 1 mins 40 secs 
 
 Phase 9.18  Placement Optimization
-Phase 9.18  Placement Optimization (Checksum:d006b3cb) REAL time: 4 mins 17 secs 
+Phase 9.18  Placement Optimization (Checksum:b0d91904) REAL time: 3 mins 58 secs 
 
 Phase 10.5  Local Placement Optimization
-Phase 10.5  Local Placement Optimization (Checksum:d006b3cb) REAL time: 4 mins 18 secs 
+Phase 10.5  Local Placement Optimization (Checksum:b0d91904) REAL time: 3 mins 59 secs 
 
-Total REAL time to Placer completion: 4 mins 20 secs 
-Total CPU  time to Placer completion: 4 mins 16 secs 
+Total REAL time to Placer completion: 4 mins 1 secs 
+Total CPU  time to Placer completion: 3 mins 59 secs 
 Running post-placement packing...
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/data_path/dqs_delayed_col1<0> is sourced by a
+   DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/data_path/dqs_delayed_col0<0> is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the
    flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
@@ -262,13 +262,16 @@ WARNING:PhysDesignRules:372 - Gated clock. Clock net
    combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the
    flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/data_path/dqs_delayed_col1<1> is sourced by a
+   DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/data_path/dqs_delayed_col1<0> is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the
    flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/data_path/dqs_delayed_col0<0> is sourced by a
+   DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/data_path/dqs_delayed_col1<1> is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the
    flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net controller_0/controller_0/USER_LOGIC_I/cont/NESlatch_or0000 is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into
+   the flip-flop.
 WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp fpga_0_Character_LCD_2x16_GPIO_IO_O_pin<0> is
    set but the tri state is not configured. 
 WARNING:PhysDesignRules:1060 - Issue with pin connections and/or configuration on
@@ -285,18 +288,20 @@ Design Summary
 
 Design Summary:
 Number of errors:      0
-Number of warnings:   51
+Number of warnings:   52
 Logic Utilization:
-  Number of Slice Flip Flops:         4,489 out of  29,504   15%
-  Number of 4 input LUTs:             8,745 out of  29,504   29%
+  Total Number Slice Registers:       4,567 out of  29,504   15%
+    Number used as Flip Flops:        4,560
+    Number used as Latches:               7
+  Number of 4 input LUTs:             8,794 out of  29,504   29%
 Logic Distribution:
-  Number of occupied Slices:          6,859 out of  14,752   46%
-    Number of Slices containing only related logic:   6,859 out of   6,859 100%
-    Number of Slices containing unrelated logic:          0 out of   6,859   0%
+  Number of occupied Slices:          6,600 out of  14,752   44%
+    Number of Slices containing only related logic:   6,600 out of   6,600 100%
+    Number of Slices containing unrelated logic:          0 out of   6,600   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:       8,919 out of  29,504   30%
-    Number used as logic:             5,664
-    Number used as a route-thru:        174
+  Total Number of 4 input LUTs:       8,973 out of  29,504   30%
+    Number used as logic:             5,713
+    Number used as a route-thru:        179
     Number used as 16x1 RAMs:             4
     Number used for Dual Port RAMs:   2,866
       (Two LUTs used per Dual Port RAM)
@@ -305,8 +310,9 @@ Logic Distribution:
   The Slice Logic Distribution report is not meaningful if the design is
   over-mapped for a non-slice resource or if Placement fails.
 
-  Number of bonded IOBs:                133 out of     250   53%
+  Number of bonded IOBs:                136 out of     250   54%
     IOB Flip Flops:                     105
+    IOB Latches:                          3
     IOB Master Pads:                      1
     IOB Slave Pads:                       1
   Number of ODDR2s used:                 22
@@ -319,11 +325,11 @@ Logic Distribution:
   Number of BSCANs:                       1 out of       1  100%
   Number of MULT18X18SIOs:                4 out of      36   11%
 
-Average Fanout of Non-Clock Nets:                4.11
+Average Fanout of Non-Clock Nets:                4.10
 
-Peak Memory Usage:  556 MB
-Total REAL time to MAP completion:  4 mins 26 secs 
-Total CPU time to MAP completion:   4 mins 22 secs 
+Peak Memory Usage:  379 MB
+Total REAL time to MAP completion:  4 mins 8 secs 
+Total CPU time to MAP completion:   4 mins 5 secs 
 
 Mapping completed.
 See MAP report file "Project5_map.mrp" for details.

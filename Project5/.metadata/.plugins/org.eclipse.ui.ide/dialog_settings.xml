@@ -4,8 +4,16 @@
 		<item value="197" key="DIALOG_Y_ORIGIN"/>
 		<item value="202" key="DIALOG_X_ORIGIN"/>
 	</section>
+	<section name="org.eclipse.ui.internal.ide.dialogs.ProjectContentsLocationArea">
+		<item value="C:\Users\wputn1\Documents\C_Code" key="OUTSIDE_LOCATION"/>
+	</section>
 	<section name="WORKBENCH_SETTINGS">
 		<list key="ENABLED_TRANSFERS">
 		</list>
+	</section>
+	<section name="com.xilinx.sdk.ui.dialogs.ProjectContentsLocationArea">
+		<item value="C:\Users\wputn1\Documents" key="OUTSIDE_LOCATION"/>
+	</section>
+	<section name="NewWizardAction">
 	</section>
 </section>

@@ -56,7 +56,10 @@ entity Project5_stub is
     fpga_0_rst_1_sys_rst_pin : in std_logic;
     graphics_ip_0_pixToDisp_pin : out std_logic_vector(2 downto 0);
     graphics_ip_0_hsync_pin : out std_logic;
-    graphics_ip_0_vsync_pin : out std_logic
+    graphics_ip_0_vsync_pin : out std_logic;
+    controller_0_NESlatch_pin : out std_logic;
+    controller_0_NESclk_pin : out std_logic;
+    controller_0_NESdatIn_pin : in std_logic
   );
 end Project5_stub;
 
@@ -111,7 +114,10 @@ architecture STRUCTURE of Project5_stub is
       fpga_0_rst_1_sys_rst_pin : in std_logic;
       graphics_ip_0_pixToDisp_pin : out std_logic_vector(2 downto 0);
       graphics_ip_0_hsync_pin : out std_logic;
-      graphics_ip_0_vsync_pin : out std_logic
+      graphics_ip_0_vsync_pin : out std_logic;
+      controller_0_NESlatch_pin : out std_logic;
+      controller_0_NESclk_pin : out std_logic;
+      controller_0_NESdatIn_pin : in std_logic
     );
   end component;
 
@@ -172,7 +178,10 @@ begin
       fpga_0_rst_1_sys_rst_pin => fpga_0_rst_1_sys_rst_pin,
       graphics_ip_0_pixToDisp_pin => graphics_ip_0_pixToDisp_pin,
       graphics_ip_0_hsync_pin => graphics_ip_0_hsync_pin,
-      graphics_ip_0_vsync_pin => graphics_ip_0_vsync_pin
+      graphics_ip_0_vsync_pin => graphics_ip_0_vsync_pin,
+      controller_0_NESlatch_pin => controller_0_NESlatch_pin,
+      controller_0_NESclk_pin => controller_0_NESclk_pin,
+      controller_0_NESdatIn_pin => controller_0_NESdatIn_pin
     );
 
 end architecture STRUCTURE;

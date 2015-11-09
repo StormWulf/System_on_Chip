@@ -122,4 +122,4 @@ vhdl xps_timer_v1_02_a "C:\Xilinx\13.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores
 vhdl xps_timer_v1_02_a "C:\Xilinx\13.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_timer_v1_02_a\hdl\vhdl\timer_control.vhd"
 vhdl xps_timer_v1_02_a "C:\Xilinx\13.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_timer_v1_02_a\hdl\vhdl\tc_core.vhd"
 vhdl xps_timer_v1_02_a "C:\Xilinx\13.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_timer_v1_02_a\hdl\vhdl\xps_timer.vhd"
-vhdl work "E:\SoC\Project5\hdl\xps_timer_0_wrapper.vhd"
+vhdl work "C:\Users\wputn1\Desktop\Project5\hdl\xps_timer_0_wrapper.vhd"

@@ -2,7 +2,7 @@ Release 13.1 - platgen Xilinx EDK 13.1 Build EDK_O.40d
  (nt)
 Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
 
-Command Line: platgen -p xc3s1600efg320-4 -lang vhdl -msg
+Command Line: platgen -p xc3s1600efg320-4 -lang vhdl -lp pcores/ -msg
 __xps/ise/xmsgprops.lst Project5.mhs 
 
 WARNING:EDK - INFO:Security:50 - The XILINXD_LICENSE_FILE environment variable
@@ -20,7 +20,7 @@ WARNING:EDK - INFO:Security:50 - The XILINXD_LICENSE_FILE environment variable
    qualify for Xilinx software updates or new releases.
 
 
-Parse E:/SoC/Project5/Project5.mhs ...
+Parse C:/Users/wputn1/Desktop/Project5/Project5.mhs ...
 
 Read MPD definitions ...
 
@@ -151,6 +151,7 @@ Address Map for Processor microblaze_0
   (0x89000000-0x89ffffff) FLASH	mb_plb
   (0x8c000000-0x8fffffff) DDR_SDRAM	mb_plb
   (0xc7000000-0xc700ffff) graphics_ip_0	mb_plb
+  (0xc7200000-0xc720ffff) controller_0	mb_plb
 INFO:EDK - IPNAME: mpmc, INSTANCE:DDR_SDRAM - tool is overriding PARAMETER
    C_SPLB0_P2P value to 0 -
    C:\Xilinx\13.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v6_03_a\data\mp
@@ -160,7 +161,7 @@ INFO:EDK - IPNAME: xps_ethernetlite, INSTANCE: Ethernet_MAC - This design
    Please refer to the data sheet for details.  
    The PLB clock frequency must be greater than or equal to 50 MHz for 100 Mbs
    Ethernet operation and greater than or equal to 5.0 MHz for 10 Mbs Ethernet
-   operation. - E:\SoC\Project5\Project5.mhs line 198
+   operation. - C:\Users\wputn1\Desktop\Project5\Project5.mhs line 201
 INFO:EDK - IPNAME: microblaze, INSTANCE:microblaze_0 - tool is overriding
    PARAMETER C_DPLB_DWIDTH value to 64 -
    C:\Xilinx\13.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_10_a\d
@@ -174,7 +175,7 @@ INFO:EDK - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
    C:\Xilinx\13.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
    \plb_v46_v2_1_0.mpd line 69 
 INFO:EDK - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
-   C_PLBV46_NUM_SLAVES value to 14 -
+   C_PLBV46_NUM_SLAVES value to 15 -
    C:\Xilinx\13.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
    \plb_v46_v2_1_0.mpd line 70 
 INFO:EDK - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
@@ -303,21 +304,33 @@ INFO:EDK - IPNAME: mdm, INSTANCE:mdm_0 - tool is overriding PARAMETER
    _v2_1_0.mpd line 84 
 INFO:EDK - IPNAME: graphics_ip, INSTANCE:graphics_ip_0 - tool is overriding
    PARAMETER C_SPLB_DWIDTH value to 64 -
-   E:\SoC\Project5\pcores\graphics_ip_v1_00_a\data\graphics_ip_v2_1_0.mpd line
-   25 
+   C:\Users\wputn1\Desktop\Project5\pcores\graphics_ip_v1_00_a\data\graphics_ip_
+   v2_1_0.mpd line 25 
 INFO:EDK - IPNAME: graphics_ip, INSTANCE:graphics_ip_0 - tool is overriding
    PARAMETER C_SPLB_NUM_MASTERS value to 2 -
-   E:\SoC\Project5\pcores\graphics_ip_v1_00_a\data\graphics_ip_v2_1_0.mpd line
-   26 
+   C:\Users\wputn1\Desktop\Project5\pcores\graphics_ip_v1_00_a\data\graphics_ip_
+   v2_1_0.mpd line 26 
 INFO:EDK - IPNAME: graphics_ip, INSTANCE:graphics_ip_0 - tool is overriding
    PARAMETER C_SPLB_MID_WIDTH value to 1 -
-   E:\SoC\Project5\pcores\graphics_ip_v1_00_a\data\graphics_ip_v2_1_0.mpd line
-   27 
+   C:\Users\wputn1\Desktop\Project5\pcores\graphics_ip_v1_00_a\data\graphics_ip_
+   v2_1_0.mpd line 27 
+INFO:EDK - IPNAME: controller, INSTANCE:controller_0 - tool is overriding
+   PARAMETER C_SPLB_DWIDTH value to 64 -
+   C:\Users\wputn1\Desktop\Project5\pcores\controller_v1_00_a\data\controller_v2
+   _1_0.mpd line 25 
+INFO:EDK - IPNAME: controller, INSTANCE:controller_0 - tool is overriding
+   PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+   C:\Users\wputn1\Desktop\Project5\pcores\controller_v1_00_a\data\controller_v2
+   _1_0.mpd line 26 
+INFO:EDK - IPNAME: controller, INSTANCE:controller_0 - tool is overriding
+   PARAMETER C_SPLB_MID_WIDTH value to 1 -
+   C:\Users\wputn1\Desktop\Project5\pcores\controller_v1_00_a\data\controller_v2
+   _1_0.mpd line 27 
 
 Checking platform address map ...
 
 Checking platform configuration ...
-IPNAME: plb_v46, INSTANCE: mb_plb - 2 master(s) : 14 slave(s) 
+IPNAME: plb_v46, INSTANCE: mb_plb - 2 master(s) : 15 slave(s) 
 IPNAME: lmb_v10, INSTANCE: ilmb - 1 master(s) : 1 slave(s) 
 IPNAME: lmb_v10, INSTANCE: dlmb - 1 master(s) : 1 slave(s) 
 
@@ -907,12 +920,73 @@ Creating hardware output directories ...
 Managing hardware (BBD-specified) netlist files ...
 
 Managing cache ...
+IPNAME:microblaze INSTANCE:microblaze_0 -
+C:\Users\wputn1\Desktop\Project5\Project5.mhs line 71 - Copying cache
+implementation netlist
+IPNAME:plb_v46 INSTANCE:mb_plb - C:\Users\wputn1\Desktop\Project5\Project5.mhs
+line 85 - Copying cache implementation netlist
+IPNAME:lmb_v10 INSTANCE:ilmb - C:\Users\wputn1\Desktop\Project5\Project5.mhs
+line 92 - Copying cache implementation netlist
+IPNAME:lmb_v10 INSTANCE:dlmb - C:\Users\wputn1\Desktop\Project5\Project5.mhs
+line 99 - Copying cache implementation netlist
+IPNAME:lmb_bram_if_cntlr INSTANCE:dlmb_cntlr -
+C:\Users\wputn1\Desktop\Project5\Project5.mhs line 106 - Copying cache
+implementation netlist
+IPNAME:lmb_bram_if_cntlr INSTANCE:ilmb_cntlr -
+C:\Users\wputn1\Desktop\Project5\Project5.mhs line 115 - Copying cache
+implementation netlist
+IPNAME:bram_block INSTANCE:lmb_bram -
+C:\Users\wputn1\Desktop\Project5\Project5.mhs line 124 - Copying cache
+implementation netlist
+IPNAME:xps_gpio INSTANCE:buttons_3bit -
+C:\Users\wputn1\Desktop\Project5\Project5.mhs line 131 - Copying cache
+implementation netlist
+IPNAME:xps_gpio INSTANCE:character_lcd_2x16 -
+C:\Users\wputn1\Desktop\Project5\Project5.mhs line 144 - Copying cache
+implementation netlist
+IPNAME:mpmc INSTANCE:ddr_sdram - C:\Users\wputn1\Desktop\Project5\Project5.mhs
+line 157 - Copying cache implementation netlist
+IPNAME:xps_gpio INSTANCE:dip_switches_4bit -
+C:\Users\wputn1\Desktop\Project5\Project5.mhs line 188 - Copying cache
+implementation netlist
+IPNAME:xps_ethernetlite INSTANCE:ethernet_mac -
+C:\Users\wputn1\Desktop\Project5\Project5.mhs line 201 - Copying cache
+implementation netlist
+IPNAME:xps_mch_emc INSTANCE:flash -
+C:\Users\wputn1\Desktop\Project5\Project5.mhs line 219 - Copying cache
+implementation netlist
+IPNAME:xps_gpio INSTANCE:leds_1bit -
+C:\Users\wputn1\Desktop\Project5\Project5.mhs line 245 - Copying cache
+implementation netlist
+IPNAME:xps_gpio INSTANCE:leds_6bit -
+C:\Users\wputn1\Desktop\Project5\Project5.mhs line 258 - Copying cache
+implementation netlist
+IPNAME:xps_uartlite INSTANCE:rs232_dce -
+C:\Users\wputn1\Desktop\Project5\Project5.mhs line 271 - Copying cache
+implementation netlist
+IPNAME:xps_uartlite INSTANCE:rs232_dte -
+C:\Users\wputn1\Desktop\Project5\Project5.mhs line 285 - Copying cache
+implementation netlist
+IPNAME:xps_gpio INSTANCE:rotary_encoder -
+C:\Users\wputn1\Desktop\Project5\Project5.mhs line 299 - Copying cache
+implementation netlist
+IPNAME:xps_timer INSTANCE:xps_timer_0 -
+C:\Users\wputn1\Desktop\Project5\Project5.mhs line 312 - Copying cache
+implementation netlist
+IPNAME:mdm INSTANCE:mdm_0 - C:\Users\wputn1\Desktop\Project5\Project5.mhs line
+347 - Copying cache implementation netlist
+IPNAME:proc_sys_reset INSTANCE:proc_sys_reset_0 -
+C:\Users\wputn1\Desktop\Project5\Project5.mhs line 359 - Copying cache
+implementation netlist
+IPNAME:graphics_ip INSTANCE:graphics_ip_0 -
+C:\Users\wputn1\Desktop\Project5\Project5.mhs line 372 - Copying cache
+implementation netlist
 
 Elaborating instances ...
-IPNAME:bram_block INSTANCE:lmb_bram - E:\SoC\Project5\Project5.mhs line 121 -
-elaborating IP
-IPNAME:clock_generator INSTANCE:clock_generator_0 - E:\SoC\Project5\Project5.mhs
-line 319 - elaborating IP
+IPNAME:bram_block INSTANCE:lmb_bram -
+C:\Users\wputn1\Desktop\Project5\Project5.mhs line 124 - elaborating IP
+IPNAME:clock_generator INSTANCE:clock_generator_0 -
+C:\Users\wputn1\Desktop\Project5\Project5.mhs line 322 - elaborating IP
 ClkGen elaborate status: PASSED
 ----------------------------------------
 
@@ -922,7 +996,7 @@ Inserting wrapper level ...
 Completion time: 3.00 seconds
 
 Constructing platform-level connectivity ...
-Completion time: 1.00 seconds
+Completion time: 0.00 seconds
 
 Writing (top-level) BMM ...
 
@@ -935,69 +1009,18 @@ Running XST synthesis ...
 INFO:EDK - The following instances are synthesized with XST. The MPD option
    IMP_NETLIST=TRUE indicates that a NGC file is to be produced using XST
    synthesis. IMP_NETLIST=FALSE (default) instances are not synthesized. 
-INSTANCE:microblaze_0 - E:\SoC\Project5\Project5.mhs line 68 - Running XST
-synthesis
-INSTANCE:mb_plb - E:\SoC\Project5\Project5.mhs line 82 - Running XST synthesis
-INSTANCE:ilmb - E:\SoC\Project5\Project5.mhs line 89 - Running XST synthesis
-INSTANCE:dlmb - E:\SoC\Project5\Project5.mhs line 96 - Running XST synthesis
-INSTANCE:dlmb_cntlr - E:\SoC\Project5\Project5.mhs line 103 - Running XST
-synthesis
-INSTANCE:ilmb_cntlr - E:\SoC\Project5\Project5.mhs line 112 - Running XST
-synthesis
-INSTANCE:lmb_bram - E:\SoC\Project5\Project5.mhs line 121 - Running XST
-synthesis
-INSTANCE:buttons_3bit - E:\SoC\Project5\Project5.mhs line 128 - Running XST
-synthesis
-INSTANCE:character_lcd_2x16 - E:\SoC\Project5\Project5.mhs line 141 - Running
-XST synthesis
-INSTANCE:ddr_sdram - E:\SoC\Project5\Project5.mhs line 154 - Running XST
-synthesis
-INSTANCE:dip_switches_4bit - E:\SoC\Project5\Project5.mhs line 185 - Running XST
-synthesis
-INSTANCE:ethernet_mac - E:\SoC\Project5\Project5.mhs line 198 - Running XST
-synthesis
-INSTANCE:flash - E:\SoC\Project5\Project5.mhs line 216 - Running XST synthesis
-INSTANCE:leds_1bit - E:\SoC\Project5\Project5.mhs line 242 - Running XST
-synthesis
-INSTANCE:leds_6bit - E:\SoC\Project5\Project5.mhs line 255 - Running XST
-synthesis
-INSTANCE:rs232_dce - E:\SoC\Project5\Project5.mhs line 268 - Running XST
-synthesis
-INSTANCE:rs232_dte - E:\SoC\Project5\Project5.mhs line 282 - Running XST
-synthesis
-INSTANCE:rotary_encoder - E:\SoC\Project5\Project5.mhs line 296 - Running XST
-synthesis
-INSTANCE:xps_timer_0 - E:\SoC\Project5\Project5.mhs line 309 - Running XST
-synthesis
-INSTANCE:clock_generator_0 - E:\SoC\Project5\Project5.mhs line 319 - Running XST
-synthesis
-INSTANCE:mdm_0 - E:\SoC\Project5\Project5.mhs line 344 - Running XST synthesis
-INSTANCE:proc_sys_reset_0 - E:\SoC\Project5\Project5.mhs line 356 - Running XST
-synthesis
-INSTANCE:graphics_ip_0 - E:\SoC\Project5\Project5.mhs line 369 - Running XST
-synthesis
+INSTANCE:clock_generator_0 - C:\Users\wputn1\Desktop\Project5\Project5.mhs line
+322 - Running XST synthesis
+INSTANCE:controller_0 - C:\Users\wputn1\Desktop\Project5\Project5.mhs line 383 -
+Running XST synthesis
 
 Running NGCBUILD ...
-IPNAME:microblaze_0_wrapper INSTANCE:microblaze_0 - E:\SoC\Project5\Project5.mhs
-line 68 - Running NGCBUILD
-IPNAME:ilmb_wrapper INSTANCE:ilmb - E:\SoC\Project5\Project5.mhs line 89 -
-Running NGCBUILD
-IPNAME:dlmb_wrapper INSTANCE:dlmb - E:\SoC\Project5\Project5.mhs line 96 -
-Running NGCBUILD
-IPNAME:ddr_sdram_wrapper INSTANCE:ddr_sdram - E:\SoC\Project5\Project5.mhs line
-154 - Running NGCBUILD
-IPNAME:ethernet_mac_wrapper INSTANCE:ethernet_mac - E:\SoC\Project5\Project5.mhs
-line 198 - Running NGCBUILD
-IPNAME:rs232_dce_wrapper INSTANCE:rs232_dce - E:\SoC\Project5\Project5.mhs line
-268 - Running NGCBUILD
-IPNAME:rs232_dte_wrapper INSTANCE:rs232_dte - E:\SoC\Project5\Project5.mhs line
-282 - Running NGCBUILD
 IPNAME:clock_generator_0_wrapper INSTANCE:clock_generator_0 -
-E:\SoC\Project5\Project5.mhs line 319 - Running NGCBUILD
+C:\Users\wputn1\Desktop\Project5\Project5.mhs line 322 - Running NGCBUILD
 INFO:EDK:3509 - NCF files should not be modified as they will be regenerated.
    If any constraint needs to be overridden, this should be done by modifying
    the data/Project5.ucf file.
 
 Rebuilding cache ...
 
-Total run time: 2309.00 seconds
+Total run time: 41.00 seconds

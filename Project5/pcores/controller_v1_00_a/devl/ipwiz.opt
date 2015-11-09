@@ -1,0 +1,8 @@
+-batch 
+-create controller 
+-ver 1.00.a 
+-dir "C:\Users\wputn1\Desktop\Project5" 
+-lang vhdl 
+-bus plbv46 s 
+-reg 1 
+-xps 

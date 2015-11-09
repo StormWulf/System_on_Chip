@@ -1,7 +1,7 @@
-Release 13.1 - par O.40d (nt64)
+Release 13.1 - par O.40d (nt)
 Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
 
-Mon Nov 02 11:09:16 2015
+Sat Nov 07 13:33:03 2015
 
 
 INFO: The IO information is provided in three file formats as part of the Place and Route (PAR) process.  These formats are:
@@ -106,7 +106,7 @@ Pinout by Pin Number:
 |E12       |                                          |DIFFS    |IO_L06N_0                |UNUSED       |            |0             |          |         |           |         |       |          |           |                |
 |E13       |                                          |IOB      |IO                       |UNUSED       |            |0             |          |         |           |         |       |          |           |                |
 |E14       |                                          |         |VCCINT                   |             |            |              |          |         |           |         |1.2    |          |           |                |
-|E15       |                                          |DIFFM    |IO_L22P_1                |UNUSED       |            |1             |          |         |           |         |       |          |           |                |
+|E15       |controller_0_NESdatIn_pin                 |IBUF     |IO_L22P_1                |INPUT        |LVCMOS33    |1             |          |         |           |IFD      |       |LOCATED   |YES        |NONE            |
 |E16       |                                          |DIFFS    |IO_L22N_1                |UNUSED       |            |1             |          |         |           |         |       |          |           |                |
 |E17       |                                          |IBUF     |IP                       |UNUSED       |            |1             |          |         |           |         |       |          |           |                |
 |E18       |                                          |IBUF     |IP                       |UNUSED       |            |1             |          |         |           |         |       |          |           |                |
@@ -245,8 +245,8 @@ Pinout by Pin Number:
 |N11       |fpga_0_FLASH_Mem_A_pin<8>                 |IOB      |IO_L18N_2                |OUTPUT       |LVCMOS33    |2             |12        |SLOW     |NONE**     |         |       |LOCATED   |YES        |NONE            |
 |N12       |                                          |DIFFM    |IO_L21P_2                |UNUSED       |            |2             |          |         |           |         |       |          |           |                |
 |N13       |                                          |         |VCCINT                   |             |            |              |          |         |           |         |1.2    |          |           |                |
-|N14       |                                          |DIFFS    |IO_L04N_1                |UNUSED       |            |1             |          |         |           |         |       |          |           |                |
-|N15       |                                          |DIFFM    |IO_L04P_1                |UNUSED       |            |1             |          |         |           |         |       |          |           |                |
+|N14       |controller_0_NESclk_pin                   |IOB      |IO_L04N_1                |OUTPUT       |LVCMOS33    |1             |12        |SLOW     |NONE**     |         |       |LOCATED   |YES        |NONE            |
+|N15       |controller_0_NESlatch_pin                 |IOB      |IO_L04P_1                |OUTPUT       |LVCMOS33    |1             |12        |SLOW     |NONE**     |         |       |LOCATED   |YES        |NONE            |
 |N16       |                                          |         |VCCO_1                   |             |            |1             |          |         |           |         |3.30   |          |           |                |
 |N17       |fpga_0_DIP_Switches_4Bit_GPIO_IO_I_pin<0> |IBUF     |IP                       |INPUT        |LVCMOS33    |1             |          |         |PULLDOWN   |NONE     |       |LOCATED   |NO         |NONE            |
 |N18       |                                          |DIFFM    |IO_L08P_1                |UNUSED       |            |1             |          |         |           |         |       |          |           |                |

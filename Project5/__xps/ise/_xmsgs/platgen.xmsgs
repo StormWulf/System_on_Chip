@@ -90,10 +90,10 @@ WARNING:Security:42 - Your software subscription period has lapsed. Your current
 <msg type="info" file="EDK" num="0" delta="new" >IPNAME: <arg fmt="%s" index="1">xps_ethernetlite</arg>, INSTANCE:<arg fmt="%s" index="2">Ethernet_MAC</arg> - <arg fmt="%s" index="3">tcl</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_FAMILY</arg> value to <arg fmt="%s" index="6">spartan3e</arg> - <arg fmt="%s" index="7">C:\Xilinx\13.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_ethernetlite_v4_00_a\data\xps_ethernetlite_v2_1_0.mpd line 69</arg> 
 </msg>
 
-<msg type="info" file="EDK" num="740" delta="new" >Cannot determine the input clock associated with port : <arg fmt="%s" index="1">ilmb_cntlr</arg>:<arg fmt="%s" index="2">BRAM_Clk_A</arg>. Clock DRCs will not be performed on this core and cores connected to it. 
+<msg type="info" file="EDK" num="740" delta="old" >Cannot determine the input clock associated with port : <arg fmt="%s" index="1">ilmb_cntlr</arg>:<arg fmt="%s" index="2">BRAM_Clk_A</arg>. Clock DRCs will not be performed on this core and cores connected to it. 
 </msg>
 
-<msg type="info" file="EDK" num="740" delta="new" >Cannot determine the input clock associated with port : <arg fmt="%s" index="1">dlmb_cntlr</arg>:<arg fmt="%s" index="2">BRAM_Clk_A</arg>. Clock DRCs will not be performed on this core and cores connected to it. 
+<msg type="info" file="EDK" num="740" delta="old" >Cannot determine the input clock associated with port : <arg fmt="%s" index="1">dlmb_cntlr</arg>:<arg fmt="%s" index="2">BRAM_Clk_A</arg>. Clock DRCs will not be performed on this core and cores connected to it. 
 </msg>
 
 <msg type="info" file="EDK" num="0" delta="new" >IPNAME: <arg fmt="%s" index="1">mpmc</arg>, INSTANCE:<arg fmt="%s" index="2">DDR_SDRAM</arg> - <arg fmt="%s" index="3">tool</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_SPLB0_P2P</arg> value to <arg fmt="%s" index="6">0</arg> - <arg fmt="%s" index="7">C:\Xilinx\13.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v6_03_a\data\mpmc_v2_1_0.mpd line 357</arg> 
@@ -101,7 +101,7 @@ WARNING:Security:42 - Your software subscription period has lapsed. Your current
 
 <msg type="info" file="EDK" num="0" delta="new" >IPNAME: <arg fmt="%s" index="1">xps_ethernetlite</arg>, INSTANCE: <arg fmt="%s" index="2">Ethernet_MAC</arg> - <arg fmt="%s" index="3">This design requires design constraints to guarantee performance.
 Please refer to the data sheet for details.  
-The PLB clock frequency must be greater than or equal to 50 MHz for 100 Mbs Ethernet operation and greater than or equal to 5.0 MHz for 10 Mbs Ethernet operation.</arg> - <arg fmt="%s" index="4">E:\SoC\Project5\Project5.mhs line 198</arg>
+The PLB clock frequency must be greater than or equal to 50 MHz for 100 Mbs Ethernet operation and greater than or equal to 5.0 MHz for 10 Mbs Ethernet operation.</arg> - <arg fmt="%s" index="4">C:\Users\wputn1\Desktop\Project5\Project5.mhs line 201</arg>
 </msg>
 
 <msg type="info" file="EDK" num="0" delta="new" >IPNAME: <arg fmt="%s" index="1">microblaze</arg>, INSTANCE:<arg fmt="%s" index="2">microblaze_0</arg> - <arg fmt="%s" index="3">tool</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_DPLB_DWIDTH</arg> value to <arg fmt="%s" index="6">64</arg> - <arg fmt="%s" index="7">C:\Xilinx\13.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_10_a\data\microblaze_v2_1_0.mpd line 188</arg> 
@@ -113,7 +113,7 @@ The PLB clock frequency must be greater than or equal to 50 MHz for 100 Mbs Ethe
 <msg type="info" file="EDK" num="0" delta="new" >IPNAME: <arg fmt="%s" index="1">plb_v46</arg>, INSTANCE:<arg fmt="%s" index="2">mb_plb</arg> - <arg fmt="%s" index="3">tool</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_PLBV46_NUM_MASTERS</arg> value to <arg fmt="%s" index="6">2</arg> - <arg fmt="%s" index="7">C:\Xilinx\13.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data\plb_v46_v2_1_0.mpd line 69</arg> 
 </msg>
 
-<msg type="info" file="EDK" num="0" delta="new" >IPNAME: <arg fmt="%s" index="1">plb_v46</arg>, INSTANCE:<arg fmt="%s" index="2">mb_plb</arg> - <arg fmt="%s" index="3">tool</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_PLBV46_NUM_SLAVES</arg> value to <arg fmt="%s" index="6">14</arg> - <arg fmt="%s" index="7">C:\Xilinx\13.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data\plb_v46_v2_1_0.mpd line 70</arg> 
+<msg type="info" file="EDK" num="0" delta="new" >IPNAME: <arg fmt="%s" index="1">plb_v46</arg>, INSTANCE:<arg fmt="%s" index="2">mb_plb</arg> - <arg fmt="%s" index="3">tool</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_PLBV46_NUM_SLAVES</arg> value to <arg fmt="%s" index="6">15</arg> - <arg fmt="%s" index="7">C:\Xilinx\13.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data\plb_v46_v2_1_0.mpd line 70</arg> 
 </msg>
 
 <msg type="info" file="EDK" num="0" delta="new" >IPNAME: <arg fmt="%s" index="1">plb_v46</arg>, INSTANCE:<arg fmt="%s" index="2">mb_plb</arg> - <arg fmt="%s" index="3">tool</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_PLBV46_MID_WIDTH</arg> value to <arg fmt="%s" index="6">1</arg> - <arg fmt="%s" index="7">C:\Xilinx\13.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data\plb_v46_v2_1_0.mpd line 71</arg> 
@@ -209,13 +209,22 @@ The PLB clock frequency must be greater than or equal to 50 MHz for 100 Mbs Ethe
 <msg type="info" file="EDK" num="0" delta="new" >IPNAME: <arg fmt="%s" index="1">mdm</arg>, INSTANCE:<arg fmt="%s" index="2">mdm_0</arg> - <arg fmt="%s" index="3">tool</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_SPLB_NUM_MASTERS</arg> value to <arg fmt="%s" index="6">2</arg> - <arg fmt="%s" index="7">C:\Xilinx\13.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_00_b\data\mdm_v2_1_0.mpd line 84</arg> 
 </msg>
 
-<msg type="info" file="EDK" num="0" delta="new" >IPNAME: <arg fmt="%s" index="1">graphics_ip</arg>, INSTANCE:<arg fmt="%s" index="2">graphics_ip_0</arg> - <arg fmt="%s" index="3">tool</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_SPLB_DWIDTH</arg> value to <arg fmt="%s" index="6">64</arg> - <arg fmt="%s" index="7">E:\SoC\Project5\pcores\graphics_ip_v1_00_a\data\graphics_ip_v2_1_0.mpd line 25</arg> 
+<msg type="info" file="EDK" num="0" delta="new" >IPNAME: <arg fmt="%s" index="1">graphics_ip</arg>, INSTANCE:<arg fmt="%s" index="2">graphics_ip_0</arg> - <arg fmt="%s" index="3">tool</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_SPLB_DWIDTH</arg> value to <arg fmt="%s" index="6">64</arg> - <arg fmt="%s" index="7">C:\Users\wputn1\Desktop\Project5\pcores\graphics_ip_v1_00_a\data\graphics_ip_v2_1_0.mpd line 25</arg> 
 </msg>
 
-<msg type="info" file="EDK" num="0" delta="new" >IPNAME: <arg fmt="%s" index="1">graphics_ip</arg>, INSTANCE:<arg fmt="%s" index="2">graphics_ip_0</arg> - <arg fmt="%s" index="3">tool</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_SPLB_NUM_MASTERS</arg> value to <arg fmt="%s" index="6">2</arg> - <arg fmt="%s" index="7">E:\SoC\Project5\pcores\graphics_ip_v1_00_a\data\graphics_ip_v2_1_0.mpd line 26</arg> 
+<msg type="info" file="EDK" num="0" delta="new" >IPNAME: <arg fmt="%s" index="1">graphics_ip</arg>, INSTANCE:<arg fmt="%s" index="2">graphics_ip_0</arg> - <arg fmt="%s" index="3">tool</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_SPLB_NUM_MASTERS</arg> value to <arg fmt="%s" index="6">2</arg> - <arg fmt="%s" index="7">C:\Users\wputn1\Desktop\Project5\pcores\graphics_ip_v1_00_a\data\graphics_ip_v2_1_0.mpd line 26</arg> 
 </msg>
 
-<msg type="info" file="EDK" num="0" delta="new" >IPNAME: <arg fmt="%s" index="1">graphics_ip</arg>, INSTANCE:<arg fmt="%s" index="2">graphics_ip_0</arg> - <arg fmt="%s" index="3">tool</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_SPLB_MID_WIDTH</arg> value to <arg fmt="%s" index="6">1</arg> - <arg fmt="%s" index="7">E:\SoC\Project5\pcores\graphics_ip_v1_00_a\data\graphics_ip_v2_1_0.mpd line 27</arg> 
+<msg type="info" file="EDK" num="0" delta="new" >IPNAME: <arg fmt="%s" index="1">graphics_ip</arg>, INSTANCE:<arg fmt="%s" index="2">graphics_ip_0</arg> - <arg fmt="%s" index="3">tool</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_SPLB_MID_WIDTH</arg> value to <arg fmt="%s" index="6">1</arg> - <arg fmt="%s" index="7">C:\Users\wputn1\Desktop\Project5\pcores\graphics_ip_v1_00_a\data\graphics_ip_v2_1_0.mpd line 27</arg> 
+</msg>
+
+<msg type="info" file="EDK" num="0" delta="new" >IPNAME: <arg fmt="%s" index="1">controller</arg>, INSTANCE:<arg fmt="%s" index="2">controller_0</arg> - <arg fmt="%s" index="3">tool</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_SPLB_DWIDTH</arg> value to <arg fmt="%s" index="6">64</arg> - <arg fmt="%s" index="7">C:\Users\wputn1\Desktop\Project5\pcores\controller_v1_00_a\data\controller_v2_1_0.mpd line 25</arg> 
+</msg>
+
+<msg type="info" file="EDK" num="0" delta="new" >IPNAME: <arg fmt="%s" index="1">controller</arg>, INSTANCE:<arg fmt="%s" index="2">controller_0</arg> - <arg fmt="%s" index="3">tool</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_SPLB_NUM_MASTERS</arg> value to <arg fmt="%s" index="6">2</arg> - <arg fmt="%s" index="7">C:\Users\wputn1\Desktop\Project5\pcores\controller_v1_00_a\data\controller_v2_1_0.mpd line 26</arg> 
+</msg>
+
+<msg type="info" file="EDK" num="0" delta="new" >IPNAME: <arg fmt="%s" index="1">controller</arg>, INSTANCE:<arg fmt="%s" index="2">controller_0</arg> - <arg fmt="%s" index="3">tool</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_SPLB_MID_WIDTH</arg> value to <arg fmt="%s" index="6">1</arg> - <arg fmt="%s" index="7">C:\Users\wputn1\Desktop\Project5\pcores\controller_v1_00_a\data\controller_v2_1_0.mpd line 27</arg> 
 </msg>
 
 <msg type="warning" file="EDK" num="0" delta="new" >PORT: <arg fmt="%s" index="1">bscan_tdo1</arg>, CONNECTOR: <arg fmt="%s" index="2">bscan_tdo1</arg> - No driver found. Port will be driven to <arg fmt="%s" index="3">GND</arg> - <arg fmt="%s" index="4">C:\Xilinx\13.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_00_b\data\mdm_v2_1_0.mpd line 230</arg> 
@@ -602,7 +611,7 @@ The PLB clock frequency must be greater than or equal to 50 MHz for 100 Mbs Ethe
 <msg type="info" file="EDK" num="0" delta="new" >The following instances are synthesized with <arg fmt="%s" index="1">XST</arg>. The MPD option IMP_NETLIST=TRUE indicates that a NGC file is to be produced using <arg fmt="%s" index="2">XST</arg> synthesis. IMP_NETLIST=FALSE (default) instances are not synthesized. 
 </msg>
 
-<msg type="info" file="EDK" num="3509" delta="new" >NCF files should not be modified as they will be regenerated.
+<msg type="info" file="EDK" num="3509" delta="old" >NCF files should not be modified as they will be regenerated.
 If any constraint needs to be overridden, this should be done by modifying the data/<arg fmt="%s" index="1">Project5</arg>.ucf file.
 </msg>
 

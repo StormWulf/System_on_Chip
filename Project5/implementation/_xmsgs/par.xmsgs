@@ -7,8 +7,52 @@
 <messages>
 <msg type="info" file="Timing" num="2802" delta="new" >Read <arg fmt="%d" index="1">104</arg> constraints.  If you are experiencing memory or runtime issues it may help to consolidate some of these constraints.  For more details please do a search for &quot;timing:2802&quot; at http://www.xilinx.com/support.</msg>
 
+<msg type="warning" file="Route" num="455" delta="new" >CLK Net:<arg fmt="%s" index="1">mdm_0/Dbg_Update_1</arg> may have excessive skew because 
+   <arg fmt="%d" index="2">19</arg> CLK pins and <arg fmt="%d" index="3">1</arg> NON_CLK pins failed to route using a CLK template.
+</msg>
+
+<msg type="warning" file="Route" num="455" delta="new" >CLK Net:<arg fmt="%s" index="1">controller_0/controller_0/USER_LOGIC_I/cont/stateNow_FSM_FFd11</arg> may have excessive skew because 
+   <arg fmt="%d" index="2">1</arg> CLK pins and <arg fmt="%d" index="3">2</arg> NON_CLK pins failed to route using a CLK template.
+</msg>
+
+<msg type="warning" file="Route" num="455" delta="new" >CLK Net:<arg fmt="%s" index="1">controller_0/controller_0/USER_LOGIC_I/cont/stateNow_FSM_FFd13</arg> may have excessive skew because 
+   <arg fmt="%d" index="2">1</arg> CLK pins and <arg fmt="%d" index="3">2</arg> NON_CLK pins failed to route using a CLK template.
+</msg>
+
+<msg type="warning" file="Route" num="455" delta="new" >CLK Net:<arg fmt="%s" index="1">controller_0/controller_0/USER_LOGIC_I/cont/stateNow_FSM_FFd15</arg> may have excessive skew because 
+   <arg fmt="%d" index="2">1</arg> CLK pins and <arg fmt="%d" index="3">2</arg> NON_CLK pins failed to route using a CLK template.
+</msg>
+
+<msg type="warning" file="Route" num="455" delta="new" >CLK Net:<arg fmt="%s" index="1">controller_0/controller_0/USER_LOGIC_I/cont/stateNow_FSM_FFd1</arg> may have excessive skew because 
+   <arg fmt="%d" index="2">1</arg> CLK pins and <arg fmt="%d" index="3">2</arg> NON_CLK pins failed to route using a CLK template.
+</msg>
+
+<msg type="warning" file="Route" num="455" delta="new" >CLK Net:<arg fmt="%s" index="1">controller_0/controller_0/USER_LOGIC_I/cont/stateNow_FSM_FFd3</arg> may have excessive skew because 
+   <arg fmt="%d" index="2">1</arg> CLK pins and <arg fmt="%d" index="3">2</arg> NON_CLK pins failed to route using a CLK template.
+</msg>
+
+<msg type="warning" file="Route" num="455" delta="new" >CLK Net:<arg fmt="%s" index="1">controller_0/controller_0/USER_LOGIC_I/cont/stateNow_FSM_FFd5</arg> may have excessive skew because 
+   <arg fmt="%d" index="2">1</arg> CLK pins and <arg fmt="%d" index="3">2</arg> NON_CLK pins failed to route using a CLK template.
+</msg>
+
+<msg type="warning" file="Route" num="455" delta="new" >CLK Net:<arg fmt="%s" index="1">controller_0/controller_0/USER_LOGIC_I/cont/stateNow_FSM_FFd7</arg> may have excessive skew because 
+   <arg fmt="%d" index="2">1</arg> CLK pins and <arg fmt="%d" index="3">2</arg> NON_CLK pins failed to route using a CLK template.
+</msg>
+
+<msg type="warning" file="Route" num="455" delta="new" >CLK Net:<arg fmt="%s" index="1">controller_0/controller_0/USER_LOGIC_I/cont/stateNow_FSM_FFd9</arg> may have excessive skew because 
+   <arg fmt="%d" index="2">1</arg> CLK pins and <arg fmt="%d" index="3">2</arg> NON_CLK pins failed to route using a CLK template.
+</msg>
+
+<msg type="warning" file="Route" num="455" delta="new" >CLK Net:<arg fmt="%s" index="1">controller_0/controller_0/USER_LOGIC_I/cont/NESlatch_or0000</arg> may have excessive skew because 
+   <arg fmt="%d" index="2">2</arg> CLK pins and <arg fmt="%d" index="3">0</arg> NON_CLK pins failed to route using a CLK template.
+</msg>
+
 <msg type="warning" file="Route" num="455" delta="new" >CLK Net:<arg fmt="%s" index="1">fpga_0_clk_1_sys_clk_pin_IBUFG</arg> may have excessive skew because 
-   <arg fmt="%d" index="2">4</arg> CLK pins and <arg fmt="%d" index="3">0</arg> NON_CLK pins failed to route using a CLK template.
+   <arg fmt="%d" index="2">5</arg> CLK pins and <arg fmt="%d" index="3">0</arg> NON_CLK pins failed to route using a CLK template.
+</msg>
+
+<msg type="warning" file="Route" num="455" delta="new" >CLK Net:<arg fmt="%s" index="1">controller_0/controller_0/USER_LOGIC_I/cont/sig&lt;5&gt;</arg> may have excessive skew because 
+   <arg fmt="%d" index="2">0</arg> CLK pins and <arg fmt="%d" index="3">1</arg> NON_CLK pins failed to route using a CLK template.
 </msg>
 
 <msg type="warning" file="Route" num="455" delta="new" >CLK Net:<arg fmt="%s" index="1">fpga_0_Ethernet_MAC_PHY_rx_clk_pin_IBUF</arg> may have excessive skew because 

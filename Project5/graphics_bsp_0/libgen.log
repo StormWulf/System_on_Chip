@@ -1,5 +1,5 @@
 Release 13.1 - libgen Xilinx EDK 13.1 Build EDK_O.40d
- (nt64)
+ (nt)
 Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
 
 Command Line: libgen -hw ../hw_platform_0/system.xml -pe microblaze_0 -log

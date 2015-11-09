@@ -24,7 +24,7 @@ TABLE OF CONTENTS
 ---- Source Parameters
 Input Format                       : MIXED
 Input File Name                    : "graphics_ip_0_wrapper_xst.prj"
-Verilog Include Directory          : {"E:\SoC\Project5\pcores\" "C:\Xilinx\13.1\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Xilinx\13.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
+Verilog Include Directory          : {"C:\Users\wputn1\Desktop\Project5\pcores\" "C:\Users\wputn1\Desktop\Project5\pcores\myprocessoriplib\pcores\" "C:\Xilinx\13.1\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Xilinx\13.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
 
 ---- Target Parameters
 Target Device                      : xc3s1600efg320-4
@@ -226,13 +226,13 @@ Entity <or_gate128> (Architecture <imp>) compiled.
 Compiling vhdl file "C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_pkg.vhd" in Library proc_common_v3_00_a.
 Package <ipif_pkg> compiled.
 Package body <ipif_pkg> compiled.
-Compiling vhdl file "E:/SoC/Project5/pcores/graphics_ip_v1_00_a/hdl/vhdl/vgatimehelper.vhd" in Library graphics_ip_v1_00_a.
+Compiling vhdl file "C:/Users/wputn1/Desktop/Project5/pcores/graphics_ip_v1_00_a/hdl/vhdl/vgatimehelper.vhd" in Library graphics_ip_v1_00_a.
 Entity <vgatimehelper> compiled.
 Entity <vgatimehelper> (Architecture <arch>) compiled.
 Compiling vhdl file "C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plb_address_decoder.vhd" in Library plbv46_slave_single_v1_01_a.
 Entity <plb_address_decoder> compiled.
 Entity <plb_address_decoder> (Architecture <IMP>) compiled.
-Compiling vhdl file "E:/SoC/Project5/pcores/graphics_ip_v1_00_a/hdl/vhdl/project5IP.vhd" in Library graphics_ip_v1_00_a.
+Compiling vhdl file "C:/Users/wputn1/Desktop/Project5/pcores/graphics_ip_v1_00_a/hdl/vhdl/project5IP.vhd" in Library graphics_ip_v1_00_a.
 Entity <project5IP> compiled.
 Entity <project5IP> (Architecture <Behavioral>) compiled.
 Compiling vhdl file "C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plb_slave_attachment.vhd" in Library plbv46_slave_single_v1_01_a.
@@ -241,13 +241,13 @@ Entity <plb_slave_attachment> (Architecture <implementation>) compiled.
 Compiling vhdl file "C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plbv46_slave_single.vhd" in Library plbv46_slave_single_v1_01_a.
 Entity <plbv46_slave_single> compiled.
 Entity <plbv46_slave_single> (Architecture <implementation>) compiled.
-Compiling vhdl file "E:/SoC/Project5/pcores/graphics_ip_v1_00_a/hdl/vhdl/user_logic.vhd" in Library graphics_ip_v1_00_a.
+Compiling vhdl file "C:/Users/wputn1/Desktop/Project5/pcores/graphics_ip_v1_00_a/hdl/vhdl/user_logic.vhd" in Library graphics_ip_v1_00_a.
 Entity <user_logic> compiled.
 Entity <user_logic> (Architecture <IMP>) compiled.
-Compiling vhdl file "E:/SoC/Project5/pcores/graphics_ip_v1_00_a/hdl/vhdl/graphics_ip.vhd" in Library graphics_ip_v1_00_a.
+Compiling vhdl file "C:/Users/wputn1/Desktop/Project5/pcores/graphics_ip_v1_00_a/hdl/vhdl/graphics_ip.vhd" in Library graphics_ip_v1_00_a.
 Entity <graphics_ip> compiled.
 Entity <graphics_ip> (Architecture <IMP>) compiled.
-Compiling vhdl file "E:/SoC/Project5/hdl/graphics_ip_0_wrapper.vhd" in Library work.
+Compiling vhdl file "C:/Users/wputn1/Desktop/Project5/hdl/graphics_ip_0_wrapper.vhd" in Library work.
 Entity <graphics_ip_0_wrapper> compiled.
 Entity <graphics_ip_0_wrapper> (Architecture <STRUCTURE>) compiled.
 
@@ -434,13 +434,13 @@ WARNING:Xst:37 - Detected unknown constraint/property "SIGIS". This constraint/p
 Entity <user_logic> analyzed. Unit <user_logic> generated.
 
 Analyzing Entity <project5IP> in library <graphics_ip_v1_00_a> (Architecture <Behavioral>).
-WARNING:Xst:790 - "E:/SoC/Project5/pcores/graphics_ip_v1_00_a/hdl/vhdl/project5IP.vhd" line 89: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "C:/Users/wputn1/Desktop/Project5/pcores/graphics_ip_v1_00_a/hdl/vhdl/project5IP.vhd" line 89: Index value(s) does not match array range, simulation mismatch.
 INFO:Xst:1433 - Contents of array <ramF> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
-WARNING:Xst:790 - "E:/SoC/Project5/pcores/graphics_ip_v1_00_a/hdl/vhdl/project5IP.vhd" line 97: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "C:/Users/wputn1/Desktop/Project5/pcores/graphics_ip_v1_00_a/hdl/vhdl/project5IP.vhd" line 97: Index value(s) does not match array range, simulation mismatch.
 INFO:Xst:1433 - Contents of array <ramB> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
-WARNING:Xst:790 - "E:/SoC/Project5/pcores/graphics_ip_v1_00_a/hdl/vhdl/project5IP.vhd" line 105: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "C:/Users/wputn1/Desktop/Project5/pcores/graphics_ip_v1_00_a/hdl/vhdl/project5IP.vhd" line 105: Index value(s) does not match array range, simulation mismatch.
 INFO:Xst:1433 - Contents of array <ramS> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
-WARNING:Xst:753 - "E:/SoC/Project5/pcores/graphics_ip_v1_00_a/hdl/vhdl/project5IP.vhd" line 111: Unconnected output port 'p_tick' of component 'vgatimehelper'.
+WARNING:Xst:753 - "C:/Users/wputn1/Desktop/Project5/pcores/graphics_ip_v1_00_a/hdl/vhdl/project5IP.vhd" line 111: Unconnected output port 'p_tick' of component 'vgatimehelper'.
 INFO:Xst:1432 - Contents of array <ramF> may be accessed with a negative index, causing simulation mismatch.
 INFO:Xst:1433 - Contents of array <ramF> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
 INFO:Xst:1432 - Contents of array <ramB> may be accessed with a negative index, causing simulation mismatch.
@@ -485,7 +485,7 @@ Unit <or_muxcy> synthesized.
 
 
 Synthesizing Unit <vgatimehelper>.
-    Related source file is "E:/SoC/Project5/pcores/graphics_ip_v1_00_a/hdl/vhdl/vgatimehelper.vhd".
+    Related source file is "C:/Users/wputn1/Desktop/Project5/pcores/graphics_ip_v1_00_a/hdl/vhdl/vgatimehelper.vhd".
     Found 10-bit up counter for signal <h_count_reg>.
     Found 10-bit comparator greatequal for signal <h_sync_next$cmp_ge0000> created at line 105.
     Found 10-bit comparator lessequal for signal <h_sync_next$cmp_le0000> created at line 105.
@@ -511,7 +511,7 @@ Unit <or_gate128> synthesized.
 
 
 Synthesizing Unit <project5IP>.
-    Related source file is "E:/SoC/Project5/pcores/graphics_ip_v1_00_a/hdl/vhdl/project5IP.vhd".
+    Related source file is "C:/Users/wputn1/Desktop/Project5/pcores/graphics_ip_v1_00_a/hdl/vhdl/project5IP.vhd".
 WARNING:Xst:647 - Input <dataPort<28>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:1780 - Signal <toDispConv> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:1780 - Signal <toDisp> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
@@ -544,7 +544,7 @@ Unit <project5IP> synthesized.
 
 
 Synthesizing Unit <user_logic>.
-    Related source file is "E:/SoC/Project5/pcores/graphics_ip_v1_00_a/hdl/vhdl/user_logic.vhd".
+    Related source file is "C:/Users/wputn1/Desktop/Project5/pcores/graphics_ip_v1_00_a/hdl/vhdl/user_logic.vhd".
     Found 32-bit register for signal <slv_reg0>.
     Summary:
 	inferred  32 D-type flip-flop(s).
@@ -645,7 +645,7 @@ Unit <plbv46_slave_single> synthesized.
 
 
 Synthesizing Unit <graphics_ip>.
-    Related source file is "E:/SoC/Project5/pcores/graphics_ip_v1_00_a/hdl/vhdl/graphics_ip.vhd".
+    Related source file is "C:/Users/wputn1/Desktop/Project5/pcores/graphics_ip_v1_00_a/hdl/vhdl/graphics_ip.vhd".
 WARNING:Xst:646 - Signal <ipif_Bus2IP_RNW> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <ipif_Bus2IP_CS<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <ipif_Bus2IP_Addr> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
@@ -653,7 +653,7 @@ Unit <graphics_ip> synthesized.
 
 
 Synthesizing Unit <graphics_ip_0_wrapper>.
-    Related source file is "E:/SoC/Project5/hdl/graphics_ip_0_wrapper.vhd".
+    Related source file is "C:/Users/wputn1/Desktop/Project5/hdl/graphics_ip_0_wrapper.vhd".
 Unit <graphics_ip_0_wrapper> synthesized.
 
 
@@ -1734,12 +1734,12 @@ Offset:              3.513ns (Levels of Logic = 2)
 =========================================================================
 
 
-Total REAL time to Xst completion: 107.00 secs
-Total CPU time to Xst completion: 107.04 secs
+Total REAL time to Xst completion: 37.00 secs
+Total CPU time to Xst completion: 37.20 secs
  
 --> 
 
-Total memory usage is 279532 kilobytes
+Total memory usage is 295596 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  403 (   0 filtered)

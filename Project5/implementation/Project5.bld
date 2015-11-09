@@ -1,71 +1,73 @@
-Release 13.1 ngdbuild O.40d (nt64)
+Release 13.1 ngdbuild O.40d (nt)
 Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
 
-Command Line: C:\Xilinx\13.1\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe -p
+Command Line: C:\Xilinx\13.1\ISE_DS\ISE\bin\nt\unwrapped\ngdbuild.exe -p
 xc3s1600efg320-4 -nt timestamp -bm Project5.bmm
-C:/Users/jfalb1/Desktop/Project5/implementation/Project5.ngc -uc Project5.ucf
+C:/Users/wputn1/Desktop/Project5/implementation/Project5.ngc -uc Project5.ucf
 Project5.ngd
 
-Reading NGO file "C:/Users/jfalb1/Desktop/Project5/implementation/Project5.ngc"
+Reading NGO file "C:/Users/wputn1/Desktop/Project5/implementation/Project5.ngc"
 ...
 Loading design module
-"C:/Users/jfalb1/Desktop/Project5/implementation/microblaze_0_wrapper.ngc"...
+"C:/Users/wputn1/Desktop/Project5/implementation/microblaze_0_wrapper.ngc"...
 Loading design module
-"C:/Users/jfalb1/Desktop/Project5/implementation/mb_plb_wrapper.ngc"...
+"C:/Users/wputn1/Desktop/Project5/implementation/mb_plb_wrapper.ngc"...
 Loading design module
-"C:/Users/jfalb1/Desktop/Project5/implementation/ilmb_wrapper.ngc"...
+"C:/Users/wputn1/Desktop/Project5/implementation/ilmb_wrapper.ngc"...
 Loading design module
-"C:/Users/jfalb1/Desktop/Project5/implementation/dlmb_wrapper.ngc"...
+"C:/Users/wputn1/Desktop/Project5/implementation/dlmb_wrapper.ngc"...
 Loading design module
-"C:/Users/jfalb1/Desktop/Project5/implementation/dlmb_cntlr_wrapper.ngc"...
+"C:/Users/wputn1/Desktop/Project5/implementation/dlmb_cntlr_wrapper.ngc"...
 Loading design module
-"C:/Users/jfalb1/Desktop/Project5/implementation/ilmb_cntlr_wrapper.ngc"...
+"C:/Users/wputn1/Desktop/Project5/implementation/ilmb_cntlr_wrapper.ngc"...
 Loading design module
-"C:/Users/jfalb1/Desktop/Project5/implementation/lmb_bram_wrapper.ngc"...
+"C:/Users/wputn1/Desktop/Project5/implementation/lmb_bram_wrapper.ngc"...
 Loading design module
-"C:/Users/jfalb1/Desktop/Project5/implementation/buttons_3bit_wrapper.ngc"...
+"C:/Users/wputn1/Desktop/Project5/implementation/buttons_3bit_wrapper.ngc"...
 Loading design module
-"C:/Users/jfalb1/Desktop/Project5/implementation/character_lcd_2x16_wrapper.ngc"
+"C:/Users/wputn1/Desktop/Project5/implementation/character_lcd_2x16_wrapper.ngc"
 ...
 Loading design module
-"C:/Users/jfalb1/Desktop/Project5/implementation/ddr_sdram_wrapper.ngc"...
+"C:/Users/wputn1/Desktop/Project5/implementation/ddr_sdram_wrapper.ngc"...
 Loading design module
-"C:/Users/jfalb1/Desktop/Project5/implementation/dip_switches_4bit_wrapper.ngc".
+"C:/Users/wputn1/Desktop/Project5/implementation/dip_switches_4bit_wrapper.ngc".
 ..
 Loading design module
-"C:/Users/jfalb1/Desktop/Project5/implementation/ethernet_mac_wrapper.ngc"...
+"C:/Users/wputn1/Desktop/Project5/implementation/ethernet_mac_wrapper.ngc"...
 Loading design module
-"C:/Users/jfalb1/Desktop/Project5/implementation/flash_wrapper.ngc"...
+"C:/Users/wputn1/Desktop/Project5/implementation/flash_wrapper.ngc"...
 Loading design module
-"C:/Users/jfalb1/Desktop/Project5/implementation/leds_1bit_wrapper.ngc"...
+"C:/Users/wputn1/Desktop/Project5/implementation/leds_1bit_wrapper.ngc"...
 Loading design module
-"C:/Users/jfalb1/Desktop/Project5/implementation/leds_6bit_wrapper.ngc"...
+"C:/Users/wputn1/Desktop/Project5/implementation/leds_6bit_wrapper.ngc"...
 Loading design module
-"C:/Users/jfalb1/Desktop/Project5/implementation/rs232_dce_wrapper.ngc"...
+"C:/Users/wputn1/Desktop/Project5/implementation/rs232_dce_wrapper.ngc"...
 Loading design module
-"C:/Users/jfalb1/Desktop/Project5/implementation/rs232_dte_wrapper.ngc"...
+"C:/Users/wputn1/Desktop/Project5/implementation/rs232_dte_wrapper.ngc"...
 Loading design module
-"C:/Users/jfalb1/Desktop/Project5/implementation/rotary_encoder_wrapper.ngc"...
+"C:/Users/wputn1/Desktop/Project5/implementation/rotary_encoder_wrapper.ngc"...
 Loading design module
-"C:/Users/jfalb1/Desktop/Project5/implementation/xps_timer_0_wrapper.ngc"...
+"C:/Users/wputn1/Desktop/Project5/implementation/xps_timer_0_wrapper.ngc"...
 Loading design module
-"C:/Users/jfalb1/Desktop/Project5/implementation/clock_generator_0_wrapper.ngc".
+"C:/Users/wputn1/Desktop/Project5/implementation/clock_generator_0_wrapper.ngc".
 ..
 Loading design module
-"C:/Users/jfalb1/Desktop/Project5/implementation/mdm_0_wrapper.ngc"...
+"C:/Users/wputn1/Desktop/Project5/implementation/mdm_0_wrapper.ngc"...
 Loading design module
-"C:/Users/jfalb1/Desktop/Project5/implementation/proc_sys_reset_0_wrapper.ngc"..
+"C:/Users/wputn1/Desktop/Project5/implementation/proc_sys_reset_0_wrapper.ngc"..
 .
 Loading design module
-"C:/Users/jfalb1/Desktop/Project5/implementation/graphics_ip_0_wrapper.ngc"...
+"C:/Users/wputn1/Desktop/Project5/implementation/graphics_ip_0_wrapper.ngc"...
+Loading design module
+"C:/Users/wputn1/Desktop/Project5/implementation/controller_0_wrapper.ngc"...
 Applying constraints in
-"C:/Users/jfalb1/Desktop/Project5/implementation/ethernet_mac_wrapper.ncf" to
+"C:/Users/wputn1/Desktop/Project5/implementation/ethernet_mac_wrapper.ncf" to
 module "Ethernet_MAC"...
 Checking Constraint Associations...
 WARNING:NgdBuild:1445 - No net associated with
    fpga_0_Ethernet_MAC_PHY_rx_clk_pin from OFFSET constraint <OFFSET = IN 6.000
    BEFORE  "fpga_0_Ethernet_MAC_PHY_rx_clk_pin";>
-   [C:/Users/jfalb1/Desktop/Project5/implementation/ethernet_mac_wrapper.ncf(3)]
+   [C:/Users/wputn1/Desktop/Project5/implementation/ethernet_mac_wrapper.ncf(3)]
 Gathering constraint information from source properties...
 Done.
 
@@ -114,7 +116,7 @@ WARNING:NgdBuild:1012 - The constraint <INST
    DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/iobs/datapath_io
    bs/gen_dqs[0].dqs_iob/dqs_en_reg by the constraint <INST
    "*/mpmc_core_0/gen_s3_ddr*.mpmc_phy_if_0/iobs/datapath_iobs/gen_dqs[*].dqs_io
-   b*"    IOB = TRUE;> [Project5.ucf(426)].
+   b*"    IOB = TRUE;> [Project5.ucf(430)].
 WARNING:NgdBuild:1012 - The constraint <INST
    /Project5/EXPANDED/Project5/DDR_SDRAM/DDR_SDRAM\/mpmc_core_0\/gen_s3_ddr_phy.
    mpmc_phy_if_0\/iobs\/datapath_iobs\/gen_dqs[1].dqs_iob\/dqs_en_reg IOB =
@@ -122,7 +124,7 @@ WARNING:NgdBuild:1012 - The constraint <INST
    DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/iobs/datapath_io
    bs/gen_dqs[1].dqs_iob/dqs_en_reg by the constraint <INST
    "*/mpmc_core_0/gen_s3_ddr*.mpmc_phy_if_0/iobs/datapath_iobs/gen_dqs[*].dqs_io
-   b*"    IOB = TRUE;> [Project5.ucf(426)].
+   b*"    IOB = TRUE;> [Project5.ucf(430)].
 WARNING:NgdBuild:1012 - The constraint <INST
    /Project5/EXPANDED/Project5/DDR_SDRAM/DDR_SDRAM\/mpmc_core_0\/gen_s3_ddr_phy.
    mpmc_phy_if_0\/dqs_div\/dqs_rst_iob IOB = FORCE> is overridden on the design
@@ -130,7 +132,7 @@ WARNING:NgdBuild:1012 - The constraint <INST
    DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/dqs_div/dqs_rst_
    iob by the constraint <INST
    "*/mpmc_core_0/gen_s3_ddr*.mpmc_phy_if_0/dqs_div/dqs_rst_iob"                
-         IOB = TRUE;> [Project5.ucf(434)].
+         IOB = TRUE;> [Project5.ucf(438)].
 WARNING:NgdBuild:1012 - The constraint <INST
    /Project5/EXPANDED/Project5/DDR_SDRAM/DDR_SDRAM\/mpmc_core_0\/gen_s3_ddr_phy.
    mpmc_phy_if_0\/iobs\/controller_iobs\/gen_cke[0].cke_iob IOB = FORCE> is
@@ -138,7 +140,7 @@ WARNING:NgdBuild:1012 - The constraint <INST
    DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/iobs/controller_
    iobs/gen_cke[0].cke_iob by the constraint <INST
    "*/mpmc_core_0/gen_s3_ddr*.mpmc_phy_if_0/iobs/controller_iobs/gen_cke[*].cke_
-   iob"   IOB = TRUE;> [Project5.ucf(430)].
+   iob"   IOB = TRUE;> [Project5.ucf(434)].
 WARNING:NgdBuild:1012 - The constraint <INST
    /Project5/EXPANDED/Project5/DDR_SDRAM/DDR_SDRAM\/mpmc_core_0\/gen_s3_ddr_phy.
    mpmc_phy_if_0\/iobs\/controller_iobs\/gen_ba[1].ba_iob IOB = FORCE> is
@@ -146,7 +148,7 @@ WARNING:NgdBuild:1012 - The constraint <INST
    DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/iobs/controller_
    iobs/gen_ba[1].ba_iob by the constraint <INST
    "*/mpmc_core_0/gen_s3_ddr*.mpmc_phy_if_0/iobs/controller_iobs/gen_ba[*].ba_io
-   b"     IOB = TRUE;> [Project5.ucf(429)].
+   b"     IOB = TRUE;> [Project5.ucf(433)].
 WARNING:NgdBuild:1012 - The constraint <INST
    /Project5/EXPANDED/Project5/DDR_SDRAM/DDR_SDRAM\/mpmc_core_0\/gen_s3_ddr_phy.
    mpmc_phy_if_0\/iobs\/controller_iobs\/gen_ba[0].ba_iob IOB = FORCE> is
@@ -154,7 +156,7 @@ WARNING:NgdBuild:1012 - The constraint <INST
    DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/iobs/controller_
    iobs/gen_ba[0].ba_iob by the constraint <INST
    "*/mpmc_core_0/gen_s3_ddr*.mpmc_phy_if_0/iobs/controller_iobs/gen_ba[*].ba_io
-   b"     IOB = TRUE;> [Project5.ucf(429)].
+   b"     IOB = TRUE;> [Project5.ucf(433)].
 WARNING:NgdBuild:1012 - The constraint <INST
    /Project5/EXPANDED/Project5/DDR_SDRAM/DDR_SDRAM\/mpmc_core_0\/gen_s3_ddr_phy.
    mpmc_phy_if_0\/iobs\/controller_iobs\/gen_addr[12].addr_iob IOB = FORCE> is
@@ -162,7 +164,7 @@ WARNING:NgdBuild:1012 - The constraint <INST
    DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/iobs/controller_
    iobs/gen_addr[12].addr_iob by the constraint <INST
    "*/mpmc_core_0/gen_s3_ddr*.mpmc_phy_if_0/iobs/controller_iobs/gen_addr[*].add
-   r_iob" IOB = TRUE;> [Project5.ucf(428)].
+   r_iob" IOB = TRUE;> [Project5.ucf(432)].
 WARNING:NgdBuild:1012 - The constraint <INST
    /Project5/EXPANDED/Project5/DDR_SDRAM/DDR_SDRAM\/mpmc_core_0\/gen_s3_ddr_phy.
    mpmc_phy_if_0\/iobs\/controller_iobs\/gen_addr[11].addr_iob IOB = FORCE> is
@@ -170,7 +172,7 @@ WARNING:NgdBuild:1012 - The constraint <INST
    DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/iobs/controller_
    iobs/gen_addr[11].addr_iob by the constraint <INST
    "*/mpmc_core_0/gen_s3_ddr*.mpmc_phy_if_0/iobs/controller_iobs/gen_addr[*].add
-   r_iob" IOB = TRUE;> [Project5.ucf(428)].
+   r_iob" IOB = TRUE;> [Project5.ucf(432)].
 WARNING:NgdBuild:1012 - The constraint <INST
    /Project5/EXPANDED/Project5/DDR_SDRAM/DDR_SDRAM\/mpmc_core_0\/gen_s3_ddr_phy.
    mpmc_phy_if_0\/iobs\/controller_iobs\/gen_addr[10].addr_iob IOB = FORCE> is
@@ -178,7 +180,7 @@ WARNING:NgdBuild:1012 - The constraint <INST
    DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/iobs/controller_
    iobs/gen_addr[10].addr_iob by the constraint <INST
    "*/mpmc_core_0/gen_s3_ddr*.mpmc_phy_if_0/iobs/controller_iobs/gen_addr[*].add
-   r_iob" IOB = TRUE;> [Project5.ucf(428)].
+   r_iob" IOB = TRUE;> [Project5.ucf(432)].
 WARNING:NgdBuild:1012 - The constraint <INST
    /Project5/EXPANDED/Project5/DDR_SDRAM/DDR_SDRAM\/mpmc_core_0\/gen_s3_ddr_phy.
    mpmc_phy_if_0\/iobs\/controller_iobs\/gen_addr[9].addr_iob IOB = FORCE> is
@@ -186,7 +188,7 @@ WARNING:NgdBuild:1012 - The constraint <INST
    DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/iobs/controller_
    iobs/gen_addr[9].addr_iob by the constraint <INST
    "*/mpmc_core_0/gen_s3_ddr*.mpmc_phy_if_0/iobs/controller_iobs/gen_addr[*].add
-   r_iob" IOB = TRUE;> [Project5.ucf(428)].
+   r_iob" IOB = TRUE;> [Project5.ucf(432)].
 WARNING:NgdBuild:1012 - The constraint <INST
    /Project5/EXPANDED/Project5/DDR_SDRAM/DDR_SDRAM\/mpmc_core_0\/gen_s3_ddr_phy.
    mpmc_phy_if_0\/iobs\/controller_iobs\/gen_addr[8].addr_iob IOB = FORCE> is
@@ -194,7 +196,7 @@ WARNING:NgdBuild:1012 - The constraint <INST
    DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/iobs/controller_
    iobs/gen_addr[8].addr_iob by the constraint <INST
    "*/mpmc_core_0/gen_s3_ddr*.mpmc_phy_if_0/iobs/controller_iobs/gen_addr[*].add
-   r_iob" IOB = TRUE;> [Project5.ucf(428)].
+   r_iob" IOB = TRUE;> [Project5.ucf(432)].
 WARNING:NgdBuild:1012 - The constraint <INST
    /Project5/EXPANDED/Project5/DDR_SDRAM/DDR_SDRAM\/mpmc_core_0\/gen_s3_ddr_phy.
    mpmc_phy_if_0\/iobs\/controller_iobs\/gen_addr[7].addr_iob IOB = FORCE> is
@@ -202,7 +204,7 @@ WARNING:NgdBuild:1012 - The constraint <INST
    DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/iobs/controller_
    iobs/gen_addr[7].addr_iob by the constraint <INST
    "*/mpmc_core_0/gen_s3_ddr*.mpmc_phy_if_0/iobs/controller_iobs/gen_addr[*].add
-   r_iob" IOB = TRUE;> [Project5.ucf(428)].
+   r_iob" IOB = TRUE;> [Project5.ucf(432)].
 WARNING:NgdBuild:1012 - The constraint <INST
    /Project5/EXPANDED/Project5/DDR_SDRAM/DDR_SDRAM\/mpmc_core_0\/gen_s3_ddr_phy.
    mpmc_phy_if_0\/iobs\/controller_iobs\/gen_addr[6].addr_iob IOB = FORCE> is
@@ -210,7 +212,7 @@ WARNING:NgdBuild:1012 - The constraint <INST
    DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/iobs/controller_
    iobs/gen_addr[6].addr_iob by the constraint <INST
    "*/mpmc_core_0/gen_s3_ddr*.mpmc_phy_if_0/iobs/controller_iobs/gen_addr[*].add
-   r_iob" IOB = TRUE;> [Project5.ucf(428)].
+   r_iob" IOB = TRUE;> [Project5.ucf(432)].
 WARNING:NgdBuild:1012 - The constraint <INST
    /Project5/EXPANDED/Project5/DDR_SDRAM/DDR_SDRAM\/mpmc_core_0\/gen_s3_ddr_phy.
    mpmc_phy_if_0\/iobs\/controller_iobs\/gen_addr[5].addr_iob IOB = FORCE> is
@@ -218,7 +220,7 @@ WARNING:NgdBuild:1012 - The constraint <INST
    DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/iobs/controller_
    iobs/gen_addr[5].addr_iob by the constraint <INST
    "*/mpmc_core_0/gen_s3_ddr*.mpmc_phy_if_0/iobs/controller_iobs/gen_addr[*].add
-   r_iob" IOB = TRUE;> [Project5.ucf(428)].
+   r_iob" IOB = TRUE;> [Project5.ucf(432)].
 WARNING:NgdBuild:1012 - The constraint <INST
    /Project5/EXPANDED/Project5/DDR_SDRAM/DDR_SDRAM\/mpmc_core_0\/gen_s3_ddr_phy.
    mpmc_phy_if_0\/iobs\/controller_iobs\/gen_addr[4].addr_iob IOB = FORCE> is
@@ -226,7 +228,7 @@ WARNING:NgdBuild:1012 - The constraint <INST
    DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/iobs/controller_
    iobs/gen_addr[4].addr_iob by the constraint <INST
    "*/mpmc_core_0/gen_s3_ddr*.mpmc_phy_if_0/iobs/controller_iobs/gen_addr[*].add
-   r_iob" IOB = TRUE;> [Project5.ucf(428)].
+   r_iob" IOB = TRUE;> [Project5.ucf(432)].
 WARNING:NgdBuild:1012 - The constraint <INST
    /Project5/EXPANDED/Project5/DDR_SDRAM/DDR_SDRAM\/mpmc_core_0\/gen_s3_ddr_phy.
    mpmc_phy_if_0\/iobs\/controller_iobs\/gen_addr[3].addr_iob IOB = FORCE> is
@@ -234,7 +236,7 @@ WARNING:NgdBuild:1012 - The constraint <INST
    DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/iobs/controller_
    iobs/gen_addr[3].addr_iob by the constraint <INST
    "*/mpmc_core_0/gen_s3_ddr*.mpmc_phy_if_0/iobs/controller_iobs/gen_addr[*].add
-   r_iob" IOB = TRUE;> [Project5.ucf(428)].
+   r_iob" IOB = TRUE;> [Project5.ucf(432)].
 WARNING:NgdBuild:1012 - The constraint <INST
    /Project5/EXPANDED/Project5/DDR_SDRAM/DDR_SDRAM\/mpmc_core_0\/gen_s3_ddr_phy.
    mpmc_phy_if_0\/iobs\/controller_iobs\/gen_addr[2].addr_iob IOB = FORCE> is
@@ -242,7 +244,7 @@ WARNING:NgdBuild:1012 - The constraint <INST
    DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/iobs/controller_
    iobs/gen_addr[2].addr_iob by the constraint <INST
    "*/mpmc_core_0/gen_s3_ddr*.mpmc_phy_if_0/iobs/controller_iobs/gen_addr[*].add
-   r_iob" IOB = TRUE;> [Project5.ucf(428)].
+   r_iob" IOB = TRUE;> [Project5.ucf(432)].
 WARNING:NgdBuild:1012 - The constraint <INST
    /Project5/EXPANDED/Project5/DDR_SDRAM/DDR_SDRAM\/mpmc_core_0\/gen_s3_ddr_phy.
    mpmc_phy_if_0\/iobs\/controller_iobs\/gen_addr[1].addr_iob IOB = FORCE> is
@@ -250,7 +252,7 @@ WARNING:NgdBuild:1012 - The constraint <INST
    DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/iobs/controller_
    iobs/gen_addr[1].addr_iob by the constraint <INST
    "*/mpmc_core_0/gen_s3_ddr*.mpmc_phy_if_0/iobs/controller_iobs/gen_addr[*].add
-   r_iob" IOB = TRUE;> [Project5.ucf(428)].
+   r_iob" IOB = TRUE;> [Project5.ucf(432)].
 WARNING:NgdBuild:1012 - The constraint <INST
    /Project5/EXPANDED/Project5/DDR_SDRAM/DDR_SDRAM\/mpmc_core_0\/gen_s3_ddr_phy.
    mpmc_phy_if_0\/iobs\/controller_iobs\/gen_addr[0].addr_iob IOB = FORCE> is
@@ -258,7 +260,7 @@ WARNING:NgdBuild:1012 - The constraint <INST
    DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/iobs/controller_
    iobs/gen_addr[0].addr_iob by the constraint <INST
    "*/mpmc_core_0/gen_s3_ddr*.mpmc_phy_if_0/iobs/controller_iobs/gen_addr[*].add
-   r_iob" IOB = TRUE;> [Project5.ucf(428)].
+   r_iob" IOB = TRUE;> [Project5.ucf(432)].
 WARNING:NgdBuild:1012 - The constraint <INST
    /Project5/EXPANDED/Project5/DDR_SDRAM/DDR_SDRAM\/mpmc_core_0\/gen_s3_ddr_phy.
    mpmc_phy_if_0\/iobs\/controller_iobs\/cas_iob IOB = FORCE> is overridden on
@@ -266,7 +268,7 @@ WARNING:NgdBuild:1012 - The constraint <INST
    DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/iobs/controller_
    iobs/cas_iob by the constraint <INST
    "*/mpmc_core_0/gen_s3_ddr*.mpmc_phy_if_0/iobs/controller_iobs/cas_iob"       
-         IOB = TRUE;> [Project5.ucf(432)].
+         IOB = TRUE;> [Project5.ucf(436)].
 WARNING:NgdBuild:1012 - The constraint <INST
    /Project5/EXPANDED/Project5/DDR_SDRAM/DDR_SDRAM\/mpmc_core_0\/gen_s3_ddr_phy.
    mpmc_phy_if_0\/iobs\/controller_iobs\/ras_iob IOB = FORCE> is overridden on
@@ -274,7 +276,7 @@ WARNING:NgdBuild:1012 - The constraint <INST
    DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/iobs/controller_
    iobs/ras_iob by the constraint <INST
    "*/mpmc_core_0/gen_s3_ddr*.mpmc_phy_if_0/iobs/controller_iobs/ras_iob"       
-         IOB = TRUE;> [Project5.ucf(431)].
+         IOB = TRUE;> [Project5.ucf(435)].
 WARNING:NgdBuild:1012 - The constraint <INST
    /Project5/EXPANDED/Project5/DDR_SDRAM/DDR_SDRAM\/mpmc_core_0\/gen_s3_ddr_phy.
    mpmc_phy_if_0\/iobs\/controller_iobs\/we_iob IOB = FORCE> is overridden on
@@ -282,7 +284,7 @@ WARNING:NgdBuild:1012 - The constraint <INST
    DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/iobs/controller_
    iobs/we_iob by the constraint <INST
    "*/mpmc_core_0/gen_s3_ddr*.mpmc_phy_if_0/iobs/controller_iobs/we_iob"        
-         IOB = TRUE;> [Project5.ucf(433)].
+         IOB = TRUE;> [Project5.ucf(437)].
 WARNING:NgdBuild:1012 - The constraint <INST
    /Project5/EXPANDED/Project5/DDR_SDRAM/DDR_SDRAM\/mpmc_core_0\/gen_s3_ddr_phy.
    mpmc_phy_if_0\/iobs\/datapath_iobs\/gen_dq[0].dq_iob\/DQ_T IOB = FORCE> is
@@ -290,7 +292,7 @@ WARNING:NgdBuild:1012 - The constraint <INST
    DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/iobs/datapath_io
    bs/gen_dq[0].dq_iob/DQ_T by the constraint <INST
    "*/mpmc_core_0/gen_s3_ddr*.mpmc_phy_if_0/iobs/datapath_iobs/gen_dq[*].dq_iob*
-   "      IOB = TRUE;> [Project5.ucf(427)].
+   "      IOB = TRUE;> [Project5.ucf(431)].
 WARNING:NgdBuild:1012 - The constraint <INST
    /Project5/EXPANDED/Project5/DDR_SDRAM/DDR_SDRAM\/mpmc_core_0\/gen_s3_ddr_phy.
    mpmc_phy_if_0\/iobs\/datapath_iobs\/gen_dq[1].dq_iob\/DQ_T IOB = FORCE> is
@@ -298,7 +300,7 @@ WARNING:NgdBuild:1012 - The constraint <INST
    DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/iobs/datapath_io
    bs/gen_dq[1].dq_iob/DQ_T by the constraint <INST
    "*/mpmc_core_0/gen_s3_ddr*.mpmc_phy_if_0/iobs/datapath_iobs/gen_dq[*].dq_iob*
-   "      IOB = TRUE;> [Project5.ucf(427)].
+   "      IOB = TRUE;> [Project5.ucf(431)].
 WARNING:NgdBuild:1012 - The constraint <INST
    /Project5/EXPANDED/Project5/DDR_SDRAM/DDR_SDRAM\/mpmc_core_0\/gen_s3_ddr_phy.
    mpmc_phy_if_0\/iobs\/datapath_iobs\/gen_dq[2].dq_iob\/DQ_T IOB = FORCE> is
@@ -306,7 +308,7 @@ WARNING:NgdBuild:1012 - The constraint <INST
    DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/iobs/datapath_io
    bs/gen_dq[2].dq_iob/DQ_T by the constraint <INST
    "*/mpmc_core_0/gen_s3_ddr*.mpmc_phy_if_0/iobs/datapath_iobs/gen_dq[*].dq_iob*
-   "      IOB = TRUE;> [Project5.ucf(427)].
+   "      IOB = TRUE;> [Project5.ucf(431)].
 WARNING:NgdBuild:1012 - The constraint <INST
    /Project5/EXPANDED/Project5/DDR_SDRAM/DDR_SDRAM\/mpmc_core_0\/gen_s3_ddr_phy.
    mpmc_phy_if_0\/iobs\/datapath_iobs\/gen_dq[3].dq_iob\/DQ_T IOB = FORCE> is
@@ -314,7 +316,7 @@ WARNING:NgdBuild:1012 - The constraint <INST
    DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/iobs/datapath_io
    bs/gen_dq[3].dq_iob/DQ_T by the constraint <INST
    "*/mpmc_core_0/gen_s3_ddr*.mpmc_phy_if_0/iobs/datapath_iobs/gen_dq[*].dq_iob*
-   "      IOB = TRUE;> [Project5.ucf(427)].
+   "      IOB = TRUE;> [Project5.ucf(431)].
 WARNING:NgdBuild:1012 - The constraint <INST
    /Project5/EXPANDED/Project5/DDR_SDRAM/DDR_SDRAM\/mpmc_core_0\/gen_s3_ddr_phy.
    mpmc_phy_if_0\/iobs\/datapath_iobs\/gen_dq[4].dq_iob\/DQ_T IOB = FORCE> is
@@ -322,7 +324,7 @@ WARNING:NgdBuild:1012 - The constraint <INST
    DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/iobs/datapath_io
    bs/gen_dq[4].dq_iob/DQ_T by the constraint <INST
    "*/mpmc_core_0/gen_s3_ddr*.mpmc_phy_if_0/iobs/datapath_iobs/gen_dq[*].dq_iob*
-   "      IOB = TRUE;> [Project5.ucf(427)].
+   "      IOB = TRUE;> [Project5.ucf(431)].
 WARNING:NgdBuild:1012 - The constraint <INST
    /Project5/EXPANDED/Project5/DDR_SDRAM/DDR_SDRAM\/mpmc_core_0\/gen_s3_ddr_phy.
    mpmc_phy_if_0\/iobs\/datapath_iobs\/gen_dq[5].dq_iob\/DQ_T IOB = FORCE> is
@@ -330,7 +332,7 @@ WARNING:NgdBuild:1012 - The constraint <INST
    DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/iobs/datapath_io
    bs/gen_dq[5].dq_iob/DQ_T by the constraint <INST
    "*/mpmc_core_0/gen_s3_ddr*.mpmc_phy_if_0/iobs/datapath_iobs/gen_dq[*].dq_iob*
-   "      IOB = TRUE;> [Project5.ucf(427)].
+   "      IOB = TRUE;> [Project5.ucf(431)].
 WARNING:NgdBuild:1012 - The constraint <INST
    /Project5/EXPANDED/Project5/DDR_SDRAM/DDR_SDRAM\/mpmc_core_0\/gen_s3_ddr_phy.
    mpmc_phy_if_0\/iobs\/datapath_iobs\/gen_dq[6].dq_iob\/DQ_T IOB = FORCE> is
@@ -338,7 +340,7 @@ WARNING:NgdBuild:1012 - The constraint <INST
    DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/iobs/datapath_io
    bs/gen_dq[6].dq_iob/DQ_T by the constraint <INST
    "*/mpmc_core_0/gen_s3_ddr*.mpmc_phy_if_0/iobs/datapath_iobs/gen_dq[*].dq_iob*
-   "      IOB = TRUE;> [Project5.ucf(427)].
+   "      IOB = TRUE;> [Project5.ucf(431)].
 WARNING:NgdBuild:1012 - The constraint <INST
    /Project5/EXPANDED/Project5/DDR_SDRAM/DDR_SDRAM\/mpmc_core_0\/gen_s3_ddr_phy.
    mpmc_phy_if_0\/iobs\/datapath_iobs\/gen_dq[7].dq_iob\/DQ_T IOB = FORCE> is
@@ -346,7 +348,7 @@ WARNING:NgdBuild:1012 - The constraint <INST
    DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/iobs/datapath_io
    bs/gen_dq[7].dq_iob/DQ_T by the constraint <INST
    "*/mpmc_core_0/gen_s3_ddr*.mpmc_phy_if_0/iobs/datapath_iobs/gen_dq[*].dq_iob*
-   "      IOB = TRUE;> [Project5.ucf(427)].
+   "      IOB = TRUE;> [Project5.ucf(431)].
 WARNING:NgdBuild:1012 - The constraint <INST
    /Project5/EXPANDED/Project5/DDR_SDRAM/DDR_SDRAM\/mpmc_core_0\/gen_s3_ddr_phy.
    mpmc_phy_if_0\/iobs\/datapath_iobs\/gen_dq[8].dq_iob\/DQ_T IOB = FORCE> is
@@ -354,7 +356,7 @@ WARNING:NgdBuild:1012 - The constraint <INST
    DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/iobs/datapath_io
    bs/gen_dq[8].dq_iob/DQ_T by the constraint <INST
    "*/mpmc_core_0/gen_s3_ddr*.mpmc_phy_if_0/iobs/datapath_iobs/gen_dq[*].dq_iob*
-   "      IOB = TRUE;> [Project5.ucf(427)].
+   "      IOB = TRUE;> [Project5.ucf(431)].
 WARNING:NgdBuild:1012 - The constraint <INST
    /Project5/EXPANDED/Project5/DDR_SDRAM/DDR_SDRAM\/mpmc_core_0\/gen_s3_ddr_phy.
    mpmc_phy_if_0\/iobs\/datapath_iobs\/gen_dq[9].dq_iob\/DQ_T IOB = FORCE> is
@@ -362,7 +364,7 @@ WARNING:NgdBuild:1012 - The constraint <INST
    DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/iobs/datapath_io
    bs/gen_dq[9].dq_iob/DQ_T by the constraint <INST
    "*/mpmc_core_0/gen_s3_ddr*.mpmc_phy_if_0/iobs/datapath_iobs/gen_dq[*].dq_iob*
-   "      IOB = TRUE;> [Project5.ucf(427)].
+   "      IOB = TRUE;> [Project5.ucf(431)].
 WARNING:NgdBuild:1012 - The constraint <INST
    /Project5/EXPANDED/Project5/DDR_SDRAM/DDR_SDRAM\/mpmc_core_0\/gen_s3_ddr_phy.
    mpmc_phy_if_0\/iobs\/datapath_iobs\/gen_dq[10].dq_iob\/DQ_T IOB = FORCE> is
@@ -370,7 +372,7 @@ WARNING:NgdBuild:1012 - The constraint <INST
    DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/iobs/datapath_io
    bs/gen_dq[10].dq_iob/DQ_T by the constraint <INST
    "*/mpmc_core_0/gen_s3_ddr*.mpmc_phy_if_0/iobs/datapath_iobs/gen_dq[*].dq_iob*
-   "      IOB = TRUE;> [Project5.ucf(427)].
+   "      IOB = TRUE;> [Project5.ucf(431)].
 WARNING:NgdBuild:1012 - The constraint <INST
    /Project5/EXPANDED/Project5/DDR_SDRAM/DDR_SDRAM\/mpmc_core_0\/gen_s3_ddr_phy.
    mpmc_phy_if_0\/iobs\/datapath_iobs\/gen_dq[11].dq_iob\/DQ_T IOB = FORCE> is
@@ -378,7 +380,7 @@ WARNING:NgdBuild:1012 - The constraint <INST
    DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/iobs/datapath_io
    bs/gen_dq[11].dq_iob/DQ_T by the constraint <INST
    "*/mpmc_core_0/gen_s3_ddr*.mpmc_phy_if_0/iobs/datapath_iobs/gen_dq[*].dq_iob*
-   "      IOB = TRUE;> [Project5.ucf(427)].
+   "      IOB = TRUE;> [Project5.ucf(431)].
 WARNING:NgdBuild:1012 - The constraint <INST
    /Project5/EXPANDED/Project5/DDR_SDRAM/DDR_SDRAM\/mpmc_core_0\/gen_s3_ddr_phy.
    mpmc_phy_if_0\/iobs\/datapath_iobs\/gen_dq[12].dq_iob\/DQ_T IOB = FORCE> is
@@ -386,7 +388,7 @@ WARNING:NgdBuild:1012 - The constraint <INST
    DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/iobs/datapath_io
    bs/gen_dq[12].dq_iob/DQ_T by the constraint <INST
    "*/mpmc_core_0/gen_s3_ddr*.mpmc_phy_if_0/iobs/datapath_iobs/gen_dq[*].dq_iob*
-   "      IOB = TRUE;> [Project5.ucf(427)].
+   "      IOB = TRUE;> [Project5.ucf(431)].
 WARNING:NgdBuild:1012 - The constraint <INST
    /Project5/EXPANDED/Project5/DDR_SDRAM/DDR_SDRAM\/mpmc_core_0\/gen_s3_ddr_phy.
    mpmc_phy_if_0\/iobs\/datapath_iobs\/gen_dq[13].dq_iob\/DQ_T IOB = FORCE> is
@@ -394,7 +396,7 @@ WARNING:NgdBuild:1012 - The constraint <INST
    DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/iobs/datapath_io
    bs/gen_dq[13].dq_iob/DQ_T by the constraint <INST
    "*/mpmc_core_0/gen_s3_ddr*.mpmc_phy_if_0/iobs/datapath_iobs/gen_dq[*].dq_iob*
-   "      IOB = TRUE;> [Project5.ucf(427)].
+   "      IOB = TRUE;> [Project5.ucf(431)].
 WARNING:NgdBuild:1012 - The constraint <INST
    /Project5/EXPANDED/Project5/DDR_SDRAM/DDR_SDRAM\/mpmc_core_0\/gen_s3_ddr_phy.
    mpmc_phy_if_0\/iobs\/datapath_iobs\/gen_dq[14].dq_iob\/DQ_T IOB = FORCE> is
@@ -402,7 +404,7 @@ WARNING:NgdBuild:1012 - The constraint <INST
    DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/iobs/datapath_io
    bs/gen_dq[14].dq_iob/DQ_T by the constraint <INST
    "*/mpmc_core_0/gen_s3_ddr*.mpmc_phy_if_0/iobs/datapath_iobs/gen_dq[*].dq_iob*
-   "      IOB = TRUE;> [Project5.ucf(427)].
+   "      IOB = TRUE;> [Project5.ucf(431)].
 WARNING:NgdBuild:1012 - The constraint <INST
    /Project5/EXPANDED/Project5/DDR_SDRAM/DDR_SDRAM\/mpmc_core_0\/gen_s3_ddr_phy.
    mpmc_phy_if_0\/iobs\/datapath_iobs\/gen_dq[15].dq_iob\/DQ_T IOB = FORCE> is
@@ -410,7 +412,7 @@ WARNING:NgdBuild:1012 - The constraint <INST
    DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/iobs/datapath_io
    bs/gen_dq[15].dq_iob/DQ_T by the constraint <INST
    "*/mpmc_core_0/gen_s3_ddr*.mpmc_phy_if_0/iobs/datapath_iobs/gen_dq[*].dq_iob*
-   "      IOB = TRUE;> [Project5.ucf(427)].
+   "      IOB = TRUE;> [Project5.ucf(431)].
 Done...
 
 Processing BMM file "Project5.bmm" ...
@@ -770,10 +772,10 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings: 157
 
-Total memory usage is 251616 kilobytes
+Total memory usage is 165580 kilobytes
 
 Writing NGD file "Project5.ngd" ...
-Total REAL time to NGDBUILD completion:  38 sec
+Total REAL time to NGDBUILD completion:  37 sec
 Total CPU time to NGDBUILD completion:   37 sec
 
 Writing NGDBUILD log file "Project5.bld"...

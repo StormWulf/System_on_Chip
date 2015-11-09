@@ -1,4 +1,4 @@
-Release 13.1 - Bitgen O.40d (nt64)
+Release 13.1 - Bitgen O.40d (nt)
 Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
 PMSPEC -- Overriding Xilinx file
 <C:/Xilinx/13.1/ISE_DS/EDK/spartan3e/data/spartan3e.acd> with local file
@@ -8,9 +8,9 @@ C:\Xilinx\13.1\ISE_DS\ISE\;C:\Xilinx\13.1\ISE_DS\EDK.
    "Project5" is an NCD, version 3.2, device xc3s1600e, package fg320, speed -4
 Opened constraints file Project5.pcf.
 
-Mon Nov 02 11:18:27 2015
+Sat Nov 07 13:33:31 2015
 
-C:\Xilinx\13.1\ISE_DS\ISE\bin\nt64\unwrapped\bitgen.exe -w -g CclkPin:PULLUP -g TdoPin:PULLNONE -g M1Pin:PULLDOWN -g DonePin:PULLUP -g StartUpClk:JTAGCLK -g M0Pin:PULLUP -g M2Pin:PULLUP -g ProgPin:PULLUP -g TckPin:PULLUP -g TdiPin:PULLUP -g TmsPin:PULLUP -g LCK_cycle:NoWait -g Security:NONE -g Persist:No Project5.ncd 
+C:\Xilinx\13.1\ISE_DS\ISE\bin\nt\unwrapped\bitgen.exe -w -g CclkPin:PULLUP -g TdoPin:PULLNONE -g M1Pin:PULLDOWN -g DonePin:PULLUP -g StartUpClk:JTAGCLK -g M0Pin:PULLUP -g M2Pin:PULLUP -g ProgPin:PULLUP -g TckPin:PULLUP -g TdiPin:PULLUP -g TmsPin:PULLUP -g LCK_cycle:NoWait -g Security:NONE -g Persist:No Project5.ncd 
 
 Summary of Bitgen Options:
 +----------------------+----------------------+
@@ -93,7 +93,7 @@ There were 0 CONFIG constraint(s) processed from Project5.pcf.
 Running DRC.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
    DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/data_path/dqs_de
-   layed_col1<0> is sourced by a combinatorial pin. This is not good design
+   layed_col0<0> is sourced by a combinatorial pin. This is not good design
    practice. Use the CE pin to control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
    DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/data_path/dqs_de
@@ -101,12 +101,16 @@ WARNING:PhysDesignRules:372 - Gated clock. Clock net
    practice. Use the CE pin to control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
    DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/data_path/dqs_de
-   layed_col1<1> is sourced by a combinatorial pin. This is not good design
+   layed_col1<0> is sourced by a combinatorial pin. This is not good design
    practice. Use the CE pin to control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
    DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/data_path/dqs_de
-   layed_col0<0> is sourced by a combinatorial pin. This is not good design
+   layed_col1<1> is sourced by a combinatorial pin. This is not good design
    practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   controller_0/controller_0/USER_LOGIC_I/cont/NESlatch_or0000 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
    fpga_0_Character_LCD_2x16_GPIO_IO_O_pin<0> is set but the tri state is not
    configured. 
@@ -124,7 +128,7 @@ WARNING:PhysDesignRules:1060 - Issue with pin connections and/or configuration
    normal.gen_normal.gen_brams[1].bram/gen_ramb16_s36_s18.bram.B>:<RAMB16_RAMB16
    B>.  The block is configured to use input parity pins. There are dangling
    output parity pins.
-DRC detected 0 errors and 7 warnings.  Please see the previously displayed
+DRC detected 0 errors and 8 warnings.  Please see the previously displayed
 individual error or warning messages for more details.
 INFO:Security:50 - The XILINXD_LICENSE_FILE environment variable is set to
 '2100@bkh-ececsw'.

@@ -274,6 +274,19 @@
 
 /******************************************************************/
 
+
+/* Definitions for peripheral CONTROLLER_0 */
+#define XPAR_CONTROLLER_0_BASEADDR 0xC7200000
+#define XPAR_CONTROLLER_0_HIGHADDR 0xC720FFFF
+
+
+/* Definitions for peripheral GRAPHICS_IP_0 */
+#define XPAR_GRAPHICS_IP_0_BASEADDR 0xC7000000
+#define XPAR_GRAPHICS_IP_0_HIGHADDR 0xC700FFFF
+
+
+/******************************************************************/
+
 /* Definitions for driver BRAM */
 #define XPAR_XBRAM_NUM_INSTANCES 2
 
@@ -340,14 +353,6 @@
 #define XPAR_BRAM_1_WRITE_ACCESS 2
 #define XPAR_BRAM_1_BASEADDR 0x00000000
 #define XPAR_BRAM_1_HIGHADDR 0x00001FFF
-
-
-/******************************************************************/
-
-
-/* Definitions for peripheral GRAPHICS_IP_0 */
-#define XPAR_GRAPHICS_IP_0_BASEADDR 0xC7000000
-#define XPAR_GRAPHICS_IP_0_HIGHADDR 0xC700FFFF
 
 
 /******************************************************************/

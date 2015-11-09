@@ -6,7 +6,7 @@
 @REM #
 @REM # Command line for ngdbuild
 @REM #
-ngdbuild -p xc3s1600efg320-4 -nt timestamp -bm Project5.bmm "C:/Users/jfalb1/Desktop/Project5/implementation/Project5.ngc" -uc Project5.ucf Project5.ngd 
+ngdbuild -p xc3s1600efg320-4 -nt timestamp -bm Project5.bmm "C:/Users/wputn1/Desktop/Project5/implementation/Project5.ngc" -uc Project5.ucf Project5.ngd 
 
 @REM #
 @REM # Command line for map

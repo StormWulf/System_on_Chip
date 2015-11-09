@@ -1,0 +1,10 @@
+elfcheck
+Xilinx EDK 13.1 Build EDK_O.40d
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw
+C:/Users/wputn1/Desktop/Project5/hw_platform_0/system.xml -pe microblaze_0
+Lab_5_0.elf 
+
+ELF file	: Lab_5_0.elf
+elfcheck passed.

@@ -67,4 +67,4 @@ vhdl mdm_v2_00_b "C:\Xilinx\13.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v
 vhdl mdm_v2_00_b "C:\Xilinx\13.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_00_b\hdl\vhdl\jtag_control.vhd"
 vhdl mdm_v2_00_b "C:\Xilinx\13.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_00_b\hdl\vhdl\mdm_core.vhd"
 vhdl mdm_v2_00_b "C:\Xilinx\13.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_00_b\hdl\vhdl\mdm.vhd"
-vhdl work "E:\SoC\Project5\hdl\mdm_0_wrapper.vhd"
+vhdl work "C:\Users\wputn1\Desktop\Project5\hdl\mdm_0_wrapper.vhd"

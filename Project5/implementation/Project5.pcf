@@ -1,12 +1,18 @@
 //! **************************************************************************
-// Written by: Map O.40d on Mon Nov 02 10:54:14 2015
+// Written by: Map O.40d on Sat Nov 07 13:26:31 2015
 //! **************************************************************************
 
 SCHEMATIC START;
-NET "microblaze_0/microblaze_0/Area.Data_Flow_I/PC_Module_I/pc_write_I"
-        USELOWSKEWLINES;
 NET "fpga_0_Ethernet_MAC_PHY_rx_clk_pin_IBUF" USELOWSKEWLINES;
 NET "fpga_0_Ethernet_MAC_PHY_tx_clk_pin_IBUF" USELOWSKEWLINES;
+COMP
+        "DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/data_path/data_read/fifo_1_data_out<7>"
+        LOCATE = SITE "SLICE_X0Y51" LEVEL 1;
+COMP
+        "DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/data_path/data_read/fifo_1_data_out<15>"
+        LOCATE = SITE "SLICE_X0Y95" LEVEL 1;
+NET "microblaze_0/microblaze_0/Area.Data_Flow_I/PC_Module_I/pc_write_I"
+        USELOWSKEWLINES;
 COMP
         "DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/data_path/data_read/fifo_1_data_out<1>"
         LOCATE = SITE "SLICE_X2Y67" LEVEL 1;
@@ -32,20 +38,17 @@ COMP
         "DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/data_path/data_read/fifo_1_data_out<14>"
         LOCATE = SITE "SLICE_X2Y95" LEVEL 1;
 COMP
-        "DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/data_path/data_read_controller/.rst_dqs_div_delayed/delay5"
-        LOCATE = SITE "SLICE_X1Y76" LEVEL 1;
+        "DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/data_path/data_read/fifo_1_data_out<5>"
+        LOCATE = SITE "SLICE_X2Y55" LEVEL 1;
+COMP
+        "DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/data_path/data_read/fifo_1_data_out<13>"
+        LOCATE = SITE "SLICE_X0Y99" LEVEL 1;
 COMP
         "DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/data_path/data_read/fifo_0_data_out<7>"
         LOCATE = SITE "SLICE_X0Y50" LEVEL 1;
 COMP
-        "DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/data_path/data_read/fifo_1_data_out<5>"
-        LOCATE = SITE "SLICE_X2Y55" LEVEL 1;
-COMP
         "DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/data_path/data_read/fifo_0_data_out<15>"
         LOCATE = SITE "SLICE_X0Y94" LEVEL 1;
-COMP
-        "DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/data_path/data_read/fifo_1_data_out<13>"
-        LOCATE = SITE "SLICE_X0Y99" LEVEL 1;
 COMP
         "DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/data_path/data_read/fifo_0_data_out<6>"
         LOCATE = SITE "SLICE_X2Y50" LEVEL 1;
@@ -58,9 +61,6 @@ COMP
 COMP
         "DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/data_path/data_read/fifo_1_data_out<8>"
         LOCATE = SITE "SLICE_X2Y135" LEVEL 1;
-COMP
-        "DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/data_path/data_read_controller/rst_dqs_div"
-        LOCATE = SITE "SLICE_X0Y77" LEVEL 1;
 COMP
         "DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/data_path/data_read/fifo_0_data_out<0>"
         LOCATE = SITE "SLICE_X0Y66" LEVEL 1;
@@ -80,9 +80,6 @@ COMP
         "DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/data_path/data_read/fifo_0_data_out<13>"
         LOCATE = SITE "SLICE_X0Y98" LEVEL 1;
 COMP
-        "DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/data_path/data_read_controller/gen_wr[0].u_fifo_0_wr_en/din_delay"
-        LOCATE = SITE "SLICE_X1Y61" LEVEL 1;
-COMP
         "DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/data_path/data_read/fifo_0_wr_addr_out<0><0>"
         LOCATE = SITE "SLICE_X1Y58" LEVEL 1;
 COMP
@@ -91,6 +88,9 @@ COMP
 COMP
         "DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/data_path/data_read_controller/gen_dqs[0]..u_dqs_delay_col0/delay1"
         LOCATE = SITE "SLICE_X2Y58" LEVEL 1;
+COMP
+        "DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/data_path/dqs_delayed_col1<0>"
+        LOCATE = SITE "SLICE_X2Y59" LEVEL 1;
 COMP
         "DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/data_path/data_read_controller/gen_wr[0].u_fifo_1_wr_en/din_delay"
         LOCATE = SITE "SLICE_X3Y61" LEVEL 1;
@@ -150,6 +150,7 @@ COMP "graphics_ip_0_pixToDisp_pin<2>" LOCATE = SITE "H14" LEVEL 1;
 COMP "fpga_0_DDR_SDRAM_DDR_DQS_pin<0>" LOCATE = SITE "L6" LEVEL 1;
 COMP "fpga_0_DDR_SDRAM_DDR_DQS_pin<1>" LOCATE = SITE "G3" LEVEL 1;
 COMP "fpga_0_DDR_SDRAM_DDR_CE_pin" LOCATE = SITE "K3" LEVEL 1;
+COMP "controller_0_NESdatIn_pin" LOCATE = SITE "E15" LEVEL 1;
 COMP "fpga_0_DDR_SDRAM_ddr_dqs_div_io_pin" LOCATE = SITE "P13" LEVEL 1;
 COMP "fpga_0_Ethernet_MAC_PHY_tx_en_pin" LOCATE = SITE "P16" LEVEL 1;
 COMP "fpga_0_DDR_SDRAM_DDR_DM_pin<0>" LOCATE = SITE "J2" LEVEL 1;
@@ -195,6 +196,7 @@ PIN fpga_0_Ethernet_MAC_PHY_rx_clk_pin_pin<0> = BEL
         "fpga_0_Ethernet_MAC_PHY_rx_clk_pin" PINNAME PAD;
 PIN "fpga_0_Ethernet_MAC_PHY_rx_clk_pin_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
 COMP "fpga_0_FLASH_Mem_CEN_pin" LOCATE = SITE "D16" LEVEL 1;
+COMP "controller_0_NESlatch_pin" LOCATE = SITE "N15" LEVEL 1;
 COMP "fpga_0_Ethernet_MAC_PHY_MDC_pin" LOCATE = SITE "P9" LEVEL 1;
 COMP "fpga_0_DDR_SDRAM_DDR_Clk_pin" LOCATE = SITE "J5" LEVEL 1;
 COMP "fpga_0_FLASH_Mem_OEN_pin" LOCATE = SITE "C18" LEVEL 1;
@@ -240,6 +242,7 @@ COMP "fpga_0_DDR_SDRAM_DDR_CS_n_pin" LOCATE = SITE "K4" LEVEL 1;
 COMP "fpga_0_Character_LCD_2x16_LCD_DB10_pin" LOCATE = SITE "P17" LEVEL 1;
 COMP "fpga_0_Character_LCD_2x16_LCD_DB11_pin" LOCATE = SITE "M15" LEVEL 1;
 COMP "fpga_0_FLASH_BEN_pin" LOCATE = SITE "C17" LEVEL 1;
+COMP "controller_0_NESclk_pin" LOCATE = SITE "N14" LEVEL 1;
 COMP "fpga_0_FLASH_Mem_DQ_pin<0>" LOCATE = SITE "N9" LEVEL 1;
 COMP "fpga_0_FLASH_Mem_DQ_pin<1>" LOCATE = SITE "M9" LEVEL 1;
 COMP "fpga_0_FLASH_Mem_DQ_pin<2>" LOCATE = SITE "R9" LEVEL 1;
@@ -288,23 +291,23 @@ COMP
         "DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/data_path/data_read/fifo_0_data_out<11>"
         LOCATE = SITE "SLICE_X0Y106" LEVEL 1;
 COMP
-        "DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/data_path/data_read/fifo_1_data_out<7>"
-        LOCATE = SITE "SLICE_X0Y51" LEVEL 1;
-COMP
-        "DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/data_path/data_read/fifo_1_data_out<15>"
-        LOCATE = SITE "SLICE_X0Y95" LEVEL 1;
-COMP
-        "DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/phy_write/dq_oe_90_r2_2"
+        "DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/data_path/data_read/fifo_0_rd_addr_d_0_1"
         LOCATE = SITE "SLICE_X0Y58" LEVEL 1;
 COMP
-        "DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/data_path/data_read/fifo_0_data_out_r<7>"
+        "DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/data_path/data_read/fifo_0_rd_addr_d_0_0"
         LOCATE = SITE "SLICE_X0Y59" LEVEL 1;
 COMP
-        "DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/phy_write/wr_data_rise<15>"
+        "DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/phy_write/dq_oe_90_r2_2"
+        LOCATE = SITE "SLICE_X0Y77" LEVEL 1;
+COMP
+        "DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/phy_write/dq_oe_90_r2"
         LOCATE = SITE "SLICE_X0Y103" LEVEL 1;
 COMP
-        "DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_paths.mpmc_data_path_0/gen_write_fifos[0].gen_fifos.mpmc_write_fifo_0/gen_fifo_bram.mpmc_bram_fifo_0/PushParity_r<7>"
-        LOCATE = SITE "SLICE_X2Y59" LEVEL 1;
+        "DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/data_path/data_read_controller/gen_wr[0].u_fifo_0_wr_en/din_delay"
+        LOCATE = SITE "SLICE_X1Y61" LEVEL 1;
+COMP
+        "DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/data_path/data_read/first_sdr_data<20>"
+        LOCATE = SITE "SLICE_X1Y76" LEVEL 1;
 PIN lmb_bram/lmb_bram/ramb16_s9_s9_0.A_pins<12> = BEL
         "lmb_bram/lmb_bram/ramb16_s9_s9_0.A" PINNAME CLKA;
 PIN lmb_bram/lmb_bram/ramb16_s9_s9_0.B_pins<12> = BEL
@@ -2166,6 +2169,7 @@ TIMEGRP clock_generator_0_clock_generator_0_SIG_DCM1_CLK0 = PIN
         "mb_plb/mb_plb/GEN_SPLB_RST[11].I_SPLB_RST" BEL
         "mb_plb/mb_plb/GEN_SPLB_RST[12].I_SPLB_RST" BEL
         "mb_plb/mb_plb/GEN_SPLB_RST[13].I_SPLB_RST" BEL
+        "mb_plb/mb_plb/GEN_SPLB_RST[14].I_SPLB_RST" BEL
         "mb_plb/mb_plb/GEN_SHARED.I_PLB_ADDRPATH/PLB_ABus_0" BEL
         "mb_plb/mb_plb/GEN_SHARED.I_PLB_ADDRPATH/PLB_ABus_1" BEL
         "mb_plb/mb_plb/GEN_SHARED.I_PLB_ADDRPATH/PLB_ABus_2" BEL
@@ -11961,6 +11965,105 @@ TIMEGRP clock_generator_0_clock_generator_0_SIG_DCM1_CLK0 = PIN
         BEL "graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/rgb_reg_2" BEL
         "graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/rgb_reg_1" BEL
         "graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/rgb_reg_0" BEL
+        "controller_0/controller_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_wrcomp_i"
+        BEL
+        "controller_0/controller_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/rd_clear_sl_busy"
+        BEL
+        "controller_0/controller_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_7"
+        BEL
+        "controller_0/controller_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_6"
+        BEL
+        "controller_0/controller_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_5"
+        BEL
+        "controller_0/controller_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_4"
+        BEL
+        "controller_0/controller_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_3"
+        BEL
+        "controller_0/controller_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_2"
+        BEL
+        "controller_0/controller_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_1"
+        BEL
+        "controller_0/controller_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_0"
+        BEL
+        "controller_0/controller_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_pavalid_reg"
+        BEL
+        "controller_0/controller_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/addr_cntl_cs_0"
+        BEL
+        "controller_0/controller_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_31"
+        BEL
+        "controller_0/controller_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_30"
+        BEL
+        "controller_0/controller_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_29"
+        BEL
+        "controller_0/controller_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_28"
+        BEL
+        "controller_0/controller_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_27"
+        BEL
+        "controller_0/controller_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_26"
+        BEL
+        "controller_0/controller_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_25"
+        BEL
+        "controller_0/controller_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_24"
+        BEL
+        "controller_0/controller_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_15"
+        BEL
+        "controller_0/controller_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_14"
+        BEL
+        "controller_0/controller_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_13"
+        BEL
+        "controller_0/controller_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_12"
+        BEL
+        "controller_0/controller_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_11"
+        BEL
+        "controller_0/controller_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_10"
+        BEL
+        "controller_0/controller_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_9"
+        BEL
+        "controller_0/controller_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_8"
+        BEL
+        "controller_0/controller_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_7"
+        BEL
+        "controller_0/controller_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_6"
+        BEL
+        "controller_0/controller_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_5"
+        BEL
+        "controller_0/controller_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_4"
+        BEL
+        "controller_0/controller_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_3"
+        BEL
+        "controller_0/controller_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_2"
+        BEL
+        "controller_0/controller_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_1"
+        BEL
+        "controller_0/controller_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_0"
+        BEL
+        "controller_0/controller_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rearbitrate_i"
+        BEL
+        "controller_0/controller_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_rnw_reg"
+        BEL
+        "controller_0/controller_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/set_sl_busy"
+        BEL
+        "controller_0/controller_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_rnw_i"
+        BEL
+        "controller_0/controller_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/data_timeout"
+        BEL
+        "controller_0/controller_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_busy"
+        BEL
+        "controller_0/controller_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_8"
+        BEL
+        "controller_0/controller_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/decode_hit_reg"
+        BEL
+        "controller_0/controller_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/wrce_out_i_0"
+        BEL
+        "controller_0/controller_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_0"
+        BEL
+        "controller_0/controller_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rnw_s_h"
+        BEL "controller_0/controller_0/USER_LOGIC_I/cont/sig_5" BEL
+        "controller_0/controller_0/USER_LOGIC_I/cont/sig_4" BEL
+        "controller_0/controller_0/USER_LOGIC_I/cont/sig_3" BEL
+        "controller_0/controller_0/USER_LOGIC_I/cont/sig_2" BEL
+        "controller_0/controller_0/USER_LOGIC_I/cont/sig_1" BEL
+        "controller_0/controller_0/USER_LOGIC_I/cont/sig_0" BEL
         "clock_generator_0/clock_generator_0/DCM1_CLK0_BUFG_INST.GCLKMUX" BEL
         "clock_generator_0/clock_generator_0/DCM1_CLK0_BUFG_INST";
 PIN

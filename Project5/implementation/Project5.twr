@@ -1,8 +1,8 @@
 --------------------------------------------------------------------------------
-Release 13.1 Trace  (nt64)
+Release 13.1 Trace  (nt)
 Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
 
-C:\Xilinx\13.1\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -e 3 -xml Project5.twx
+C:\Xilinx\13.1\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -e 3 -xml Project5.twx
 Project5.ncd Project5.pcf
 
 Design file:              Project5.ncd
@@ -41,7 +41,7 @@ ns;
 
  1 net analyzed, 0 failing nets detected.
  0 timing errors detected.
- Maximum net skew is   2.063ns.
+ Maximum net skew is   2.764ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -50,7 +50,7 @@ HIGH 14 ns;
 
  131 paths analyzed, 67 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
- Minimum period is   9.772ns.
+ Minimum period is   9.390ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -68,7 +68,7 @@ HIGH 14 ns;
 
  135 paths analyzed, 122 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
- Minimum period is  20.728ns.
+ Minimum period is  20.660ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -78,7 +78,7 @@ data_read_controller/rst_dqs_div"         MAXDELAY = 2 ns;
 
  1 net analyzed, 0 failing nets detected.
  0 timing errors detected.
- Maximum net delay is   1.662ns.
+ Maximum net delay is   1.644ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -88,7 +88,7 @@ fifo_0_wr_en<0>"         MAXDELAY = 2 ns;
 
  1 net analyzed, 0 failing nets detected.
  0 timing errors detected.
- Maximum net delay is   1.154ns.
+ Maximum net delay is   1.237ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -98,7 +98,7 @@ fifo_0_wr_en<1>"         MAXDELAY = 2 ns;
 
  1 net analyzed, 0 failing nets detected.
  0 timing errors detected.
- Maximum net delay is   1.730ns.
+ Maximum net delay is   1.282ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -108,7 +108,7 @@ fifo_1_wr_en<0>"         MAXDELAY = 2 ns;
 
  1 net analyzed, 0 failing nets detected.
  0 timing errors detected.
- Maximum net delay is   1.473ns.
+ Maximum net delay is   1.470ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -118,7 +118,7 @@ fifo_1_wr_en<1>"         MAXDELAY = 2 ns;
 
  1 net analyzed, 0 failing nets detected.
  0 timing errors detected.
- Maximum net delay is   1.862ns.
+ Maximum net delay is   1.918ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -128,7 +128,7 @@ data_read/fifo_0_wr_addr_out<0><0>"         MAXDELAY = 2.5 ns;
 
  1 net analyzed, 0 failing nets detected.
  0 timing errors detected.
- Maximum net delay is   1.703ns.
+ Maximum net delay is   1.370ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -138,7 +138,7 @@ data_read/fifo_0_wr_addr_out<0><2>"         MAXDELAY = 2.5 ns;
 
  1 net analyzed, 0 failing nets detected.
  0 timing errors detected.
- Maximum net delay is   1.319ns.
+ Maximum net delay is   2.421ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -148,7 +148,7 @@ data_read/fifo_0_wr_addr_out<0><3>"         MAXDELAY = 2.5 ns;
 
  1 net analyzed, 0 failing nets detected.
  0 timing errors detected.
- Maximum net delay is   1.868ns.
+ Maximum net delay is   1.917ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -158,7 +158,7 @@ data_read/fifo_0_wr_addr_out<0><1>"         MAXDELAY = 2.5 ns;
 
  1 net analyzed, 0 failing nets detected.
  0 timing errors detected.
- Maximum net delay is   1.632ns.
+ Maximum net delay is   1.681ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -168,7 +168,7 @@ data_read/fifo_1_wr_addr_out<0><0>"         MAXDELAY = 2.5 ns;
 
  1 net analyzed, 0 failing nets detected.
  0 timing errors detected.
- Maximum net delay is   1.566ns.
+ Maximum net delay is   1.951ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -178,7 +178,7 @@ data_read/fifo_1_wr_addr_out<0><2>"         MAXDELAY = 2.5 ns;
 
  1 net analyzed, 0 failing nets detected.
  0 timing errors detected.
- Maximum net delay is   1.423ns.
+ Maximum net delay is   1.873ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -188,7 +188,7 @@ data_read/fifo_1_wr_addr_out<0><3>"         MAXDELAY = 2.5 ns;
 
  1 net analyzed, 0 failing nets detected.
  0 timing errors detected.
- Maximum net delay is   1.646ns.
+ Maximum net delay is   2.172ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -198,7 +198,7 @@ data_read/fifo_1_wr_addr_out<0><1>"         MAXDELAY = 2.5 ns;
 
  1 net analyzed, 0 failing nets detected.
  0 timing errors detected.
- Maximum net delay is   1.346ns.
+ Maximum net delay is   1.440ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -208,7 +208,7 @@ data_read/fifo_0_wr_addr_out<1><0>"         MAXDELAY = 2.5 ns;
 
  1 net analyzed, 0 failing nets detected.
  0 timing errors detected.
- Maximum net delay is   1.896ns.
+ Maximum net delay is   2.111ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -218,7 +218,7 @@ data_read/fifo_0_wr_addr_out<1><2>"         MAXDELAY = 2.5 ns;
 
  1 net analyzed, 0 failing nets detected.
  0 timing errors detected.
- Maximum net delay is   2.233ns.
+ Maximum net delay is   1.953ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -228,7 +228,7 @@ data_read/fifo_0_wr_addr_out<1><3>"         MAXDELAY = 2.5 ns;
 
  1 net analyzed, 0 failing nets detected.
  0 timing errors detected.
- Maximum net delay is   2.342ns.
+ Maximum net delay is   2.262ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -238,7 +238,7 @@ data_read/fifo_0_wr_addr_out<1><1>"         MAXDELAY = 2.5 ns;
 
  1 net analyzed, 0 failing nets detected.
  0 timing errors detected.
- Maximum net delay is   2.014ns.
+ Maximum net delay is   2.273ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -248,7 +248,7 @@ data_read/fifo_1_wr_addr_out<1><0>"         MAXDELAY = 2.5 ns;
 
  1 net analyzed, 0 failing nets detected.
  0 timing errors detected.
- Maximum net delay is   2.454ns.
+ Maximum net delay is   1.985ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -258,7 +258,7 @@ data_read/fifo_1_wr_addr_out<1><2>"         MAXDELAY = 2.5 ns;
 
  1 net analyzed, 0 failing nets detected.
  0 timing errors detected.
- Maximum net delay is   2.037ns.
+ Maximum net delay is   1.997ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -268,7 +268,7 @@ data_read/fifo_1_wr_addr_out<1><3>"         MAXDELAY = 2.5 ns;
 
  1 net analyzed, 0 failing nets detected.
  0 timing errors detected.
- Maximum net delay is   1.852ns.
+ Maximum net delay is   2.025ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -278,7 +278,7 @@ data_read/fifo_1_wr_addr_out<1><1>"         MAXDELAY = 2.5 ns;
 
  1 net analyzed, 0 failing nets detected.
  0 timing errors detected.
- Maximum net delay is   2.170ns.
+ Maximum net delay is   2.151ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -318,7 +318,7 @@ data_read/fifo_0_data_out<8>"         MAXDELAY = 2 ns;
 
  1 net analyzed, 0 failing nets detected.
  0 timing errors detected.
- Maximum net delay is   0.746ns.
+ Maximum net delay is   0.957ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -348,7 +348,7 @@ data_read/fifo_0_data_out<9>"         MAXDELAY = 2 ns;
 
  1 net analyzed, 0 failing nets detected.
  0 timing errors detected.
- Maximum net delay is   0.440ns.
+ Maximum net delay is   1.144ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -368,7 +368,7 @@ data_read/fifo_0_data_out<10>"         MAXDELAY = 2 ns;
 
  1 net analyzed, 0 failing nets detected.
  0 timing errors detected.
- Maximum net delay is   1.336ns.
+ Maximum net delay is   1.488ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -388,7 +388,7 @@ data_read/fifo_0_data_out<11>"         MAXDELAY = 2 ns;
 
  1 net analyzed, 0 failing nets detected.
  0 timing errors detected.
- Maximum net delay is   1.280ns.
+ Maximum net delay is   1.825ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -408,7 +408,7 @@ data_read/fifo_0_data_out<12>"         MAXDELAY = 2 ns;
 
  1 net analyzed, 0 failing nets detected.
  0 timing errors detected.
- Maximum net delay is   1.363ns.
+ Maximum net delay is   1.724ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -428,7 +428,7 @@ data_read/fifo_0_data_out<13>"         MAXDELAY = 2 ns;
 
  1 net analyzed, 0 failing nets detected.
  0 timing errors detected.
- Maximum net delay is   1.655ns.
+ Maximum net delay is   0.937ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -448,7 +448,7 @@ data_read/fifo_0_data_out<14>"         MAXDELAY = 2 ns;
 
  1 net analyzed, 0 failing nets detected.
  0 timing errors detected.
- Maximum net delay is   1.363ns.
+ Maximum net delay is   1.726ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -468,7 +468,7 @@ data_read/fifo_0_data_out<15>"         MAXDELAY = 2 ns;
 
  1 net analyzed, 0 failing nets detected.
  0 timing errors detected.
- Maximum net delay is   1.363ns.
+ Maximum net delay is   1.409ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -478,7 +478,7 @@ data_read/fifo_1_data_out<8>"         MAXDELAY = 2 ns;
 
  1 net analyzed, 0 failing nets detected.
  0 timing errors detected.
- Maximum net delay is   1.265ns.
+ Maximum net delay is   0.704ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -488,7 +488,7 @@ data_read/fifo_1_data_out<9>"         MAXDELAY = 2 ns;
 
  1 net analyzed, 0 failing nets detected.
  0 timing errors detected.
- Maximum net delay is   0.441ns.
+ Maximum net delay is   0.858ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -498,7 +498,7 @@ data_read/fifo_1_data_out<10>"         MAXDELAY = 2 ns;
 
  1 net analyzed, 0 failing nets detected.
  0 timing errors detected.
- Maximum net delay is   1.384ns.
+ Maximum net delay is   1.175ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -508,7 +508,7 @@ data_read/fifo_1_data_out<11>"         MAXDELAY = 2 ns;
 
  1 net analyzed, 0 failing nets detected.
  0 timing errors detected.
- Maximum net delay is   1.635ns.
+ Maximum net delay is   1.468ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -518,7 +518,7 @@ data_read/fifo_1_data_out<12>"         MAXDELAY = 2 ns;
 
  1 net analyzed, 0 failing nets detected.
  0 timing errors detected.
- Maximum net delay is   1.384ns.
+ Maximum net delay is   1.776ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -528,7 +528,7 @@ data_read/fifo_1_data_out<13>"         MAXDELAY = 2 ns;
 
  1 net analyzed, 0 failing nets detected.
  0 timing errors detected.
- Maximum net delay is   1.394ns.
+ Maximum net delay is   0.441ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -538,7 +538,7 @@ data_read/fifo_1_data_out<14>"         MAXDELAY = 2 ns;
 
  1 net analyzed, 0 failing nets detected.
  0 timing errors detected.
- Maximum net delay is   0.900ns.
+ Maximum net delay is   0.440ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -548,7 +548,7 @@ data_read/fifo_1_data_out<15>"         MAXDELAY = 2 ns;
 
  1 net analyzed, 0 failing nets detected.
  0 timing errors detected.
- Maximum net delay is   0.405ns.
+ Maximum net delay is   0.721ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -578,7 +578,7 @@ data_read/fifo_0_data_out<0>"         MAXDELAY = 2 ns;
 
  1 net analyzed, 0 failing nets detected.
  0 timing errors detected.
- Maximum net delay is   0.933ns.
+ Maximum net delay is   0.901ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -608,7 +608,7 @@ data_read/fifo_0_data_out<1>"         MAXDELAY = 2 ns;
 
  1 net analyzed, 0 failing nets detected.
  0 timing errors detected.
- Maximum net delay is   0.680ns.
+ Maximum net delay is   1.717ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -628,7 +628,7 @@ data_read/fifo_0_data_out<2>"         MAXDELAY = 2 ns;
 
  1 net analyzed, 0 failing nets detected.
  0 timing errors detected.
- Maximum net delay is   0.441ns.
+ Maximum net delay is   1.404ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -648,7 +648,7 @@ data_read/fifo_0_data_out<3>"         MAXDELAY = 2 ns;
 
  1 net analyzed, 0 failing nets detected.
  0 timing errors detected.
- Maximum net delay is   1.197ns.
+ Maximum net delay is   0.877ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -668,7 +668,7 @@ data_read/fifo_0_data_out<4>"         MAXDELAY = 2 ns;
 
  1 net analyzed, 0 failing nets detected.
  0 timing errors detected.
- Maximum net delay is   0.406ns.
+ Maximum net delay is   1.034ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -688,7 +688,7 @@ data_read/fifo_0_data_out<5>"         MAXDELAY = 2 ns;
 
  1 net analyzed, 0 failing nets detected.
  0 timing errors detected.
- Maximum net delay is   1.302ns.
+ Maximum net delay is   0.938ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -708,7 +708,7 @@ data_read/fifo_0_data_out<6>"         MAXDELAY = 2 ns;
 
  1 net analyzed, 0 failing nets detected.
  0 timing errors detected.
- Maximum net delay is   1.017ns.
+ Maximum net delay is   1.154ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -728,7 +728,7 @@ data_read/fifo_0_data_out<7>"         MAXDELAY = 2 ns;
 
  1 net analyzed, 0 failing nets detected.
  0 timing errors detected.
- Maximum net delay is   0.904ns.
+ Maximum net delay is   1.039ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -738,7 +738,7 @@ data_read/fifo_1_data_out<0>"         MAXDELAY = 2 ns;
 
  1 net analyzed, 0 failing nets detected.
  0 timing errors detected.
- Maximum net delay is   0.737ns.
+ Maximum net delay is   0.686ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -748,7 +748,7 @@ data_read/fifo_1_data_out<1>"         MAXDELAY = 2 ns;
 
  1 net analyzed, 0 failing nets detected.
  0 timing errors detected.
- Maximum net delay is   1.031ns.
+ Maximum net delay is   0.440ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -758,7 +758,7 @@ data_read/fifo_1_data_out<2>"         MAXDELAY = 2 ns;
 
  1 net analyzed, 0 failing nets detected.
  0 timing errors detected.
- Maximum net delay is   1.289ns.
+ Maximum net delay is   0.441ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -768,7 +768,7 @@ data_read/fifo_1_data_out<3>"         MAXDELAY = 2 ns;
 
  1 net analyzed, 0 failing nets detected.
  0 timing errors detected.
- Maximum net delay is   1.319ns.
+ Maximum net delay is   0.440ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -778,7 +778,7 @@ data_read/fifo_1_data_out<4>"         MAXDELAY = 2 ns;
 
  1 net analyzed, 0 failing nets detected.
  0 timing errors detected.
- Maximum net delay is   1.285ns.
+ Maximum net delay is   0.938ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -788,7 +788,7 @@ data_read/fifo_1_data_out<5>"         MAXDELAY = 2 ns;
 
  1 net analyzed, 0 failing nets detected.
  0 timing errors detected.
- Maximum net delay is   1.030ns.
+ Maximum net delay is   0.741ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -798,7 +798,7 @@ data_read/fifo_1_data_out<6>"         MAXDELAY = 2 ns;
 
  1 net analyzed, 0 failing nets detected.
  0 timing errors detected.
- Maximum net delay is   0.750ns.
+ Maximum net delay is   0.737ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -808,7 +808,7 @@ data_read/fifo_1_data_out<7>"         MAXDELAY = 2 ns;
 
  1 net analyzed, 0 failing nets detected.
  0 timing errors detected.
- Maximum net delay is   1.048ns.
+ Maximum net delay is   1.016ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -1040,205 +1040,205 @@ Timing constraint: TS_clock_generator_0_clock_generator_0_SIG_DCM1_CLK0 =
 PERIOD TIMEGRP         "clock_generator_0_clock_generator_0_SIG_DCM1_CLK0" 
 TS_sys_clk_pin         HIGH 50%;
 
- 1964643 paths analyzed, 28732 endpoints analyzed, 9 failing endpoints
+ 1965094 paths analyzed, 28875 endpoints analyzed, 9 failing endpoints
  9 timing errors detected. (9 setup errors, 0 hold errors, 0 component switching limit errors)
- Minimum period is  25.665ns.
+ Minimum period is  26.081ns.
 --------------------------------------------------------------------------------
-Slack:                  -5.665ns (requirement - (data path - clock path skew + uncertainty))
+Slack:                  -6.081ns (requirement - (data path - clock path skew + uncertainty))
   Source:               graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/vga_unit/v_count_reg_4 (FF)
-  Destination:          graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/rgb_reg_0 (FF)
+  Destination:          graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/rgb_reg_2 (FF)
   Requirement:          20.000ns
-  Data Path Delay:      25.665ns (Levels of Logic = 13)
-  Clock Path Skew:      0.000ns
+  Data Path Delay:      26.029ns (Levels of Logic = 13)
+  Clock Path Skew:      -0.052ns (0.131 - 0.183)
   Source Clock:         clk_50_0000MHz rising at 0.000ns
   Destination Clock:    clk_50_0000MHz rising at 20.000ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/vga_unit/v_count_reg_4 to graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/rgb_reg_0
+  Maximum Data Path: graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/vga_unit/v_count_reg_4 to graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/rgb_reg_2
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X103Y45.XQ     Tcko                  0.591   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/vga_unit/v_count_reg<4>
+    SLICE_X103Y44.YQ     Tcko                  0.587   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/vga_unit/v_count_reg<4>
                                                        graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/vga_unit/v_count_reg_4
-    MULT18X18_X1Y6.A0    net (fanout=4)        0.894   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/vga_unit/v_count_reg<4>
-    MULT18X18_X1Y6.P0    Tmult                 3.657   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/Mmult_mapindex_mult0000
+    MULT18X18_X1Y5.A0    net (fanout=4)        0.520   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/vga_unit/v_count_reg<4>
+    MULT18X18_X1Y5.P0    Tmult                 3.657   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/Mmult_mapindex_mult0000
                                                        graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/Mmult_mapindex_mult0000
-    SLICE_X99Y34.F3      net (fanout=1)        1.242   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/mapindex_mult0000<0>
-    SLICE_X99Y34.COUT    Topcyf                1.162   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/mapindex<0>
+    SLICE_X101Y66.F4     net (fanout=1)        1.609   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/mapindex_mult0000<0>
+    SLICE_X101Y66.COUT   Topcyf                1.162   Ethernet_MAC/Ethernet_MAC/XEMAC_I/bus2ip_addr_d1<5>
                                                        graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/Madd_mapindex_add0000_Madd_lut<0>
                                                        graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/Madd_mapindex_add0000_Madd_cy<0>
                                                        graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/Madd_mapindex_add0000_Madd_cy<1>
-    SLICE_X99Y35.CIN     net (fanout=1)        0.000   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/Madd_mapindex_add0000_Madd_cy<1>
-    SLICE_X99Y35.Y       Tciny                 0.869   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/mapindex<2>
+    SLICE_X101Y67.CIN    net (fanout=1)        0.000   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/Madd_mapindex_add0000_Madd_cy<1>
+    SLICE_X101Y67.Y      Tciny                 0.869   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/mapindex<2>
                                                        graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/Madd_mapindex_add0000_Madd_cy<2>
                                                        graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/Madd_mapindex_add0000_Madd_xor<3>
-    SLICE_X65Y65.G2      net (fanout=375)      2.730   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/mapindex<3>
-    SLICE_X65Y65.Y       Tilo                  0.704   graphics_ip_0/graphics_ip_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_be_reg<3>
+    SLICE_X83Y115.G3     net (fanout=375)      2.166   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/mapindex<3>
+    SLICE_X83Y115.Y      Tilo                  0.704   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/Madd_mapindex_add0000_Madd_xor<1>_1
                                                        graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/Madd_mapindex_add0000_Madd_xor<3>_1
-    SLICE_X70Y54.F4      net (fanout=376)      1.744   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/Madd_mapindex_add0000_Madd_xor<3>_1
-    SLICE_X70Y54.X       Tilo                  0.759   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/N504
-                                                       graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramB214.SLICEM_F
-    SLICE_X84Y48.F1      net (fanout=1)        1.105   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/N504
-    SLICE_X84Y48.F5      Tif5                  1.033   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX2_11_f53
-                                                       graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX2_124
-                                                       graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX2_11_f5_2
-    SLICE_X84Y48.FXINA   net (fanout=1)        0.000   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX2_11_f53
-    SLICE_X84Y48.FX      Tinafx                0.364   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX2_11_f53
-                                                       graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX2_10_f6_1
-    SLICE_X84Y49.FXINA   net (fanout=1)        0.000   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX2_10_f62
-    SLICE_X84Y49.FX      Tinafx                0.364   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX2_12_f53
-                                                       graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX2_9_f7_0
-    SLICE_X85Y49.FXINA   net (fanout=1)        0.000   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX2_9_f71
-    SLICE_X85Y49.Y       Tif6y                 0.521   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX2_8_f8
+    SLICE_X88Y112.F4     net (fanout=376)      1.196   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/Madd_mapindex_add0000_Madd_xor<3>_1
+    SLICE_X88Y112.X      Tilo                  0.759   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/N490
+                                                       graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramB207.SLICEM_F
+    SLICE_X101Y97.F4     net (fanout=1)        1.275   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/N490
+    SLICE_X101Y97.F5     Tif5                  0.875   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX2_14_f5
+                                                       graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX2_154
+                                                       graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX2_14_f5
+    SLICE_X101Y96.FXINB  net (fanout=1)        0.000   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX2_14_f5
+    SLICE_X101Y96.FX     Tinbfx                0.463   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX2_13_f53
+                                                       graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX2_12_f6
+    SLICE_X100Y97.FXINB  net (fanout=1)        0.000   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX2_12_f6
+    SLICE_X100Y97.FX     Tinbfx                0.364   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX2_13_f52
+                                                       graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX2_10_f7
+    SLICE_X101Y95.FXINB  net (fanout=1)        0.000   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX2_10_f7
+    SLICE_X101Y95.Y      Tif6y                 0.521   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX2_8_f8
                                                        graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX2_8_f8
-    SLICE_X83Y34.G2      net (fanout=1)        0.962   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX2_8_f8
-    SLICE_X83Y34.F5      Tif5                  0.875   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/pixdatB_varindex0000<2>
+    SLICE_X87Y44.G4      net (fanout=1)        2.177   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX2_8_f8
+    SLICE_X87Y44.F5      Tif5                  0.875   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/pixdatB_varindex0000<2>
                                                        graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX2_4
                                                        graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX2_2_f5
-    SLICE_X89Y25.BY      net (fanout=12)       1.385   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/pixdatB_varindex0000<2>
-    SLICE_X89Y25.Y       Tbyy                  0.850   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX13_7_f8
-                                                       graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX13_7_f8
-    SLICE_X79Y30.F3      net (fanout=1)        1.133   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX13_7_f8
-    SLICE_X79Y30.X       Tif5x                 1.025   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/rgb_reg_varindex0000<1>
-                                                       graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX13_2_f5_G
-                                                       graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX13_2_f5
-    SLICE_X77Y38.G2      net (fanout=1)        0.859   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/rgb_reg_varindex0000<1>
-    SLICE_X77Y38.CLK     Tgck                  0.837   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/rgb_reg<0>
-                                                       graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/rgb_reg_mux0001<1>1
-                                                       graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/rgb_reg_0
+    SLICE_X89Y35.BY      net (fanout=12)       1.371   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/pixdatB_varindex0000<2>
+    SLICE_X89Y35.Y       Tbyy                  0.850   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX15_7_f81
+                                                       graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX15_7_f8_0
+    SLICE_X84Y39.G1      net (fanout=1)        0.660   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX15_7_f81
+    SLICE_X84Y39.X       Tif5x                 1.152   DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_paths.mpmc_data_path_0/gen_write_fifos[0].gen_fifos.mpmc_write_fifo_0/gen_fifo_bram.mpmc_bram_fifo_0/PushData_r<42>
+                                                       graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX15_2_f5_F
+                                                       graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX15_2_f5
+    SLICE_X78Y58.G2      net (fanout=1)        1.325   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/rgb_reg_varindex0000<3>
+    SLICE_X78Y58.CLK     Tgck                  0.892   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/rgb_reg<1>
+                                                       graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/rgb_reg_mux0001<3>1
+                                                       graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/rgb_reg_2
     -------------------------------------------------  ---------------------------
-    Total                                     25.665ns (13.611ns logic, 12.054ns route)
-                                                       (53.0% logic, 47.0% route)
+    Total                                     26.029ns (13.730ns logic, 12.299ns route)
+                                                       (52.7% logic, 47.3% route)
 
 --------------------------------------------------------------------------------
-Slack:                  -5.640ns (requirement - (data path - clock path skew + uncertainty))
+Slack:                  -5.988ns (requirement - (data path - clock path skew + uncertainty))
   Source:               graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/vga_unit/v_count_reg_4 (FF)
-  Destination:          graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/rgb_reg_0 (FF)
+  Destination:          graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/rgb_reg_2 (FF)
   Requirement:          20.000ns
-  Data Path Delay:      25.640ns (Levels of Logic = 13)
-  Clock Path Skew:      0.000ns
+  Data Path Delay:      25.936ns (Levels of Logic = 13)
+  Clock Path Skew:      -0.052ns (0.131 - 0.183)
   Source Clock:         clk_50_0000MHz rising at 0.000ns
   Destination Clock:    clk_50_0000MHz rising at 20.000ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/vga_unit/v_count_reg_4 to graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/rgb_reg_0
+  Maximum Data Path: graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/vga_unit/v_count_reg_4 to graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/rgb_reg_2
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X103Y45.XQ     Tcko                  0.591   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/vga_unit/v_count_reg<4>
+    SLICE_X103Y44.YQ     Tcko                  0.587   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/vga_unit/v_count_reg<4>
                                                        graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/vga_unit/v_count_reg_4
-    MULT18X18_X1Y6.A0    net (fanout=4)        0.894   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/vga_unit/v_count_reg<4>
-    MULT18X18_X1Y6.P0    Tmult                 3.657   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/Mmult_mapindex_mult0000
+    MULT18X18_X1Y5.A0    net (fanout=4)        0.520   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/vga_unit/v_count_reg<4>
+    MULT18X18_X1Y5.P0    Tmult                 3.657   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/Mmult_mapindex_mult0000
                                                        graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/Mmult_mapindex_mult0000
-    SLICE_X99Y34.F3      net (fanout=1)        1.242   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/mapindex_mult0000<0>
-    SLICE_X99Y34.COUT    Topcyf                1.162   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/mapindex<0>
+    SLICE_X101Y66.F4     net (fanout=1)        1.609   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/mapindex_mult0000<0>
+    SLICE_X101Y66.COUT   Topcyf                1.162   Ethernet_MAC/Ethernet_MAC/XEMAC_I/bus2ip_addr_d1<5>
                                                        graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/Madd_mapindex_add0000_Madd_lut<0>
                                                        graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/Madd_mapindex_add0000_Madd_cy<0>
                                                        graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/Madd_mapindex_add0000_Madd_cy<1>
-    SLICE_X99Y35.CIN     net (fanout=1)        0.000   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/Madd_mapindex_add0000_Madd_cy<1>
-    SLICE_X99Y35.Y       Tciny                 0.869   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/mapindex<2>
+    SLICE_X101Y67.CIN    net (fanout=1)        0.000   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/Madd_mapindex_add0000_Madd_cy<1>
+    SLICE_X101Y67.Y      Tciny                 0.869   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/mapindex<2>
                                                        graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/Madd_mapindex_add0000_Madd_cy<2>
                                                        graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/Madd_mapindex_add0000_Madd_xor<3>
-    SLICE_X65Y65.G2      net (fanout=375)      2.730   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/mapindex<3>
-    SLICE_X65Y65.Y       Tilo                  0.704   graphics_ip_0/graphics_ip_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_be_reg<3>
+    SLICE_X83Y115.G3     net (fanout=375)      2.166   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/mapindex<3>
+    SLICE_X83Y115.Y      Tilo                  0.704   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/Madd_mapindex_add0000_Madd_xor<1>_1
                                                        graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/Madd_mapindex_add0000_Madd_xor<3>_1
-    SLICE_X74Y58.F4      net (fanout=376)      1.593   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/Madd_mapindex_add0000_Madd_xor<3>_1
-    SLICE_X74Y58.X       Tilo                  0.759   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/N502
-                                                       graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramB213.SLICEM_F
-    SLICE_X85Y48.F4      net (fanout=1)        1.290   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/N502
-    SLICE_X85Y48.F5      Tif5                  0.875   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX2_12_f54
-                                                       graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX2_138
-                                                       graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX2_12_f5_3
-    SLICE_X85Y48.FXINA   net (fanout=1)        0.000   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX2_12_f54
-    SLICE_X85Y48.FX      Tinafx                0.463   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX2_12_f54
-                                                       graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX2_11_f6_0
-    SLICE_X84Y49.FXINB   net (fanout=1)        0.000   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX2_11_f61
-    SLICE_X84Y49.FX      Tinbfx                0.364   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX2_12_f53
-                                                       graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX2_9_f7_0
-    SLICE_X85Y49.FXINA   net (fanout=1)        0.000   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX2_9_f71
-    SLICE_X85Y49.Y       Tif6y                 0.521   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX2_8_f8
+    SLICE_X86Y115.F4     net (fanout=376)      1.086   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/Madd_mapindex_add0000_Madd_xor<3>_1
+    SLICE_X86Y115.X      Tilo                  0.759   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/N498
+                                                       graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramB211.SLICEM_F
+    SLICE_X101Y96.F4     net (fanout=1)        1.292   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/N498
+    SLICE_X101Y96.F5     Tif5                  0.875   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX2_13_f53
+                                                       graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX2_149
+                                                       graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX2_13_f5_2
+    SLICE_X101Y96.FXINA  net (fanout=1)        0.000   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX2_13_f53
+    SLICE_X101Y96.FX     Tinafx                0.463   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX2_13_f53
+                                                       graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX2_12_f6
+    SLICE_X100Y97.FXINB  net (fanout=1)        0.000   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX2_12_f6
+    SLICE_X100Y97.FX     Tinbfx                0.364   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX2_13_f52
+                                                       graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX2_10_f7
+    SLICE_X101Y95.FXINB  net (fanout=1)        0.000   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX2_10_f7
+    SLICE_X101Y95.Y      Tif6y                 0.521   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX2_8_f8
                                                        graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX2_8_f8
-    SLICE_X83Y34.G2      net (fanout=1)        0.962   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX2_8_f8
-    SLICE_X83Y34.F5      Tif5                  0.875   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/pixdatB_varindex0000<2>
+    SLICE_X87Y44.G4      net (fanout=1)        2.177   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX2_8_f8
+    SLICE_X87Y44.F5      Tif5                  0.875   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/pixdatB_varindex0000<2>
                                                        graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX2_4
                                                        graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX2_2_f5
-    SLICE_X89Y25.BY      net (fanout=12)       1.385   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/pixdatB_varindex0000<2>
-    SLICE_X89Y25.Y       Tbyy                  0.850   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX13_7_f8
-                                                       graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX13_7_f8
-    SLICE_X79Y30.F3      net (fanout=1)        1.133   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX13_7_f8
-    SLICE_X79Y30.X       Tif5x                 1.025   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/rgb_reg_varindex0000<1>
-                                                       graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX13_2_f5_G
-                                                       graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX13_2_f5
-    SLICE_X77Y38.G2      net (fanout=1)        0.859   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/rgb_reg_varindex0000<1>
-    SLICE_X77Y38.CLK     Tgck                  0.837   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/rgb_reg<0>
-                                                       graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/rgb_reg_mux0001<1>1
-                                                       graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/rgb_reg_0
+    SLICE_X89Y35.BY      net (fanout=12)       1.371   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/pixdatB_varindex0000<2>
+    SLICE_X89Y35.Y       Tbyy                  0.850   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX15_7_f81
+                                                       graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX15_7_f8_0
+    SLICE_X84Y39.G1      net (fanout=1)        0.660   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX15_7_f81
+    SLICE_X84Y39.X       Tif5x                 1.152   DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_paths.mpmc_data_path_0/gen_write_fifos[0].gen_fifos.mpmc_write_fifo_0/gen_fifo_bram.mpmc_bram_fifo_0/PushData_r<42>
+                                                       graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX15_2_f5_F
+                                                       graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX15_2_f5
+    SLICE_X78Y58.G2      net (fanout=1)        1.325   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/rgb_reg_varindex0000<3>
+    SLICE_X78Y58.CLK     Tgck                  0.892   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/rgb_reg<1>
+                                                       graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/rgb_reg_mux0001<3>1
+                                                       graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/rgb_reg_2
     -------------------------------------------------  ---------------------------
-    Total                                     25.640ns (13.552ns logic, 12.088ns route)
+    Total                                     25.936ns (13.730ns logic, 12.206ns route)
                                                        (52.9% logic, 47.1% route)
 
 --------------------------------------------------------------------------------
-Slack:                  -5.601ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/vga_unit/v_count_reg_5 (FF)
-  Destination:          graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/rgb_reg_0 (FF)
+Slack:                  -5.952ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/vga_unit/v_count_reg_4 (FF)
+  Destination:          graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/rgb_reg_2 (FF)
   Requirement:          20.000ns
-  Data Path Delay:      25.601ns (Levels of Logic = 12)
-  Clock Path Skew:      0.000ns
+  Data Path Delay:      25.900ns (Levels of Logic = 12)
+  Clock Path Skew:      -0.052ns (0.131 - 0.183)
   Source Clock:         clk_50_0000MHz rising at 0.000ns
   Destination Clock:    clk_50_0000MHz rising at 20.000ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/vga_unit/v_count_reg_5 to graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/rgb_reg_0
+  Maximum Data Path: graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/vga_unit/v_count_reg_4 to graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/rgb_reg_2
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X103Y44.XQ     Tcko                  0.591   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/vga_unit/v_count_reg<5>
-                                                       graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/vga_unit/v_count_reg_5
-    MULT18X18_X1Y6.A1    net (fanout=5)        0.948   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/vga_unit/v_count_reg<5>
-    MULT18X18_X1Y6.P2    Tmult                 3.657   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/Mmult_mapindex_mult0000
+    SLICE_X103Y44.YQ     Tcko                  0.587   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/vga_unit/v_count_reg<4>
+                                                       graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/vga_unit/v_count_reg_4
+    MULT18X18_X1Y5.A0    net (fanout=4)        0.520   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/vga_unit/v_count_reg<4>
+    MULT18X18_X1Y5.P0    Tmult                 3.657   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/Mmult_mapindex_mult0000
                                                        graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/Mmult_mapindex_mult0000
-    SLICE_X99Y35.F3      net (fanout=1)        1.514   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/mapindex_mult0000<2>
-    SLICE_X99Y35.Y       Topy                  1.641   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/mapindex<2>
-                                                       graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/Madd_mapindex_add0000_Madd_lut<2>
-                                                       graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/Madd_mapindex_add0000_Madd_cy<2>
-                                                       graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/Madd_mapindex_add0000_Madd_xor<3>
-    SLICE_X65Y65.G2      net (fanout=375)      2.730   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/mapindex<3>
-    SLICE_X65Y65.Y       Tilo                  0.704   graphics_ip_0/graphics_ip_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_be_reg<3>
-                                                       graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/Madd_mapindex_add0000_Madd_xor<3>_1
-    SLICE_X70Y54.F4      net (fanout=376)      1.744   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/Madd_mapindex_add0000_Madd_xor<3>_1
-    SLICE_X70Y54.X       Tilo                  0.759   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/N504
-                                                       graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramB214.SLICEM_F
-    SLICE_X84Y48.F1      net (fanout=1)        1.105   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/N504
-    SLICE_X84Y48.F5      Tif5                  1.033   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX2_11_f53
-                                                       graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX2_124
-                                                       graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX2_11_f5_2
-    SLICE_X84Y48.FXINA   net (fanout=1)        0.000   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX2_11_f53
-    SLICE_X84Y48.FX      Tinafx                0.364   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX2_11_f53
-                                                       graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX2_10_f6_1
-    SLICE_X84Y49.FXINA   net (fanout=1)        0.000   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX2_10_f62
-    SLICE_X84Y49.FX      Tinafx                0.364   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX2_12_f53
-                                                       graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX2_9_f7_0
-    SLICE_X85Y49.FXINA   net (fanout=1)        0.000   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX2_9_f71
-    SLICE_X85Y49.Y       Tif6y                 0.521   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX2_8_f8
+    SLICE_X101Y66.F4     net (fanout=1)        1.609   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/mapindex_mult0000<0>
+    SLICE_X101Y66.Y      Topy                  1.641   Ethernet_MAC/Ethernet_MAC/XEMAC_I/bus2ip_addr_d1<5>
+                                                       graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/Madd_mapindex_add0000_Madd_lut<0>
+                                                       graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/Madd_mapindex_add0000_Madd_cy<0>
+                                                       graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/Madd_mapindex_add0000_Madd_xor<1>
+    SLICE_X83Y115.F3     net (fanout=375)      2.305   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/mapindex<1>
+    SLICE_X83Y115.X      Tilo                  0.704   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/Madd_mapindex_add0000_Madd_xor<1>_1
+                                                       graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/Madd_mapindex_add0000_Madd_xor<1>_1
+    SLICE_X84Y114.F2     net (fanout=376)      1.011   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/Madd_mapindex_add0000_Madd_xor<1>_1
+    SLICE_X84Y114.X      Tilo                  0.759   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/N492
+                                                       graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/Mram_ramB208.SLICEM_F
+    SLICE_X100Y97.F4     net (fanout=1)        1.523   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/N492
+    SLICE_X100Y97.F5     Tif5                  1.033   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX2_13_f52
+                                                       graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX2_148
+                                                       graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX2_13_f5_1
+    SLICE_X100Y96.FXINB  net (fanout=1)        0.000   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX2_13_f52
+    SLICE_X100Y96.FX     Tinbfx                0.364   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX2_12_f55
+                                                       graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX2_11_f6_1
+    SLICE_X100Y97.FXINA  net (fanout=1)        0.000   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX2_11_f62
+    SLICE_X100Y97.FX     Tinafx                0.364   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX2_13_f52
+                                                       graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX2_10_f7
+    SLICE_X101Y95.FXINB  net (fanout=1)        0.000   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX2_10_f7
+    SLICE_X101Y95.Y      Tif6y                 0.521   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX2_8_f8
                                                        graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX2_8_f8
-    SLICE_X83Y34.G2      net (fanout=1)        0.962   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX2_8_f8
-    SLICE_X83Y34.F5      Tif5                  0.875   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/pixdatB_varindex0000<2>
+    SLICE_X87Y44.G4      net (fanout=1)        2.177   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX2_8_f8
+    SLICE_X87Y44.F5      Tif5                  0.875   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/pixdatB_varindex0000<2>
                                                        graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX2_4
                                                        graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX2_2_f5
-    SLICE_X89Y25.BY      net (fanout=12)       1.385   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/pixdatB_varindex0000<2>
-    SLICE_X89Y25.Y       Tbyy                  0.850   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX13_7_f8
-                                                       graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX13_7_f8
-    SLICE_X79Y30.F3      net (fanout=1)        1.133   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX13_7_f8
-    SLICE_X79Y30.X       Tif5x                 1.025   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/rgb_reg_varindex0000<1>
-                                                       graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX13_2_f5_G
-                                                       graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX13_2_f5
-    SLICE_X77Y38.G2      net (fanout=1)        0.859   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/rgb_reg_varindex0000<1>
-    SLICE_X77Y38.CLK     Tgck                  0.837   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/rgb_reg<0>
-                                                       graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/rgb_reg_mux0001<1>1
-                                                       graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/rgb_reg_0
+    SLICE_X89Y35.BY      net (fanout=12)       1.371   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/pixdatB_varindex0000<2>
+    SLICE_X89Y35.Y       Tbyy                  0.850   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX15_7_f81
+                                                       graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX15_7_f8_0
+    SLICE_X84Y39.G1      net (fanout=1)        0.660   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX15_7_f81
+    SLICE_X84Y39.X       Tif5x                 1.152   DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_paths.mpmc_data_path_0/gen_write_fifos[0].gen_fifos.mpmc_write_fifo_0/gen_fifo_bram.mpmc_bram_fifo_0/PushData_r<42>
+                                                       graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX15_2_f5_F
+                                                       graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/inst_LPM_MUX15_2_f5
+    SLICE_X78Y58.G2      net (fanout=1)        1.325   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/rgb_reg_varindex0000<3>
+    SLICE_X78Y58.CLK     Tgck                  0.892   graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/rgb_reg<1>
+                                                       graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/rgb_reg_mux0001<3>1
+                                                       graphics_ip_0/graphics_ip_0/USER_LOGIC_I/ourIP/rgb_reg_2
     -------------------------------------------------  ---------------------------
-    Total                                     25.601ns (13.221ns logic, 12.380ns route)
-                                                       (51.6% logic, 48.4% route)
+    Total                                     25.900ns (13.399ns logic, 12.501ns route)
+                                                       (51.7% logic, 48.3% route)
 
 --------------------------------------------------------------------------------
 
@@ -1259,7 +1259,7 @@ PERIOD TIMEGRP         "clock_generator_0_clock_generator_0_SIG_DCM0_CLK0"
 
  5435 paths analyzed, 2097 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
- Minimum period is   9.501ns.
+ Minimum period is   9.521ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -1270,7 +1270,7 @@ HIGH 50%;
 
  533 paths analyzed, 437 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
- Minimum period is   8.450ns.
+ Minimum period is   8.718ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -1290,14 +1290,14 @@ Derived Constraints for TS_sys_clk_pin
 |           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-|TS_sys_clk_pin                 |     20.000ns|      6.000ns|     25.665ns|            0|            9|            3|      1970614|
-| TS_clock_generator_0_clock_gen|     20.000ns|     25.665ns|          N/A|            9|            0|      1964643|            0|
+|TS_sys_clk_pin                 |     20.000ns|      6.000ns|     26.081ns|            0|            9|            3|      1971065|
+| TS_clock_generator_0_clock_gen|     20.000ns|     26.081ns|          N/A|            9|            0|      1965094|            0|
 | erator_0_SIG_DCM1_CLK0        |             |             |             |             |             |             |             |
-| TS_clock_generator_0_clock_gen|     10.000ns|      4.800ns|      9.501ns|            0|            0|            3|         5968|
+| TS_clock_generator_0_clock_gen|     10.000ns|      4.800ns|      9.521ns|            0|            0|            3|         5968|
 | erator_0_SIG_DCM1_CLK2X       |             |             |             |             |             |             |             |
-|  TS_clock_generator_0_clock_ge|     10.000ns|      9.501ns|          N/A|            0|            0|         5435|            0|
+|  TS_clock_generator_0_clock_ge|     10.000ns|      9.521ns|          N/A|            0|            0|         5435|            0|
 |  nerator_0_SIG_DCM0_CLK0      |             |             |             |             |             |             |             |
-|  TS_clock_generator_0_clock_ge|     10.000ns|      8.450ns|          N/A|            0|            0|          533|            0|
+|  TS_clock_generator_0_clock_ge|     10.000ns|      8.718ns|          N/A|            0|            0|          533|            0|
 |  nerator_0_SIG_DCM0_CLK90     |             |             |             |             |             |             |             |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 
@@ -1325,11 +1325,11 @@ Clock fpga_0_Ethernet_MAC_PHY_tx_clk_pin to Pad
                                       | clk (edge) |                                       | Clock  |
 Destination                           |   to PAD   |Internal Clock(s)                      | Phase  |
 --------------------------------------+------------+---------------------------------------+--------+
-fpga_0_Ethernet_MAC_PHY_tx_data_pin<0>|    6.997(R)|fpga_0_Ethernet_MAC_PHY_tx_clk_pin_IBUF|   0.000|
-fpga_0_Ethernet_MAC_PHY_tx_data_pin<1>|    7.402(R)|fpga_0_Ethernet_MAC_PHY_tx_clk_pin_IBUF|   0.000|
-fpga_0_Ethernet_MAC_PHY_tx_data_pin<2>|    6.713(R)|fpga_0_Ethernet_MAC_PHY_tx_clk_pin_IBUF|   0.000|
-fpga_0_Ethernet_MAC_PHY_tx_data_pin<3>|    6.713(R)|fpga_0_Ethernet_MAC_PHY_tx_clk_pin_IBUF|   0.000|
-fpga_0_Ethernet_MAC_PHY_tx_en_pin     |    8.353(R)|fpga_0_Ethernet_MAC_PHY_tx_clk_pin_IBUF|   0.000|
+fpga_0_Ethernet_MAC_PHY_tx_data_pin<0>|    7.007(R)|fpga_0_Ethernet_MAC_PHY_tx_clk_pin_IBUF|   0.000|
+fpga_0_Ethernet_MAC_PHY_tx_data_pin<1>|    7.865(R)|fpga_0_Ethernet_MAC_PHY_tx_clk_pin_IBUF|   0.000|
+fpga_0_Ethernet_MAC_PHY_tx_data_pin<2>|    6.724(R)|fpga_0_Ethernet_MAC_PHY_tx_clk_pin_IBUF|   0.000|
+fpga_0_Ethernet_MAC_PHY_tx_data_pin<3>|    6.724(R)|fpga_0_Ethernet_MAC_PHY_tx_clk_pin_IBUF|   0.000|
+fpga_0_Ethernet_MAC_PHY_tx_en_pin     |    8.394(R)|fpga_0_Ethernet_MAC_PHY_tx_clk_pin_IBUF|   0.000|
 --------------------------------------+------------+---------------------------------------+--------+
 
 Clock to Setup on destination clock fpga_0_Ethernet_MAC_PHY_rx_clk_pin
@@ -1337,7 +1337,7 @@ Clock to Setup on destination clock fpga_0_Ethernet_MAC_PHY_rx_clk_pin
                                   | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------------+---------+---------+---------+---------+
-fpga_0_Ethernet_MAC_PHY_rx_clk_pin|         |         |    7.255|    5.577|
+fpga_0_Ethernet_MAC_PHY_rx_clk_pin|         |         |    7.231|    5.675|
 ----------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock fpga_0_Ethernet_MAC_PHY_tx_clk_pin
@@ -1345,7 +1345,7 @@ Clock to Setup on destination clock fpga_0_Ethernet_MAC_PHY_tx_clk_pin
                                   | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------------+---------+---------+---------+---------+
-fpga_0_Ethernet_MAC_PHY_tx_clk_pin|         |    6.352|         |    6.700|
+fpga_0_Ethernet_MAC_PHY_tx_clk_pin|         |    6.104|         |    6.136|
 ----------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock fpga_0_clk_1_sys_clk_pin
@@ -1353,32 +1353,32 @@ Clock to Setup on destination clock fpga_0_clk_1_sys_clk_pin
                         | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock            |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ------------------------+---------+---------+---------+---------+
-fpga_0_clk_1_sys_clk_pin|   25.665|    4.382|    4.225|    8.598|
+fpga_0_clk_1_sys_clk_pin|   26.081|    4.359|    5.160|    8.531|
 ------------------------+---------+---------+---------+---------+
 
 
 Timing summary:
 ---------------
 
-Timing errors: 9  Score: 44028  (Setup/Max: 44028, Hold: 0)
+Timing errors: 9  Score: 46067  (Setup/Max: 46067, Hold: 0)
 
-Constraints cover 1970893 paths, 95 nets, and 47364 connections
+Constraints cover 1971344 paths, 95 nets, and 47512 connections
 
 Design statistics:
-   Minimum period:  25.665ns   (Maximum frequency:  38.964MHz)
+   Minimum period:  26.081ns   (Maximum frequency:  38.342MHz)
    Maximum path delay from/to any node:   2.912ns
-   Maximum net skew:   2.063ns
+   Maximum net skew:   2.764ns
    Maximum net delay:   3.967ns
 
 
-Analysis completed Mon Nov 02 11:09:36 2015 
+Analysis completed Sat Nov 07 13:33:22 2015 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 359 MB
+Peak Memory Usage: 229 MB
 
 
 

@@ -24,7 +24,7 @@ TABLE OF CONTENTS
 ---- Source Parameters
 Input Format                       : MIXED
 Input File Name                    : "ilmb_cntlr_wrapper_xst.prj"
-Verilog Include Directory          : {"E:\SoC\Project5\pcores\" "C:\Xilinx\13.1\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Xilinx\13.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
+Verilog Include Directory          : {"C:\Users\wputn1\Desktop\Project5\pcores\" "C:\Users\wputn1\Desktop\Project5\pcores\myprocessoriplib\pcores\" "C:\Xilinx\13.1\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Xilinx\13.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
 
 ---- Target Parameters
 Target Device                      : xc3s1600efg320-4
@@ -84,7 +84,7 @@ Package body <lmb_bram_if_funcs> compiled.
 Compiling vhdl file "C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/lmb_bram_if_cntlr_v3_00_a/hdl/vhdl/lmb_bram_if_cntlr.vhd" in Library lmb_bram_if_cntlr_v3_00_a.
 Entity <lmb_bram_if_cntlr> compiled.
 Entity <lmb_bram_if_cntlr> (Architecture <imp>) compiled.
-Compiling vhdl file "E:/SoC/Project5/hdl/ilmb_cntlr_wrapper.vhd" in Library work.
+Compiling vhdl file "C:/Users/wputn1/Desktop/Project5/hdl/ilmb_cntlr_wrapper.vhd" in Library work.
 Entity <ilmb_cntlr_wrapper> compiled.
 Entity <ilmb_cntlr_wrapper> (Architecture <STRUCTURE>) compiled.
 
@@ -233,7 +233,7 @@ Unit <lmb_bram_if_cntlr> synthesized.
 
 
 Synthesizing Unit <ilmb_cntlr_wrapper>.
-    Related source file is "E:/SoC/Project5/hdl/ilmb_cntlr_wrapper.vhd".
+    Related source file is "C:/Users/wputn1/Desktop/Project5/hdl/ilmb_cntlr_wrapper.vhd".
 Unit <ilmb_cntlr_wrapper> synthesized.
 
 
@@ -426,8 +426,8 @@ Delay:               0.879ns (Levels of Logic = 1)
 =========================================================================
 
 
-Total REAL time to Xst completion: 13.00 secs
-Total CPU time to Xst completion: 12.49 secs
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 3.54 secs
  
 --> 
 

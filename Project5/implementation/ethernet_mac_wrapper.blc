@@ -6,11 +6,11 @@ xc3s1600efg320-4 -intstyle silent -i -sd .. ethernet_mac_wrapper.ngc
 ../ethernet_mac_wrapper
 
 Reading NGO file
-"E:/SoC/Project5/implementation/ethernet_mac_wrapper/ethernet_mac_wrapper.ngc"
-...
+"C:/Users/wputn1/Desktop/Project5/implementation/ethernet_mac_wrapper/ethernet_m
+ac_wrapper.ngc" ...
 Executing edif2ngd -noa
-"E:\SoC\Project5\implementation\ethernet_mac_wrapper_fifo_generator_v4_3.edn"
-"ethernet_mac_wrapper_fifo_generator_v4_3.ngo"
+"C:\Users\wputn1\Desktop\Project5\implementation\ethernet_mac_wrapper_fifo_gener
+ator_v4_3.edn" "ethernet_mac_wrapper_fifo_generator_v4_3.ngo"
 Release 13.1 - edif2ngd O.40d (nt)
 Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
 INFO:NgdBuild - Release 13.1 edif2ngd O.40d (nt)
@@ -19,8 +19,8 @@ PMSPEC -- Overriding Xilinx file <C:/Xilinx/13.1/ISE_DS/EDK/data/edif2ngd.pfd>
 with local file <C:/Xilinx/13.1/ISE_DS/ISE/data/edif2ngd.pfd>
 Writing module to "ethernet_mac_wrapper_fifo_generator_v4_3.ngo"...
 Loading design module
-"E:\SoC\Project5\implementation\ethernet_mac_wrapper\ethernet_mac_wrapper_fifo_g
-enerator_v4_3.ngo"...
+"C:\Users\wputn1\Desktop\Project5\implementation\ethernet_mac_wrapper\ethernet_m
+ac_wrapper_fifo_generator_v4_3.ngo"...
 Loading design module
 "../ethernet_mac_wrapper_fifo_generator_v4_3_fifo_generator_v4_3_xst_1.ngc"...
 
@@ -35,10 +35,10 @@ NGCBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 100592 kilobytes
+Total memory usage is 100080 kilobytes
 
 Writing NGC file "../ethernet_mac_wrapper.ngc" ...
-Total REAL time to NGCBUILD completion:  8 sec
-Total CPU time to NGCBUILD completion:   1 sec
+Total REAL time to NGCBUILD completion:  5 sec
+Total CPU time to NGCBUILD completion:   2 sec
 
 Writing NGCBUILD log file "../ethernet_mac_wrapper.blc"...

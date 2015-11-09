@@ -122,4 +122,4 @@ vhdl xps_uartlite_v1_01_a "C:\Xilinx\13.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pco
 vhdl xps_uartlite_v1_01_a "C:\Xilinx\13.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_uartlite_v1_01_a\hdl\vhdl\uartlite_tx.vhd"
 vhdl xps_uartlite_v1_01_a "C:\Xilinx\13.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_uartlite_v1_01_a\hdl\vhdl\uartlite_core.vhd"
 vhdl xps_uartlite_v1_01_a "C:\Xilinx\13.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_uartlite_v1_01_a\hdl\vhdl\xps_uartlite.vhd"
-vhdl work "E:\SoC\Project5\hdl\rs232_dce_wrapper.vhd"
+vhdl work "C:\Users\wputn1\Desktop\Project5\hdl\rs232_dce_wrapper.vhd"

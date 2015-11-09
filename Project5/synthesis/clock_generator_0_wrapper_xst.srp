@@ -24,7 +24,7 @@ TABLE OF CONTENTS
 ---- Source Parameters
 Input Format                       : MIXED
 Input File Name                    : "clock_generator_0_wrapper_xst.prj"
-Verilog Include Directory          : {"E:\SoC\Project5\pcores\" "C:\Xilinx\13.1\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Xilinx\13.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
+Verilog Include Directory          : {"C:\Users\wputn1\Desktop\Project5\pcores\" "C:\Users\wputn1\Desktop\Project5\pcores\myprocessoriplib\pcores\" "C:\Xilinx\13.1\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Xilinx\13.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
 
 ---- Target Parameters
 Target Device                      : xc3s1600efg320-4
@@ -60,10 +60,10 @@ Entity <pll_module> (Architecture <STRUCT>) compiled.
 Compiling vhdl file "C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/clock_generator_v4_01_a/hdl/vhdl/mmcm_module.vhd" in Library clock_generator_v4_01_a.
 Entity <mmcm_module> compiled.
 Entity <mmcm_module> (Architecture <STRUCT>) compiled.
-Compiling vhdl file "E:/SoC/Project5/hdl/elaborate/clock_generator_0_v4_01_a/hdl/vhdl/clock_generator.vhd" in Library clock_generator_0_v4_01_a.
+Compiling vhdl file "C:/Users/wputn1/Desktop/Project5/hdl/elaborate/clock_generator_0_v4_01_a/hdl/vhdl/clock_generator.vhd" in Library clock_generator_0_v4_01_a.
 Entity <clock_generator> compiled.
 Entity <clock_generator> (Architecture <STRUCTURE>) compiled.
-Compiling vhdl file "E:/SoC/Project5/hdl/clock_generator_0_wrapper.vhd" in Library work.
+Compiling vhdl file "C:/Users/wputn1/Desktop/Project5/hdl/clock_generator_0_wrapper.vhd" in Library work.
 Entity <clock_generator_0_wrapper> compiled.
 Entity <clock_generator_0_wrapper> (Architecture <STRUCTURE>) compiled.
 
@@ -150,16 +150,16 @@ Analyzing generic Entity <clock_generator> in library <clock_generator_0_v4_01_a
 	C_FAMILY = "spartan3e"
 	C_PACKAGE = "fg320"
 	C_SPEEDGRADE = "-4"
-WARNING:Xst:753 - "E:/SoC/Project5/hdl/elaborate/clock_generator_0_v4_01_a/hdl/vhdl/clock_generator.vhd" line 284: Unconnected output port 'CLK180' of component 'dcm_module'.
-WARNING:Xst:753 - "E:/SoC/Project5/hdl/elaborate/clock_generator_0_v4_01_a/hdl/vhdl/clock_generator.vhd" line 284: Unconnected output port 'CLK270' of component 'dcm_module'.
-WARNING:Xst:753 - "E:/SoC/Project5/hdl/elaborate/clock_generator_0_v4_01_a/hdl/vhdl/clock_generator.vhd" line 284: Unconnected output port 'CLK2X180' of component 'dcm_module'.
-WARNING:Xst:753 - "E:/SoC/Project5/hdl/elaborate/clock_generator_0_v4_01_a/hdl/vhdl/clock_generator.vhd" line 284: Unconnected output port 'CLKFX180' of component 'dcm_module'.
-WARNING:Xst:753 - "E:/SoC/Project5/hdl/elaborate/clock_generator_0_v4_01_a/hdl/vhdl/clock_generator.vhd" line 284: Unconnected output port 'STATUS' of component 'dcm_module'.
-WARNING:Xst:753 - "E:/SoC/Project5/hdl/elaborate/clock_generator_0_v4_01_a/hdl/vhdl/clock_generator.vhd" line 397: Unconnected output port 'CLK180' of component 'dcm_module'.
-WARNING:Xst:753 - "E:/SoC/Project5/hdl/elaborate/clock_generator_0_v4_01_a/hdl/vhdl/clock_generator.vhd" line 397: Unconnected output port 'CLK270' of component 'dcm_module'.
-WARNING:Xst:753 - "E:/SoC/Project5/hdl/elaborate/clock_generator_0_v4_01_a/hdl/vhdl/clock_generator.vhd" line 397: Unconnected output port 'CLK2X180' of component 'dcm_module'.
-WARNING:Xst:753 - "E:/SoC/Project5/hdl/elaborate/clock_generator_0_v4_01_a/hdl/vhdl/clock_generator.vhd" line 397: Unconnected output port 'CLKFX180' of component 'dcm_module'.
-WARNING:Xst:753 - "E:/SoC/Project5/hdl/elaborate/clock_generator_0_v4_01_a/hdl/vhdl/clock_generator.vhd" line 397: Unconnected output port 'STATUS' of component 'dcm_module'.
+WARNING:Xst:753 - "C:/Users/wputn1/Desktop/Project5/hdl/elaborate/clock_generator_0_v4_01_a/hdl/vhdl/clock_generator.vhd" line 284: Unconnected output port 'CLK180' of component 'dcm_module'.
+WARNING:Xst:753 - "C:/Users/wputn1/Desktop/Project5/hdl/elaborate/clock_generator_0_v4_01_a/hdl/vhdl/clock_generator.vhd" line 284: Unconnected output port 'CLK270' of component 'dcm_module'.
+WARNING:Xst:753 - "C:/Users/wputn1/Desktop/Project5/hdl/elaborate/clock_generator_0_v4_01_a/hdl/vhdl/clock_generator.vhd" line 284: Unconnected output port 'CLK2X180' of component 'dcm_module'.
+WARNING:Xst:753 - "C:/Users/wputn1/Desktop/Project5/hdl/elaborate/clock_generator_0_v4_01_a/hdl/vhdl/clock_generator.vhd" line 284: Unconnected output port 'CLKFX180' of component 'dcm_module'.
+WARNING:Xst:753 - "C:/Users/wputn1/Desktop/Project5/hdl/elaborate/clock_generator_0_v4_01_a/hdl/vhdl/clock_generator.vhd" line 284: Unconnected output port 'STATUS' of component 'dcm_module'.
+WARNING:Xst:753 - "C:/Users/wputn1/Desktop/Project5/hdl/elaborate/clock_generator_0_v4_01_a/hdl/vhdl/clock_generator.vhd" line 397: Unconnected output port 'CLK180' of component 'dcm_module'.
+WARNING:Xst:753 - "C:/Users/wputn1/Desktop/Project5/hdl/elaborate/clock_generator_0_v4_01_a/hdl/vhdl/clock_generator.vhd" line 397: Unconnected output port 'CLK270' of component 'dcm_module'.
+WARNING:Xst:753 - "C:/Users/wputn1/Desktop/Project5/hdl/elaborate/clock_generator_0_v4_01_a/hdl/vhdl/clock_generator.vhd" line 397: Unconnected output port 'CLK2X180' of component 'dcm_module'.
+WARNING:Xst:753 - "C:/Users/wputn1/Desktop/Project5/hdl/elaborate/clock_generator_0_v4_01_a/hdl/vhdl/clock_generator.vhd" line 397: Unconnected output port 'CLKFX180' of component 'dcm_module'.
+WARNING:Xst:753 - "C:/Users/wputn1/Desktop/Project5/hdl/elaborate/clock_generator_0_v4_01_a/hdl/vhdl/clock_generator.vhd" line 397: Unconnected output port 'STATUS' of component 'dcm_module'.
 Entity <clock_generator> analyzed. Unit <clock_generator> generated.
 
 Analyzing generic Entity <dcm_module.1> in library <clock_generator_v4_01_a> (Architecture <STRUCT>).
@@ -284,7 +284,7 @@ Unit <dcm_module_2> synthesized.
 
 
 Synthesizing Unit <clock_generator>.
-    Related source file is "E:/SoC/Project5/hdl/elaborate/clock_generator_0_v4_01_a/hdl/vhdl/clock_generator.vhd".
+    Related source file is "C:/Users/wputn1/Desktop/Project5/hdl/elaborate/clock_generator_0_v4_01_a/hdl/vhdl/clock_generator.vhd".
 WARNING:Xst:1305 - Output <CLKOUT3> is never assigned. Tied to value 0.
 WARNING:Xst:1305 - Output <CLKOUT4> is never assigned. Tied to value 0.
 WARNING:Xst:1305 - Output <CLKOUT5> is never assigned. Tied to value 0.
@@ -343,7 +343,7 @@ Unit <clock_generator> synthesized.
 
 
 Synthesizing Unit <clock_generator_0_wrapper>.
-    Related source file is "E:/SoC/Project5/hdl/clock_generator_0_wrapper.vhd".
+    Related source file is "C:/Users/wputn1/Desktop/Project5/hdl/clock_generator_0_wrapper.vhd".
 Unit <clock_generator_0_wrapper> synthesized.
 
 
@@ -519,12 +519,12 @@ Delay:               1.319ns (Levels of Logic = 0)
 =========================================================================
 
 
-Total REAL time to Xst completion: 11.00 secs
-Total CPU time to Xst completion: 10.34 secs
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.55 secs
  
 --> 
 
-Total memory usage is 197548 kilobytes
+Total memory usage is 198124 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   66 (   0 filtered)
