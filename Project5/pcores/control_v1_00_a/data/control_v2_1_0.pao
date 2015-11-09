@@ -1,0 +1,10 @@
+##############################################################################
+## Filename:          C:/Users/Jeff/Documents/GitHub/System_on_Chip/Project5/pcores/control_v1_00_a/data/control_v2_1_0.pao
+## Description:       Peripheral Analysis Order
+## Date:              Thu Nov 05 16:51:37 2015 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+lib proc_common_v3_00_a  all 
+lib plbv46_slave_single_v1_01_a  all 
+lib control_v1_00_a user_logic vhdl
+lib control_v1_00_a control vhdl

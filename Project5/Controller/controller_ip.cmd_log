@@ -12,3 +12,4 @@ map -intstyle ise -p xc3s1600e-fg320-4 -cm area -ir off -pr off -c 100 -o contro
 par -w -intstyle ise -ol high -t 1 controller_ip_map.ncd controller_ip.ncd controller_ip.pcf 
 trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml controller_ip.twx controller_ip.ncd -o controller_ip.twr controller_ip.pcf 
 xst -intstyle ise -ifn "C:/Users/Jeff/Documents/GitHub/System_on_Chip/Project5/Controller/controller_ip.xst" -ofn "C:/Users/Jeff/Documents/GitHub/System_on_Chip/Project5/Controller/controller_ip.syr" 
+xst -intstyle ise -ifn "C:/Users/Jeff/Documents/GitHub/System_on_Chip/Project5/Controller/controller_ip.xst" -ofn "C:/Users/Jeff/Documents/GitHub/System_on_Chip/Project5/Controller/controller_ip.syr" 

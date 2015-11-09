@@ -26,7 +26,7 @@
 -- Filename:          user_logic.vhd
 -- Version:           1.00.a
 -- Description:       User logic.
--- Date:              Wed Nov 04 16:35:39 2015 (by Create and Import Peripheral Wizard)
+-- Date:              Thu Nov 05 16:51:37 2015 (by Create and Import Peripheral Wizard)
 -- VHDL Standard:     VHDL'93
 ------------------------------------------------------------------------------
 -- Naming Conventions:
@@ -97,7 +97,7 @@ entity user_logic is
   port
   (
     -- ADD USER PORTS BELOW THIS LINE ------------------
-	NESlatch, NESclk : out  STD_LOGIC;
+    --USER ports added here
     -- ADD USER PORTS ABOVE THIS LINE ------------------
 
     -- DO NOT EDIT BELOW THIS LINE ---------------------
@@ -128,15 +128,7 @@ end entity user_logic;
 architecture IMP of user_logic is
 
   --USER signal declarations added here, as needed for user logic
-COMPONENT controller_ip PORT(
-			  reset : in  STD_LOGIC;
-           clk_50mhz : in  STD_LOGIC;
-           --buttonLED : out  STD_LOGIC_VECTOR (7 downto 0);
-           NESlatch : out  STD_LOGIC;
-           NESclk : out  STD_LOGIC;
-           NESdatIN : in  STD_LOGIC
-);
-end COMPONENT;
+
   ------------------------------------------
   -- Signals for user logic slave model s/w accessible register example
   ------------------------------------------
@@ -152,14 +144,7 @@ end COMPONENT;
 begin
 
   --USER logic implementation added here
-	ourIP : controller_ip PORT MAP(
-		reset => Bus2IP_Reset,
-		clk_50mhz => Bus2IP_Clk,
-		--buttonLED => buttonLED,
-		NESlatch => NESlatch,
-		NESclk => NESclk,
-		NESdatIN => slv_reg1(0)
-	);
+
   ------------------------------------------
   -- Example code to read/write user logic slave model s/w accessible registers
   -- 
