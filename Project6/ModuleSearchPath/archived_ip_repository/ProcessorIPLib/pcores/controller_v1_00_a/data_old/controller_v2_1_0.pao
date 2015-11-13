@@ -1,0 +1,11 @@
+##############################################################################
+## Filename:          C:\Users\wputn1\Desktop\Project5\pcores/controller_v1_00_a/data/controller_v2_1_0.pao
+## Description:       Peripheral Analysis Order
+## Date:              Sat Nov 07 12:50:12 2015 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+lib proc_common_v3_00_a all vhdl
+lib plbv46_slave_single_v1_01_a all vhdl
+lib controller_v1_00_a controller vhdl
+lib controller_v1_00_a user_logic vhdl
+lib controller_v1_00_a proj1 vhdl

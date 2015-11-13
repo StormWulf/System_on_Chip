@@ -1,0 +1,170 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns:mso="urn:schemas-microsoft-com:office:office"
+ xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<head>
+  <title>Change log for mch_plbv46_slave_burst_v2_00_a</title>
+  <link href="../../../../../../doc/usenglish/css/xilhtml.css"
+ rel="stylesheet" type="text/css">
+  <style>
+		P.Level1Heading {
+			color: #000000;
+			font-weight: bold;
+			font-size: 1.05em;
+			margin-bottom: 0em;
+			margin-top: 0em;
+		}
+		P.Level2Heading  {
+			font-weight: bold;
+			margin-top: 2em;
+			margin-bottom: 0em;
+		}
+		P.Level3Heading {
+			font-weight: bold;
+			margin-top: 2em;
+		}
+		.GreyBackground {
+			background-color:#CCCCCC;
+		}
+		.PreformatFont  {
+			font-family: Fixed, Mono, Courier New, Courier;
+			font-size: .95em;
+		}
+	</style><!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:Location msdt:dt="string">New Mexico</mso:Location>
+<mso:Description0 msdt:dt="string"></mso:Description0>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+<body>
+<h3 class="PageHeader">Xilinx Processor IP Library</h3>
+<h1>Change log for mch_plbv46_slave_burst</h1>
+<h1></h1>
+<hr class="whs1">
+<table style="vertical-align: top; text-align: left;" border="0"
+ cellpadding="1" cellspacing="0">
+  <tbody>
+<!-- BEGIN CHANGELOG FOR New core version --><!--spacer--><tr><td><p><br></p></td></tr><tr><td class="GreyBackground">  <p class="Level1Heading">Changes in v2.01.a, introduced in 11.3  </p>  </td></tr><tr>      <td>      <p class="Level2Heading">11.3 - Changes in VHDL/Verilog/Netlist sources (.vhd, .v, .ngc, .edn) </p>      <hr class="whs1"> </td>    </tr>    <tr>      <td>    <br>      <pre> <span style="font-family: Arial;">New Features:</span><font size="-1"><br></font></pre>  <ul><li><font size="-1"><span style="font-family: Arial;">None</span></font></li>     </ul>      <pre><span style="font-family: Arial;">Resolved Issues:</span><font size="+1"><span style="font-family: Arial;"><br></span></font></pre>      <ul>
+        <li><font size="-1"><span style="font-family: Arial;">fix for [CR<523388>] XCL2 Byte access fix</span></font></li>
+      </ul>
+      <font size="-1"><span style="font-family: Arial;">Known Issues /Limitations:</span></font><br style="font-family: Arial;">      <ul>        <li><font size="-1"><span style="font-family: Arial;">None</span></font></li>      </ul>      </td>    </tr><!-- End section --><!-- End section --> <tr>      <td>      <hr class="whs1"> </td>    </tr><!-- BEGIN CHANGELOG FOR New core version --><!--spacer--><tr>
+
+      <td>
+
+       
+
+       
+      </td>
+    </tr>
+    <tr>
+      <td class="GreyBackground">
+      <p class="Level1Heading">Changes in v2.00.a, introduced in 11.1 </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+      <p class="Level2Heading">11.1 - Changes in VHDL/Verilog/Netlist
+sources (.vhd, .v, .ngc, .edn) </p>
+      <hr class="whs1"> </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td>
+      <pre><font size="-1"><span style="font-family: Arial;"><br></span></font><span
+ style="font-family: Arial;">New Features:</span><font size="-1"><br></font></pre>
+      <ul>
+        <li style="font-family: Arial;"><font size="-1">Changed
+the helper libraries<span style=""></span></font></li>
+        <ul style="font-family: Arial;">
+          <li><font size="-1">proc_common_v2_00_a to proc_common_v3_00_a</font></li>
+          <li><font size="-1">plbv46_slave_burst_v1_00_a to
+plbv46_slave_burst_v1_01_a<u11:p></u11:p><u8:p></u8:p></font></li>
+        </ul>
+        <li style="font-family: Arial;"><font size="-1">Updated <span
+ class="SpellE">readdata_buffer.vhd</span> for new DXCL2 FSL_S_READ
+protocol</font></li>
+        <li><font size="-1"><span style="font-family: Arial;"><span
+ style="font-family: Arial;">Update write path to supprt cache
+writeback in DXCL2 mode</span><br>
+          </span></font></li>
+      </ul>
+      <pre><span style="font-family: Arial;">Resolved Issues:</span><font
+ size="+1"><span style="font-family: Arial;"><br></span></font></pre>
+      <ul>
+        <small> </small>
+        <li><small><font size="-1"><small><span
+ style="font-family: Arial;"></span></small></font><font size="-1"><small><span
+ style="font-family: Arial;"></span></small></font><font
+ style="font-family: Arial;" size="-1">Fixed&nbsp; [CR&lt; 476144&gt;]
+-
+Fix for unaligned read data transfers through cache line transactions</font></small></li>
+        <li style="font-family: Arial;"><font size="-1"><font
+ style="font-family: Arial;">Fixed&nbsp; [CR&lt;</font><p:colorscheme
+ colors="#ffffff,#000000,#808080,#cccc00,#446b94,#339933,#990033,#508c94"></p:colorscheme><span
+ style="font-size: 12pt;"> <small>502618</small></span><font
+ style="font-family: Arial;">&gt;] -
+Fix for write back cache line transaction issue</font></font></li>
+        <li style="font-family: Arial;"><font size="-1"><font
+ style="font-family: Arial;">Fixed&nbsp; [CR&lt;</font><p:colorscheme
+ colors="#ffffff,#000000,#808080,#cccc00,#446b94,#339933,#990033,#508c94"></p:colorscheme><span
+ style="font-size: 12pt;"> <small>508291</small></span><font
+ style="font-family: Arial;">&gt;] -
+Fix for No PLB single cacheline issue<br>
+          </font></font></li>
+      </ul>
+      <font size="-1"><span style="font-family: Arial;">Known Issues /
+Limitations:</span></font><br style="font-family: Arial;">
+      <ul style="font-family: Arial;">
+        <li><font size="-1">None</font><br>
+        </li>
+      </ul>
+      </td>
+    </tr>
+<!-- End section --><!-- End section --><!-- End section --><!-- End section -->
+    <tr>
+      <td>
+      <hr class="whs1"> </td>
+    </tr>
+<!-- END CHANGELOG FOR New core version. BEGIN change logs for new version here --><!--spacer-->
+    <tr>
+      <td class="GreyBackground">
+      <p class="Level1Heading">Changes in v1.00.a, introduced in 9.2 </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+      <p class="Level2Heading">9.2 - Changes in VHDL/<span
+ class="SpellE">Verilog/Netlist</span> sources (.<span class="SpellE">vhd</span>,
+.v, .<span class="SpellE">ngc</span>, .<span class="SpellE">edn</span>)
+      </p>
+      <hr class="whs1"> </td>
+    </tr>
+    <tr style="font-family: Arial;">
+      <td style="vertical-align: top;"><br>
+      </td>
+    </tr>
+    <tr style="font-family: Arial;">
+      <td>
+      <pre><font size="-1"><br><span style="font-family: Arial;"></span></font><span
+ style="font-family: Arial;">New Features:</span><font size="-1"><br></font></pre>
+      <ul>
+        <li><font size="-1">Initial Release</font></li>
+      </ul>
+      <font size="-1">Resolved Issues:</font><br>
+      <font style="font-family: Arial;" size="-1"> </font>
+      <ul>
+        <font size="-1"> </font>
+        <li><font size="-1">None</font></li>
+      </ul>
+      <font size="-1">Known Issues /
+Limitations:</font><font style="font-family: Arial;" size="-1"></font>
+      <ul>
+        <li><font size="-1">None</font></li>
+      </ul>
+      </td>
+    </tr>
+<!-- END CHANGELOG FOR New core version. BEGIN change logs for new version here -->
+</tbody></table><p class="Copyright"> Copyright &copy; 1995-2009 Xilinx, Inc. Allrights reserved. </p></body></html>

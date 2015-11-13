@@ -1,0 +1,12 @@
+# Peripheral Analyze Order (.pao) file for the
+# IPIF Interrupt Control version v2_01_a
+#
+# ----- Proc Common Library Files --------------
+lib proc_common_v3_00_a all  
+#
+#----- Interrupt Control Library Files ---------
+lib interrupt_control_v2_01_a  interrupt_control.vhd vhdl
+#
+# --- End of list ------------------------------
+#nosort
+

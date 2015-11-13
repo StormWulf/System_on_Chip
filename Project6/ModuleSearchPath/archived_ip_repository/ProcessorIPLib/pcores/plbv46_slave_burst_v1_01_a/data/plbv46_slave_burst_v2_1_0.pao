@@ -1,0 +1,20 @@
+# Peripheral Analyze Order (.pao) file for the
+# PLB V4.6 Slave Burst Version 1.01.a
+#
+# ----- Proc Common Library Files -----------------
+lib proc_common_v3_00_a  all  
+#
+#----- PLB IPIF Library Files ---------------------
+lib plbv46_slave_burst_v1_01_a  flex_addr_cntr.vhd vhdl
+lib plbv46_slave_burst_v1_01_a  addr_reg_cntr_brst_flex.vhd vhdl
+lib plbv46_slave_burst_v1_01_a  plb_address_decoder.vhd vhdl
+lib plbv46_slave_burst_v1_01_a  burst_support.vhd vhdl 
+lib plbv46_slave_burst_v1_01_a  wr_buffer.vhd vhdl 
+lib plbv46_slave_burst_v1_01_a  be_reset_gen.vhd vhdl 
+lib plbv46_slave_burst_v1_01_a  plb_slave_attachment.vhd vhdl  
+lib plbv46_slave_burst_v1_01_a  data_mirror_128.vhd vhdl
+lib plbv46_slave_burst_v1_01_a  plbv46_slave_burst.vhd vhdl 
+#
+# --- End of list ------------------------------
+#nosort
+

@@ -1,0 +1,52 @@
+
+**** Build of configuration Debug for project hello_world_0 ****
+
+make all 
+Building file: ../gameGraphics.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../graphics_bsp_0/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.10.a -mno-xl-soft-mul -MMD -MP -MF"gameGraphics.d" -MT"gameGraphics.d" -o"gameGraphics.o" "../gameGraphics.c"
+../gameGraphics.c: In function 'main':
+../gameGraphics.c:35: warning: unused variable 'cwht1'
+../gameGraphics.c:35: warning: unused variable 'cyel0'
+../gameGraphics.c:34: warning: unused variable 'cmag1'
+../gameGraphics.c:33: warning: unused variable 'ccyan0'
+../gameGraphics.c:33: warning: unused variable 'cgreen0'
+../gameGraphics.c:32: warning: unused variable 'cblue0'
+../gameGraphics.c:32: warning: unused variable 'cblk0'
+../gameGraphics.c:30: warning: unused variable 'writeInt'
+Finished building: ../gameGraphics.c
+' '
+Building target: hello_world_0.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../graphics_bsp_0/microblaze_0/lib -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.10.a -mno-xl-soft-mul -o"hello_world_0.elf"  ./gameGraphics.o  ./src/gameGraphics.o ./src/helloworld.o ./src/platform.o   
+./src/gameGraphics.o: In function `main':
+C:\Users\Jeff\Documents\GitHub\System_on_Chip\Project5\graphics_bsp_0\hello_world_0\Debug/../src/gameGraphics.c:28: multiple definition of `IPcoreAddr'
+./gameGraphics.o:C:\Users\Jeff\Documents\GitHub\System_on_Chip\Project5\graphics_bsp_0\hello_world_0\Debug/../gameGraphics.c:28: first defined here
+c:\xilinx\13.1\ise_ds\edk\gnu\microblaze\nt64\bin\..\lib\gcc\microblaze-xilinx-elf\4.1.2\..\..\..\..\microblaze-xilinx-elf\bin\ld.exe: Disabling relaxation: it will not work with multiple definitions
+./src/gameGraphics.o: In function `main':
+C:\Users\Jeff\Documents\GitHub\System_on_Chip\Project5\graphics_bsp_0\hello_world_0\Debug/../src/gameGraphics.c:28: multiple definition of `bgOff'
+./gameGraphics.o:C:\Users\Jeff\Documents\GitHub\System_on_Chip\Project5\graphics_bsp_0\hello_world_0\Debug/../gameGraphics.c:28: first defined here
+./src/gameGraphics.o: In function `main':
+C:\Users\Jeff\Documents\GitHub\System_on_Chip\Project5\graphics_bsp_0\hello_world_0\Debug/../src/gameGraphics.c:28: multiple definition of `bgSprOff'
+./gameGraphics.o:C:\Users\Jeff\Documents\GitHub\System_on_Chip\Project5\graphics_bsp_0\hello_world_0\Debug/../gameGraphics.c:28: first defined here
+./src/gameGraphics.o: In function `main':
+C:\Users\Jeff\Documents\GitHub\System_on_Chip\Project5\graphics_bsp_0\hello_world_0\Debug/../src/gameGraphics.c:28: multiple definition of `fgSprOff'
+./gameGraphics.o:C:\Users\Jeff\Documents\GitHub\System_on_Chip\Project5\graphics_bsp_0\hello_world_0\Debug/../gameGraphics.c:28: first defined here
+./src/gameGraphics.o: In function `main':
+C:\Users\Jeff\Documents\GitHub\System_on_Chip\Project5\graphics_bsp_0\hello_world_0\Debug/../src/gameGraphics.c:30: multiple definition of `fgOff'
+./gameGraphics.o:C:\Users\Jeff\Documents\GitHub\System_on_Chip\Project5\graphics_bsp_0\hello_world_0\Debug/../gameGraphics.c:30: first defined here
+./src/gameGraphics.o: In function `main':
+C:\Users\Jeff\Documents\GitHub\System_on_Chip\Project5\graphics_bsp_0\hello_world_0\Debug/../src/gameGraphics.c:32: multiple definition of `sprOff'
+./gameGraphics.o:C:\Users\Jeff\Documents\GitHub\System_on_Chip\Project5\graphics_bsp_0\hello_world_0\Debug/../gameGraphics.c:32: first defined here
+./src/gameGraphics.o: In function `main':
+C:\Users\Jeff\Documents\GitHub\System_on_Chip\Project5\graphics_bsp_0\hello_world_0\Debug/../src/gameGraphics.c:32: multiple definition of `sprColorOff'
+./gameGraphics.o:C:\Users\Jeff\Documents\GitHub\System_on_Chip\Project5\graphics_bsp_0\hello_world_0\Debug/../gameGraphics.c:32: first defined here
+./src/gameGraphics.o: In function `main':
+C:\Users\Jeff\Documents\GitHub\System_on_Chip\Project5\graphics_bsp_0\hello_world_0\Debug/../src/gameGraphics.c:28: multiple definition of `main'
+./gameGraphics.o:C:\Users\Jeff\Documents\GitHub\System_on_Chip\Project5\graphics_bsp_0\hello_world_0\Debug/../gameGraphics.c:28: first defined here
+./src/helloworld.o: In function `main':
+C:\Users\Jeff\Documents\GitHub\System_on_Chip\Project5\graphics_bsp_0\hello_world_0\Debug/../src/helloworld.c:27: multiple definition of `main'
+./gameGraphics.o:C:\Users\Jeff\Documents\GitHub\System_on_Chip\Project5\graphics_bsp_0\hello_world_0\Debug/../gameGraphics.c:28: first defined here
+c:\xilinx\13.1\ise_ds\edk\gnu\microblaze\nt64\bin\..\lib\gcc\microblaze-xilinx-elf\4.1.2\..\..\..\..\microblaze-xilinx-elf\bin\ld.exe: Warning: size of symbol `main' changed from 17100 in ./gameGraphics.o to 88 in ./src/helloworld.o
+collect2: ld returned 1 exit status
+make: *** [hello_world_0.elf] Error 1

@@ -1,0 +1,57 @@
+//file: gameGraphics.c
+//Authors: William Putnam, Jeff Falberg
+//Last Updated: 10.31.2015
+
+//Description: Write graphics data to the monitor.
+//
+//writeReg	|	register
+//----------+-------------------
+//   0		|	wEn fore
+//   1		|	wEn back
+//   2		|	wEn sprite
+//   3		|	dataIn fore
+//   4		|	dataIn back
+//   5		|	dataIn sprite
+//   6		|	dataOut fore
+//   7		|	dataOut back
+//   8		|	dataOut sprite
+
+#include <stdio.h>
+#include <unistd.h>
+//#include "platform.h"
+#include "xgpio_l.h"
+#include "xparameters.h"
+#include "xbasic_types.h"
+#include "xtmrctr.h"
+#include "xtmrctr_l.h"
+
+int main(){
+
+	int writeReg = 0, readReg = 0,
+			we_tf = 0, we_tb = 0, we_sm = 0,
+			addr_tf = 0, addr_tb = 0, addr_sm = 0,
+			data_tf = 0, data_tb = 0, data_sm = 0;
+
+	//registers are separated by a factor of 4
+	//XGpio_WriteReg(xxxxx, 4*writereg, ***data***);
+
+	for(;;){
+		writeReg = 0;
+		readReg = 0;
+		//read in the enables
+		if (we_tf){
+			//XGpio_WriteReg();
+		}
+		writeReg = 1;
+		if (we_tb){
+			//XGpio_WriteReg();
+		}
+		writeReg = 2;
+		if (we_sm){
+			//XGpio_WriteReg();
+		}
+	}
+
+	return 0;
+}
+

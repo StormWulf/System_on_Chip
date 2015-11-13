@@ -1,0 +1,357 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns:mso="urn:schemas-microsoft-com:office:office"
+ xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<head>
+  <title>Change log for xps_mch_emc, v3.01.a</title>
+  <link href="../../../../../../doc/usenglish/css/xilhtml.css"
+ rel="stylesheet" type="text/css">
+  <style>
+		P.Level1Heading {
+			color: #000000;
+			font-weight: bold;
+			font-size: 1.05em;
+			margin-bottom: 0em;
+			margin-top: 0em;
+		}
+		P.Level2Heading  {
+			font-weight: bold;
+			margin-top: 2em;
+			margin-bottom: 0em;
+		}
+		P.Level3Heading {
+			font-weight: bold;
+			margin-top: 2em;
+		}
+		.GreyBackground {
+			background-color:#CCCCCC;
+		}
+		.PreformatFont  {
+			font-family: Fixed, Mono, Courier New, Courier;
+			font-size: .95em;
+		}
+	</style><!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:Location msdt:dt="string">New Mexico</mso:Location>
+<mso:Description0 msdt:dt="string"></mso:Description0>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+<body>
+<h3 class="PageHeader">Xilinx Processor IP Library</h3>
+<h1>Change log for xps_mch_emc<br>
+</h1>
+<hr class="whs1">
+<table style="vertical-align: top; text-align: left;" border="0"
+ cellpadding="1" cellspacing="0">
+  <tbody>
+<!-- BEGIN CHANGELOG FOR New core version --><!--spacer--><tr><td><p><br></p></td></tr><tr><td class="GreyBackground">  <p class="Level1Heading">Changes in v3.01.a, introduced in 11.3  </p>  </td></tr><tr>      <td>      <p class="Level2Heading">11.3 - Changes in VHDL/Verilog/Netlist sources (.vhd, .v, .ngc, .edn) </p>      <hr class="whs1"> </td>    </tr>    <tr>      <td>    <br>      <pre> <span style="font-family: Arial;">New Features:</span><font size="-1"><br></font></pre>  <ul><li><font size="-1"><span style="font-family: Arial;">None</span></font></li>     </ul>      <pre><span style="font-family: Arial;">Resolved Issues:</span><font size="+1"><span style="font-family: Arial;"><br></span></font></pre>      <ul>
+        <li><font size="-1"><span style="font-family: Arial;">Fix for [CR<523388>] of XCL2 Byte access fix</span></font></li>
+      </ul>
+      <font size="-1"><span style="font-family: Arial;">Known Issues /Limitations:</span></font><br style="font-family: Arial;">      <ul>        <li><font size="-1"><span style="font-family: Arial;">None</span></font></li>      </ul>      </td>    </tr><!-- End section --><!-- End section --> <tr>      <td>      <hr class="whs1"> </td>    </tr><!-- BEGIN CHANGELOG FOR New core version --><!--spacer--><tr>
+
+      <td>
+
+       
+
+       
+      </td>
+    </tr>
+    <tr>
+      <td class="GreyBackground">
+      <p class="Level1Heading">Changes in v3.00.a, introduced in 11.1 </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+      <p class="Level2Heading">11.1 - Changes in VHDL/Verilog/Netlist
+sources (.vhd, .v, .ngc, .edn) </p>
+      <hr class="whs1"> </td>
+    </tr>
+    <tr>
+      <td>
+      <pre><span style="font-style: italic;"></span><br><font size="-1"><span
+ style="font-family: Arial;"><br></span></font><span
+ style="font-family: Arial;">New Features:</span><font size="-1"><br></font></pre>
+      <ul>
+        <li><font size="-1"><span style="font-family: Arial;">Support
+for page mode flash</span></font></li>
+        <li><font size="-1"><span style="font-family: Arial;">Support
+for 64 bit external memory</span></font></li>
+        <li><font size="-1"><span style="font-family: Arial;">Support
+for 64 bit IPIF native Dwidth</span></font></li>
+        <li><font size="-1"><span style="font-family: Arial;">Support
+XCL/XCL2 features using C_MCHx_PROTOCOL parameter<br>
+          </span></font></li>
+        <li><font size="-1"><span style="font-family: Arial;">Changed
+the helper libraries</span></font></li>
+        <ul>
+          <li><font size="-1"><span style="font-family: Arial;">proc_common_v2_00_a
+to proc-common_v3_00_a</span></font></li>
+          <li><font size="-1"><span style="font-family: Arial;">mch_plbv46_slave_burst_v1_00_a
+to </span></font><font size="-1"><span style="font-family: Arial;">mch_plbv46_slave_burst_v2_00_a</span></font></li>
+          <li><font size="-1"><span style="font-family: Arial;">emc_common_v3_00_a
+to emc_common_v4_00_a<br>
+            </span></font></li>
+        </ul>
+      </ul>
+      <pre><span style="font-family: Arial;">Resolved Issues:</span><font
+ size="+1"><span style="font-family: Arial;"><br></span></font></pre>
+      <ul>
+        <li><font size="-1"><span style="font-family: Arial;">Fixed
+[CR&lt;474993&gt;] : Support for 64 bit memory<br>
+          </span></font></li>
+        <li><font size="-1"><span style="font-family: Arial;">Fixed
+[CR&lt;304057&gt;] : Support for page mode flash memory<br>
+          </span></font></li>
+        <li><font size="-1"><span style="font-family: Arial;">Fixed
+[CR&lt;470102&gt;] : Fixed the delay in back to back writes</span></font><font
+ size="-1"><span style="font-family: Arial;"></span></font></li>
+      </ul>
+      <font size="-1"><span style="font-family: Arial;">Known Issues /
+Limitations:</span></font><br style="font-family: Arial;">
+      <ul>
+        <li style="font-family: Arial;"><font size="-1">Design will
+fail if Rdclk is not connected properly</font></li>
+      </ul>
+      </td>
+    </tr>
+<!-- End section --> <tr>
+      <td>
+      <p class="Level2Heading">11.1 - Changes in tool interface files
+(.mpd) </p>
+      <hr class="whs1"> </td>
+    </tr>
+    <tr>
+      <td>
+      <ul>
+        <li><font size="-1"><span style="font-family: Arial;">C_PAGEMODE_FLASH_x
+paratmeter is added for page mode flash</span></font></li>
+        <li><font size="-1"><span style="font-family: Arial;">C_MEMx_WIDTH
+parameter range has been updated to support 64-bit</span></font></li>
+        <li><font size="-1"><span style="font-family: Arial;">C_MAX_MEM_WIDTH
+parameter range has been updated to support 64 bit</span></font></li>
+        <li><font size="-1"><span style="font-family: Arial;">C_MCH_NATIVE_DWIDTH
+parameter has been updated to support 64 bt IPIF Dwidth</span></font></li>
+        <li><font size="-1"><span style="font-family: Arial;">C_TPACC_PS_FLASH_x
+parameter has been added for page read timing</span></font></li>
+        <li><font size="-1"><span style="font-family: Arial;">Signal
+names MCH_PLB_Clk and MCH_PLB_Rst has been replaced with </span></font><font
+ size="-1"><span style="font-family: Arial;">MCH_SPLB_Clk and
+MCH_SPLB_Rst</span></font></li>
+        <li><font size="-1"><span style="font-family: Arial;">Range of
+C_SPLB_P2P has been updated [CR &lt;447734&gt;]</span></font></li>
+        <li><font size="-1"><span style="font-family: Arial;">parameter
+name C_MCH_PLB_CLK_PERIOD_PS is replaced with </span></font><font
+ size="-1"><span style="font-family: Arial;">C_MCH_SPLB_CLK_PERIOD_PS</span></font></li>
+        <li><font size="-1"><span style="font-family: Arial;">Updated
+C_MCHx_PROTOCOL to support DXCL2 writeback option<br>
+          </span></font></li>
+      </ul>
+      </td>
+    </tr>
+<!-- End section --> <tr>
+      <td>
+      <p class="Level2Heading">11.1 - Changes in Tcl script files
+associated with core (.tcl) </p>
+      <hr class="whs1"> </td>
+    </tr>
+    <tr>
+      <td>
+      <ul>
+        <li><font size="-1"><span style="font-family: Arial;">Check for
+"Parameter C_INCLUDE_DATAWIDTH_MATCHING_x should be '1' only when
+C_MEMx_WIDTH is not equal to C_MCH_NATIVE_DWIDTH"<br>
+          </span></font></li>
+        <li><font size="-1"><span style="font-family: Arial;">Check for
+"Parameter </span></font><font size="-1"><span
+ style="font-family: Arial;">C_MCH_NATIVE_DWIDTH can be 64 only when
+C_NUM_CHANNELS='0'"</span></font></li>
+        <li><font size="-1"><span style="font-family: Arial;">Check for
+"Parameter </span></font><font size="-1"><span
+ style="font-family: Arial;">C_SPLB_DWIDTH should be always greater
+than or equal to </span></font><font size="-1"><span
+ style="font-family: Arial;"></span></font><font size="-1"><span
+ style="font-family: Arial;">C_MCH_NATIVE_DWIDTH for xps_mch_emc core<br>
+          </span></font></li>
+      </ul>
+      </td>
+    </tr>
+<!-- End section --> <tr>
+      <td>
+      <p class="Level2Heading"> 11.1 - Changes in&nbsp;documentation
+associated with core </p>
+      <hr class="whs1"> </td>
+    </tr>
+    <tr>
+      <td>
+      <ul>
+        <li><font size="-1"><span style="font-family: Arial;">Updated
+DS document for support to page mode flash memories</span></font></li>
+        <li><font size="-1"><span style="font-family: Arial;">Updated </span></font><font
+ size="-1"><span style="font-family: Arial;">DS document for 64 bit
+external memory</span></font></li>
+        <li><font size="-1"><span style="font-family: Arial;">Updated </span></font><font
+ size="-1"><span style="font-family: Arial;">DS document for 64 bit
+IPIF native Dwidth</span></font></li>
+        <li><font size="-1"><span style="font-family: Arial;">Updated
+DS document with page mode and 64 bit memory parameters</span></font></li>
+        <li><font size="-1"><span style="font-family: Arial;">Updated
+DS document with XCL &amp; XCL2 support</span></font></li>
+        <li><font size="-1"><span style="font-family: Arial;">Updated
+the DS document with timing diagrams<br>
+          </span></font></li>
+      </ul>
+      </td>
+    </tr>
+    <tr>
+      <td><br>
+      </td>
+    </tr>
+    <tr>
+      <td class="GreyBackground">
+      <p class="Level1Heading">Changes in v2.00.a, introduced in 10.1.2
+      </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+      <p class="Level2Heading">10.1.2 - Changes in VHDL/Verilog/Netlist
+sources (.vhd, .v, .ngc, .edn) </p>
+      <hr class="whs1"> </td>
+    </tr>
+    <tr>
+      <td>
+      <pre><span style="font-family: Arial;">New Features:</span><font
+ size="-1"><br></font></pre>
+      <ul>
+        <li><font size="-1"><span style="font-family: Arial;">None</span></font></li>
+      </ul>
+      <pre><span style="font-family: Arial;">Resolved Issues:</span><font
+ size="+1"><span style="font-family: Arial;"><br></span></font></pre>
+      <ul>
+        <li><font size="-1"><span style="font-family: Arial;">Fixed
+[CR&lt;472164&gt;] : Proper versioning of the core</span></font></li>
+        <li><font size="-1"><span style="font-family: Arial;">Helper
+library emc_common is changed from v2_02_a to v3_00_a<br>
+          </span></font></li>
+      </ul>
+      <font size="-1"><span style="font-family: Arial;">Known Issues /
+Limitations:</span></font><br style="font-family: Arial;">
+      <ul>
+        <li style="font-family: Arial;"><font size="-1">Does not
+support 64 bit memory data width</font></li>
+        <li style="font-family: Arial;"><font size="-1">When
+C_INCLUDE_PL_IPIF=0 :</font></li>
+        <ul>
+          <li style="font-family: Arial;"><font size="-1">MCH_PLB_Clk
+must be connected to proper clock signal</font></li>
+          <li style="font-family: Arial;"><font size="-1">C_MCH_PLB_CLK_PERIOD_PS
+must be assigned proper value</font></li>
+          <li style="font-family: Arial;"><font size="-1">MCH_PLB_Rst
+must be connected to proper reset signal</font></li>
+        </ul>
+        <li style="font-family: Arial;"><font size="-1">Design will
+fail if Rdclk is not connected properly</font></li>
+      </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="GreyBackground">
+      <p class="Level1Heading">Changes in v1.01.a, introduced in 9.2 </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+      <p class="Level2Heading">9.2 - Changes in VHDL/Verilog/Netlist
+sources (.vhd, .v, .ngc, .edn) </p>
+      <hr class="whs1"> </td>
+    </tr>
+    <tr>
+      <td>
+      <pre><span style="font-style: italic;"></span><br><font size="-1"><span
+ style="font-family: Arial;"><br></span></font><span
+ style="font-family: Arial;">New Features:</span><font size="-1"><br></font></pre>
+      <ul>
+        <li><font size="-1"><span style="font-family: Arial;">None</span></font></li>
+      </ul>
+      <pre><span style="font-family: Arial;">Resolved Issues:</span><font
+ size="+1"><span style="font-family: Arial;"><br></span></font></pre>
+      <ul>
+        <li><font size="-1"><span style="font-family: Arial;">None<br>
+          </span></font></li>
+      </ul>
+      <font size="-1"><span style="font-family: Arial;">Known Issues /
+Limitations:</span></font><br style="font-family: Arial;">
+      <ul>
+        <li style="font-family: Arial;"><font size="-1">None<br>
+          </font></li>
+      </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>
+      <p class="Level2Heading">9.2 - Changes in tool interface files
+(.mpd) </p>
+      <hr class="whs1"> </td>
+    </tr>
+    <tr>
+      <td>
+      <ul>
+        <li><font size="-1"><span style="font-family: Arial;">Correct
+IO_IS value for paratmeter C_THZOE_PS_MEM_x</span></font></li>
+        <li><font size="-1"><span style="font-family: Arial;">Added
+ASSIGNMENT = REQUIRE and ISVALID tags to parameters C_MEMx_BASEADDR and
+          </span></font><font size="-1"><span
+ style="font-family: Arial;">C_MEMx_HIGHADDR </span></font></li>
+      </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="GreyBackground">
+      <p class="Level1Heading">Changes in v1.01.a, introduced in 9.1 </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+      <p class="Level2Heading">9.1 - Changes in VHDL/Verilog/Netlist
+sources (.vhd, .v, .ngc, .edn) </p>
+      <hr class="whs1"> </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">
+      <pre><font size="-1"><span style="font-family: Arial;"><br></span></font><span
+ style="font-family: Arial;">New Features:</span><font size="-1"><br></font></pre>
+      <ul>
+        <li><font size="-1"><span style="font-family: Arial;">None<br>
+          </span></font></li>
+      </ul>
+      <pre><span style="font-family: Arial;">Resolved Issues:</span><font
+ size="+1"><span style="font-family: Arial;"><br></span></font></pre>
+      <ul>
+        <li><font size="-1"><span style="font-family: Arial;">None<br>
+          </span></font></li>
+      </ul>
+      <font size="-1"><span style="font-family: Arial;">Known Issues /
+Limitations:</span></font><br style="font-family: Arial;">
+      <ul>
+        <li style="font-family: Arial;"><font size="-1">None</font></li>
+      </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>
+      <p class="Level2Heading">9.1 - Changes in tool interface files
+(.mpd) </p>
+      <hr class="whs1"> </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">
+      <ul>
+        <li><font size="-1"><span style="font-family: Arial;">Initial
+1.00a version<br>
+          </span></font></li>
+      </ul>
+      </td>
+    </tr>
+<!-- END CHANGELOG FOR New core version. BEGIN change logs for new version here -->
+</tbody></table><p class="Copyright"> Copyright &copy; 1995-2009 Xilinx, Inc. Allrights reserved. </p></body></html>
