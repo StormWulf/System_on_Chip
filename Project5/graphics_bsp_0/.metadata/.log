@@ -1,0 +1,30 @@
+!SESSION 2015-11-09 15:19:00.768 -----------------------------------------------
+eclipse.buildId=Release 13.1 Build SDK_O.40d
+java.version=1.6.0_21
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-11-09 15:24:54.379
+!MESSAGE Indexed 'standalone_bsp_0' (0 sources, 8 headers) in 0.59 sec: 0 declarations; 0 references; 8 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-11-09 15:29:44.914
+!MESSAGE Indexed 'empty_application_0' (64 sources, 90 headers) in 12.06 sec: 3,419 declarations; 11,976 references; 7 unresolved inclusions; 0 syntax errors; 4 unresolved names (0.03%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-11-09 16:03:32.680
+!MESSAGE Indexed 'empty_application_0' (64 sources, 90 headers) in 4.39 sec: 3,419 declarations; 11,976 references; 7 unresolved inclusions; 0 syntax errors; 4 unresolved names (0.03%)
+
+!ENTRY org.eclipse.core.jobs 4 2 2015-11-10 18:42:06.174
+!MESSAGE An internal error occurred during: "Monitoring hardware specifications".
+!STACK 0
+java.lang.IllegalStateException: Workspace is closed.
+	at org.eclipse.core.resources.ResourcesPlugin.getWorkspace(ResourcesPlugin.java:367)
+	at com.xilinx.sdk.hw.HwProject.getHwProjectsInWorkspace(Unknown Source)
+	at com.xilinx.sdk.hw.sync.HwPlatformMonitor.doMonitorTask(Unknown Source)
+	at com.xilinx.sdk.hw.sync.HwPlatformMonitor.access$0(Unknown Source)
+	at com.xilinx.sdk.hw.sync.HwPlatformMonitor$1.run(Unknown Source)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:179)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4584)
+	at com.xilinx.sdk.hw.sync.HwPlatformMonitor.doMonitor(Unknown Source)
+	at com.xilinx.sdk.hw.sync.HwPlatformMonitorUtils$1.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)

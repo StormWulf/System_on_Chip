@@ -1,3 +1,4 @@
+
 <FILTERS>
 
   <IDENTIFICATION VERSION="1.2" XTLVERSION="1.2"/>
@@ -84,7 +85,7 @@
         <VARIABLE IS_LABELED="TRUE" NAME="Master Slaves" VALUE="TRUE" VIEWDISP="Bus Interface Filters" VIEWTYPE="CHECKBOX"/>
       </SET>
       <SET CLASS="FILTER" ID="Monitors" ROW_INDEX="3">
-        <VARIABLE IS_LABELED="TRUE" NAME="Monitors" VALUE="TRUE" VIEWDISP="Bus Interface Filters" VIEWTYPE="CHECKBOX"/>
+        <VARIABLE IS_LABELED="TRUE" NAME="Monitors" VALUE="FALSE" VIEWDISP="Bus Interface Filters" VIEWTYPE="CHECKBOX"/>
       </SET>
       <SET CLASS="FILTER" ID="Targets" ROW_INDEX="4">
         <VARIABLE IS_LABELED="TRUE" NAME="Targets" VALUE="TRUE" VIEWDISP="Bus Interface Filters" VIEWTYPE="CHECKBOX"/>
