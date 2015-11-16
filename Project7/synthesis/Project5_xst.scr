@@ -1,0 +1,14 @@
+run
+-opt_mode speed
+-netlist_hierarchy as_optimized
+-opt_level 1
+-p xc3s1600efg320-4
+-top Project5
+-ifmt MIXED
+-ifn Project5_xst.prj
+-ofn ../implementation/Project5.ngc
+-hierarchy_separator /
+-iobuf YES
+-max_fanout 10000
+-sd {../implementation}
+-vlgincdir {"C:\Users\malsa6\Desktop\Project7\pcores\" "C:\Users\malsa6\Desktop\Project7\pcores\myprocessoriplib\pcores\" "C:\Xilinx\13.1\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Xilinx\13.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }

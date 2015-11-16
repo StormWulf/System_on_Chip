@@ -1,0 +1,251 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html xmlns:mso="urn:schemas-microsoft-com:office:office"
+ xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<head>
+  <title>Change log for xps_timer, 1.02.a</title>
+  <meta http-equiv="Content-Type"
+ content="text/html; charset=windows-1252">
+  <link href="../../../../../../doc/usenglish/css/xilhtml.css"
+ type="text/css" rel="stylesheet">
+  <style>P.Level1Heading {
+	MARGIN-TOP: 0em; FONT-WEIGHT: bold; FONT-SIZE: 1.05em; MARGIN-BOTTOM: 0em; COLOR: #000000
+}
+P.Level2Heading {
+	MARGIN-TOP: 2em; FONT-WEIGHT: bold; MARGIN-BOTTOM: 0em
+}
+P.Level3Heading {
+	MARGIN-TOP: 2em; FONT-WEIGHT: bold
+}
+.GreyBackground {
+	BACKGROUND-COLOR: #cccccc
+}
+.PreformatFont {
+	FONT-SIZE: 0.95em; FONT-FAMILY: Fixed, Mono, Courier New, Courier
+}
+  </style><!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:Location msdt:dt="string">New Mexico</mso:Location>
+<mso:Description0 msdt:dt="string"></mso:Description0>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+  <meta content="MSHTML 6.00.2900.3627" name="GENERATOR">
+</head>
+<body>
+<h3 class="PageHeader">Xilinx Processor IP Library</h3>
+<h1>Change log for xps_timer<br>
+</h1>
+<hr class="whs1">
+<table style="vertical-align: top; text-align: left;" border="0"
+ cellpadding="1" cellspacing="0">
+  <tbody>
+<!-- BEGIN CHANGELOG FOR New core version --><!--spacer--> <tr>
+      <td>
+      <table style="vertical-align: top; text-align: left;" border="0"
+ cellpadding="1" cellspacing="0">
+        <tbody>
+          <tr>
+            <td class="GreyBackground">
+            <p class="Level1Heading">Changes in v1.02.a, introduced in
+12.1 </p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p></p>
+      </td>
+    </tr>
+    <tr style="font-weight: bold;">
+      <td style="vertical-align: top;">12.1 - Changes in tool interface
+files (.mpd)</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">
+      <ul>
+        <li><font size="-1"><span style="font-family: Arial;">MPD
+changed to fix the CR 536378. The sensitivity of the interrupt changed
+to EDGE_RISING</span></font></li>
+        <li><font size="-1"><span style="font-family: Arial;">This
+change is made to align the RTL interrupt generation logic and datasheet<br>
+          </span></font></li>
+      </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td class="GreyBackground">
+      <p class="Level1Heading">Changes in v1.01.b, introduced in 11.3 </p>
+      </td>
+    </tr>
+    <tr style="font-weight: bold;">
+      <td style="vertical-align: top;">11.3 - Changes in
+VHDL/Verilog/Netlist sources (.vhd, .v, .ngc, .edn)</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">
+      <pre><span style="font-family: Arial;">New Features:</span><font
+ size="-1"><br></font></pre>
+      <ul>
+        <li><font size="-1"><span style="font-family: Arial;">None</span></font></li>
+      </ul>
+      <pre><span style="font-family: Arial;">Resolved Issues:</span><font
+ size="+1"><span style="font-family: Arial;"><br></span></font></pre>
+      <ul>
+        <li><font size="-1"><span style="font-family: Arial;">Fixed the
+CR&nbsp; 518987</span></font>
+          <ul>
+            <li><font size="-1"><span style="font-family: Arial;">In
+the previous version xps_timer_v1_01_a interrupt genrated for more than
+one clock pulse. Core updated to generate the interrupt signal for one
+clock pulse.</span></font></li>
+            <li> <font size="-1"><span style="font-family: Arial;">The
+datasheet line "The TINT bit set in TCSR and, if enabled, the external
+GenerateOut signal is driven to 1 for one clock cycle. If enabled, the
+interrupt signal for the timer is driven for 1 clock cycle. This mode
+is useful for generating repetitive interrupts or external signals with
+a specified interval." The RTL changed to genrate the interrupt signal
+for 1 clock pulse as per the DS.</span></font></li>
+          </ul>
+        </li>
+      </ul>
+      <font size="-1"><span style="font-family: Arial;">Known Issues /
+Limitations:</span></font><br style="font-family: Arial;">
+      <ul>
+        <li style="font-family: Arial;"><font size="-1"><span
+ style="font-family: Arial;">None</span></font></li>
+      </ul>
+      </td>
+    </tr>
+    <tr style="font-weight: bold;">
+      <td style="vertical-align: top;">11.1 - Changes in tool interface
+files (.mpd)</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><font size="-1"><span
+ style="font-family: Arial;"></span></font>
+      <ul>
+        <li style="font-family: Arial;"><font size="-1"><span
+ style="font-family: Arial;">None</span></font> </li>
+      </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>
+      <p class="Level2Heading">11.1 - Changes in VHDL/Verilog/Netlist
+sources (.vhd, .v, .ngc, .edn) </p>
+      <hr class="whs1"> </td>
+    </tr>
+    <tr>
+      <td>
+      <pre><span style="font-style: italic;"></span><font size="-1"><span
+ style="font-family: Arial;"><br></span></font><span
+ style="font-family: Arial;">New Features:</span><font size="-1"><br></font></pre>
+      <ul>
+        <li><font size="-1"><span style="font-family: Arial;">Changed
+the helper libraries proc_common_v2_00_a to proc_common_v3_00_a and
+plbv46_slave_single_v1_00_a to plbv46_slave_single_v1_01_a.<br>
+          </span></font></li>
+      </ul>
+      <pre><span style="font-family: Arial;">Resolved Issues:</span><font
+ size="+1"><span style="font-family: Arial;"><br></span></font></pre>
+      <ul>
+        <li><font size="-1"><span style="font-family: Arial;">Write to
+read only register is generating bus error not return a bus error</span></font>
+        </li>
+        <li><font size="-1"><span style="font-family: Arial;">Fixed the
+CR&nbsp; 503554</span></font>
+          <ul>
+            <li><font size="-1"><span style="font-family: Arial;">Thie
+counters reset to zero&nbsp; if reset is applied <br>
+              </span></font></li>
+          </ul>
+        </li>
+        <li><font size="-1"><span style="font-family: Arial;">Fixed CR
+494614 <br>
+          </span></font>
+          <ul>
+            <li><font size="-1"><span style="font-family: Arial;">Versions
+that have this issue : v1_00_a<br>
+              </span></font></li>
+          </ul>
+        </li>
+      </ul>
+      <font size="-1"><span style="font-family: Arial;">Known Issues /
+Limitations:</span></font><br style="font-family: Arial;">
+      <ul>
+        <li style="font-family: Arial;"><font size="-1">None</font> </li>
+      </ul>
+      </td>
+    </tr>
+<!-- End section --> <tr>
+      <td>
+      <p class="Level2Heading">11.1 - Changes in tool interface files
+(.mpd) </p>
+      <hr class="whs1"> </td>
+    </tr>
+    <tr>
+      <td>
+      <ul>
+        <li><font size="-1"><span style="font-family: Arial;">None</span></font>
+        </li>
+      </ul>
+      </td>
+    </tr>
+<!-- End section --> <tr>
+      <td>
+      <p class="Level2Heading">11.1 - Changes in Tcl script files
+associated with core (.tcl) </p>
+      <hr class="whs1"> </td>
+    </tr>
+    <tr>
+      <td>
+      <ul>
+        <li><font size="-1"><span style="font-family: Arial;">None<br>
+          </span></font></li>
+      </ul>
+      </td>
+    </tr>
+<!-- End section --> <tr>
+      <td>
+      <p class="Level2Heading">11.1 - Changes in&nbsp;documentation
+associated with core </p>
+      <hr class="whs1"> </td>
+    </tr>
+    <tr>
+      <td>
+      <ul>
+        <li><font size="-1"><span style="font-family: Arial;">Modified
+for the Performance and Resource Utilization Benchmarks Data </span></font></li>
+      </ul>
+      </td>
+    </tr>
+<!-- End section --> <tr>
+      <td>
+      <hr class="whs1"> </td>
+    </tr>
+<!-- END CHANGELOG FOR New core version. BEGIN change logs for new version here --><!--spacer-->
+    <tr>
+      <td class="GreyBackground">
+      <p class="Level1Heading">Changes in v1.00.a, introduced in 10.1.1
+      </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+      <p class="Level2Heading">10.1.1 - Changes in VHDL/Verilog/Netlist
+sources (.vhd, .v, .ngc, .edn) </p>
+      <hr class="whs1"> </td>
+    </tr>
+    <tr>
+      <td><br>
+      </td>
+    </tr>
+<!-- END CHANGELOG FOR New core version. BEGIN change logs for new version here -->
+  </tbody>
+</table>
+<p class="Copyright">Copyright � 1995-2009 Xilinx, Inc. All rights
+reserved. </p>
+</body>
+</html>

@@ -1,0 +1,12 @@
+##############################################################################
+## Filename:          C:\Users\wputn1\Desktop\Project6\pcores/graphics_ip_v1_00_a/data/graphics_ip_v2_1_0.pao
+## Description:       Peripheral Analysis Order
+## Date:              Fri Nov 13 11:50:09 2015 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+lib proc_common_v3_00_a all vhdl
+lib plbv46_slave_single_v1_01_a all vhdl
+lib graphics_ip_v1_00_a graphics_ip vhdl
+lib graphics_ip_v1_00_a user_logic vhdl
+lib graphics_ip_v1_00_a project5IP vhdl
+lib graphics_ip_v1_00_a vgatimehelper vhdl
