@@ -1,60 +1,7 @@
-<EDKSYSTEM EDKVERSION="13.1" EDWVERSION="1.2" TIMESTAMP="Mon Nov 16 10:02:26 2015">
 
-  <SYSTEMINFO ARCH="spartan3e" DEVICE="xc3s1600e" PACKAGE="fg320" PART="xc3s1600efg320-4" SOURCE="C:/Users/Jeff/Documents/GitHub/System_on_Chip/Project6/Project5.xmp" SPEEDGRADE="-4"/>
+<EDKSYSTEM EDKVERSION="13.1" EDWVERSION="1.2" TIMESTAMP="Fri Nov 13 11:51:38 2015">
 
-  <EXTERNALPORTS>
-    <PORT DIR="I" ENDIAN="BIG" LEFT="0" LSB="2" MHS_INDEX="0" MSB="0" NAME="fpga_0_Buttons_3Bit_GPIO_IO_I_pin" RIGHT="2" SIGNAME="fpga_0_Buttons_3Bit_GPIO_IO_I_pin"/>
-    <PORT DIR="O" ENDIAN="BIG" LEFT="0" LSB="6" MHS_INDEX="1" MSB="0" NAME="fpga_0_Character_LCD_2x16_GPIO_IO_O_pin" RIGHT="6" SIGNAME="fpga_0_Character_LCD_2x16_GPIO_IO_O_pin"/>
-    <PORT DIR="O" MHS_INDEX="2" NAME="fpga_0_Character_LCD_2x16_LCD_DB11_pin" SIGNAME="net_vcc"/>
-    <PORT DIR="O" MHS_INDEX="3" NAME="fpga_0_Character_LCD_2x16_LCD_DB10_pin" SIGNAME="net_vcc"/>
-    <PORT DIR="O" MHS_INDEX="4" NAME="fpga_0_Character_LCD_2x16_LCD_DB9_pin" SIGNAME="net_vcc"/>
-    <PORT DIR="O" MHS_INDEX="5" NAME="fpga_0_Character_LCD_2x16_LCD_DB8_pin" SIGNAME="net_vcc"/>
-    <PORT DIR="O" MHS_INDEX="6" NAME="fpga_0_DDR_SDRAM_DDR_Clk_pin" SIGNAME="fpga_0_DDR_SDRAM_DDR_Clk_pin"/>
-    <PORT DIR="O" MHS_INDEX="7" NAME="fpga_0_DDR_SDRAM_DDR_Clk_n_pin" SIGNAME="fpga_0_DDR_SDRAM_DDR_Clk_n_pin"/>
-    <PORT DIR="O" MHS_INDEX="8" NAME="fpga_0_DDR_SDRAM_DDR_CE_pin" SIGNAME="fpga_0_DDR_SDRAM_DDR_CE_pin"/>
-    <PORT DIR="O" MHS_INDEX="9" NAME="fpga_0_DDR_SDRAM_DDR_CS_n_pin" SIGNAME="fpga_0_DDR_SDRAM_DDR_CS_n_pin"/>
-    <PORT DIR="O" MHS_INDEX="10" NAME="fpga_0_DDR_SDRAM_DDR_RAS_n_pin" SIGNAME="fpga_0_DDR_SDRAM_DDR_RAS_n_pin"/>
-    <PORT DIR="O" MHS_INDEX="11" NAME="fpga_0_DDR_SDRAM_DDR_CAS_n_pin" SIGNAME="fpga_0_DDR_SDRAM_DDR_CAS_n_pin"/>
-    <PORT DIR="O" MHS_INDEX="12" NAME="fpga_0_DDR_SDRAM_DDR_WE_n_pin" SIGNAME="fpga_0_DDR_SDRAM_DDR_WE_n_pin"/>
-    <PORT DIR="O" ENDIAN="LITTLE" LEFT="1" LSB="0" MHS_INDEX="13" MSB="1" NAME="fpga_0_DDR_SDRAM_DDR_BankAddr_pin" RIGHT="0" SIGNAME="fpga_0_DDR_SDRAM_DDR_BankAddr_pin"/>
-    <PORT DIR="O" ENDIAN="LITTLE" LEFT="12" LSB="0" MHS_INDEX="14" MSB="12" NAME="fpga_0_DDR_SDRAM_DDR_Addr_pin" RIGHT="0" SIGNAME="fpga_0_DDR_SDRAM_DDR_Addr_pin"/>
-    <PORT DIR="IO" ENDIAN="LITTLE" LEFT="15" LSB="0" MHS_INDEX="15" MSB="15" NAME="fpga_0_DDR_SDRAM_DDR_DQ_pin" RIGHT="0" SIGNAME="fpga_0_DDR_SDRAM_DDR_DQ_pin"/>
-    <PORT DIR="O" ENDIAN="LITTLE" LEFT="1" LSB="0" MHS_INDEX="16" MSB="1" NAME="fpga_0_DDR_SDRAM_DDR_DM_pin" RIGHT="0" SIGNAME="fpga_0_DDR_SDRAM_DDR_DM_pin"/>
-    <PORT DIR="IO" ENDIAN="LITTLE" LEFT="1" LSB="0" MHS_INDEX="17" MSB="1" NAME="fpga_0_DDR_SDRAM_DDR_DQS_pin" RIGHT="0" SIGNAME="fpga_0_DDR_SDRAM_DDR_DQS_pin"/>
-    <PORT DIR="IO" MHS_INDEX="18" NAME="fpga_0_DDR_SDRAM_ddr_dqs_div_io_pin" SIGNAME="fpga_0_DDR_SDRAM_ddr_dqs_div_io_pin"/>
-    <PORT DIR="I" ENDIAN="BIG" LEFT="0" LSB="3" MHS_INDEX="19" MSB="0" NAME="fpga_0_DIP_Switches_4Bit_GPIO_IO_I_pin" RIGHT="3" SIGNAME="fpga_0_DIP_Switches_4Bit_GPIO_IO_I_pin"/>
-    <PORT DIR="I" MHS_INDEX="20" NAME="fpga_0_Ethernet_MAC_PHY_tx_clk_pin" SIGNAME="fpga_0_Ethernet_MAC_PHY_tx_clk_pin"/>
-    <PORT DIR="I" MHS_INDEX="21" NAME="fpga_0_Ethernet_MAC_PHY_rx_clk_pin" SIGNAME="fpga_0_Ethernet_MAC_PHY_rx_clk_pin"/>
-    <PORT DIR="I" MHS_INDEX="22" NAME="fpga_0_Ethernet_MAC_PHY_crs_pin" SIGNAME="fpga_0_Ethernet_MAC_PHY_crs_pin"/>
-    <PORT DIR="I" MHS_INDEX="23" NAME="fpga_0_Ethernet_MAC_PHY_dv_pin" SIGNAME="fpga_0_Ethernet_MAC_PHY_dv_pin"/>
-    <PORT DIR="I" ENDIAN="LITTLE" LEFT="3" LSB="0" MHS_INDEX="24" MSB="3" NAME="fpga_0_Ethernet_MAC_PHY_rx_data_pin" RIGHT="0" SIGNAME="fpga_0_Ethernet_MAC_PHY_rx_data_pin"/>
-    <PORT DIR="I" MHS_INDEX="25" NAME="fpga_0_Ethernet_MAC_PHY_col_pin" SIGNAME="fpga_0_Ethernet_MAC_PHY_col_pin"/>
-    <PORT DIR="O" MHS_INDEX="26" NAME="fpga_0_Ethernet_MAC_PHY_tx_en_pin" SIGNAME="fpga_0_Ethernet_MAC_PHY_tx_en_pin"/>
-    <PORT DIR="O" ENDIAN="LITTLE" LEFT="3" LSB="0" MHS_INDEX="27" MSB="3" NAME="fpga_0_Ethernet_MAC_PHY_tx_data_pin" RIGHT="0" SIGNAME="fpga_0_Ethernet_MAC_PHY_tx_data_pin"/>
-    <PORT DIR="O" MHS_INDEX="28" NAME="fpga_0_Ethernet_MAC_PHY_MDC_pin" SIGNAME="fpga_0_Ethernet_MAC_PHY_MDC_pin"/>
-    <PORT DIR="IO" MHS_INDEX="29" NAME="fpga_0_Ethernet_MAC_PHY_MDIO_pin" SIGNAME="fpga_0_Ethernet_MAC_PHY_MDIO_pin"/>
-    <PORT DIR="O" ENDIAN="BIG" LEFT="8" LSB="31" MHS_INDEX="30" MSB="8" NAME="fpga_0_FLASH_Mem_A_pin" RIGHT="31" SIGNAME="fpga_0_FLASH_Mem_A_pin_vslice_8_31_concat"/>
-    <PORT DIR="O" MHS_INDEX="31" NAME="fpga_0_FLASH_Mem_CEN_pin" SIGNAME="fpga_0_FLASH_Mem_CEN_pin"/>
-    <PORT DIR="O" MHS_INDEX="32" NAME="fpga_0_FLASH_Mem_OEN_pin" SIGNAME="fpga_0_FLASH_Mem_OEN_pin"/>
-    <PORT DIR="O" MHS_INDEX="33" NAME="fpga_0_FLASH_Mem_WEN_pin" SIGNAME="fpga_0_FLASH_Mem_WEN_pin"/>
-    <PORT DIR="IO" ENDIAN="BIG" LEFT="0" LSB="7" MHS_INDEX="34" MSB="0" NAME="fpga_0_FLASH_Mem_DQ_pin" RIGHT="7" SIGNAME="fpga_0_FLASH_Mem_DQ_pin"/>
-    <PORT DIR="O" MHS_INDEX="35" NAME="fpga_0_FLASH_BEN_pin" SIGNAME="net_gnd"/>
-    <PORT DIR="O" MHS_INDEX="36" NAME="fpga_0_LEDs_1Bit_GPIO_IO_O_pin" SIGNAME="fpga_0_LEDs_1Bit_GPIO_IO_O_pin"/>
-    <PORT DIR="O" ENDIAN="BIG" LEFT="0" LSB="5" MHS_INDEX="37" MSB="0" NAME="fpga_0_LEDs_6Bit_GPIO_IO_O_pin" RIGHT="5" SIGNAME="fpga_0_LEDs_6Bit_GPIO_IO_O_pin"/>
-    <PORT DIR="I" MHS_INDEX="38" NAME="fpga_0_RS232_DCE_RX_pin" SIGNAME="fpga_0_RS232_DCE_RX_pin"/>
-    <PORT DIR="O" MHS_INDEX="39" NAME="fpga_0_RS232_DCE_TX_pin" SIGNAME="fpga_0_RS232_DCE_TX_pin"/>
-    <PORT DIR="I" MHS_INDEX="40" NAME="fpga_0_RS232_DTE_RX_pin" SIGNAME="fpga_0_RS232_DTE_RX_pin"/>
-    <PORT DIR="O" MHS_INDEX="41" NAME="fpga_0_RS232_DTE_TX_pin" SIGNAME="fpga_0_RS232_DTE_TX_pin"/>
-    <PORT DIR="I" ENDIAN="BIG" LEFT="0" LSB="2" MHS_INDEX="42" MSB="0" NAME="fpga_0_Rotary_Encoder_GPIO_IO_I_pin" RIGHT="2" SIGNAME="fpga_0_Rotary_Encoder_GPIO_IO_I_pin"/>
-    <PORT CLKFREQUENCY="50000000" DIR="I" MHS_INDEX="43" NAME="fpga_0_clk_1_sys_clk_pin" SIGIS="CLK" SIGNAME="CLK_S"/>
-    <PORT DIR="I" MHS_INDEX="44" NAME="fpga_0_rst_1_sys_rst_pin" RSTPOLARITY="1" SIGIS="RST" SIGNAME="sys_rst_s"/>
-    <PORT DIR="O" MHS_INDEX="45" NAME="controller_0_NESlatch_pin" SIGNAME="controller_0_NESlatch"/>
-    <PORT DIR="O" MHS_INDEX="46" NAME="controller_0_NESclk_pin" SIGNAME="controller_0_NESclk"/>
-    <PORT DIR="I" MHS_INDEX="47" NAME="controller_0_NESdatIn_pin" SIGNAME="controller_0_NESdatIn"/>
-    <PORT DIR="O" ENDIAN="LITTLE" LEFT="2" LSB="0" MHS_INDEX="48" MSB="2" NAME="graphics_ip_0_pixToDisp_pin" RIGHT="0" SIGNAME="graphics_ip_0_pixToDisp"/>
-    <PORT DIR="O" MHS_INDEX="49" NAME="graphics_ip_0_hsync_pin" SIGNAME="graphics_ip_0_hsync"/>
-    <PORT DIR="O" MHS_INDEX="50" NAME="graphics_ip_0_vsync_pin" SIGNAME="graphics_ip_0_vsync"/>
-  </EXTERNALPORTS>
+  <SYSTEMINFO ARCH="spartan3e" DEVICE="xc3s1600e" PACKAGE="fg320" PART="xc3s1600efg320-4" SOURCE="C:/Users/wputn1/Desktop/Project6/Project5.xmp" SPEEDGRADE="-4"/>
 
   <MODULES>
     <MODULE HWVERSION="8.10.a" INSTANCE="microblaze_0" IPTYPE="PROCESSOR" MHS_INDEX="0" MODCLASS="PROCESSOR" MODTYPE="microblaze" PROCTYPE="MICROBLAZE">
@@ -63,7 +10,6 @@
       <DOCUMENTATION>
         <DOCUMENT SOURCE="C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_10_a/doc/microblaze.pdf" TYPE="IP"/>
       </DOCUMENTATION>
-      <LICENSEINFO ICON_NAME="ps_core_preferred"/>
       <PARAMETERS>
         <PARAMETER MPD_INDEX="0" NAME="C_SCO" TYPE="integer" VALUE="0"/>
         <PARAMETER CHANGEDBY="SYSTEM" MPD_INDEX="1" NAME="C_FREQ" TYPE="integer" VALUE="50000000"/>
@@ -2167,6 +2113,7 @@
         <PERIPHERAL INSTANCE="graphics_ip_0"/>
         <PERIPHERAL INSTANCE="controller_0"/>
       </PERIPHERALS>
+      <LICENSEINFO ICON_NAME="ps_core_preferred"/>
     </MODULE>
     <MODULE BUSSTD="PLBV46" BUSSTD_PSF="PLBV46" HWVERSION="1.05.a" INSTANCE="mb_plb" IPTYPE="BUS" MHS_INDEX="1" MODCLASS="BUS" MODTYPE="plb_v46">
       <DESCRIPTION TYPE="SHORT">Processor Local Bus (PLB) 4.6</DESCRIPTION>
@@ -2174,7 +2121,6 @@
       <DOCUMENTATION>
         <DOCUMENT SOURCE="C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/doc/plb_v46.pdf" TYPE="IP"/>
       </DOCUMENTATION>
-      <LICENSEINFO ICON_NAME="ps_core_preferred"/>
       <PARAMETERS>
         <PARAMETER CHANGEDBY="SYSTEM" MPD_INDEX="0" NAME="C_PLBV46_NUM_MASTERS" TYPE="integer" VALUE="2"/>
         <PARAMETER CHANGEDBY="SYSTEM" MPD_INDEX="1" NAME="C_PLBV46_NUM_SLAVES" TYPE="integer" VALUE="15"/>
@@ -2312,6 +2258,7 @@
           </SLAVES>
         </MEMRANGE>
       </MEMORYMAP>
+      <LICENSEINFO ICON_NAME="ps_core_preferred"/>
     </MODULE>
     <MODULE BUSSTD="LMB" BUSSTD_PSF="LMB" HWVERSION="2.00.a" INSTANCE="ilmb" IPTYPE="BUS" MHS_INDEX="2" MODCLASS="BUS" MODTYPE="lmb_v10">
       <DESCRIPTION TYPE="SHORT">Local Memory Bus (LMB) 1.0</DESCRIPTION>
@@ -2319,7 +2266,6 @@
       <DOCUMENTATION>
         <DOCUMENT SOURCE="C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/lmb_v10_v2_00_a/doc/lmb_v10.pdf" TYPE="IP"/>
       </DOCUMENTATION>
-      <LICENSEINFO ICON_NAME="ps_core_preferred"/>
       <PARAMETERS>
         <PARAMETER CHANGEDBY="SYSTEM" MPD_INDEX="0" NAME="C_LMB_NUM_SLAVES" TYPE="integer" VALUE="1"/>
         <PARAMETER MPD_INDEX="1" NAME="C_LMB_AWIDTH" TYPE="integer" VALUE="32"/>
@@ -2357,6 +2303,7 @@
       <IOINTERFACES>
         <IOINTERFACE MPD_INDEX="0" NAME="reset_0"/>
       </IOINTERFACES>
+      <LICENSEINFO ICON_NAME="ps_core_preferred"/>
     </MODULE>
     <MODULE BUSSTD="LMB" BUSSTD_PSF="LMB" HWVERSION="2.00.a" INSTANCE="dlmb" IPTYPE="BUS" MHS_INDEX="3" MODCLASS="BUS" MODTYPE="lmb_v10">
       <DESCRIPTION TYPE="SHORT">Local Memory Bus (LMB) 1.0</DESCRIPTION>
@@ -2364,7 +2311,6 @@
       <DOCUMENTATION>
         <DOCUMENT SOURCE="C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/lmb_v10_v2_00_a/doc/lmb_v10.pdf" TYPE="IP"/>
       </DOCUMENTATION>
-      <LICENSEINFO ICON_NAME="ps_core_preferred"/>
       <PARAMETERS>
         <PARAMETER CHANGEDBY="SYSTEM" MPD_INDEX="0" NAME="C_LMB_NUM_SLAVES" TYPE="integer" VALUE="1"/>
         <PARAMETER MPD_INDEX="1" NAME="C_LMB_AWIDTH" TYPE="integer" VALUE="32"/>
@@ -2402,6 +2348,7 @@
       <IOINTERFACES>
         <IOINTERFACE MPD_INDEX="0" NAME="reset_0"/>
       </IOINTERFACES>
+      <LICENSEINFO ICON_NAME="ps_core_preferred"/>
     </MODULE>
     <MODULE HWVERSION="3.00.a" INSTANCE="dlmb_cntlr" IPTYPE="PERIPHERAL" MHS_INDEX="4" MODCLASS="MEMORY_CNTLR" MODTYPE="lmb_bram_if_cntlr">
       <DESCRIPTION TYPE="SHORT">LMB BRAM Controller</DESCRIPTION>
@@ -2409,7 +2356,6 @@
       <DOCUMENTATION>
         <DOCUMENT SOURCE="C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/lmb_bram_if_cntlr_v3_00_a/doc/lmb_bram_if_cntlr.pdf" TYPE="IP"/>
       </DOCUMENTATION>
-      <LICENSEINFO ICON_NAME="ps_core_preferred"/>
       <PARAMETERS>
         <PARAMETER ADDRESS="BASE" ADDR_TYPE="MEMORY" CHANGEDBY="USER" ENDIAN="BIG" IS_INSTANTIATED="TRUE" LSB="31" MHS_INDEX="2" MPD_INDEX="0" MSB="0" NAME="C_BASEADDR" TYPE="std_logic_vector" VALUE="0x00000000"/>
         <PARAMETER ADDRESS="HIGH" ADDR_TYPE="MEMORY" CHANGEDBY="USER" ENDIAN="BIG" IS_INSTANTIATED="TRUE" LSB="31" MHS_INDEX="3" MPD_INDEX="1" MSB="0" NAME="C_HIGHADDR" TYPE="std_logic_vector" VALUE="0x00001fff"/>
@@ -2640,6 +2586,7 @@
           </SLAVES>
         </MEMRANGE>
       </MEMORYMAP>
+      <LICENSEINFO ICON_NAME="ps_core_preferred"/>
     </MODULE>
     <MODULE HWVERSION="3.00.a" INSTANCE="ilmb_cntlr" IPTYPE="PERIPHERAL" MHS_INDEX="5" MODCLASS="MEMORY_CNTLR" MODTYPE="lmb_bram_if_cntlr">
       <DESCRIPTION TYPE="SHORT">LMB BRAM Controller</DESCRIPTION>
@@ -2647,7 +2594,6 @@
       <DOCUMENTATION>
         <DOCUMENT SOURCE="C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/lmb_bram_if_cntlr_v3_00_a/doc/lmb_bram_if_cntlr.pdf" TYPE="IP"/>
       </DOCUMENTATION>
-      <LICENSEINFO ICON_NAME="ps_core_preferred"/>
       <PARAMETERS>
         <PARAMETER ADDRESS="BASE" ADDR_TYPE="MEMORY" CHANGEDBY="USER" ENDIAN="BIG" IS_INSTANTIATED="TRUE" LSB="31" MHS_INDEX="2" MPD_INDEX="0" MSB="0" NAME="C_BASEADDR" TYPE="std_logic_vector" VALUE="0x00000000"/>
         <PARAMETER ADDRESS="HIGH" ADDR_TYPE="MEMORY" CHANGEDBY="USER" ENDIAN="BIG" IS_INSTANTIATED="TRUE" LSB="31" MHS_INDEX="3" MPD_INDEX="1" MSB="0" NAME="C_HIGHADDR" TYPE="std_logic_vector" VALUE="0x00001fff"/>
@@ -2878,6 +2824,7 @@
           </SLAVES>
         </MEMRANGE>
       </MEMORYMAP>
+      <LICENSEINFO ICON_NAME="ps_core_preferred"/>
     </MODULE>
     <MODULE HWVERSION="1.00.a" INSTANCE="lmb_bram" IPTYPE="PERIPHERAL" MHS_INDEX="6" MODCLASS="MEMORY" MODTYPE="bram_block">
       <DESCRIPTION TYPE="SHORT">Block RAM (BRAM) Block</DESCRIPTION>
@@ -2885,7 +2832,6 @@
       <DOCUMENTATION>
         <DOCUMENT SOURCE="C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/bram_block_v1_00_a/doc/bram_block.pdf" TYPE="IP"/>
       </DOCUMENTATION>
-      <LICENSEINFO ICON_NAME="ps_core_preferred"/>
       <PARAMETERS>
         <PARAMETER CHANGEDBY="SYSTEM" MPD_INDEX="0" NAME="C_MEMSIZE" TYPE="integer" VALUE="0x2000"/>
         <PARAMETER MPD_INDEX="1" NAME="C_PORT_DWIDTH" TYPE="integer" VALUE="32"/>
@@ -2933,6 +2879,7 @@
           </PORTMAPS>
         </BUSINTERFACE>
       </BUSINTERFACES>
+      <LICENSEINFO ICON_NAME="ps_core_preferred"/>
     </MODULE>
     <MODULE HWVERSION="2.00.a" INSTANCE="Buttons_3Bit" IPTYPE="PERIPHERAL" MHS_INDEX="7" MODCLASS="PERIPHERAL" MODTYPE="xps_gpio">
       <DESCRIPTION TYPE="SHORT">XPS General Purpose IO</DESCRIPTION>
@@ -2940,7 +2887,6 @@
       <DOCUMENTATION>
         <DOCUMENT SOURCE="C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_gpio_v2_00_a/doc/xps_gpio.pdf" TYPE="IP"/>
       </DOCUMENTATION>
-      <LICENSEINFO ICON_NAME="ps_core_preferred"/>
       <PARAMETERS>
         <PARAMETER ADDRESS="BASE" ADDR_TYPE="REGISTER" CHANGEDBY="USER" ENDIAN="BIG" IS_INSTANTIATED="TRUE" LSB="31" MHS_INDEX="6" MPD_INDEX="0" MSB="0" NAME="C_BASEADDR" TYPE="std_logic_vector" VALUE="0x814a0000"/>
         <PARAMETER ADDRESS="HIGH" ADDR_TYPE="REGISTER" CHANGEDBY="USER" ENDIAN="BIG" IS_INSTANTIATED="TRUE" LSB="31" MHS_INDEX="7" MPD_INDEX="1" MSB="0" NAME="C_HIGHADDR" TYPE="std_logic_vector" VALUE="0x814affff"/>
@@ -3089,6 +3035,7 @@
           </SLAVES>
         </MEMRANGE>
       </MEMORYMAP>
+      <LICENSEINFO ICON_NAME="ps_core_preferred"/>
     </MODULE>
     <MODULE HWVERSION="2.00.a" INSTANCE="Character_LCD_2x16" IPTYPE="PERIPHERAL" MHS_INDEX="8" MODCLASS="PERIPHERAL" MODTYPE="xps_gpio">
       <DESCRIPTION TYPE="SHORT">XPS General Purpose IO</DESCRIPTION>
@@ -3096,7 +3043,6 @@
       <DOCUMENTATION>
         <DOCUMENT SOURCE="C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_gpio_v2_00_a/doc/xps_gpio.pdf" TYPE="IP"/>
       </DOCUMENTATION>
-      <LICENSEINFO ICON_NAME="ps_core_preferred"/>
       <PARAMETERS>
         <PARAMETER ADDRESS="BASE" ADDR_TYPE="REGISTER" CHANGEDBY="USER" ENDIAN="BIG" IS_INSTANTIATED="TRUE" LSB="31" MHS_INDEX="6" MPD_INDEX="0" MSB="0" NAME="C_BASEADDR" TYPE="std_logic_vector" VALUE="0x81480000"/>
         <PARAMETER ADDRESS="HIGH" ADDR_TYPE="REGISTER" CHANGEDBY="USER" ENDIAN="BIG" IS_INSTANTIATED="TRUE" LSB="31" MHS_INDEX="7" MPD_INDEX="1" MSB="0" NAME="C_HIGHADDR" TYPE="std_logic_vector" VALUE="0x8148ffff"/>
@@ -3245,6 +3191,7 @@
           </SLAVES>
         </MEMRANGE>
       </MEMORYMAP>
+      <LICENSEINFO ICON_NAME="ps_core_preferred"/>
     </MODULE>
     <MODULE HWVERSION="6.03.a" INSTANCE="DDR_SDRAM" IPTYPE="PERIPHERAL" MHS_INDEX="9" MODCLASS="MEMORY_CNTLR" MODTYPE="mpmc">
       <DESCRIPTION TYPE="SHORT">Multi-Port Memory Controller(DDR/DDR2/SDRAM)</DESCRIPTION>
@@ -3252,11 +3199,9 @@
       <DOCUMENTATION>
         <DOCUMENT SOURCE="C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v6_03_a/doc/mpmc.pdf" TYPE="IP"/>
       </DOCUMENTATION>
-      <LICENSEINFO ICON_NAME="ps_core_preferred"/>
       <PARAMETERS>
         <PARAMETER CHANGEDBY="SYSTEM" MPD_INDEX="0" NAME="C_FAMILY" TYPE="STRING" VALUE="spartan3e"/>
         <PARAMETER CHANGEDBY="SYSTEM" MPD_INDEX="1" NAME="C_BASEFAMILY" TYPE="STRING" VALUE="spartan3e"/>
-        <PARAMETER MPD_INDEX="2" NAME="C_SUBFAMILY" TYPE="STRING" VALUE="fx"/>
         <PARAMETER CHANGEDBY="SYSTEM" MPD_INDEX="3" NAME="C_DEVICE" TYPE="STRING" VALUE="3s1600e"/>
         <PARAMETER CHANGEDBY="SYSTEM" MPD_INDEX="4" NAME="C_PACKAGE" TYPE="STRING" VALUE="fg320"/>
         <PARAMETER CHANGEDBY="SYSTEM" MPD_INDEX="5" NAME="C_SPEEDGRADE" TYPE="STRING" VALUE="-4"/>
@@ -8056,6 +8001,7 @@
           </SLAVES>
         </MEMRANGE>
       </MEMORYMAP>
+      <LICENSEINFO ICON_NAME="ps_core_preferred"/>
     </MODULE>
     <MODULE HWVERSION="2.00.a" INSTANCE="DIP_Switches_4Bit" IPTYPE="PERIPHERAL" MHS_INDEX="10" MODCLASS="PERIPHERAL" MODTYPE="xps_gpio">
       <DESCRIPTION TYPE="SHORT">XPS General Purpose IO</DESCRIPTION>
@@ -8063,7 +8009,6 @@
       <DOCUMENTATION>
         <DOCUMENT SOURCE="C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_gpio_v2_00_a/doc/xps_gpio.pdf" TYPE="IP"/>
       </DOCUMENTATION>
-      <LICENSEINFO ICON_NAME="ps_core_preferred"/>
       <PARAMETERS>
         <PARAMETER ADDRESS="BASE" ADDR_TYPE="REGISTER" CHANGEDBY="USER" ENDIAN="BIG" IS_INSTANTIATED="TRUE" LSB="31" MHS_INDEX="6" MPD_INDEX="0" MSB="0" NAME="C_BASEADDR" TYPE="std_logic_vector" VALUE="0x81460000"/>
         <PARAMETER ADDRESS="HIGH" ADDR_TYPE="REGISTER" CHANGEDBY="USER" ENDIAN="BIG" IS_INSTANTIATED="TRUE" LSB="31" MHS_INDEX="7" MPD_INDEX="1" MSB="0" NAME="C_HIGHADDR" TYPE="std_logic_vector" VALUE="0x8146ffff"/>
@@ -8212,6 +8157,7 @@
           </SLAVES>
         </MEMRANGE>
       </MEMORYMAP>
+      <LICENSEINFO ICON_NAME="ps_core_preferred"/>
     </MODULE>
     <MODULE HWVERSION="4.00.a" INSTANCE="Ethernet_MAC" IPTYPE="PERIPHERAL" MHS_INDEX="11" MODCLASS="PERIPHERAL" MODTYPE="xps_ethernetlite">
       <DESCRIPTION TYPE="SHORT">XPS 10/100 Ethernet MAC Lite</DESCRIPTION>
@@ -8219,7 +8165,6 @@
       <DOCUMENTATION>
         <DOCUMENT SOURCE="C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v4_00_a/doc/xps_ethernetlite.pdf" TYPE="IP"/>
       </DOCUMENTATION>
-      <LICENSEINFO ICON_NAME="ps_core_preferred"/>
       <PARAMETERS>
         <PARAMETER CHANGEDBY="SYSTEM" MPD_INDEX="0" NAME="C_FAMILY" TYPE="STRING" VALUE="spartan3e"/>
         <PARAMETER ADDRESS="BASE" ADDR_TYPE="REGISTER" CHANGEDBY="USER" IS_INSTANTIATED="TRUE" MHS_INDEX="2" MPD_INDEX="1" NAME="C_BASEADDR" TYPE="std_logic_vector" VALUE="0x81000000"/>
@@ -8400,6 +8345,7 @@
           </SLAVES>
         </MEMRANGE>
       </MEMORYMAP>
+      <LICENSEINFO ICON_NAME="ps_core_preferred"/>
     </MODULE>
     <MODULE HWVERSION="3.01.a" INSTANCE="FLASH" IPTYPE="PERIPHERAL" MHS_INDEX="12" MODCLASS="MEMORY_CNTLR" MODTYPE="xps_mch_emc">
       <DESCRIPTION TYPE="SHORT">XPS Multi-Channel External Memory Controller(SRAM/Flash)</DESCRIPTION>
@@ -8407,7 +8353,6 @@
       <DOCUMENTATION>
         <DOCUMENT SOURCE="C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_mch_emc_v3_01_a/doc/xps_mch_emc.pdf" TYPE="IP"/>
       </DOCUMENTATION>
-      <LICENSEINFO ICON_NAME="ps_core_preferred"/>
       <PARAMETERS>
         <PARAMETER CHANGEDBY="SYSTEM" MPD_INDEX="0" NAME="C_FAMILY" TYPE="STRING" VALUE="spartan3e"/>
         <PARAMETER IS_INSTANTIATED="TRUE" MHS_INDEX="1" MPD_INDEX="1" NAME="C_NUM_BANKS_MEM" TYPE="INTEGER" VALUE="1"/>
@@ -8782,6 +8727,7 @@
           </SLAVES>
         </MEMRANGE>
       </MEMORYMAP>
+      <LICENSEINFO ICON_NAME="ps_core_preferred"/>
     </MODULE>
     <MODULE HWVERSION="2.00.a" INSTANCE="LEDs_1Bit" IPTYPE="PERIPHERAL" MHS_INDEX="13" MODCLASS="PERIPHERAL" MODTYPE="xps_gpio">
       <DESCRIPTION TYPE="SHORT">XPS General Purpose IO</DESCRIPTION>
@@ -8789,7 +8735,6 @@
       <DOCUMENTATION>
         <DOCUMENT SOURCE="C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_gpio_v2_00_a/doc/xps_gpio.pdf" TYPE="IP"/>
       </DOCUMENTATION>
-      <LICENSEINFO ICON_NAME="ps_core_preferred"/>
       <PARAMETERS>
         <PARAMETER ADDRESS="BASE" ADDR_TYPE="REGISTER" CHANGEDBY="USER" ENDIAN="BIG" IS_INSTANTIATED="TRUE" LSB="31" MHS_INDEX="6" MPD_INDEX="0" MSB="0" NAME="C_BASEADDR" TYPE="std_logic_vector" VALUE="0x81440000"/>
         <PARAMETER ADDRESS="HIGH" ADDR_TYPE="REGISTER" CHANGEDBY="USER" ENDIAN="BIG" IS_INSTANTIATED="TRUE" LSB="31" MHS_INDEX="7" MPD_INDEX="1" MSB="0" NAME="C_HIGHADDR" TYPE="std_logic_vector" VALUE="0x8144ffff"/>
@@ -8938,6 +8883,7 @@
           </SLAVES>
         </MEMRANGE>
       </MEMORYMAP>
+      <LICENSEINFO ICON_NAME="ps_core_preferred"/>
     </MODULE>
     <MODULE HWVERSION="2.00.a" INSTANCE="LEDs_6Bit" IPTYPE="PERIPHERAL" MHS_INDEX="14" MODCLASS="PERIPHERAL" MODTYPE="xps_gpio">
       <DESCRIPTION TYPE="SHORT">XPS General Purpose IO</DESCRIPTION>
@@ -8945,7 +8891,6 @@
       <DOCUMENTATION>
         <DOCUMENT SOURCE="C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_gpio_v2_00_a/doc/xps_gpio.pdf" TYPE="IP"/>
       </DOCUMENTATION>
-      <LICENSEINFO ICON_NAME="ps_core_preferred"/>
       <PARAMETERS>
         <PARAMETER ADDRESS="BASE" ADDR_TYPE="REGISTER" CHANGEDBY="USER" ENDIAN="BIG" IS_INSTANTIATED="TRUE" LSB="31" MHS_INDEX="6" MPD_INDEX="0" MSB="0" NAME="C_BASEADDR" TYPE="std_logic_vector" VALUE="0x81420000"/>
         <PARAMETER ADDRESS="HIGH" ADDR_TYPE="REGISTER" CHANGEDBY="USER" ENDIAN="BIG" IS_INSTANTIATED="TRUE" LSB="31" MHS_INDEX="7" MPD_INDEX="1" MSB="0" NAME="C_HIGHADDR" TYPE="std_logic_vector" VALUE="0x8142ffff"/>
@@ -9094,6 +9039,7 @@
           </SLAVES>
         </MEMRANGE>
       </MEMORYMAP>
+      <LICENSEINFO ICON_NAME="ps_core_preferred"/>
     </MODULE>
     <MODULE HWVERSION="1.01.a" INSTANCE="RS232_DCE" IPTYPE="PERIPHERAL" MHS_INDEX="15" MODCLASS="PERIPHERAL" MODTYPE="xps_uartlite">
       <DESCRIPTION TYPE="SHORT">XPS UART (Lite)</DESCRIPTION>
@@ -9101,7 +9047,6 @@
       <DOCUMENTATION>
         <DOCUMENT SOURCE="C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_uartlite_v1_01_a/doc/xps_uartlite.pdf" TYPE="IP"/>
       </DOCUMENTATION>
-      <LICENSEINFO ICON_NAME="ps_core_preferred"/>
       <PARAMETERS>
         <PARAMETER CHANGEDBY="SYSTEM" MPD_INDEX="0" NAME="C_FAMILY" TYPE="STRING" VALUE="spartan3e"/>
         <PARAMETER CHANGEDBY="SYSTEM" MPD_INDEX="1" NAME="C_SPLB_CLK_FREQ_HZ" TYPE="INTEGER" VALUE="50000000"/>
@@ -9233,6 +9178,7 @@
           </SLAVES>
         </MEMRANGE>
       </MEMORYMAP>
+      <LICENSEINFO ICON_NAME="ps_core_preferred"/>
     </MODULE>
     <MODULE HWVERSION="1.01.a" INSTANCE="RS232_DTE" IPTYPE="PERIPHERAL" MHS_INDEX="16" MODCLASS="PERIPHERAL" MODTYPE="xps_uartlite">
       <DESCRIPTION TYPE="SHORT">XPS UART (Lite)</DESCRIPTION>
@@ -9240,7 +9186,6 @@
       <DOCUMENTATION>
         <DOCUMENT SOURCE="C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_uartlite_v1_01_a/doc/xps_uartlite.pdf" TYPE="IP"/>
       </DOCUMENTATION>
-      <LICENSEINFO ICON_NAME="ps_core_preferred"/>
       <PARAMETERS>
         <PARAMETER CHANGEDBY="SYSTEM" MPD_INDEX="0" NAME="C_FAMILY" TYPE="STRING" VALUE="spartan3e"/>
         <PARAMETER CHANGEDBY="SYSTEM" MPD_INDEX="1" NAME="C_SPLB_CLK_FREQ_HZ" TYPE="INTEGER" VALUE="50000000"/>
@@ -9372,6 +9317,7 @@
           </SLAVES>
         </MEMRANGE>
       </MEMORYMAP>
+      <LICENSEINFO ICON_NAME="ps_core_preferred"/>
     </MODULE>
     <MODULE HWVERSION="2.00.a" INSTANCE="Rotary_Encoder" IPTYPE="PERIPHERAL" MHS_INDEX="17" MODCLASS="PERIPHERAL" MODTYPE="xps_gpio">
       <DESCRIPTION TYPE="SHORT">XPS General Purpose IO</DESCRIPTION>
@@ -9379,7 +9325,6 @@
       <DOCUMENTATION>
         <DOCUMENT SOURCE="C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_gpio_v2_00_a/doc/xps_gpio.pdf" TYPE="IP"/>
       </DOCUMENTATION>
-      <LICENSEINFO ICON_NAME="ps_core_preferred"/>
       <PARAMETERS>
         <PARAMETER ADDRESS="BASE" ADDR_TYPE="REGISTER" CHANGEDBY="USER" ENDIAN="BIG" IS_INSTANTIATED="TRUE" LSB="31" MHS_INDEX="6" MPD_INDEX="0" MSB="0" NAME="C_BASEADDR" TYPE="std_logic_vector" VALUE="0x81400000"/>
         <PARAMETER ADDRESS="HIGH" ADDR_TYPE="REGISTER" CHANGEDBY="USER" ENDIAN="BIG" IS_INSTANTIATED="TRUE" LSB="31" MHS_INDEX="7" MPD_INDEX="1" MSB="0" NAME="C_HIGHADDR" TYPE="std_logic_vector" VALUE="0x8140ffff"/>
@@ -9528,6 +9473,7 @@
           </SLAVES>
         </MEMRANGE>
       </MEMORYMAP>
+      <LICENSEINFO ICON_NAME="ps_core_preferred"/>
     </MODULE>
     <MODULE HWVERSION="1.02.a" INSTANCE="xps_timer_0" IPTYPE="PERIPHERAL" MHS_INDEX="18" MODCLASS="PERIPHERAL" MODTYPE="xps_timer">
       <DESCRIPTION TYPE="SHORT">XPS Timer/Counter</DESCRIPTION>
@@ -9535,7 +9481,6 @@
       <DOCUMENTATION>
         <DOCUMENT SOURCE="C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_timer_v1_02_a/doc/xps_timer.pdf" TYPE="IP"/>
       </DOCUMENTATION>
-      <LICENSEINFO ICON_NAME="ps_core_preferred"/>
       <PARAMETERS>
         <PARAMETER CHANGEDBY="SYSTEM" MPD_INDEX="0" NAME="C_FAMILY" TYPE="STRING" VALUE="spartan3e"/>
         <PARAMETER IS_INSTANTIATED="TRUE" MHS_INDEX="1" MPD_INDEX="1" NAME="C_COUNT_WIDTH" TYPE="INTEGER" VALUE="32"/>
@@ -9670,6 +9615,7 @@
           </SLAVES>
         </MEMRANGE>
       </MEMORYMAP>
+      <LICENSEINFO ICON_NAME="ps_core_preferred"/>
     </MODULE>
     <MODULE HWVERSION="4.01.a" INSTANCE="clock_generator_0" IPTYPE="PERIPHERAL" MHS_INDEX="19" MODCLASS="IP" MODTYPE="clock_generator">
       <DESCRIPTION TYPE="SHORT">Clock Generator</DESCRIPTION>
@@ -9677,7 +9623,6 @@
       <DOCUMENTATION>
         <DOCUMENT SOURCE="C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/clock_generator_v4_01_a/doc/clock_generator.pdf" TYPE="IP"/>
       </DOCUMENTATION>
-      <LICENSEINFO ICON_NAME="ps_core_preferred"/>
       <PARAMETERS>
         <PARAMETER CHANGEDBY="SYSTEM" MPD_INDEX="0" NAME="C_FAMILY" TYPE="STRING" VALUE="spartan3e"/>
         <PARAMETER CHANGEDBY="SYSTEM" MPD_INDEX="1" NAME="C_DEVICE" TYPE="STRING" VALUE="3s1600e"/>
@@ -9803,6 +9748,7 @@
         <PORT DIR="O" MPD_INDEX="22" NAME="PSDONE" SIGNAME="__NOC__"/>
       </PORTS>
       <BUSINTERFACES/>
+      <LICENSEINFO ICON_NAME="ps_core_preferred"/>
     </MODULE>
     <MODULE HWVERSION="2.00.b" INSTANCE="mdm_0" IPTYPE="PERIPHERAL" MHS_INDEX="20" MODCLASS="DEBUG" MODTYPE="mdm">
       <DESCRIPTION TYPE="SHORT">MicroBlaze Debug Module (MDM)</DESCRIPTION>
@@ -9810,7 +9756,6 @@
       <DOCUMENTATION>
         <DOCUMENT SOURCE="C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mdm_v2_00_b/doc/mdm.pdf" TYPE="IP"/>
       </DOCUMENTATION>
-      <LICENSEINFO ICON_NAME="ps_core_preferred"/>
       <PARAMETERS>
         <PARAMETER CHANGEDBY="SYSTEM" MPD_INDEX="0" NAME="C_FAMILY" TYPE="STRING" VALUE="spartan3e"/>
         <PARAMETER MPD_INDEX="1" NAME="C_JTAG_CHAIN" TYPE="INTEGER" VALUE="2"/>
@@ -10164,6 +10109,7 @@
           </SLAVES>
         </MEMRANGE>
       </MEMORYMAP>
+      <LICENSEINFO ICON_NAME="ps_core_preferred"/>
     </MODULE>
     <MODULE HWVERSION="3.00.a" INSTANCE="proc_sys_reset_0" IPTYPE="PERIPHERAL" MHS_INDEX="21" MODCLASS="PERIPHERAL" MODTYPE="proc_sys_reset">
       <DESCRIPTION TYPE="SHORT">Processor System Reset Module</DESCRIPTION>
@@ -10171,9 +10117,7 @@
       <DOCUMENTATION>
         <DOCUMENT SOURCE="C:/Xilinx/13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_sys_reset_v3_00_a/doc/proc_sys_reset.pdf" TYPE="IP"/>
       </DOCUMENTATION>
-      <LICENSEINFO ICON_NAME="ps_core_preferred"/>
       <PARAMETERS>
-        <PARAMETER MPD_INDEX="0" NAME="C_SUBFAMILY" TYPE="string" VALUE="lx"/>
         <PARAMETER MPD_INDEX="1" NAME="C_EXT_RST_WIDTH" TYPE="integer" VALUE="4"/>
         <PARAMETER MPD_INDEX="2" NAME="C_AUX_RST_WIDTH" TYPE="integer" VALUE="4"/>
         <PARAMETER IS_INSTANTIATED="TRUE" MHS_INDEX="1" MPD_INDEX="3" NAME="C_EXT_RESET_HIGH" TYPE="std_logic" VALUE="1"/>
@@ -10233,9 +10177,9 @@
       <IOINTERFACES>
         <IOINTERFACE MPD_INDEX="0" NAME="reset_0"/>
       </IOINTERFACES>
+      <LICENSEINFO ICON_NAME="ps_core_preferred"/>
     </MODULE>
     <MODULE HWVERSION="1.00.a" INSTANCE="graphics_ip_0" IPTYPE="PERIPHERAL" MHS_INDEX="22" MODCLASS="PERIPHERAL" MODTYPE="graphics_ip">
-      <LICENSEINFO ICON_NAME="ps_core_local"/>
       <PARAMETERS>
         <PARAMETER ADDRESS="BASE" ADDR_TYPE="REGISTER" CHANGEDBY="USER" IS_INSTANTIATED="TRUE" MHS_INDEX="2" MPD_INDEX="0" NAME="C_BASEADDR" TYPE="std_logic_vector" VALUE="0xc7000000"/>
         <PARAMETER ADDRESS="HIGH" ADDR_TYPE="REGISTER" CHANGEDBY="USER" IS_INSTANTIATED="TRUE" MHS_INDEX="3" MPD_INDEX="1" NAME="C_HIGHADDR" TYPE="std_logic_vector" VALUE="0xc700ffff"/>
@@ -10252,9 +10196,9 @@
         <PARAMETER CHANGEDBY="SYSTEM" MPD_INDEX="12" NAME="C_FAMILY" TYPE="STRING" VALUE="spartan3e"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="O" ENDIAN="LITTLE" IS_INSTANTIATED="TRUE" LEFT="2" LSB="0" MHS_INDEX="0" MPD_INDEX="0" MSB="2" NAME="pixToDisp" RIGHT="0" SIGNAME="graphics_ip_0_pixToDisp" VECFORMULA="[2:0]"/>
-        <PORT DIR="O" IS_INSTANTIATED="TRUE" MHS_INDEX="1" MPD_INDEX="1" NAME="hsync" SIGNAME="graphics_ip_0_hsync"/>
-        <PORT DIR="O" IS_INSTANTIATED="TRUE" MHS_INDEX="2" MPD_INDEX="2" NAME="vsync" SIGNAME="graphics_ip_0_vsync"/>
+        <PORT DIR="O" ENDIAN="LITTLE" IS_INSTANTIATED="TRUE" LEFT="2" LSB="0" MPD_INDEX="0" MSB="2" NAME="pixToDisp" RIGHT="0" SIGNAME="graphics_ip_0_pixToDisp" VECFORMULA="[2:0]"/>
+        <PORT DIR="O" IS_INSTANTIATED="TRUE" MPD_INDEX="1" NAME="hsync" SIGNAME="graphics_ip_0_hsync"/>
+        <PORT DIR="O" IS_INSTANTIATED="TRUE" MPD_INDEX="2" NAME="vsync" SIGNAME="graphics_ip_0_vsync"/>
         <PORT BUS="SPLB" CLKFREQUENCY="50000000" DEF_SIGNAME="clk_50_0000MHz" DIR="I" MPD_INDEX="3" NAME="SPLB_Clk" SIGIS="CLK" SIGNAME="clk_50_0000MHz"/>
         <PORT BUS="SPLB" DEF_SIGNAME="mb_plb_SPLB_Rst" DIR="I" MPD_INDEX="4" NAME="SPLB_Rst" SIGIS="RST" SIGNAME="mb_plb_SPLB_Rst"/>
         <PORT BUS="SPLB" DEF_SIGNAME="mb_plb_PLB_ABus" DIR="I" ENDIAN="BIG" LEFT="0" LSB="31" MPD_INDEX="5" MSB="0" NAME="PLB_ABus" RIGHT="31" SIGNAME="mb_plb_PLB_ABus" VECFORMULA="[0:31]"/>
@@ -10263,7 +10207,7 @@
         <PORT BUS="SPLB" DEF_SIGNAME="mb_plb_PLB_SAValid" DIR="I" MPD_INDEX="8" NAME="PLB_SAValid" SIGNAME="mb_plb_PLB_SAValid"/>
         <PORT BUS="SPLB" DEF_SIGNAME="mb_plb_PLB_rdPrim" DIR="I" MPD_INDEX="9" NAME="PLB_rdPrim" SIGNAME="mb_plb_PLB_rdPrim"/>
         <PORT BUS="SPLB" DEF_SIGNAME="mb_plb_PLB_wrPrim" DIR="I" MPD_INDEX="10" NAME="PLB_wrPrim" SIGNAME="mb_plb_PLB_wrPrim"/>
-        <PORT BUS="SPLB" DEF_SIGNAME="mb_plb_PLB_masterID" DIR="I" MPD_INDEX="11" NAME="PLB_masterID" SIGNAME="mb_plb_PLB_masterID" VECFORMULA="[0:(C_SPLB_MID_WIDTH-1)]"/>
+        <PORT BUS="SPLB" DEF_SIGNAME="mb_plb_PLB_masterID" DIR="I" ENDIAN="BIG" LEFT="0" LSB="2" MPD_INDEX="11" MSB="0" NAME="PLB_masterID" RIGHT="2" SIGNAME="mb_plb_PLB_masterID" VECFORMULA="[0:(C_SPLB_MID_WIDTH-1)]"/>
         <PORT BUS="SPLB" DEF_SIGNAME="mb_plb_PLB_abort" DIR="I" MPD_INDEX="12" NAME="PLB_abort" SIGNAME="mb_plb_PLB_abort"/>
         <PORT BUS="SPLB" DEF_SIGNAME="mb_plb_PLB_busLock" DIR="I" MPD_INDEX="13" NAME="PLB_busLock" SIGNAME="mb_plb_PLB_busLock"/>
         <PORT BUS="SPLB" DEF_SIGNAME="mb_plb_PLB_RNW" DIR="I" MPD_INDEX="14" NAME="PLB_RNW" SIGNAME="mb_plb_PLB_RNW"/>
@@ -10353,9 +10297,9 @@
           </SLAVES>
         </MEMRANGE>
       </MEMORYMAP>
+      <LICENSEINFO ICON_NAME="ps_core_local"/>
     </MODULE>
     <MODULE HWVERSION="1.00.a" INSTANCE="controller_0" IPTYPE="PERIPHERAL" MHS_INDEX="23" MODCLASS="PERIPHERAL" MODTYPE="controller">
-      <LICENSEINFO ICON_NAME="ps_core_local"/>
       <PARAMETERS>
         <PARAMETER ADDRESS="BASE" ADDR_TYPE="REGISTER" CHANGEDBY="USER" IS_INSTANTIATED="TRUE" MHS_INDEX="2" MPD_INDEX="0" NAME="C_BASEADDR" TYPE="std_logic_vector" VALUE="0xc7200000"/>
         <PARAMETER ADDRESS="HIGH" ADDR_TYPE="REGISTER" CHANGEDBY="USER" IS_INSTANTIATED="TRUE" MHS_INDEX="3" MPD_INDEX="1" NAME="C_HIGHADDR" TYPE="std_logic_vector" VALUE="0xc720ffff"/>
@@ -10372,9 +10316,9 @@
         <PARAMETER CHANGEDBY="SYSTEM" MPD_INDEX="12" NAME="C_FAMILY" TYPE="STRING" VALUE="spartan3e"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="O" IS_INSTANTIATED="TRUE" MHS_INDEX="0" MPD_INDEX="0" NAME="NESlatch" SIGNAME="controller_0_NESlatch"/>
-        <PORT DIR="O" IS_INSTANTIATED="TRUE" MHS_INDEX="1" MPD_INDEX="1" NAME="NESclk" SIGNAME="controller_0_NESclk"/>
-        <PORT DIR="I" IS_INSTANTIATED="TRUE" MHS_INDEX="2" MPD_INDEX="2" NAME="NESdatIn" SIGNAME="controller_0_NESdatIn"/>
+        <PORT DIR="O" IS_INSTANTIATED="TRUE" MPD_INDEX="0" NAME="NESlatch" SIGNAME="controller_0_NESlatch"/>
+        <PORT DIR="O" IS_INSTANTIATED="TRUE" MPD_INDEX="1" NAME="NESclk" SIGNAME="controller_0_NESclk"/>
+        <PORT DIR="I" IS_INSTANTIATED="TRUE" MPD_INDEX="2" NAME="NESdatIn" SIGNAME="controller_0_NESdatIn"/>
         <PORT BUS="SPLB" CLKFREQUENCY="50000000" DEF_SIGNAME="clk_50_0000MHz" DIR="I" MPD_INDEX="3" NAME="SPLB_Clk" SIGIS="CLK" SIGNAME="clk_50_0000MHz"/>
         <PORT BUS="SPLB" DEF_SIGNAME="mb_plb_SPLB_Rst" DIR="I" MPD_INDEX="4" NAME="SPLB_Rst" SIGIS="RST" SIGNAME="mb_plb_SPLB_Rst"/>
         <PORT BUS="SPLB" DEF_SIGNAME="mb_plb_PLB_ABus" DIR="I" ENDIAN="BIG" LEFT="0" LSB="31" MPD_INDEX="5" MSB="0" NAME="PLB_ABus" RIGHT="31" SIGNAME="mb_plb_PLB_ABus" VECFORMULA="[0:31]"/>
@@ -10383,7 +10327,7 @@
         <PORT BUS="SPLB" DEF_SIGNAME="mb_plb_PLB_SAValid" DIR="I" MPD_INDEX="8" NAME="PLB_SAValid" SIGNAME="mb_plb_PLB_SAValid"/>
         <PORT BUS="SPLB" DEF_SIGNAME="mb_plb_PLB_rdPrim" DIR="I" MPD_INDEX="9" NAME="PLB_rdPrim" SIGNAME="mb_plb_PLB_rdPrim"/>
         <PORT BUS="SPLB" DEF_SIGNAME="mb_plb_PLB_wrPrim" DIR="I" MPD_INDEX="10" NAME="PLB_wrPrim" SIGNAME="mb_plb_PLB_wrPrim"/>
-        <PORT BUS="SPLB" DEF_SIGNAME="mb_plb_PLB_masterID" DIR="I" MPD_INDEX="11" NAME="PLB_masterID" SIGNAME="mb_plb_PLB_masterID" VECFORMULA="[0:(C_SPLB_MID_WIDTH-1)]"/>
+        <PORT BUS="SPLB" DEF_SIGNAME="mb_plb_PLB_masterID" DIR="I" ENDIAN="BIG" LEFT="0" LSB="2" MPD_INDEX="11" MSB="0" NAME="PLB_masterID" RIGHT="2" SIGNAME="mb_plb_PLB_masterID" VECFORMULA="[0:(C_SPLB_MID_WIDTH-1)]"/>
         <PORT BUS="SPLB" DEF_SIGNAME="mb_plb_PLB_abort" DIR="I" MPD_INDEX="12" NAME="PLB_abort" SIGNAME="mb_plb_PLB_abort"/>
         <PORT BUS="SPLB" DEF_SIGNAME="mb_plb_PLB_busLock" DIR="I" MPD_INDEX="13" NAME="PLB_busLock" SIGNAME="mb_plb_PLB_busLock"/>
         <PORT BUS="SPLB" DEF_SIGNAME="mb_plb_PLB_RNW" DIR="I" MPD_INDEX="14" NAME="PLB_RNW" SIGNAME="mb_plb_PLB_RNW"/>
@@ -10473,7 +10417,62 @@
           </SLAVES>
         </MEMRANGE>
       </MEMORYMAP>
+      <LICENSEINFO ICON_NAME="ps_core_local"/>
     </MODULE>
   </MODULES>
+
+  <EXTERNALPORTS>
+    <PORT DIR="I" ENDIAN="BIG" LEFT="0" LSB="2" MHS_INDEX="0" MSB="0" NAME="fpga_0_Buttons_3Bit_GPIO_IO_I_pin" RIGHT="2" SIGNAME="fpga_0_Buttons_3Bit_GPIO_IO_I_pin"/>
+    <PORT DIR="O" ENDIAN="BIG" LEFT="0" LSB="6" MHS_INDEX="1" MSB="0" NAME="fpga_0_Character_LCD_2x16_GPIO_IO_O_pin" RIGHT="6" SIGNAME="fpga_0_Character_LCD_2x16_GPIO_IO_O_pin"/>
+    <PORT DIR="O" MHS_INDEX="2" NAME="fpga_0_Character_LCD_2x16_LCD_DB11_pin" SIGNAME="net_vcc"/>
+    <PORT DIR="O" MHS_INDEX="3" NAME="fpga_0_Character_LCD_2x16_LCD_DB10_pin" SIGNAME="net_vcc"/>
+    <PORT DIR="O" MHS_INDEX="4" NAME="fpga_0_Character_LCD_2x16_LCD_DB9_pin" SIGNAME="net_vcc"/>
+    <PORT DIR="O" MHS_INDEX="5" NAME="fpga_0_Character_LCD_2x16_LCD_DB8_pin" SIGNAME="net_vcc"/>
+    <PORT DIR="O" MHS_INDEX="6" NAME="fpga_0_DDR_SDRAM_DDR_Clk_pin" SIGNAME="fpga_0_DDR_SDRAM_DDR_Clk_pin"/>
+    <PORT DIR="O" MHS_INDEX="7" NAME="fpga_0_DDR_SDRAM_DDR_Clk_n_pin" SIGNAME="fpga_0_DDR_SDRAM_DDR_Clk_n_pin"/>
+    <PORT DIR="O" MHS_INDEX="8" NAME="fpga_0_DDR_SDRAM_DDR_CE_pin" SIGNAME="fpga_0_DDR_SDRAM_DDR_CE_pin"/>
+    <PORT DIR="O" MHS_INDEX="9" NAME="fpga_0_DDR_SDRAM_DDR_CS_n_pin" SIGNAME="fpga_0_DDR_SDRAM_DDR_CS_n_pin"/>
+    <PORT DIR="O" MHS_INDEX="10" NAME="fpga_0_DDR_SDRAM_DDR_RAS_n_pin" SIGNAME="fpga_0_DDR_SDRAM_DDR_RAS_n_pin"/>
+    <PORT DIR="O" MHS_INDEX="11" NAME="fpga_0_DDR_SDRAM_DDR_CAS_n_pin" SIGNAME="fpga_0_DDR_SDRAM_DDR_CAS_n_pin"/>
+    <PORT DIR="O" MHS_INDEX="12" NAME="fpga_0_DDR_SDRAM_DDR_WE_n_pin" SIGNAME="fpga_0_DDR_SDRAM_DDR_WE_n_pin"/>
+    <PORT DIR="O" ENDIAN="LITTLE" LEFT="1" LSB="0" MHS_INDEX="13" MSB="1" NAME="fpga_0_DDR_SDRAM_DDR_BankAddr_pin" RIGHT="0" SIGNAME="fpga_0_DDR_SDRAM_DDR_BankAddr_pin"/>
+    <PORT DIR="O" ENDIAN="LITTLE" LEFT="12" LSB="0" MHS_INDEX="14" MSB="12" NAME="fpga_0_DDR_SDRAM_DDR_Addr_pin" RIGHT="0" SIGNAME="fpga_0_DDR_SDRAM_DDR_Addr_pin"/>
+    <PORT DIR="IO" ENDIAN="LITTLE" LEFT="15" LSB="0" MHS_INDEX="15" MSB="15" NAME="fpga_0_DDR_SDRAM_DDR_DQ_pin" RIGHT="0" SIGNAME="fpga_0_DDR_SDRAM_DDR_DQ_pin"/>
+    <PORT DIR="O" ENDIAN="LITTLE" LEFT="1" LSB="0" MHS_INDEX="16" MSB="1" NAME="fpga_0_DDR_SDRAM_DDR_DM_pin" RIGHT="0" SIGNAME="fpga_0_DDR_SDRAM_DDR_DM_pin"/>
+    <PORT DIR="IO" ENDIAN="LITTLE" LEFT="1" LSB="0" MHS_INDEX="17" MSB="1" NAME="fpga_0_DDR_SDRAM_DDR_DQS_pin" RIGHT="0" SIGNAME="fpga_0_DDR_SDRAM_DDR_DQS_pin"/>
+    <PORT DIR="IO" MHS_INDEX="18" NAME="fpga_0_DDR_SDRAM_ddr_dqs_div_io_pin" SIGNAME="fpga_0_DDR_SDRAM_ddr_dqs_div_io_pin"/>
+    <PORT DIR="I" ENDIAN="BIG" LEFT="0" LSB="3" MHS_INDEX="19" MSB="0" NAME="fpga_0_DIP_Switches_4Bit_GPIO_IO_I_pin" RIGHT="3" SIGNAME="fpga_0_DIP_Switches_4Bit_GPIO_IO_I_pin"/>
+    <PORT DIR="I" MHS_INDEX="20" NAME="fpga_0_Ethernet_MAC_PHY_tx_clk_pin" SIGNAME="fpga_0_Ethernet_MAC_PHY_tx_clk_pin"/>
+    <PORT DIR="I" MHS_INDEX="21" NAME="fpga_0_Ethernet_MAC_PHY_rx_clk_pin" SIGNAME="fpga_0_Ethernet_MAC_PHY_rx_clk_pin"/>
+    <PORT DIR="I" MHS_INDEX="22" NAME="fpga_0_Ethernet_MAC_PHY_crs_pin" SIGNAME="fpga_0_Ethernet_MAC_PHY_crs_pin"/>
+    <PORT DIR="I" MHS_INDEX="23" NAME="fpga_0_Ethernet_MAC_PHY_dv_pin" SIGNAME="fpga_0_Ethernet_MAC_PHY_dv_pin"/>
+    <PORT DIR="I" ENDIAN="LITTLE" LEFT="3" LSB="0" MHS_INDEX="24" MSB="3" NAME="fpga_0_Ethernet_MAC_PHY_rx_data_pin" RIGHT="0" SIGNAME="fpga_0_Ethernet_MAC_PHY_rx_data_pin"/>
+    <PORT DIR="I" MHS_INDEX="25" NAME="fpga_0_Ethernet_MAC_PHY_col_pin" SIGNAME="fpga_0_Ethernet_MAC_PHY_col_pin"/>
+    <PORT DIR="O" MHS_INDEX="26" NAME="fpga_0_Ethernet_MAC_PHY_tx_en_pin" SIGNAME="fpga_0_Ethernet_MAC_PHY_tx_en_pin"/>
+    <PORT DIR="O" ENDIAN="LITTLE" LEFT="3" LSB="0" MHS_INDEX="27" MSB="3" NAME="fpga_0_Ethernet_MAC_PHY_tx_data_pin" RIGHT="0" SIGNAME="fpga_0_Ethernet_MAC_PHY_tx_data_pin"/>
+    <PORT DIR="O" MHS_INDEX="28" NAME="fpga_0_Ethernet_MAC_PHY_MDC_pin" SIGNAME="fpga_0_Ethernet_MAC_PHY_MDC_pin"/>
+    <PORT DIR="IO" MHS_INDEX="29" NAME="fpga_0_Ethernet_MAC_PHY_MDIO_pin" SIGNAME="fpga_0_Ethernet_MAC_PHY_MDIO_pin"/>
+    <PORT DIR="O" ENDIAN="BIG" LEFT="8" LSB="31" MHS_INDEX="30" MSB="8" NAME="fpga_0_FLASH_Mem_A_pin" RIGHT="31" SIGNAME="fpga_0_FLASH_Mem_A_pin_vslice_8_31_concat"/>
+    <PORT DIR="O" MHS_INDEX="31" NAME="fpga_0_FLASH_Mem_CEN_pin" SIGNAME="fpga_0_FLASH_Mem_CEN_pin"/>
+    <PORT DIR="O" MHS_INDEX="32" NAME="fpga_0_FLASH_Mem_OEN_pin" SIGNAME="fpga_0_FLASH_Mem_OEN_pin"/>
+    <PORT DIR="O" MHS_INDEX="33" NAME="fpga_0_FLASH_Mem_WEN_pin" SIGNAME="fpga_0_FLASH_Mem_WEN_pin"/>
+    <PORT DIR="IO" ENDIAN="BIG" LEFT="0" LSB="7" MHS_INDEX="34" MSB="0" NAME="fpga_0_FLASH_Mem_DQ_pin" RIGHT="7" SIGNAME="fpga_0_FLASH_Mem_DQ_pin"/>
+    <PORT DIR="O" MHS_INDEX="35" NAME="fpga_0_FLASH_BEN_pin" SIGNAME="net_gnd"/>
+    <PORT DIR="O" MHS_INDEX="36" NAME="fpga_0_LEDs_1Bit_GPIO_IO_O_pin" SIGNAME="fpga_0_LEDs_1Bit_GPIO_IO_O_pin"/>
+    <PORT DIR="O" ENDIAN="BIG" LEFT="0" LSB="5" MHS_INDEX="37" MSB="0" NAME="fpga_0_LEDs_6Bit_GPIO_IO_O_pin" RIGHT="5" SIGNAME="fpga_0_LEDs_6Bit_GPIO_IO_O_pin"/>
+    <PORT DIR="I" MHS_INDEX="38" NAME="fpga_0_RS232_DCE_RX_pin" SIGNAME="fpga_0_RS232_DCE_RX_pin"/>
+    <PORT DIR="O" MHS_INDEX="39" NAME="fpga_0_RS232_DCE_TX_pin" SIGNAME="fpga_0_RS232_DCE_TX_pin"/>
+    <PORT DIR="I" MHS_INDEX="40" NAME="fpga_0_RS232_DTE_RX_pin" SIGNAME="fpga_0_RS232_DTE_RX_pin"/>
+    <PORT DIR="O" MHS_INDEX="41" NAME="fpga_0_RS232_DTE_TX_pin" SIGNAME="fpga_0_RS232_DTE_TX_pin"/>
+    <PORT DIR="I" ENDIAN="BIG" LEFT="0" LSB="2" MHS_INDEX="42" MSB="0" NAME="fpga_0_Rotary_Encoder_GPIO_IO_I_pin" RIGHT="2" SIGNAME="fpga_0_Rotary_Encoder_GPIO_IO_I_pin"/>
+    <PORT CLKFREQUENCY="50000000" DIR="I" MHS_INDEX="43" NAME="fpga_0_clk_1_sys_clk_pin" SIGIS="CLK" SIGNAME="CLK_S"/>
+    <PORT DIR="I" MHS_INDEX="44" NAME="fpga_0_rst_1_sys_rst_pin" RSTPOLARITY="1" SIGIS="RST" SIGNAME="sys_rst_s"/>
+    <PORT DIR="O" MHS_INDEX="45" NAME="controller_0_NESlatch_pin" SIGNAME="controller_0_NESlatch"/>
+    <PORT DIR="O" MHS_INDEX="46" NAME="controller_0_NESclk_pin" SIGNAME="controller_0_NESclk"/>
+    <PORT DIR="I" MHS_INDEX="47" NAME="controller_0_NESdatIn_pin" SIGNAME="controller_0_NESdatIn"/>
+    <PORT DIR="O" ENDIAN="LITTLE" LEFT="2" LSB="0" MHS_INDEX="48" MSB="2" NAME="graphics_ip_0_pixToDisp_pin" RIGHT="0" SIGNAME="graphics_ip_0_pixToDisp"/>
+    <PORT DIR="O" MHS_INDEX="49" NAME="graphics_ip_0_hsync_pin" SIGNAME="graphics_ip_0_hsync"/>
+    <PORT DIR="O" MHS_INDEX="50" NAME="graphics_ip_0_vsync_pin" SIGNAME="graphics_ip_0_vsync"/>
+  </EXTERNALPORTS>
 
 </EDKSYSTEM>

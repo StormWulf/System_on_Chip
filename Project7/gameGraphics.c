@@ -26,12 +26,12 @@
 
 #define cblk0 0
 #define cblk1 1
-#define cblue0 2
-#define cblue1 3
-#define cgreen0 4
-#define cgreen1 5
-#define ccyan0 6
-#define ccyan1 7
+#define cblu0 2
+#define cblu1 3
+#define cgrn0 4
+#define cgrn1 5
+#define ccyn0 6
+#define ccyn1 7
 #define cred0 8
 #define cred1 9
 #define cmag0 10
@@ -40,6 +40,9 @@
 #define cyel1 13
 #define cwht0 14
 #define cwht1 15
+
+//up to this many bullets can be on the map at any time
+#define MAX_BULLETS 5
 
 const int IPcoreAddr = 0xc7000000, bgOff = 0x40000000, bgSprOff = 0x1000, fgSprOff = 0x40000, fgOff = 0x80000000,
 			sprOff = 0x20000000, sprColorOff = 0x1000000, controllerCoreAddr = 0xC7200000;
@@ -50,11 +53,11 @@ typedef struct{
 
 int main(){
 
-	unsigned int i, addr, cont;
+	int i, addr, cont, LorR = 1, bullets[MAX_BULLETS] = {-1}, bullDir[MAX_BULLETS] = {1};
 
 	int foreground[1200] = {0}, background[1200] = {0};
 	evinLoc oldLoc = {1040, 1041, 1080, 1081, 1120, 1121};
-	evinLoc newLoc = {0, 0, 0, 0, 0, 0};
+	evinLoc newLoc = {1040, 1041, 1080, 1081, 1120, 1121};
 	evinLoc endLoc = {558, 559, 598, 599, 638, 639};
 
 	//sprite map declaration
@@ -78,41 +81,41 @@ int main(){
 			cwht0, cwht0, cwht0, cblk1, cwht0, cwht0, cwht0, cwht0,
 			//evin CL 2
 			cwht0, cwht0, cwht0, cwht0, cblk1, cwht0, cwht0, cwht0,
-			cwht0, cwht0, cwht0, cwht0, cblk1, cwht0, cwht0, ccyan1,
+			cwht0, cwht0, cwht0, cwht0, cblk1, cwht0, cwht0, ccyn1,
 			cwht0, cwht0, cwht0, cwht0, cblk1, cblk1, cblk1, cblk1,
 			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cblk1, cblk1,
 			cwht0, cwht0, cwht0, cwht0, cblk1, cblk1, cblk1, cblk1,
-			cgreen1, cgreen1, cgreen1, cblk1, cblk1, cblue1, cblue1, cblue1,
-			cgreen1, cwht0, cwht0, cblk1, cblue1, cblue1, cblue1, cblue1,
-			cgreen1, cwht0, cwht0, cblk1, cblue1, cblue1, cblue1, cblue1,
+			cgrn1, cgrn1, cgrn1, cblk1, cblk1, cblu1, cblu1, cblu1,
+			cgrn1, cwht0, cwht0, cblk1, cblu1, cblu1, cblu1, cblu1,
+			cgrn1, cwht0, cwht0, cblk1, cblu1, cblu1, cblu1, cblu1,
 			//evin CR 3
 			cwht0, cwht0, cwht0, cblk1, cwht0, cwht0, cwht0, cwht0,
-			ccyan1, cwht0, cwht0, cblk1, cwht0, cwht0, cwht0, cwht0,
+			ccyn1, cwht0, cwht0, cblk1, cwht0, cwht0, cwht0, cwht0,
 			cblk1, cblk1, cblk1, cblk1, cwht0, cwht0, cwht0, cwht0,
-			cblk1, cblk1, cwht0, cwht0, cwht0, cgreen1, cgreen1, cwht0,
-			cblk1, cblk1, cblk1, cblk1, cwht0, cwht0, cgreen1, cwht0,
-			cblue1, cblue1, cblue1, cblk1, cblk1, cwht0, cgreen1, cwht0,
-			cblue1, cblue1, cblue1, cblue1, cblk1, cgreen1, cgreen1, cwht0,
-			cblue1, cblue1, cblue1, cblue1, cblk1, cwht0, cwht0, cwht0,
+			cblk1, cblk1, cwht0, cwht0, cwht0, cgrn1, cgrn1, cwht0,
+			cblk1, cblk1, cblk1, cblk1, cwht0, cwht0, cgrn1, cwht0,
+			cblu1, cblu1, cblu1, cblk1, cblk1, cwht0, cgrn1, cwht0,
+			cblu1, cblu1, cblu1, cblu1, cblk1, cgrn1, cgrn1, cwht0,
+			cblu1, cblu1, cblu1, cblu1, cblk1, cwht0, cwht0, cwht0,
 			//evin BL 4
-			cgreen1, cgreen1, cwht0, cblk1, cblue1, cblue1, cblue1, cblue1,
-			cwht0, cwht0, cwht0, cblk1, cblue1, cblue1, cblue1, cblue1,
-			cwht0, cwht0, cwht0, cblk1, cblk1, cblue1, cblue1, cblue1,
-			cwht0, cwht0, cwht0, cwht0, cblk1, cblue1, cblue1, cblue1,
-			cwht0, cwht0, cwht0, cblk1, cblk1, cblue1, cblue1, cblue1,
-			cwht0, cwht0, cblk1, cblk1, cblue1, cblue1, cblue1, cblue1,
+			cgrn1, cgrn1, cwht0, cblk1, cblu1, cblu1, cblu1, cblu1,
+			cwht0, cwht0, cwht0, cblk1, cblu1, cblu1, cblu1, cblu1,
+			cwht0, cwht0, cwht0, cblk1, cblk1, cblu1, cblu1, cblu1,
+			cwht0, cwht0, cwht0, cwht0, cblk1, cblu1, cblu1, cblu1,
+			cwht0, cwht0, cwht0, cblk1, cblk1, cblu1, cblu1, cblu1,
+			cwht0, cwht0, cblk1, cblk1, cblu1, cblu1, cblu1, cblu1,
 			cwht0, cwht0, cblk1, cblk1, cblk1, cblk1, cblk1, cblk1,
 			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
 			//evin BR 5
-			cblue1, cblue1, cblue1, cblue1, cblk1, cwht0, cwht0, cwht0,
-			cblue1, cblue1, cblue1, cblue1, cblk1, cwht0, cwht0, cwht0,
-			cblue1, cblue1, cblue1, cblk1, cblk1, cwht0, cwht0, cwht0,
-			cblue1, cblue1, cblue1, cblk1, cwht0, cwht0, cwht0, cwht0,
-			cblue1, cblue1, cblue1, cblk1, cblk1, cwht0, cwht0, cwht0,
-			cblue1, cblue1, cblue1, cblue1, cblk1, cblk1, cwht0, cwht0,
+			cblu1, cblu1, cblu1, cblu1, cblk1, cwht0, cwht0, cwht0,
+			cblu1, cblu1, cblu1, cblu1, cblk1, cwht0, cwht0, cwht0,
+			cblu1, cblu1, cblu1, cblk1, cblk1, cwht0, cwht0, cwht0,
+			cblu1, cblu1, cblu1, cblk1, cwht0, cwht0, cwht0, cwht0,
+			cblu1, cblu1, cblu1, cblk1, cblk1, cwht0, cwht0, cwht0,
+			cblu1, cblu1, cblu1, cblu1, cblk1, cblk1, cwht0, cwht0,
 			cblk1, cblk1, cblk1, cblk1, cblk1, cblk1, cwht0, cwht0,
 			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
-			//6
+			//foreground 6
 			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
 			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
 			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
@@ -121,32 +124,32 @@ int main(){
 			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
 			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
 			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
-			//7
+			//win 7
+			cblk0, cyel0, cblk0, cyel0, cblk0, cyel0, cblk0, cblk0,
+			cblk0, cblk0, cyel0, cblk0, cyel0, cblk0, cblk0, cblk0,
+			cblk0, cblk0, cgrn0, cgrn0, cgrn0, cblk0, cblk0, cblk0,
+			cblk0, cblk0, cblk0, cgrn0, cblk0, cblk0, cblk0, cblk0,
+			cblk0, cblk0, cgrn0, cgrn0, cgrn0, cblk0, cblk0, cblk0,
+			cblk0, cred0, cred0, cblk0, cblk0, cred0, cblk0, cblk0,
+			cblk0, cred0, cblk0, cred0, cblk0, cred0, cblk0, cblk0,
+			cblk0, cred0, cblk0, cblk0, cred0, cred0, cblk0, cblk0,
+			//evin bullet 8
 			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cblu1, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cblu1, ccyn1, cblu1, cwht0, cwht0, cwht0,
+			cwht0, cblu1, cblu1, ccyn1, cblu1, cblu1, cwht0, cwht0,
+			cwht0, cblu1, cblu1, ccyn1, cblu1, cblu1, cwht0, cwht0,
+			cwht0, cwht0, cblu1, ccyn1, cblu1, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cblu1, cwht0, cwht0, cwht0, cwht0,
 			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			//bullet enemy 9
 			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
-			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
-			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
-			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
-			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
-			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
-			//8
-			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
-			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
-			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
-			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
-			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
-			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
-			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
-			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
-			//9
-			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
-			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
-			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
-			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
-			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
-			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
-			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cmag1, cwht0, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cmag1, cred1, cmag1, cwht0, cwht0, cwht0,
+			cwht0, cmag1, cmag1, cred1, cmag1, cmag1, cwht0, cwht0,
+			cwht0, cmag1, cmag1, cred1, cmag1, cmag1, cwht0, cwht0,
+			cwht0, cwht0, cmag1, cred1, cmag1, cwht0, cwht0, cwht0,
+			cwht0, cwht0, cwht0, cmag1, cwht0, cwht0, cwht0, cwht0,
 			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
 			//10
 			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
@@ -275,14 +278,14 @@ int main(){
 			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
 			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
 			//green/magenta level 24
-			cgreen0, cmag0, cgreen0, cmag0, cgreen0, cmag0, cgreen0, cmag0,
-			cmag0, cgreen0, cmag0, cgreen0, cmag0, cgreen0, cmag0, cgreen0,
-			cgreen0, cmag0, cgreen0, cmag0, cgreen0, cmag0, cgreen0, cmag0,
-			cmag0, cgreen0, cmag0, cgreen0, cmag0, cgreen0, cmag0, cgreen0,
-			cgreen0, cmag0, cgreen0, cmag0, cgreen0, cmag0, cgreen0, cmag0,
-			cmag0, cgreen0, cmag0, cgreen0, cmag0, cgreen0, cmag0, cgreen0,
-			cgreen0, cmag0, cgreen0, cmag0, cgreen0, cmag0, cgreen0, cmag0,
-			cmag0, cgreen0, cmag0, cgreen0, cmag0, cgreen0, cmag0, cgreen0,
+			cgrn0, cmag0, cgrn0, cmag0, cgrn0, cmag0, cgrn0, cmag0,
+			cmag0, cgrn0, cmag0, cgrn0, cmag0, cgrn0, cmag0, cgrn0,
+			cgrn0, cmag0, cgrn0, cmag0, cgrn0, cmag0, cgrn0, cmag0,
+			cmag0, cgrn0, cmag0, cgrn0, cmag0, cgrn0, cmag0, cgrn0,
+			cgrn0, cmag0, cgrn0, cmag0, cgrn0, cmag0, cgrn0, cmag0,
+			cmag0, cgrn0, cmag0, cgrn0, cmag0, cgrn0, cmag0, cgrn0,
+			cgrn0, cmag0, cgrn0, cmag0, cgrn0, cmag0, cgrn0, cmag0,
+			cmag0, cgrn0, cmag0, cgrn0, cmag0, cgrn0, cmag0, cgrn0,
 			//yellow level 25
 			cyel0, cyel0, cyel0, cyel0, cyel0, cyel0, cyel0, cyel0,
 			cyel0, cyel0, cyel0, cyel0, cyel0, cyel0, cyel0, cyel0,
@@ -293,23 +296,23 @@ int main(){
 			cyel0, cyel0, cyel0, cyel0, cyel0, cyel0, cyel0, cyel0,
 			cyel0, cyel0, cyel0, cyel0, cyel0, cyel0, cyel0, cyel0,
 			//blue level 26
-			cblue0, cblue0, cblue0, cblue0, cblue0, cblue0, cblue0, cblue0,
-			cblue0, cblue0, cblue0, cblue0, cblue0, cblue0, cblue0, cblue0,
-			cblue0, cblue0, cblue0, cblue0, cblue0, cblue0, cblue0, cblue0,
-			cblue0, cblue0, cblue0, cblue0, cblue0, cblue0, cblue0, cblue0,
-			cblue0, cblue0, cblue0, cblue0, cblue0, cblue0, cblue0, cblue0,
-			cblue0, cblue0, cblue0, cblue0, cblue0, cblue0, cblue0, cblue0,
-			cblue0, cblue0, cblue0, cblue0, cblue0, cblue0, cblue0, cblue0,
-			cblue0, cblue0, cblue0, cblue0, cblue0, cblue0, cblue0, cblue0,
+			cblu0, cblu0, cblu0, cblu0, cblu0, cblu0, cblu0, cblu0,
+			cblu0, cblu0, cblu0, cblu0, cblu0, cblu0, cblu0, cblu0,
+			cblu0, cblu0, cblu0, cblu0, cblu0, cblu0, cblu0, cblu0,
+			cblu0, cblu0, cblu0, cblu0, cblu0, cblu0, cblu0, cblu0,
+			cblu0, cblu0, cblu0, cblu0, cblu0, cblu0, cblu0, cblu0,
+			cblu0, cblu0, cblu0, cblu0, cblu0, cblu0, cblu0, cblu0,
+			cblu0, cblu0, cblu0, cblu0, cblu0, cblu0, cblu0, cblu0,
+			cblu0, cblu0, cblu0, cblu0, cblu0, cblu0, cblu0, cblu0,
 			//cyan level 27
-			ccyan0, ccyan0, ccyan0, ccyan0, ccyan0, ccyan0, ccyan0, ccyan0,
-			ccyan0, ccyan0, ccyan0, ccyan0, ccyan0, ccyan0, ccyan0, ccyan0,
-			ccyan0, ccyan0, ccyan0, ccyan0, ccyan0, ccyan0, ccyan0, ccyan0,
-			ccyan0, ccyan0, ccyan0, ccyan0, ccyan0, ccyan0, ccyan0, ccyan0,
-			ccyan0, ccyan0, ccyan0, ccyan0, ccyan0, ccyan0, ccyan0, ccyan0,
-			ccyan0, ccyan0, ccyan0, ccyan0, ccyan0, ccyan0, ccyan0, ccyan0,
-			ccyan0, ccyan0, ccyan0, ccyan0, ccyan0, ccyan0, ccyan0, ccyan0,
-			ccyan0, ccyan0, ccyan0, ccyan0, ccyan0, ccyan0, ccyan0, ccyan0,
+			ccyn0, ccyn0, ccyn0, ccyn0, ccyn0, ccyn0, ccyn0, ccyn0,
+			ccyn0, ccyn0, ccyn0, ccyn0, ccyn0, ccyn0, ccyn0, ccyn0,
+			ccyn0, ccyn0, ccyn0, ccyn0, ccyn0, ccyn0, ccyn0, ccyn0,
+			ccyn0, ccyn0, ccyn0, ccyn0, ccyn0, ccyn0, ccyn0, ccyn0,
+			ccyn0, ccyn0, ccyn0, ccyn0, ccyn0, ccyn0, ccyn0, ccyn0,
+			ccyn0, ccyn0, ccyn0, ccyn0, ccyn0, ccyn0, ccyn0, ccyn0,
+			ccyn0, ccyn0, ccyn0, ccyn0, ccyn0, ccyn0, ccyn0, ccyn0,
+			ccyn0, ccyn0, ccyn0, ccyn0, ccyn0, ccyn0, ccyn0, ccyn0,
 			//black/white level 28
 			cblk0, cblk0, cblk0, cblk0, cblk0, cblk0, cblk0, cblk0,
 			cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0, cwht0,
@@ -371,8 +374,9 @@ int main(){
 
 		cont = XGpio_ReadReg(controllerCoreAddr, 0);
 		//process move
-		if (cont == 254){
-				background[254] = 30;
+		if (cont == 254){					//A (jump)
+			if (background[newLoc.tl-40] != 30 && background[newLoc.tr-40] != 30 && newLoc.tl > 39 &&
+					newLoc.tr > 39){
 				newLoc.tl = oldLoc.tl - 40;
 				newLoc.tr = oldLoc.tr - 40;
 				newLoc.cl = oldLoc.cl - 40;
@@ -381,16 +385,161 @@ int main(){
 				newLoc.br = oldLoc.br - 40;
 				foreground[oldLoc.bl] = 6;
 				foreground[oldLoc.br] = 6;
+			}
+		}
+		if (cont == 253){					//B (fire)
+			for (i = 0; i < MAX_BULLETS; ++i){
+				if (bullets[i] == -1){
+					if (LorR == 1){
+						bullets[i] = oldLoc.cr + 1;
+						bullDir[i] = 1;
+					}
+					else{
+						bullets[i] = oldLoc.cl - 1;
+						bullDir[i] = -1;
+					}
+					break;
+				}
+			}
+		}
+		if (cont == 191){					//left
+			LorR = -1;
+			if (background[newLoc.tl-1] != 30 && background[newLoc.cl-1] != 30 && background[newLoc.bl-1] != 30){
+				newLoc.tl = oldLoc.tl - 1;
+				newLoc.tr = oldLoc.tr - 1;
+				newLoc.cl = oldLoc.cl - 1;
+				newLoc.cr = oldLoc.cr - 1;
+				newLoc.bl = oldLoc.bl - 1;
+				newLoc.br = oldLoc.br - 1;
+				foreground[oldLoc.tr] = 6;
+				foreground[oldLoc.cr] = 6;
+				foreground[oldLoc.br] = 6;
+			}
+		}
+		if (cont == 190){					//left + A
+			if (background[newLoc.tl+1] != 30 && background[newLoc.cl+1] != 30 && background[newLoc.bl+1] != 30
+					&& newLoc.tl > -1 && newLoc.tr > -1){
+				newLoc.tl = oldLoc.tl - 41;
+				newLoc.tr = oldLoc.tr - 41;
+				newLoc.cl = oldLoc.cl - 41;
+				newLoc.cr = oldLoc.cr - 41;
+				newLoc.bl = oldLoc.bl - 41;
+				newLoc.br = oldLoc.br - 41;
+				foreground[oldLoc.tr] = 6;
+				foreground[oldLoc.cr] = 6;
+				foreground[oldLoc.bl] = 6;
+				foreground[oldLoc.br] = 6;
+			}
+		}
+		if (cont == 127){					//right
+			LorR = 1;
+			if (background[newLoc.tr+1] != 30 && background[newLoc.cr+1] != 30 && background[newLoc.br+1] != 30
+					|| ((newLoc.cr+1) % 39 != 39) || (newLoc.cr != 39 || newLoc.cr != 79 || newLoc.cr != 119 || newLoc.cr != 159
+					|| newLoc.cr != 199 || newLoc.cr != 239 || newLoc.cr != 279 || newLoc.cr != 319
+					|| newLoc.cr != 359 || newLoc.cr != 399 || newLoc.cr != 439 || newLoc.cr != 479
+					|| newLoc.cr != 519 || newLoc.cr != 559 || newLoc.cr != 599 || newLoc.cr != 639
+					|| newLoc.cr != 679 || newLoc.cr != 719 || newLoc.cr != 759 || newLoc.cr != 799
+					|| newLoc.cr != 839 || newLoc.cr != 879 || newLoc.cr != 919 || newLoc.cr != 959
+					|| newLoc.cr != 999 || newLoc.cr != 1039 || newLoc.cr != 1079 || newLoc.cr != 1119
+					|| newLoc.cr != 1159 || newLoc.cr != 1199)){
+				newLoc.tl = oldLoc.tl + 1;
+				newLoc.tr = oldLoc.tr + 1;
+				newLoc.cl = oldLoc.cl + 1;
+				newLoc.cr = oldLoc.cr + 1;
+				newLoc.bl = oldLoc.bl + 1;
+				newLoc.br = oldLoc.br + 1;
+				foreground[oldLoc.tl] = 6;
+				foreground[oldLoc.cl] = 6;
+				foreground[oldLoc.bl] = 6;
+			}
+		}
+		if (cont == 126){					//right + A
+			if (background[newLoc.tr+1] != 30 && background[newLoc.cr+1] != 30 && background[newLoc.br+1] != 30
+					&& newLoc.tl > 39 && newLoc.tr > 39){
+				newLoc.tl = oldLoc.tl - 39;
+				newLoc.tr = oldLoc.tr - 39;
+				newLoc.cl = oldLoc.cl - 39;
+				newLoc.cr = oldLoc.cr - 39;
+				newLoc.bl = oldLoc.bl - 39;
+				newLoc.br = oldLoc.br - 39;
+				foreground[oldLoc.tl] = 6;
+				foreground[oldLoc.cl] = 6;
+				foreground[oldLoc.bl] = 6;
+				foreground[oldLoc.br] = 6;
+			}
 		}
 
+		//gravity?
+		if (cont != 254 && background[oldLoc.bl+40] != 30 && background[oldLoc.br+40] != 30){
+			if(cont == 191){
+				newLoc.tl += 39;
+				newLoc.tr += 39;
+				newLoc.cl += 39;
+				newLoc.cr += 39;
+				newLoc.bl += 39;
+				newLoc.br += 39;
+				foreground[oldLoc.tl] = 6;
+				foreground[oldLoc.cl] = 6;
+				foreground[oldLoc.bl] = 6;
+				foreground[oldLoc.tr] = 6;
+				foreground[oldLoc.cr] = 6;
+				foreground[oldLoc.br] = 6;
+			}
+			else if (cont == 127){
+				newLoc.tl += 41;
+				newLoc.tr += 41;
+				newLoc.cl += 41;
+				newLoc.cr += 41;
+				newLoc.bl += 41;
+				newLoc.br += 41;
+				foreground[oldLoc.tl] = 6;
+				foreground[oldLoc.cl] = 6;
+				foreground[oldLoc.bl] = 6;
+				foreground[oldLoc.tr] = 6;
+				foreground[oldLoc.cr] = 6;
+				foreground[oldLoc.br] = 6;
+			}
+			else {
+				newLoc.tl += 40;
+				newLoc.tr += 40;
+				newLoc.cl += 40;
+				newLoc.cr += 40;
+				newLoc.bl += 40;
+				newLoc.br += 40;
+				foreground[oldLoc.tl] = 6;
+				foreground[oldLoc.tr] = 6;
+			}
+		}
+
+		//copy over old location to new
 		oldLoc = newLoc;
-		background[oldLoc.tl] = 0;
+
 		foreground[oldLoc.tl] = 0;
 		foreground[oldLoc.tr] = 1;
 		foreground[oldLoc.cl] = 2;
 		foreground[oldLoc.cr] = 3;
 		foreground[oldLoc.bl] = 4;
 		foreground[oldLoc.br] = 5;
+
+		//update any bullets out there
+		for (i = 0; i < MAX_BULLETS; ++i){
+			if (bullets[i] != -1){
+				foreground[bullets[i]] = 6;
+				bullets[i] += bullDir[i];
+				if (background[bullets[i]] == 30 || (bullets[i] == 0) || (bullets[i] == 39) || (bullets[i] == 79)
+						|| (bullets[i] == 119) || (bullets[i] == 159) || (bullets[i] == 199)
+						|| (bullets[i] == 239) || (bullets[i] == 279) || (bullets[i] == 319)
+						|| (bullets[i] == 359) || (bullets[i] == 399) || (bullets[i] == 439)
+						|| (bullets[i] == 479) || (bullets[i] == 519) || (bullets[i] == 559)
+						|| (bullets[i] == 599) || (bullets[i] == 639) || (bullets[i] == 679)
+						|| (bullets[i] == 719) || (bullets[i] == 759) || (bullets[i] == 799)
+						|| (bullets[i] == 839) || (bullets[i] == 879) || (bullets[i] == 919)
+						|| (bullets[i] == 959) || (bullets[i] == 999) || (bullets[i] == 1039)
+						|| (bullets[i] == 1079) || (bullets[i] == 1119) || (bullets[i] == 1159)
+						|| (bullets[i] == 1199)) bullets[i] = -1;
+				else foreground[bullets[i]] = 8;
+			}
+		}
 
 		//start with foreground
 		for (addr = 0; addr < 1200; ++addr){
@@ -409,6 +558,10 @@ int main(){
 			XGpio_WriteReg(IPcoreAddr, 0, addr + sprMap[addr]*sprColorOff + sprOff);
 			XGpio_ReadReg(IPcoreAddr, 0);
 		}
+
+		//proceed to next level if we reach the goal
+		if (endLoc.tl == oldLoc.tl && endLoc.tr == oldLoc.tr && endLoc.cl == oldLoc.cl &&
+				endLoc.cr == oldLoc.cr && endLoc.bl == oldLoc.bl && endLoc.br == oldLoc.br) break;
 	}
 
 	/*for(;;){
